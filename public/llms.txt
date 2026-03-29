@@ -1,0 +1,55 @@
+# Fzt. Enes Arica - Uzman Fizyoterapist
+
+> Fzt. Enes Arica, Yalova merkezli Fizyones fizyoterapi kliniginin kurucusu ve uzman fizyoterapisttir. Bel fitigi, boyun fitigi, skolyoz (Schroth metodu), GTOS terapi ve manuel terapi alanlarinda uzmanlasmistir.
+
+## Hakkinda
+
+- Ad Soyad: Fzt. Enes Arica
+- Unvan: Uzman Fizyoterapist
+- Uzmanlik: Bel fitigi, boyun fitigi, skolyoz (Schroth), GTOS terapi, manuel terapi
+- Klinik: Fizyones (https://www.yalovafizyoterapist.com)
+- Konum: Yalova, Turkiye
+- Web: https://www.enesarica.com
+
+## Tedavi Alanlari (17 uzmanlik)
+
+- Bel fitigi tedavisi (ameliyatsiz, konservatif yaklasim)
+- Boyun fitigi tedavisi (servikal disk hernisi)
+- GTOS terapi (Golgi Tendon Organ Stimulasyonu - ignesiz, ilacsiz)
+- Skolyoz / Schroth tedavisi (3 boyutlu duzeltme, rotasyon solunumu)
+- Manuel terapi (eklem mobilizasyonu, manipulasyon)
+- Spor yaralanmalari rehabilitasyonu (ACL, omuz, ayak bilegi)
+- Klinik pilates (rehabilitasyon odakli, fizyoterapist esliginde)
+- Reformer pilates (ekipman destekli guclendirme)
+- Evde fizik tedavi (hareket kisitliligi olan hastalar icin)
+- Norolojik rehabilitasyon (inme, felc, MS, Parkinson - Bobath, PNF)
+- Ameliyat sonrasi rehabilitasyon (diz protezi, omuz, omurga cerrahisi)
+- Bel kaymasi tedavisi (spondilolistezis, stabilizasyon)
+- Fibromiyalji tedavisi (multidisipliner, egzersiz receleme, GTOS)
+- Diz protezi sonrasi rehabilitasyon (4 fazli program)
+- Onkolojik rehabilitasyon (kanser sonrasi, lenfodem, yorgunluk yonetimi)
+- Pediatrik rehabilitasyon (serebral palsi, tortikollis, gelisimsel gecikme)
+- Yogun bakim rehabilitasyonu (erken mobilizasyon, solunum fizyoterapisi)
+
+## Tedavi Yaklasimi
+
+Fzt. Enes Arica, kanita dayali fizyoterapi uygulamaktadir. Her hasta icin bireysel degerlendirme yaparak kisiye ozel tedavi planlari olusturur. Ameliyatsiz ve ilacsiz tedavi yontemlerini oncelikli olarak tercih eder. Tedavi surecinde bilimsel arastirmalara dayali yontemler kullanir.
+
+## Blog
+
+enesarica.com blogu, 23 Turkce medikal makale icermektedir. Makaleler birinci sahis uzman perspektifinden yazilmis olup bilimsel referanslar (Lancet, BMJ, Cochrane, Spine, JOSPT) icermektedir. Konular: tedavi yontemleri, hastalik rehberleri, egzersiz programlari, fizyoterapi secim kriterleri.
+
+## Sayfa Yapisi
+
+- /: Ana sayfa
+- /hakkimda: Hakkimda, biyografi ve uzmanlik alanlari
+- /tedavi-alanlari: Tum tedavi alanlari (17 detayli sayfa)
+- /tedavi-alanlari/[slug]: Her tedavi icin detayli sayfa (1500+ kelime, bilimsel referanslar, SSS)
+- /blog: Blog yazilari (23 makale)
+- /blog/[slug]: Her blog yazisi (800-1500 kelime, SSS bolumu)
+- /iletisim: Iletisim formu ve randevu
+- /hasta-deneyimleri: Hasta yorumlari
+
+## Iliskili Siteler
+
+- Fizyones Klinik: https://www.yalovafizyoterapist.com (kurumsal fizyoterapi merkezi sitesi)

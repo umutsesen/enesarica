@@ -1,0 +1,47 @@
+import testimonials from "@/data/testimonials";
+import { FaStar } from "react-icons/fa";
+
+export default function HastaDeneyimleriPage() {
+  return (
+    <main className="pt-20">
+      <div className="bg-sand-50 py-24 md:py-32 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <p className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">
+            Geri Bildirimler
+          </p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-forest-900">
+            Hasta Deneyimleri
+          </h1>
+        </div>
+      </div>
+
+      <section className="py-24 md:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {testimonials.map((t, i) => (
+              <div
+                key={i}
+                className="rounded-2xl p-8 border border-gray-100 flex flex-col"
+              >
+                <div className="flex gap-1 mb-4">
+                  {Array.from({ length: t.rating }).map((_, j) => (
+                    <FaStar key={j} className="w-4 h-4 text-sage-600" />
+                  ))}
+                </div>
+                <p className="text-gray-600 leading-relaxed flex-1">
+                  &ldquo;{t.text}&rdquo;
+                </p>
+                <div className="mt-6 pt-6 border-t border-gray-100">
+                  <p className="font-semibold text-forest-900">{t.name}</p>
+                  <p className="text-sm text-gray-500 mt-1">
+                    {t.treatment} &middot; {t.branch}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

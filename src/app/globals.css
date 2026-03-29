@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FAFAF6;
+  --foreground: #1a1a1a;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+/* Prose styling for MDX content (treatment & blog pages) */
+.prose h2 {
+  @apply text-2xl font-semibold text-gray-900 mt-10 mb-4 tracking-tight;
+}
+
+.prose h3 {
+  @apply text-xl font-semibold text-gray-900 mt-8 mb-3;
+}
+
+.prose p {
+  @apply text-gray-600 leading-relaxed mb-4;
+}
+
+.prose ul, .prose ol {
+  @apply text-gray-600 mb-4 pl-6;
+}
+
+.prose li {
+  @apply mb-2 leading-relaxed;
+}
+
+.prose a {
+  @apply text-sage-600 hover:text-sage-700 underline underline-offset-4;
+}
+
+.prose strong {
+  @apply text-gray-900 font-semibold;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-sage-500 pl-6 italic text-gray-500 my-6;
+}
+
+.prose img {
+  @apply rounded-2xl my-8;
+}

@@ -1,0 +1,91 @@
+import { Inter } from 'next/font/google';
+import './globals.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import { FloatingButtons } from './components/FloatingButtons';
+import { StructuredData } from './components/StructuredData';
+
+const inter = Inter({
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+});
+
+export const metadata = {
+  title: 'Uzman Fizyoterapist Enes Arıca | Yalova, İstanbul, İzmir',
+  description:
+    'Uzman Fizyoterapist Enes Arıca ile bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates tedavisi. Yalova, İstanbul ve İzmir\'de hizmetinizdeyiz.',
+  keywords: [
+    'fizyoterapist',
+    'enes arıca',
+    'bel fıtığı tedavisi',
+    'boyun fıtığı tedavisi',
+    'skolyoz tedavisi',
+    'GTOS terapi',
+    'manuel terapi',
+    'klinik pilates',
+    'reformer pilates',
+    'fizyoterapi yalova',
+    'fizyoterapi istanbul',
+    'fizyoterapi izmir',
+  ],
+  openGraph: {
+    title: 'Uzman Fizyoterapist Enes Arıca | Yalova, İstanbul, İzmir',
+    description:
+      'Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates tedavisi.',
+    url: 'https://www.enesarica.com',
+    siteName: 'Uzman Fizyoterapist Enes Arıca',
+    images: [
+      {
+        url: 'https://www.enesarica.com/imgs/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Uzman Fizyoterapist Enes Arıca',
+      },
+    ],
+    locale: 'tr_TR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Uzman Fizyoterapist Enes Arıca',
+    description:
+      'Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates tedavisi.',
+    images: ['https://www.enesarica.com/imgs/og-image.jpg'],
+  },
+  icons: {
+    icon: [
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  alternates: {
+    canonical: 'https://www.enesarica.com',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="tr">
+      <body className={inter.className}>
+        <StructuredData />
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+        <FloatingButtons />
+      </body>
+    </html>
+  );
+}

@@ -1,0 +1,193 @@
+import Link from "next/link";
+import { FaInstagram, FaYoutube, FaFacebookF, FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import { getAllPosts } from "@/lib/mdx";
+import { treatments } from "@/data/treatments";
+
+const socialLinks = [
+  { icon: FaInstagram, href: "https://www.instagram.com/fizyones/", label: "Instagram" },
+  { icon: FaYoutube, href: "https://www.youtube.com/@fizyones", label: "YouTube" },
+  { icon: FaFacebookF, href: "https://www.facebook.com/fizyones/", label: "Facebook" },
+];
+
+const quickLinks = [
+  { name: "Ana Sayfa", href: "/" },
+  { name: "Hakkımda", href: "/hakkimda" },
+  { name: "Tedavi Alanları", href: "/tedavi-alanlari" },
+  { name: "Blog", href: "/blog" },
+  { name: "Hasta Deneyimleri", href: "/hasta-deneyimleri" },
+  { name: "İletişim", href: "/iletisim" },
+];
+
+export default function Footer() {
+  const blogPosts = getAllPosts('blog').slice(0, 12);
+  const half = Math.ceil(treatments.length / 2);
+  const treatmentsCol1 = treatments.slice(0, half);
+  const treatmentsCol2 = treatments.slice(half);
+
+  return (
+    <footer className="bg-forest-900 text-gray-400">
+      {/* Top section: Brand description + CTA */}
+      <div className="border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <Link href="/" className="text-white font-bold text-2xl">
+                Enes Arıca
+              </Link>
+              <p className="mt-4 text-gray-400 leading-relaxed max-w-lg">
+                Uzman fizyoterapist Enes Arıca, bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates alanlarında 10 yılı aşkın deneyimle ameliyatsız tedavi hizmeti sunmaktadır. Yalova Merkez, Yalova Çiftlikköy, İstanbul Bahçelievler ve İzmir Alsancak şubelerinde hastalarına kişiye özel tedavi programları uygulayarak kalıcı çözümler sağlamaktadır.
+              </p>
+            </div>
+            <div className="lg:text-right">
+              <div className="inline-flex flex-col sm:flex-row gap-3">
+                <Link
+                  href="/iletisim"
+                  className="px-7 py-3.5 bg-sage-600 text-white rounded-lg font-medium hover:bg-sage-700 transition-colors text-center"
+                >
+                  Randevu Al
+                </Link>
+                <a
+                  href="tel:+905446621245"
+                  className="px-7 py-3.5 border border-white/20 text-white rounded-lg font-medium hover:bg-white/10 transition-colors text-center"
+                >
+                  +90 544 662 12 45
+                </a>
+              </div>
+              <div className="mt-5 flex gap-3 lg:justify-end">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-gray-400 hover:text-sage-400 hover:bg-white/15 transition-colors"
+                  >
+                    <social.icon className="w-3.5 h-3.5" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Link grid */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          {/* Sayfalar */}
+          <div>
+            <h3 className="text-white text-sm font-semibold mb-4">Sayfalar</h3>
+            <ul className="space-y-2.5">
+              {quickLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm hover:text-sage-400 transition-colors">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Tedavi Alanları Col 1 */}
+          <div>
+            <h3 className="text-white text-sm font-semibold mb-4">Tedavi Alanları</h3>
+            <ul className="space-y-2.5">
+              {treatmentsCol1.map((t) => (
+                <li key={t.slug}>
+                  <Link href={`/tedavi-alanlari/${t.slug}`} className="text-sm hover:text-sage-400 transition-colors">
+                    {t.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Tedavi Alanları Col 2 */}
+          <div>
+            <h3 className="text-white text-sm font-semibold mb-4 invisible">Tedaviler</h3>
+            <ul className="space-y-2.5">
+              {treatmentsCol2.map((t) => (
+                <li key={t.slug}>
+                  <Link href={`/tedavi-alanlari/${t.slug}`} className="text-sm hover:text-sage-400 transition-colors">
+                    {t.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Blog Col 1 */}
+          <div>
+            <h3 className="text-white text-sm font-semibold mb-4">Son Yazılar</h3>
+            <ul className="space-y-2.5">
+              {blogPosts.slice(0, 6).map((post) => (
+                <li key={post.slug}>
+                  <Link href={`/blog/${post.slug}`} className="text-sm hover:text-sage-400 transition-colors line-clamp-1">
+                    {post.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Blog Col 2 */}
+          <div>
+            <h3 className="text-white text-sm font-semibold mb-4 invisible">Yazılar</h3>
+            <ul className="space-y-2.5">
+              {blogPosts.slice(6, 12).map((post) => (
+                <li key={post.slug}>
+                  <Link href={`/blog/${post.slug}`} className="text-sm hover:text-sage-400 transition-colors line-clamp-1">
+                    {post.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* İletişim */}
+          <div>
+            <h3 className="text-white text-sm font-semibold mb-4">İletişim</h3>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <a href="tel:+905446621245" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
+                  <FaPhone className="w-3 h-3 shrink-0" />
+                  +90 544 662 12 45
+                </a>
+              </li>
+              <li>
+                <a href="mailto:fizyones77@gmail.com" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
+                  <FaEnvelope className="w-3 h-3 shrink-0" />
+                  fizyones77@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/905446621245" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
+                  <FaWhatsapp className="w-3 h-3 shrink-0" />
+                  WhatsApp
+                </a>
+              </li>
+            </ul>
+            <div className="mt-6">
+              <h4 className="text-white text-sm font-semibold mb-2">Şubeler</h4>
+              <ul className="space-y-1.5 text-sm">
+                <li>Yalova Merkez</li>
+                <li>Yalova Çiftlikköy</li>
+                <li>İstanbul Bahçelievler</li>
+                <li>İzmir Alsancak</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
+          <p>&copy; {new Date().getFullYear()} Fzt. Enes Arıca. Tüm hakları saklıdır.</p>
+          <p>Yalova &middot; İstanbul &middot; İzmir &middot; Fizyoterapi ve Rehabilitasyon</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
