@@ -25,6 +25,33 @@ function Section({ children, className = "" }) {
   );
 }
 
+function TimelineItem({ item, index }) {
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, x: -30 }}
+      animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="relative pl-12 md:pl-16 group"
+    >
+      {/* Dot */}
+      <div className={`absolute left-2 md:left-4 top-1 w-5 h-5 rounded-full border-2 transition-colors duration-500 ${
+        inView ? 'border-sage-600 bg-sage-600' : 'border-gray-300 bg-white'
+      }`}>
+        <div className={`absolute inset-0 rounded-full bg-sage-600/20 transition-transform duration-500 ${
+          inView ? 'scale-[2] opacity-100' : 'scale-100 opacity-0'
+        }`} />
+      </div>
+
+      <span className="text-sage-600 text-sm font-semibold">{item.year}</span>
+      <h3 className="text-lg font-semibold text-forest-900 mt-1">{item.title}</h3>
+      <p className="text-gray-600 mt-1">{item.desc}</p>
+    </motion.div>
+  );
+}
+
 const timeline = [
   { year: "2014", title: "Lisans Mezuniyeti", desc: "Marmara Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü" },
   { year: "2015", title: "Fizyones Kuruluşu", desc: "Yalova'da ilk Fizyones şubesinin açılışı" },
@@ -108,35 +135,41 @@ export default function HakkimdaPage() {
       </Section>
 
       {/* Timeline */}
-      <Section className="py-24 md:py-32 bg-sand-50">
+      <section className="py-24 md:py-32 bg-sand-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto">
-            <p className="text-sage-600 text-sm font-medium tracking-widest uppercase mb-4">
-              Kariyer Yolculuğu
-            </p>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-16">
-              Eğitim ve Deneyim
-            </h2>
-            <div className="relative">
-              <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-gray-200" />
-              <div className="space-y-12">
-                {timeline.map((item, i) => (
-                  <div key={i} className="relative pl-12 md:pl-16">
-                    <div className="absolute left-2 md:left-4 top-1 w-5 h-5 rounded-full border-2 border-sage-600 bg-white" />
-                    <span className="text-sage-600 text-sm font-semibold">
-                      {item.year}
-                    </span>
-                    <h3 className="text-lg font-semibold text-forest-900 mt-1">
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-600 mt-1">{item.desc}</p>
-                  </div>
-                ))}
+          <div className="grid lg:grid-cols-5 gap-16">
+            <div className="lg:col-span-2 lg:sticky lg:top-32 lg:self-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <p className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">
+                  Kariyer Yolculuğu
+                </p>
+                <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-4">
+                  Eğitim ve Deneyim
+                </h2>
+                <p className="text-gray-500 leading-relaxed">
+                  2014&apos;ten bugüne fizyoterapi alanındaki gelişim sürecim ve kazanımlarım.
+                </p>
+              </motion.div>
+            </div>
+
+            <div className="lg:col-span-3">
+              <div className="relative">
+                <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-gray-200" />
+                <div className="space-y-10">
+                  {timeline.map((item, i) => (
+                    <TimelineItem key={i} item={item} index={i} />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Certifications */}
       <Section className="py-24 md:py-32">
