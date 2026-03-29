@@ -19,10 +19,7 @@ const quickLinks = [
 ];
 
 export default function Footer() {
-  const blogPosts = getAllPosts('blog').slice(0, 12);
-  const half = Math.ceil(treatments.length / 2);
-  const treatmentsCol1 = treatments.slice(0, half);
-  const treatmentsCol2 = treatments.slice(half);
+  const blogPosts = getAllPosts('blog').slice(0, 8);
 
   return (
     <footer className="bg-forest-900 text-gray-400">
@@ -74,7 +71,7 @@ export default function Footer() {
 
       {/* Link grid */}
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {/* Sayfalar */}
           <div>
             <h3 className="text-white text-sm font-semibold mb-4">Sayfalar</h3>
@@ -89,11 +86,11 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Tedavi Alanları Col 1 */}
+          {/* Tedavi Alanları */}
           <div>
             <h3 className="text-white text-sm font-semibold mb-4">Tedavi Alanları</h3>
             <ul className="space-y-2.5">
-              {treatmentsCol1.map((t) => (
+              {treatments.slice(0, 8).map((t) => (
                 <li key={t.slug}>
                   <Link href={`/tedavi-alanlari/${t.slug}`} className="text-sm hover:text-sage-400 transition-colors">
                     {t.title}
@@ -103,39 +100,11 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Tedavi Alanları Col 2 */}
-          <div>
-            <h3 className="text-white text-sm font-semibold mb-4 invisible">Tedaviler</h3>
-            <ul className="space-y-2.5">
-              {treatmentsCol2.map((t) => (
-                <li key={t.slug}>
-                  <Link href={`/tedavi-alanlari/${t.slug}`} className="text-sm hover:text-sage-400 transition-colors">
-                    {t.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Blog Col 1 */}
+          {/* Son Yazılar */}
           <div>
             <h3 className="text-white text-sm font-semibold mb-4">Son Yazılar</h3>
             <ul className="space-y-2.5">
-              {blogPosts.slice(0, 6).map((post) => (
-                <li key={post.slug}>
-                  <Link href={`/blog/${post.slug}`} className="text-sm hover:text-sage-400 transition-colors line-clamp-1">
-                    {post.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Blog Col 2 */}
-          <div>
-            <h3 className="text-white text-sm font-semibold mb-4 invisible">Yazılar</h3>
-            <ul className="space-y-2.5">
-              {blogPosts.slice(6, 12).map((post) => (
+              {blogPosts.slice(0, 8).map((post) => (
                 <li key={post.slug}>
                   <Link href={`/blog/${post.slug}`} className="text-sm hover:text-sage-400 transition-colors line-clamp-1">
                     {post.title}
@@ -146,36 +115,38 @@ export default function Footer() {
           </div>
 
           {/* İletişim */}
-          <div>
+          <div className="col-span-2 sm:col-span-2 md:col-span-3 lg:col-span-2">
             <h3 className="text-white text-sm font-semibold mb-4">İletişim</h3>
-            <ul className="space-y-2.5 text-sm">
-              <li>
-                <a href="tel:+905446621245" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
-                  <FaPhone className="w-3 h-3 shrink-0" />
-                  +90 544 662 12 45
-                </a>
-              </li>
-              <li>
-                <a href="mailto:fizyones77@gmail.com" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
-                  <FaEnvelope className="w-3 h-3 shrink-0" />
-                  fizyones77@gmail.com
-                </a>
-              </li>
-              <li>
-                <a href="https://wa.me/905446621245" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
-                  <FaWhatsapp className="w-3 h-3 shrink-0" />
-                  WhatsApp
-                </a>
-              </li>
-            </ul>
-            <div className="mt-6">
-              <h4 className="text-white text-sm font-semibold mb-2">Şubeler</h4>
-              <ul className="space-y-1.5 text-sm">
-                <li>Yalova Merkez</li>
-                <li>Yalova Çiftlikköy</li>
-                <li>İstanbul Bahçelievler</li>
-                <li>İzmir Alsancak</li>
+            <div className="grid grid-cols-2 gap-6">
+              <ul className="space-y-2.5 text-sm">
+                <li>
+                  <a href="tel:+905446621245" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
+                    <FaPhone className="w-3 h-3 shrink-0" />
+                    +90 544 662 12 45
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:fizyones77@gmail.com" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
+                    <FaEnvelope className="w-3 h-3 shrink-0" />
+                    fizyones77@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/905446621245" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
+                    <FaWhatsapp className="w-3 h-3 shrink-0" />
+                    WhatsApp
+                  </a>
+                </li>
               </ul>
+              <div>
+                <h4 className="text-white text-sm font-semibold mb-2">Şubeler</h4>
+                <ul className="space-y-1.5 text-sm">
+                  <li>Yalova Merkez</li>
+                  <li>Yalova Çiftlikköy</li>
+                  <li>İstanbul Bahçelievler</li>
+                  <li>İzmir Alsancak</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

@@ -28,7 +28,7 @@ export default function Hero() {
             </Link>
 
             {/* Stats */}
-            <div className="mt-14 pt-10 border-t border-white/10 grid grid-cols-3 gap-6">
+            <div className="mt-14 pt-10 border-t border-white/10 flex flex-wrap gap-x-10 gap-y-6">
               <div>
                 <span className="text-3xl md:text-4xl font-bold text-white">5.000+</span>
                 <p className="text-sm text-gray-500 mt-1">Tedavi Edilen Hasta</p>

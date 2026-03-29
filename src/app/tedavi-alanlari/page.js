@@ -145,7 +145,7 @@ export default function TedaviAlanlariPage() {
       {/* CTA */}
       <section className="py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="rounded-2xl border border-gray-200 p-12 md:p-16 text-center">
+          <div className="rounded-2xl border border-gray-200 p-8 md:p-16 text-center">
             <h2 className="text-3xl md:text-4xl font-semibold text-forest-900 tracking-tight mb-4">
               Tedavi Sürecini Birlikte Planlayalım
             </h2>

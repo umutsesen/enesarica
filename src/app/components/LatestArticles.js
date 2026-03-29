@@ -57,7 +57,7 @@ export default function LatestArticles() {
             </Link>
           </div>
 
-          <div className="relative grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(340px,0.85fr)] lg:items-stretch">
+          <div className="relative grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-stretch">
             <Link
               href={`/blog/${featured.slug}`}
               className="group relative overflow-hidden rounded-[2rem] bg-forest-900 p-8 text-white shadow-[0_24px_80px_rgba(21,44,31,0.28)] transition-transform duration-300 hover:-translate-y-1 md:p-10"
