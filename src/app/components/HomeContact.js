@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import branches from '@/data/branches'
+import BranchSelect from './BranchSelect'
 
 export default function HomeContact() {
   const [form, setForm] = useState({
@@ -115,18 +116,11 @@ export default function HomeContact() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-sage-600 focus:ring-1 focus:ring-sage-600 outline-none transition-colors text-sm"
                 />
-                <select
-                  name="branch"
-                  required
+                <BranchSelect
+                  branches={branches}
                   value={form.branch}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-sage-600 focus:ring-1 focus:ring-sage-600 outline-none transition-colors text-sm bg-white"
-                >
-                  <option value="">Şube Seçin</option>
-                  {branches.map((b) => (
-                    <option key={b.name} value={b.name}>{b.name}</option>
-                  ))}
-                </select>
+                />
               </div>
               <textarea
                 name="message"

@@ -41,26 +41,24 @@ export default function BlogPage() {
                   href={`/blog/${featured.slug}`}
                   className="group block mb-16 pb-16 border-b border-gray-100"
                 >
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                    <div>
-                      {featured.category && (
-                        <span className="text-sage-600 text-xs font-medium tracking-widest uppercase">
-                          {featured.category}
-                        </span>
-                      )}
-                      <h2 className="text-3xl md:text-4xl font-semibold text-forest-900 group-hover:text-sage-600 transition-colors mt-3 mb-4">
-                        {featured.title}
-                      </h2>
-                      {featured.description && (
-                        <p className="text-gray-600 leading-relaxed line-clamp-3 mb-6">
-                          {featured.description}
-                        </p>
-                      )}
-                      <div className="flex items-center gap-3 text-sm text-gray-400">
-                        <time dateTime={featured.date}>{formatDate(featured.date)}</time>
-                        <span>&middot;</span>
-                        <span>{featured.readingTime} dk okuma</span>
-                      </div>
+                  <div>
+                    {featured.category && (
+                      <span className="text-sage-600 text-xs font-medium tracking-widest uppercase">
+                        {featured.category}
+                      </span>
+                    )}
+                    <h2 className="text-3xl md:text-4xl font-semibold text-forest-900 group-hover:text-sage-600 transition-colors mt-3 mb-4 max-w-2xl">
+                      {featured.title}
+                    </h2>
+                    {featured.description && (
+                      <p className="text-gray-600 leading-relaxed line-clamp-3 mb-6 max-w-2xl">
+                        {featured.description}
+                      </p>
+                    )}
+                    <div className="flex items-center gap-3 text-sm text-gray-400">
+                      <time dateTime={featured.date}>{formatDate(featured.date)}</time>
+                      <span>&middot;</span>
+                      <span>{featured.readingTime} dk okuma</span>
                     </div>
                   </div>
                 </Link>

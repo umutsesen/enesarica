@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const treatments = [
@@ -22,10 +23,15 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+
+  // Only use transparent/white-text style on homepage before scroll
+  const isDark = isHome && !scrolled;
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -38,16 +44,26 @@ export default function Navbar() {
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
 
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/80 backdrop-blur-xl shadow-[0_1px_0_0_rgba(0,0,0,0.05)]"
-          : "bg-transparent"
+        isDark
+          ? "bg-transparent"
+          : "bg-white/80 backdrop-blur-xl shadow-[0_1px_0_0_rgba(0,0,0,0.05)]"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link href="/" className={`font-semibold transition-colors duration-300 ${scrolled ? 'text-forest-900' : 'text-white'}`}>
+        <Link
+          href="/"
+          className={`font-semibold text-lg transition-colors duration-300 ${
+            isDark ? "text-white" : "text-forest-900"
+          }`}
+        >
           Enes Arıca
         </Link>
 
@@ -63,7 +79,11 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  className={`px-4 py-2 text-sm transition-colors rounded-lg flex items-center gap-1 ${scrolled ? 'text-gray-600 hover:text-forest-900 hover:bg-black/[0.03]' : 'text-white/80 hover:text-white hover:bg-white/10'}`}
+                  className={`px-4 py-2 text-sm transition-colors rounded-lg flex items-center gap-1 ${
+                    isDark
+                      ? "text-white/80 hover:text-white hover:bg-white/10"
+                      : "text-gray-600 hover:text-forest-900 hover:bg-black/[0.03]"
+                  }`}
                 >
                   {link.name}
                   <svg
@@ -97,7 +117,11 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`px-4 py-2 text-sm transition-colors rounded-lg ${scrolled ? 'text-gray-600 hover:text-forest-900 hover:bg-black/[0.03]' : 'text-white/80 hover:text-white hover:bg-white/10'}`}
+                className={`px-4 py-2 text-sm transition-colors rounded-lg ${
+                  isDark
+                    ? "text-white/80 hover:text-white hover:bg-white/10"
+                    : "text-gray-600 hover:text-forest-900 hover:bg-black/[0.03]"
+                }`}
               >
                 {link.name}
               </Link>
@@ -106,7 +130,11 @@ export default function Navbar() {
 
           <Link
             href="/iletisim"
-            className={`ml-2 text-sm px-5 py-2 rounded-lg transition-colors ${scrolled ? 'bg-forest-900 text-white hover:bg-forest-800' : 'bg-sage-600 text-white hover:bg-sage-700'}`}
+            className={`ml-2 text-sm px-5 py-2 rounded-lg transition-colors ${
+              isDark
+                ? "bg-sage-600 text-white hover:bg-sage-700"
+                : "bg-forest-900 text-white hover:bg-forest-800"
+            }`}
           >
             Randevu Al
           </Link>
@@ -118,7 +146,15 @@ export default function Navbar() {
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Menüyü kapat" : "Menüyü aç"}
         >
-          <svg className={`w-5 h-5 transition-colors duration-300 ${scrolled ? 'text-forest-900' : 'text-white'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <svg
+            className={`w-5 h-5 transition-colors duration-300 ${
+              isDark && !mobileOpen ? "text-white" : "text-forest-900"
+            }`}
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
             {mobileOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -129,64 +165,79 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 top-16 bg-white z-40 overflow-y-auto">
-          <div className="px-6 py-6 flex flex-col gap-1">
-            {navLinks.map((link) =>
-              link.hasDropdown ? (
-                <div key={link.name}>
-                  <button
-                    onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
-                    className="w-full flex items-center justify-between py-3 text-gray-600 font-medium"
-                  >
-                    {link.name}
-                    <svg
-                      className={`w-4 h-4 transition-transform ${mobileDropdownOpen ? "rotate-180" : ""}`}
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  {mobileDropdownOpen && (
-                    <div className="pl-4 flex flex-col gap-1">
-                      {treatments.map((item) => (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          onClick={() => setMobileOpen(false)}
-                          className="py-2 text-sm text-gray-500 hover:text-forest-900 transition-colors"
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="py-3 text-gray-600 font-medium hover:text-forest-900 transition-colors"
+      <div
+        className={`lg:hidden fixed inset-0 top-16 bg-white z-40 transition-all duration-300 ${
+          mobileOpen
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-2 pointer-events-none"
+        }`}
+      >
+        <div className="px-6 py-8 flex flex-col gap-1 h-full overflow-y-auto">
+          {navLinks.map((link) =>
+            link.hasDropdown ? (
+              <div key={link.name}>
+                <button
+                  onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+                  className="w-full flex items-center justify-between py-3.5 text-forest-900 font-medium text-lg"
                 >
                   {link.name}
-                </Link>
-              )
-            )}
+                  <svg
+                    className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${
+                      mobileDropdownOpen ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div
+                  className={`overflow-hidden transition-all duration-300 ${
+                    mobileDropdownOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <div className="pl-4 pb-2 flex flex-col gap-0.5 border-l-2 border-sage-200 ml-1">
+                    {treatments.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="py-2.5 text-sm text-gray-500 hover:text-sage-600 transition-colors"
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="py-3.5 text-forest-900 font-medium text-lg hover:text-sage-600 transition-colors"
+              >
+                {link.name}
+              </Link>
+            )
+          )}
 
+          <div className="mt-auto pt-6 border-t border-gray-100">
             <Link
               href="/iletisim"
-              onClick={() => setMobileOpen(false)}
-              className="mt-4 bg-forest-900 text-white text-center font-medium px-5 py-3 rounded-lg"
+              className="block bg-forest-900 text-white text-center font-medium px-5 py-3.5 rounded-lg hover:bg-forest-800 transition-colors"
             >
               Randevu Al
             </Link>
+            <a
+              href="tel:+905446621245"
+              className="block mt-3 text-center text-sm text-gray-500"
+            >
+              +90 544 662 12 45
+            </a>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 }

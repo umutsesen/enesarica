@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { FaPhone, FaMapMarkerAlt, FaExternalLinkAlt } from "react-icons/fa";
 import branches from "@/data/branches";
+import BranchSelect from "../components/BranchSelect";
 
 export default function IletisimPage() {
   const [form, setForm] = useState({
@@ -116,20 +117,11 @@ export default function IletisimPage() {
                   <label className="block text-sm font-medium text-gray-700 mb-1.5">
                     Şube Seçin
                   </label>
-                  <select
-                    name="branch"
-                    required
+                  <BranchSelect
+                    branches={branches}
                     value={form.branch}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-sage-600 focus:ring-1 focus:ring-sage-600 outline-none transition-colors bg-white"
-                  >
-                    <option value="">Şube seçiniz</option>
-                    {branches.map((b) => (
-                      <option key={b.name} value={b.name}>
-                        {b.name}
-                      </option>
-                    ))}
-                  </select>
+                  />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1.5">

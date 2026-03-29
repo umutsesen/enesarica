@@ -4,6 +4,7 @@ import AboutPreview from './components/AboutPreview'
 import FeaturedTestimonials from './components/FeaturedTestimonials'
 import LatestArticles from './components/LatestArticles'
 import TreatmentProcess from './components/TreatmentProcess'
+import YouTubeShorts from './components/YouTubeShorts'
 import HomeContact from './components/HomeContact'
 
 export default function HomePage() {
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Specializations />
       <TreatmentProcess />
       <FeaturedTestimonials />
+      <YouTubeShorts />
       <LatestArticles />
       <HomeContact />
     </>
