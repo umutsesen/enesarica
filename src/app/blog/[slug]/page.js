@@ -48,8 +48,39 @@ export default async function BlogPostPage({ params }) {
   const allPosts = getAllBlogPosts();
   const related = allPosts.filter((p) => p.slug !== slug).slice(0, 2);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.description,
+    "author": {
+      "@type": "Person",
+      "name": "Fzt. Enes Arıca",
+      "url": "https://www.enesarica.com/hakkimda",
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Fzt. Enes Arıca",
+    },
+    "datePublished": post.date,
+    "mainEntityOfPage": `https://www.enesarica.com/blog/${slug}`,
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.enesarica.com" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.enesarica.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://www.enesarica.com/blog/${slug}` },
+    ],
+  };
+
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
       <div className="bg-forest-900 py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {post.category && (
@@ -94,7 +125,22 @@ export default async function BlogPostPage({ params }) {
             </div>
           )}
 
-          <div className="mt-12 rounded-2xl p-8 border border-gray-100">
+          <div className="mt-12 rounded-2xl p-8 bg-forest-900 text-center">
+            <h3 className="text-xl font-semibold text-white mb-2">
+              Bu konuda detaylı değerlendirme ister misiniz?
+            </h3>
+            <p className="text-gray-300 text-sm mb-6">
+              Uzman fizyoterapist Enes Arıca ile ücretsiz ön değerlendirme için randevu alın.
+            </p>
+            <Link
+              href="/iletisim"
+              className="inline-block bg-sage-600 text-white text-sm font-medium px-8 py-3 rounded-lg hover:bg-sage-700 transition-colors"
+            >
+              Randevu Al
+            </Link>
+          </div>
+
+          <div className="mt-8 rounded-2xl p-8 border border-gray-100">
             <h3 className="font-semibold text-forest-900">Fzt. Enes Arıca</h3>
             <p className="text-gray-600 text-sm mt-2">
               Fizyones kurucusu, uzman fizyoterapist. GTOS terapi, Schroth

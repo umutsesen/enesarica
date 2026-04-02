@@ -1,9 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { FaPhone, FaMapMarkerAlt, FaExternalLinkAlt } from "react-icons/fa";
 import branches from "@/data/branches";
 import BranchSelect from "../components/BranchSelect";
+
+const ease = [0.25, 0.4, 0.25, 1];
 
 export default function IletisimPage() {
   const [form, setForm] = useState({
@@ -49,22 +52,37 @@ export default function IletisimPage() {
 
   return (
     <main className="pt-20">
-      <div className="bg-sand-50 py-24 md:py-32 border-b border-gray-100">
+      <div className="bg-sand-50 py-24 md:py-32 border-b border-gray-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">
+          <motion.p
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease }}
+            className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
+          >
             Bize Ulaşın
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-forest-900">
+          </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1, ease }}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-forest-900"
+          >
             İletişim ve Randevu
-          </h1>
+          </motion.h1>
         </div>
       </div>
 
-      <section className="py-24 md:py-32">
+      <section className="py-24 md:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Form */}
-            <div>
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, ease }}
+              viewport={{ once: true, margin: "-100px" }}
+            >
               <p className="text-sage-600 text-sm font-medium tracking-widest uppercase mb-4">
                 Randevu Formu
               </p>
@@ -155,10 +173,15 @@ export default function IletisimPage() {
                   </p>
                 )}
               </form>
-            </div>
+            </motion.div>
 
             {/* Branches */}
-            <div>
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.1, ease }}
+              viewport={{ once: true, margin: "-100px" }}
+            >
               <p className="text-sage-600 text-sm font-medium tracking-widest uppercase mb-4">
                 Şubelerimiz
               </p>
@@ -166,10 +189,14 @@ export default function IletisimPage() {
                 Lokasyonlar
               </h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
-                {branches.map((b) => (
-                  <div
+                {branches.map((b, i) => (
+                  <motion.div
                     key={b.name}
-                    className="rounded-2xl p-8 border border-gray-100"
+                    initial={{ opacity: 0, y: 25 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: i * 0.1, ease }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    className="rounded-2xl p-8 border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
                   >
                     <h3 className="text-lg font-semibold text-forest-900">
                       {b.name}
@@ -198,10 +225,10 @@ export default function IletisimPage() {
                         Haritada Gör
                       </a>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

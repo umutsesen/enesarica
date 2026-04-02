@@ -1,17 +1,32 @@
-import testimonials from "@/data/testimonials";
+"use client";
+
+import { motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
+import { testimonials } from "@/data/testimonials";
+
+const ease = [0.25, 0.4, 0.25, 1];
 
 export default function HastaDeneyimleriPage() {
   return (
     <main className="pt-20">
-      <div className="bg-sand-50 py-24 md:py-32 border-b border-gray-100">
+      <div className="bg-sand-50 py-24 md:py-32 border-b border-gray-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">
+          <motion.p
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease }}
+            className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
+          >
             Geri Bildirimler
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-forest-900">
+          </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1, ease }}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-forest-900"
+          >
             Hasta Deneyimleri
-          </h1>
+          </motion.h1>
         </div>
       </div>
 
@@ -19,9 +34,13 @@ export default function HastaDeneyimleriPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
-              <div
+              <motion.div
                 key={i}
-                className="rounded-2xl p-8 border border-gray-100 flex flex-col"
+                initial={{ opacity: 0, y: 30, scale: 0.97 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.5, delay: (i % 3) * 0.08, ease }}
+                viewport={{ once: true, margin: "-50px" }}
+                className="rounded-2xl p-8 border border-gray-100 flex flex-col hover:shadow-md hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: t.rating }).map((_, j) => (
@@ -37,7 +56,7 @@ export default function HastaDeneyimleriPage() {
                     {t.treatment} &middot; {t.branch}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

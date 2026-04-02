@@ -1,8 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import branches from '@/data/branches'
 import BranchSelect from './BranchSelect'
+
+const ease = [0.25, 0.4, 0.25, 1]
 
 export default function HomeContact() {
   const [form, setForm] = useState({
@@ -44,11 +47,17 @@ export default function HomeContact() {
   }
 
   return (
-    <section className="py-24 md:py-32 bg-sand-50">
+    <section className="py-24 md:py-32 bg-sand-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left: Text */}
-          <div className="lg:sticky lg:top-32">
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease }}
+            viewport={{ once: true, margin: "-100px" }}
+            className="lg:sticky lg:top-32"
+          >
             <p className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">
               İletişim
             </p>
@@ -60,27 +69,45 @@ export default function HomeContact() {
             </p>
 
             <div className="space-y-3 text-sm">
-              <div className="flex items-center gap-3 text-gray-600">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4, delay: 0.3, ease }}
+                viewport={{ once: true }}
+                className="flex items-center gap-3 text-gray-600"
+              >
                 <div className="w-8 h-8 rounded-lg bg-sage-600/10 flex items-center justify-center">
                   <svg className="w-4 h-4 text-sage-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 Pazartesi – Cumartesi: 09:00 – 19:00
-              </div>
-              <div className="flex items-center gap-3 text-gray-600">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4, delay: 0.4, ease }}
+                viewport={{ once: true }}
+                className="flex items-center gap-3 text-gray-600"
+              >
                 <div className="w-8 h-8 rounded-lg bg-sage-600/10 flex items-center justify-center">
                   <svg className="w-4 h-4 text-sage-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                   </svg>
                 </div>
                 <a href="tel:+905446621245" className="hover:text-sage-600 transition-colors">+90 544 662 12 45</a>
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right: Form */}
-          <div className="bg-white rounded-2xl border border-gray-100 p-8">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.15, ease }}
+            viewport={{ once: true, margin: "-100px" }}
+            className="bg-white rounded-2xl border border-gray-100 p-8"
+          >
             <h3 className="text-xl font-semibold text-forest-900 mb-6">Randevu Al</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid sm:grid-cols-2 gap-4">
@@ -145,7 +172,7 @@ export default function HomeContact() {
                 <p className="text-red-600 text-sm text-center">Bir hata oluştu. Lütfen tekrar deneyin.</p>
               )}
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

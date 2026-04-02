@@ -3,54 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
-
-function Section({ children, className = "" }) {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  return (
-    <motion.section
-      ref={ref}
-      variants={fadeUp}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      className={className}
-    >
-      {children}
-    </motion.section>
-  );
-}
-
-function TimelineItem({ item, index }) {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, x: -30 }}
-      animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="relative pl-12 md:pl-16 group"
-    >
-      {/* Dot */}
-      <div className={`absolute left-2 md:left-4 top-1 w-5 h-5 rounded-full border-2 transition-colors duration-500 ${
-        inView ? 'border-sage-600 bg-sage-600' : 'border-gray-300 bg-white'
-      }`}>
-        <div className={`absolute inset-0 rounded-full bg-sage-600/20 transition-transform duration-500 ${
-          inView ? 'scale-[2] opacity-100' : 'scale-100 opacity-0'
-        }`} />
-      </div>
-
-      <span className="text-sage-600 text-sm font-semibold">{item.year}</span>
-      <h3 className="text-lg font-semibold text-forest-900 mt-1">{item.title}</h3>
-      <p className="text-gray-600 mt-1">{item.desc}</p>
-    </motion.div>
-  );
-}
+const ease = [0.25, 0.4, 0.25, 1];
 
 const timeline = [
   { year: "2014", title: "Lisans Mezuniyeti", desc: "Marmara Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü" },
@@ -85,22 +39,38 @@ export default function HakkimdaPage() {
   return (
     <main className="pt-20">
       {/* Hero */}
-      <div className="bg-sand-50 py-24 md:py-32 border-b border-gray-100">
+      <div className="bg-sand-50 py-24 md:py-32 border-b border-gray-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">
+          <motion.p
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease }}
+            className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
+          >
             Uzman Fizyoterapist
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-forest-900">
+          </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1, ease }}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-forest-900"
+          >
             Hakkımda
-          </h1>
+          </motion.h1>
         </div>
       </div>
 
       {/* Biography */}
-      <Section className="py-24 md:py-32">
+      <section className="py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-16 items-start">
-            <div className="lg:col-span-2">
+            <motion.div
+              initial={{ clipPath: "inset(100% 0 0 0)" }}
+              whileInView={{ clipPath: "inset(0% 0 0 0)" }}
+              transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
+              viewport={{ once: true, margin: "-100px" }}
+              className="lg:col-span-2"
+            >
               <div className="aspect-[3/4] relative rounded-2xl overflow-hidden">
                 <Image
                   src="/imgs/enes-arica.jpeg"
@@ -110,51 +80,80 @@ export default function HakkimdaPage() {
                   sizes="(max-width: 1024px) 100vw, 40vw"
                 />
               </div>
-            </div>
+            </motion.div>
             <div className="lg:col-span-3">
-            <p className="text-sage-600 text-sm font-medium tracking-widest uppercase mb-4">
-              Biyografi
-            </p>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-8">
-              Fzt. Enes Arıca
-            </h2>
-            <div className="space-y-6 text-gray-600 leading-relaxed">
-              <p>
-                Marmara Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü mezunuyum. Mezuniyetimin ardından fizyoterapi alanındaki tutkumu kendi kliniğime taşıyarak Fizyones markasını kurdum. Bugün Yalova Merkez, Yalova Çiftlikköy, İstanbul Bahçelievler ve İzmir Alsancak olmak üzere 4 şubede hastalarıma hizmet vermenin gururunu yaşıyorum.
-              </p>
-              <p>
-                Kariyer yolculuğumda GTOS (Golgi Tendon Organ Stimülasyonu) terapi, skolyoz tedavisinde Schroth metodu ve ortopedik manuel terapi alanlarında ileri düzey eğitimler aldım. Bu uzmanlık alanları sayesinde özellikle bel fıtığı, boyun fıtığı, skolyoz ve kronik ağrı sendromlarında ameliyatsız, iğnesiz ve ilaçsız tedavi yöntemleri sunabiliyorum.
-              </p>
-              <p>
-                Her hastamın kendine özgü olduğuna inanıyor ve tedavi programlarını kişiye özel olarak tasarlıyorum. Kanıta dayalı tıp prensiplerini modern fizyoterapi teknikleriyle birleştirerek hastalarımın en kısa sürede günlük hayatlarına ve sevdikleri aktivitelere dönmelerini sağlıyorum.
-              </p>
-            </div>
+              <motion.p
+                initial={{ opacity: 0, x: -15 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, ease }}
+                viewport={{ once: true }}
+                className="text-sage-600 text-sm font-medium tracking-widest uppercase mb-4"
+              >
+                Biyografi
+              </motion.p>
+              <motion.h2
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1, ease }}
+                viewport={{ once: true }}
+                className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-8"
+              >
+                Fzt. Enes Arıca
+              </motion.h2>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2, ease }}
+                viewport={{ once: true }}
+                className="space-y-6 text-gray-600 leading-relaxed"
+              >
+                <p>
+                  Marmara Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü mezunuyum. Mezuniyetimin ardından fizyoterapi alanındaki tutkumu kendi kliniğime taşıyarak Fizyones markasını kurdum. Bugün Yalova Merkez, Yalova Çiftlikköy, İstanbul Bahçelievler ve İzmir Alsancak olmak üzere 4 şubede hastalarıma hizmet vermenin gururunu yaşıyorum.
+                </p>
+                <p>
+                  Kariyer yolculuğumda GTOS (Golgi Tendon Organ Stimülasyonu) terapi, skolyoz tedavisinde Schroth metodu ve ortopedik manuel terapi alanlarında ileri düzey eğitimler aldım. Bu uzmanlık alanları sayesinde özellikle bel fıtığı, boyun fıtığı, skolyoz ve kronik ağrı sendromlarında ameliyatsız, iğnesiz ve ilaçsız tedavi yöntemleri sunabiliyorum.
+                </p>
+                <p>
+                  Her hastamın kendine özgü olduğuna inanıyor ve tedavi programlarını kişiye özel olarak tasarlıyorum. Kanıta dayalı tıp prensiplerini modern fizyoterapi teknikleriyle birleştirerek hastalarımın en kısa sürede günlük hayatlarına ve sevdikleri aktivitelere dönmelerini sağlıyorum.
+                </p>
+              </motion.div>
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Timeline */}
       <section className="py-24 md:py-32 bg-sand-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-16">
             <div className="lg:col-span-2 lg:sticky lg:top-32 lg:self-start">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
+              <motion.p
+                initial={{ opacity: 0, x: -15 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, ease }}
                 viewport={{ once: true }}
+                className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
               >
-                <p className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">
-                  Kariyer Yolculuğu
-                </p>
-                <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-4">
-                  Eğitim ve Deneyim
-                </h2>
-                <p className="text-gray-500 leading-relaxed">
-                  2014&apos;ten bugüne fizyoterapi alanındaki gelişim sürecim ve kazanımlarım.
-                </p>
-              </motion.div>
+                Kariyer Yolculuğu
+              </motion.p>
+              <motion.h2
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1, ease }}
+                viewport={{ once: true }}
+                className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-4"
+              >
+                Eğitim ve Deneyim
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2, ease }}
+                viewport={{ once: true }}
+                className="text-gray-500 leading-relaxed"
+              >
+                2014&apos;ten bugüne fizyoterapi alanındaki gelişim sürecim ve kazanımlarım.
+              </motion.p>
             </div>
 
             <div className="lg:col-span-3">
@@ -162,7 +161,28 @@ export default function HakkimdaPage() {
                 <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-gray-200" />
                 <div className="space-y-10">
                   {timeline.map((item, i) => (
-                    <TimelineItem key={i} item={item} index={i} />
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, x: -30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: i * 0.08, ease }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      className="relative pl-12 md:pl-16 group"
+                    >
+                      <motion.div
+                        initial={{ scale: 0 }}
+                        whileInView={{ scale: 1 }}
+                        transition={{ duration: 0.4, delay: i * 0.08 + 0.1, ease }}
+                        viewport={{ once: true }}
+                        className="absolute left-2 md:left-4 top-1 w-5 h-5 rounded-full border-2 border-sage-600 bg-sage-600"
+                      >
+                        <div className="absolute inset-0 rounded-full bg-sage-600/20 scale-[2]" />
+                      </motion.div>
+
+                      <span className="text-sage-600 text-sm font-semibold">{item.year}</span>
+                      <h3 className="text-lg font-semibold text-forest-900 mt-1">{item.title}</h3>
+                      <p className="text-gray-600 mt-1">{item.desc}</p>
+                    </motion.div>
                   ))}
                 </div>
               </div>
@@ -172,19 +192,35 @@ export default function HakkimdaPage() {
       </section>
 
       {/* Certifications */}
-      <Section className="py-24 md:py-32">
+      <section className="py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-sage-600 text-sm font-medium tracking-widest uppercase mb-4">
+          <motion.p
+            initial={{ opacity: 0, x: -15 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease }}
+            viewport={{ once: true }}
+            className="text-sage-600 text-sm font-medium tracking-widest uppercase mb-4"
+          >
             Uzmanlık Alanları
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-16">
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1, ease }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-16"
+          >
             Sertifikalar
-          </h2>
+          </motion.h2>
           <div className="grid md:grid-cols-3 gap-6">
             {certifications.map((cert, i) => (
-              <div
+              <motion.div
                 key={i}
-                className="rounded-2xl p-8 border border-gray-100 hover:border-sage-600/30 transition-colors"
+                initial={{ opacity: 0, y: 30, scale: 0.97 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.5, delay: i * 0.1, ease }}
+                viewport={{ once: true, margin: "-50px" }}
+                className="rounded-2xl p-8 border border-gray-100 hover:border-sage-600/30 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
               >
                 <h3 className="text-xl font-semibold text-forest-900">
                   {cert.title}
@@ -195,16 +231,22 @@ export default function HakkimdaPage() {
                 <p className="text-gray-600 mt-4 leading-relaxed">
                   {cert.desc}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Philosophy */}
-      <Section className="py-24 md:py-32 bg-sand-50">
+      <section className="py-24 md:py-32 bg-sand-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease }}
+            viewport={{ once: true, margin: "-100px" }}
+            className="max-w-3xl mx-auto text-center"
+          >
             <p className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">
               Yaklaşımım
             </p>
@@ -219,12 +261,18 @@ export default function HakkimdaPage() {
                 Hastalarımla açık iletişim kurarak tedavi sürecini birlikte yönetiyoruz. Her seansta yapılan uygulamaların nedenini açıklıyor, hastalarımın kendi vücutlarını daha iyi anlamalarını sağlıyorum. Bu hasta merkezli yaklaşım, tedavi sürecini hızlandırıyor ve kalıcı sonuçlar elde etmemizi sağlıyor.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </Section>
+      </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 bg-sand-50">
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease }}
+        viewport={{ once: true, margin: "-80px" }}
+        className="py-20 md:py-28 bg-sand-50"
+      >
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-4">
             Tedavi Surecini Birlikte Planlayalim
@@ -234,12 +282,12 @@ export default function HakkimdaPage() {
           </p>
           <Link
             href="/iletisim"
-            className="inline-flex items-center px-8 py-4 bg-sage-600 text-white rounded-lg font-medium hover:bg-sage-700 transition-colors"
+            className="inline-flex items-center px-8 py-4 bg-sage-600 text-white rounded-lg font-medium hover:bg-sage-700 transition-all hover:-translate-y-0.5"
           >
             Randevu Al
           </Link>
         </div>
-      </section>
+      </motion.section>
     </main>
   );
 }

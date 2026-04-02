@@ -1,6 +1,10 @@
+'use client'
+
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { testimonials } from '@/data/testimonials'
 
+const ease = [0.25, 0.4, 0.25, 1]
 const featured = testimonials.filter(t => t.featured).slice(0, 6)
 
 export default function FeaturedTestimonials() {
@@ -8,19 +12,35 @@ export default function FeaturedTestimonials() {
     <section className="py-24 md:py-32 bg-sand-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-14">
-          <p className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease }}
+            viewport={{ once: true, margin: "-80px" }}
+            className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
+          >
             Gerçek Hasta Deneyimleri
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900">
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1, ease }}
+            viewport={{ once: true, margin: "-80px" }}
+            className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900"
+          >
             Hasta Deneyimleri
-          </h2>
+          </motion.h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {featured.map((t, i) => (
-            <div
+            <motion.div
               key={i}
-              className="rounded-2xl border border-gray-100 bg-white p-6 flex flex-col"
+              initial={{ opacity: 0, y: 30, scale: 0.97 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.5, delay: i * 0.08, ease }}
+              viewport={{ once: true, margin: "-50px" }}
+              className="rounded-2xl border border-gray-100 bg-white p-6 flex flex-col hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <p className="text-gray-600 leading-relaxed flex-1 mb-5">
                 &ldquo;{t.quote}&rdquo;
@@ -38,18 +58,24 @@ export default function FeaturedTestimonials() {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4, ease }}
+          viewport={{ once: true }}
+          className="mt-12 text-center"
+        >
           <Link
             href="/hasta-deneyimleri"
             className="text-sm font-medium text-forest-900 hover:text-sage-600 transition-colors"
           >
             Tüm Hasta Deneyimleri →
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

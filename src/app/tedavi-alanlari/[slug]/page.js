@@ -62,9 +62,24 @@ export default async function TreatmentPage({ params }) {
     })),
   } : null;
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalTherapy",
+    "name": post.title,
+    "description": post.description,
+    "provider": {
+      "@type": "Person",
+      "name": "Fzt. Enes Arıca",
+      "url": "https://www.enesarica.com",
+      "jobTitle": "Uzman Fizyoterapist",
+    },
+    "url": `https://www.enesarica.com/tedavi-alanlari/${slug}`,
+  };
+
   return (
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
       <div className="bg-forest-900 py-24 md:py-32">

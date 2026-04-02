@@ -156,7 +156,11 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
           <p>&copy; {new Date().getFullYear()} Fzt. Enes Arıca. Tüm hakları saklıdır.</p>
-          <p>Yalova &middot; İstanbul &middot; İzmir &middot; Fizyoterapi ve Rehabilitasyon</p>
+          <div className="flex items-center gap-4">
+            <Link href="/kvkk" className="hover:text-sage-400 transition-colors">KVKK Aydınlatma</Link>
+            <span>&middot;</span>
+            <Link href="/gizlilik-politikasi" className="hover:text-sage-400 transition-colors">Gizlilik Politikası</Link>
+          </div>
         </div>
       </div>
     </footer>
