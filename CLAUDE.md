@@ -1,6 +1,7 @@
 # Enes Arıca Kişisel Site — Agent Context
 
-> Personal brand website for Uzman Fizyoterapist Enes Arıca.
+> Uzman Fizyoterapist Enes Arıca kişisel marka web sitesi.
+> Domain: www.enesarica.com
 
 ## Tech Stack
 
@@ -8,39 +9,68 @@
 |-------|--------|
 | Framework | Next.js 15 (App Router) |
 | Styling | Tailwind CSS 3.4 |
-| Animation | Framer Motion (minimal, whileInView only) |
+| Animation | Framer Motion (whileInView + animate, clip-path reveals, counter) |
 | Blog/Content | MDX (remark + remark-html) |
-| Sitemap | next-sitemap |
+| Sitemap | next-sitemap (postbuild) |
 | Font | Inter (next/font/google) |
+| Hosting | Vercel |
+
+## Project Structure
+
+```
+enesarica/
+├── src/app/
+│   ├── layout.js              # Root: Inter font, metadata, StructuredData
+│   ├── page.js                # Homepage: Hero → AboutPreview → Specializations → TreatmentProcess → FeaturedTestimonials → YouTubeShorts → LatestArticles → HomeContact
+│   ├── components/            # All components
+│   ├── hakkimda/              # Biography, timeline, certifications, philosophy
+│   ├── tedavi-alanlari/       # Treatment listing + [slug] MDX detail
+│   ├── blog/                  # Blog listing + [slug] MDX detail
+│   ├── hasta-deneyimleri/     # Testimonial grid
+│   ├── iletisim/              # Contact form + branch cards
+│   ├── sss/                   # FAQ page
+│   ├── kvkk/                  # KVKK legal
+│   └── gizlilik-politikasi/   # Privacy policy
+├── src/data/                  # treatments.js, testimonials.js, branches.js, certifications.js
+├── content/
+│   ├── blog/                  # 28 MDX blog posts
+│   └── tedaviler/             # 17 MDX treatment detail pages
+└── public/
+    ├── enesaricalogo.png      # Site logo (Navbar + Footer)
+    └── imgs/                  # Photos (jpeg/webp), basin images
+```
+
+## Color System (Tailwind custom)
+
+| Token | Hex | Usage |
+|-------|-----|-------|
+| forest-900 | `#152C1F` | Primary dark (Hero bg, buttons, headings) |
+| forest-800 | `#1E3A2B` | Hover states |
+| sage-600 | `#557259` | Accent (CTA buttons, kickers, links) |
+| sage-400 | `#8AAF90` | Light accent (dark bg text) |
+| sand-50 | `#FAFAF6` | Background (body, alternating sections) |
+| sand-100/200 | `#F5F3EE` / `#EBE7E0` | Card backgrounds, borders |
 
 ## Design System
 
-- **Primary dark:** navy-900 (`#1C1C2E`)
-- **Accent:** copper-500 (`#B87333`)
-- **Background:** warm-50 (`#FAFAF8`)
-- **Buttons:** bg-navy-900 or bg-copper-500, rounded-lg
-- **Hero:** Dark (bg-navy-900), copper kicker text, white heading
-- **Section kickers:** `text-copper-500 text-xs font-semibold tracking-[0.2em] uppercase`
-- **Cards:** rounded-2xl p-8 border border-gray-100
+- **Logo:** `/enesaricalogo.png` — Navbar (h-8 w-32), Footer (h-8 w-36). Dark bg: `brightness-0 invert`
+- **Hero:** Dark (bg-forest-900), sage-400 kicker text, white heading
+- **Section kickers:** `text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase`
+- **Cards:** rounded-2xl p-6/p-8 border border-gray-100
+- **Buttons:** bg-sage-600 hover:bg-sage-700 rounded-lg (primary), bg-forest-900 hover:bg-forest-800 (secondary)
+- **Section padding:** py-24 md:py-32
+- **YouTube:** Sekmeli yapı (Videolar / Egzersizler), shorts grid + video grid
+- **NO:** pill badges, gradient text, glow effects
 
-## Domain
+## Animasyon Kuralları
 
-enesarica.com (all canonical URLs use this)
-
-## Phone
-
-+90 544 662 12 45 (NOT 554)
-
-## Pages
-
-- `/` — Homepage (Hero, TrustBar, Specializations, AboutPreview, Testimonials, CTA, LatestArticles)
-- `/hakkimda` — Biography, timeline, certifications, philosophy
-- `/tedavi-alanlari` — 8 treatment listing
-- `/tedavi-alanlari/[slug]` — MDX treatment detail + sidebar CTA + FAQ
-- `/blog` — Article listing
-- `/blog/[slug]` — MDX article + author card + related
-- `/hasta-deneyimleri` — Testimonial grid
-- `/iletisim` — Contact form + 4 branch cards
+- Custom easing: `[0.25, 0.4, 0.25, 1]`
+- Hero: `animate` (sayfa yüklenince), staggered cascade, clip-path image reveal, counter animasyonu
+- Sections: `whileInView` + `viewport: { once: true, margin: "-100px" }`
+- Image reveals: `clipPath: "inset(100% 0 0 0)"` → `"inset(0% 0 0 0)"` (curtain effect)
+- Cards: `opacity: 0, y: 30, scale: 0.97` → `1, 0, 1` (staggered)
+- Hover effects: `hover:-translate-y-1 hover:shadow-md`
+- **KULLANMA:** `filter: blur()` → non-composited, PageSpeed düşürür
 
 ## Hard Rules
 
@@ -48,21 +78,27 @@ enesarica.com (all canonical URLs use this)
 - Social links: instagram.com/fizyones, youtube.com/@fizyones, facebook.com/fizyones
 - Author: "Fzt. Enes Arıca" (not "Fizyones")
 - Branch names: Yalova Merkez, Yalova Çiftlikköy (NOT Çınarcık), İzmir Alsancak, İstanbul Bahçelievler (NOT Ataşehir)
-- Floating buttons: right side (WhatsApp + Phone)
-- No pill badges, no gradient text, no glow
+- Floating buttons: right side (WhatsApp + Phone), `bottom-4 right-4 sm:bottom-6 sm:right-6`
+- Phone: +90 544 662 12 45 (NOT 554)
+- Email: fizyones77@gmail.com
+- Copyright year: dynamic `new Date().getFullYear()`
 - Prose styling in globals.css for MDX content
+- Images: webp preferred, Next.js Image component
+
+## SEO & Performance
+
+- Google Search Console: Domain property (enesarica.com)
+- Sitemap: www.enesarica.com/sitemap.xml (next-sitemap postbuild)
+- robots.txt: generated by next-sitemap
+- OpenGraph + Twitter Card metadata in layout.js
+- Structured Data: PhysicalTherapist JSON-LD
 
 ## Verification
 
 ```bash
-npx next build   # Must succeed
+npx next build   # Must succeed with 0 errors
 ```
 
-## Content
+## SEO Targets
 
-- 8 treatment MDX files in content/tedaviler/
-- 2 blog MDX files in content/blog/
-- Treatment data in src/data/treatments.js
-- Testimonials in src/data/testimonials.js
-- Branches in src/data/branches.js
-- Certifications in src/data/certifications.js
+fizyoterapist enes arıca, bel fıtığı tedavisi, boyun fıtığı tedavisi, GTOS terapi, skolyoz tedavisi, manuel terapi, klinik pilates, reformer pilates, Yalova fizyoterapi
