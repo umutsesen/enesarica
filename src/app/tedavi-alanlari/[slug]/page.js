@@ -17,12 +17,12 @@ export async function generateMetadata({ params }) {
     title: `${post.title} | Fzt. Enes Arıca`,
     description: post.description,
     alternates: {
-      canonical: `https://www.enesarica.com/tedavi-alanlari/${slug}`,
+      canonical: `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}`,
     },
     openGraph: {
       title: `${post.title} | Fzt. Enes Arıca`,
       description: post.description,
-      url: `https://www.enesarica.com/tedavi-alanlari/${slug}`,
+      url: `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}`,
     },
   };
 }
@@ -46,9 +46,9 @@ export default async function TreatmentPage({ params }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.enesarica.com" },
-      { "@type": "ListItem", "position": 2, "name": "Tedavi Alanları", "item": "https://www.enesarica.com/tedavi-alanlari" },
-      { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://www.enesarica.com/tedavi-alanlari/${slug}` },
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.fizyoterapistenesarica.com" },
+      { "@type": "ListItem", "position": 2, "name": "Tedavi Alanları", "item": "https://www.fizyoterapistenesarica.com/tedavi-alanlari" },
+      { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}` },
     ],
   };
 
@@ -70,10 +70,10 @@ export default async function TreatmentPage({ params }) {
     "provider": {
       "@type": "Person",
       "name": "Fzt. Enes Arıca",
-      "url": "https://www.enesarica.com",
+      "url": "https://www.fizyoterapistenesarica.com",
       "jobTitle": "Uzman Fizyoterapist",
     },
-    "url": `https://www.enesarica.com/tedavi-alanlari/${slug}`,
+    "url": `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}`,
   };
 
   return (

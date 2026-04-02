@@ -3,13 +3,13 @@ export const metadata = {
   description:
     "Fzt. Enes Arıca ile iletişime geçin ve randevu alın. Yalova, İstanbul ve İzmir şubelerimizden size en uygun lokasyonu seçin.",
   alternates: {
-    canonical: "https://www.enesarica.com/iletisim",
+    canonical: "https://www.fizyoterapistenesarica.com/iletisim",
   },
   openGraph: {
     title: "İletişim ve Randevu | Fzt. Enes Arıca",
     description:
       "Fzt. Enes Arıca ile iletişime geçin ve randevu alın.",
-    url: "https://www.enesarica.com/iletisim",
+    url: "https://www.fizyoterapistenesarica.com/iletisim",
   },
 };
 

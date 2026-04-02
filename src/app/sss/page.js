@@ -5,7 +5,7 @@ export const metadata = {
   title: 'Sık Sorulan Sorular | Fzt. Enes Arıca',
   description:
     'Fizyoterapi tedavileri, randevu süreci, fiyatlandırma ve tedavi süreleri hakkında sık sorulan sorular.',
-  alternates: { canonical: 'https://www.enesarica.com/sss' },
+  alternates: { canonical: 'https://www.fizyoterapistenesarica.com/sss' },
 };
 
 const faqData = [

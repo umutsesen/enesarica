@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'www.enesarica.com',
+        hostname: 'www.fizyoterapistenesarica.com',
       },
     ],
   },

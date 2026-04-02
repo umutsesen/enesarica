@@ -3,13 +3,13 @@ export const metadata = {
   description:
     "Fizyones kurucusu Fzt. Enes Arıca hakkında. GTOS terapi, Schroth metodu ve manuel terapi alanlarında uzman fizyoterapist.",
   alternates: {
-    canonical: "https://www.enesarica.com/hakkimda",
+    canonical: "https://www.fizyoterapistenesarica.com/hakkimda",
   },
   openGraph: {
     title: "Hakkımda | Uzman Fizyoterapist Enes Arıca",
     description:
       "Fizyones kurucusu Fzt. Enes Arıca hakkında. GTOS terapi, Schroth metodu ve manuel terapi alanlarında uzman fizyoterapist.",
-    url: "https://www.enesarica.com/hakkimda",
+    url: "https://www.fizyoterapistenesarica.com/hakkimda",
   },
 };
 

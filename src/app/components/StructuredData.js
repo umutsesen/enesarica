@@ -6,9 +6,9 @@ export function StructuredData() {
     '@type': ['Person', 'PhysicalTherapist'],
     name: 'Enes Arıca',
     jobTitle: 'Uzman Fizyoterapist',
-    url: 'https://www.enesarica.com',
+    url: 'https://www.fizyoterapistenesarica.com',
     telephone: '+90 544 662 12 45',
-    image: 'https://www.enesarica.com/imgs/enes-arica.jpg',
+    image: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpg',
     description:
       'Uzman Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında uzman.',
     areaServed: ['Yalova', 'İzmir', 'İstanbul'],

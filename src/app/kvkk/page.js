@@ -2,7 +2,7 @@ export const metadata = {
   title: 'KVKK Aydinlatma Metni | Fzt. Enes Arica',
   description:
     '6698 sayili Kisisel Verilerin Korunmasi Kanunu kapsaminda aydinlatma metni.',
-  alternates: { canonical: 'https://www.enesarica.com/kvkk' },
+  alternates: { canonical: 'https://www.fizyoterapistenesarica.com/kvkk' },
 };
 
 export default function KVKKPage() {
@@ -83,7 +83,7 @@ export default function KVKKPage() {
         <h2>5. Kisisel Verilerin Toplanma Yontemleri ve Hukuki Sebepleri</h2>
         <p>Kisisel verileriniz asagidaki yontemlerle toplanmaktadir:</p>
         <ul>
-          <li>enesarica.com uzerindeki iletisim ve randevu formlari</li>
+          <li>fizyoterapistenesarica.com uzerindeki iletisim ve randevu formlari</li>
           <li>WhatsApp ve telefon araciligiyla iletisim</li>
           <li>Klinige yuz yuze basvuru</li>
           <li>Cerezler ve analitik araclar (Microsoft Clarity)</li>

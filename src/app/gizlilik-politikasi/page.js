@@ -1,8 +1,8 @@
 export const metadata = {
   title: 'Gizlilik Politikasi | Fzt. Enes Arica',
   description:
-    'enesarica.com gizlilik politikasi. Cerez kullanimi, form verileri ve analytics bilgileri.',
-  alternates: { canonical: 'https://www.enesarica.com/gizlilik-politikasi' },
+    'fizyoterapistenesarica.com gizlilik politikasi. Cerez kullanimi, form verileri ve analytics bilgileri.',
+  alternates: { canonical: 'https://www.fizyoterapistenesarica.com/gizlilik-politikasi' },
 };
 
 export default function GizlilikPolitikasiPage() {
@@ -14,7 +14,7 @@ export default function GizlilikPolitikasiPage() {
         </h1>
 
         <p>
-          Bu gizlilik politikasi, enesarica.com web sitesini ziyaret ettiginizde
+          Bu gizlilik politikasi, fizyoterapistenesarica.com web sitesini ziyaret ettiginizde
           kisisel verilerinizin nasil toplandigi, kullanildigi ve korundugu
           hakkinda sizi bilgilendirmek amaciyla hazirlanmistir.
         </p>

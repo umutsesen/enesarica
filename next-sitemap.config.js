@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.enesarica.com',
+  siteUrl: 'https://www.fizyoterapistenesarica.com',
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.7,

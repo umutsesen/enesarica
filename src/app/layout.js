@@ -32,11 +32,11 @@ export const metadata = {
     title: 'Uzman Fizyoterapist Enes Arıca | Yalova, İstanbul, İzmir',
     description:
       'Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates tedavisi.',
-    url: 'https://www.enesarica.com',
+    url: 'https://www.fizyoterapistenesarica.com',
     siteName: 'Uzman Fizyoterapist Enes Arıca',
     images: [
       {
-        url: 'https://www.enesarica.com/imgs/og-image.jpg',
+        url: 'https://www.fizyoterapistenesarica.com/imgs/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Uzman Fizyoterapist Enes Arıca',
@@ -50,7 +50,7 @@ export const metadata = {
     title: 'Uzman Fizyoterapist Enes Arıca',
     description:
       'Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates tedavisi.',
-    images: ['https://www.enesarica.com/imgs/og-image.jpg'],
+    images: ['https://www.fizyoterapistenesarica.com/imgs/og-image.jpg'],
   },
   icons: {
     icon: [
@@ -61,7 +61,7 @@ export const metadata = {
     apple: '/apple-touch-icon.png',
   },
   alternates: {
-    canonical: 'https://www.enesarica.com',
+    canonical: 'https://www.fizyoterapistenesarica.com',
   },
   robots: {
     index: true,

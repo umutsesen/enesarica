@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.enesarica.com
+Host: https://www.fizyoterapistenesarica.com
 
 # Sitemaps
-Sitemap: https://www.enesarica.com/sitemap.xml
+Sitemap: https://www.fizyoterapistenesarica.com/sitemap.xml
