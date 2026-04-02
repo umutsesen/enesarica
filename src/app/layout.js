@@ -79,6 +79,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
+      <head>
+        <meta name="designed-by" content="DenkLabs — Made in Deutschland" />
+      </head>
       <body className={inter.className}>
         <StructuredData />
         <Navbar />
