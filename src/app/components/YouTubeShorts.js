@@ -165,7 +165,7 @@ export default function YouTubeShorts() {
   const [tab, setTab] = useState("videos");
 
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section className="py-24 md:py-32 bg-sand-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <motion.div
