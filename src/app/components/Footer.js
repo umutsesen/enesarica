@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaInstagram, FaYoutube, FaFacebookF, FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { getAllPosts } from "@/lib/mdx";
 import { treatments } from "@/data/treatments";
@@ -28,8 +29,13 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
-              <Link href="/" className="text-white font-bold text-2xl">
-                Enes Arıca
+              <Link href="/" className="relative h-8 w-36 block">
+                <Image
+                  src="/enesaricalogo.png"
+                  alt="Enes Arıca"
+                  fill
+                  className="object-contain object-left brightness-0 invert"
+                />
               </Link>
               <p className="mt-4 text-gray-400 leading-relaxed max-w-lg">
                 Uzman fizyoterapist Enes Arıca, bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates alanlarında 10 yılı aşkın deneyimle ameliyatsız tedavi hizmeti sunmaktadır. Yalova Merkez, Yalova Çiftlikköy, İstanbul Bahçelievler ve İzmir Alsancak şubelerinde hastalarına kişiye özel tedavi programları uygulayarak kalıcı çözümler sağlamaktadır.

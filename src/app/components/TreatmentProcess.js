@@ -41,7 +41,7 @@ export default function TreatmentProcess() {
             className="aspect-[4/5] relative rounded-2xl overflow-hidden bg-forest-800"
           >
             <img
-              src="/imgs/enes-arica-tv.jpeg"
+              src="/imgs/basin2.webp"
               alt="Fizyoterapist Enes Arıca tedavi uygulaması"
               className="w-full h-full object-cover"
             />
