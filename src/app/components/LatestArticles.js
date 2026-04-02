@@ -15,18 +15,31 @@ const blogImages = {
   'diz-agrilari': '/imgs/blog/diz-agrilari.webp',
 }
 
+const categoryFallback = {
+  'Egzersiz': '/imgs/blog/klinik-pilates.webp',
+  'Tedavi': '/imgs/blog/gtos-terapi.webp',
+  'Rehber': '/imgs/blog/skolyoz.webp',
+  'Sağlık': '/imgs/blog/bel-fitigi.webp',
+}
+
+const defaultImage = '/imgs/blog/bel-fitigi.webp'
+
+function getImage(slug, category) {
+  return blogImages[slug] || categoryFallback[category] || defaultImage
+}
+
 export default function LatestArticles() {
   const posts = getAllPosts('blog').slice(0, 4)
 
   if (posts.length === 0) return null
 
   return (
-    <section className="py-16 md:py-20">
+    <section className="py-10 md:py-14">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-10">
+        <div className="flex items-end justify-between mb-8">
           <div>
-            <p className="text-sm uppercase tracking-wider text-sage-600 font-medium mb-3">Blog</p>
-            <h2 className="text-3xl md:text-4xl font-semibold text-forest-900">
+            <p className="text-sm uppercase tracking-wider text-sage-600 font-medium mb-2">Blog</p>
+            <h2 className="text-2xl md:text-3xl font-semibold text-forest-900">
               Son Yazılar
             </h2>
           </div>
@@ -43,31 +56,29 @@ export default function LatestArticles() {
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {posts.map((post) => {
-            const image = blogImages[post.slug]
+            const image = getImage(post.slug, post.category)
             return (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
                 className="group block rounded-2xl border border-sand-200 bg-white overflow-hidden transition-all duration-300 hover:border-sage-300 hover:shadow-lg"
               >
-                {image && (
-                  <div className="relative h-36 overflow-hidden">
-                    <Image
-                      src={image}
-                      alt={post.title}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    />
-                  </div>
-                )}
-                <div className="p-5">
+                <div className="relative h-36 overflow-hidden">
+                  <Image
+                    src={image}
+                    alt={post.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
+                <div className="p-4">
                   {post.category && (
-                    <p className="text-xs uppercase tracking-wider text-sage-600 font-medium mb-2">
+                    <p className="text-xs uppercase tracking-wider text-sage-600 font-medium mb-1.5">
                       {post.category}
                     </p>
                   )}
-                  <h3 className="text-base font-semibold text-forest-900 leading-snug group-hover:text-sage-700 transition-colors line-clamp-2">
+                  <h3 className="text-sm font-semibold text-forest-900 leading-snug group-hover:text-sage-700 transition-colors line-clamp-2">
                     {post.title}
                   </h3>
                 </div>
