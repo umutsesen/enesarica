@@ -106,7 +106,7 @@ export default function HomeContact() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15, ease }}
             viewport={{ once: true, margin: "-100px" }}
-            className="bg-white rounded-2xl border border-gray-100 p-8"
+            className="bg-white rounded-2xl border border-gray-100 p-5 sm:p-8"
           >
             <h3 className="text-xl font-semibold text-forest-900 mb-6">Randevu Al</h3>
             <form onSubmit={handleSubmit} className="space-y-4">

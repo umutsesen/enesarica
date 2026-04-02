@@ -80,7 +80,7 @@ export default function MobileApp() {
             transition={{ duration: 0.5, delay: 0.15 }}
             className="flex justify-center"
           >
-            <div className="w-[280px] h-[560px] bg-sand-50 rounded-[2.5rem] border border-gray-200 flex items-center justify-center">
+            <div className="w-[240px] sm:w-[280px] h-[480px] sm:h-[560px] bg-sand-50 rounded-[2.5rem] border border-gray-200 flex items-center justify-center">
               <p className="text-gray-400 text-sm text-center px-8">
                 Uygulama ekran goruntusu
               </p>

@@ -204,9 +204,9 @@ export default function TedaviAlanlariPage() {
               >
                 <Link
                   href={`/tedavi-alanlari/${t.slug}`}
-                  className="group flex-none w-[320px] md:w-[380px] block"
+                  className="group flex-none w-[280px] sm:w-[320px] md:w-[380px] block"
                 >
-                  <div className="h-full rounded-2xl border border-gray-100 bg-white p-8 hover:border-sage-500/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                  <div className="h-full rounded-2xl border border-gray-100 bg-white p-6 sm:p-8 hover:border-sage-500/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col">
                     <span className="text-sage-500/60 text-6xl font-bold leading-none mb-4">
                       {String(i + 1).padStart(2, "0")}
                     </span>

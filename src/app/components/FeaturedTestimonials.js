@@ -40,7 +40,7 @@ export default function FeaturedTestimonials() {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.5, delay: i * 0.08, ease }}
               viewport={{ once: true, margin: "-50px" }}
-              className="rounded-2xl border border-gray-100 bg-white p-6 flex flex-col hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              className="rounded-2xl border border-gray-100 bg-white p-4 sm:p-6 flex flex-col hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <p className="text-gray-600 leading-relaxed flex-1 mb-5">
                 &ldquo;{t.quote}&rdquo;

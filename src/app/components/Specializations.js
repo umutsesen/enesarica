@@ -11,7 +11,7 @@ export default function Specializations() {
   return (
     <section className="py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-16">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12 sm:mb-16">
           <div>
             <motion.p
               initial={{ opacity: 0, x: -20 }}
