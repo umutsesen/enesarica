@@ -10,7 +10,6 @@ const blogImages = {
   'skolyoz': '/imgs/blog/skolyoz.webp',
   'gtos-terapi': '/imgs/blog/gtos-terapi.webp',
   'klinik-pilates': '/imgs/blog/klinik-pilates.webp',
-  'kuru-igneleme': '/imgs/blog/kuru-igneleme.webp',
   'reformer-pilates': '/imgs/blog/klinik-pilates.webp',
   'diz-agrilari': '/imgs/blog/diz-agrilari.webp',
 }
