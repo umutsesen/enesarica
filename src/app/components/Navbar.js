@@ -53,9 +53,11 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isDark
-          ? "bg-transparent"
-          : "bg-white shadow-[0_1px_0_0_rgba(0,0,0,0.05)]"
+        mobileOpen
+          ? "bg-white shadow-[0_1px_0_0_rgba(0,0,0,0.05)]"
+          : isDark
+            ? "bg-transparent"
+            : "bg-white shadow-[0_1px_0_0_rgba(0,0,0,0.05)]"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -152,7 +154,7 @@ export default function Navbar() {
         >
           <svg
             className={`w-5 h-5 transition-colors duration-300 ${
-              isDark && !mobileOpen ? "text-white" : "text-forest-900"
+              isDark && !mobileOpen ? "text-white" : "text-gray-900"
             }`}
             fill="none"
             viewBox="0 0 24 24"
