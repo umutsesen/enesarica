@@ -176,6 +176,11 @@ export default function Footer() {
             <Link href="/gizlilik-politikasi" className="hover:text-sage-400 transition-colors">Gizlilik Politikası</Link>
           </div>
         </div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-5">
+          <p className="text-[11px] text-gray-600 text-center">
+            Bu web sitesindeki bilgiler genel bilgilendirme amaçlıdır ve tıbbi teşhis veya tedavi yerine geçmez. Tedavi kararları için mutlaka uzman fizyoterapiste danışınız.
+          </p>
+        </div>
       </div>
     </footer>
   );
