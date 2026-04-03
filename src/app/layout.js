@@ -87,6 +87,7 @@ export default function RootLayout({ children }) {
     <html lang="tr">
       <head>
         <meta name="designed-by" content="DenkLabs — Made in Deutschland" />
+        <meta name="msvalidate.01" content="81AA098D4DAEA88D728AB2657C015DCE" />
       </head>
       <body className={inter.className}>
         <StructuredData />
