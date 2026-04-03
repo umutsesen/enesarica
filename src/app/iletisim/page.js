@@ -29,15 +29,18 @@ export default function IletisimPage() {
     setStatus(null);
 
     try {
-      const res = await fetch(
-        "https://verify.sizeandme.com/api/email/fizyones",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(form),
-        }
-      );
-      if (res.ok) {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "a849377f-2f48-4c4d-b751-364a46e721fc",
+          subject: "Yeni Randevu Talebi - Fzt. Enes Arıca",
+          from_name: form.name,
+          ...form,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
         setStatus("success");
         setForm({ name: "", phone: "", email: "", branch: "", message: "" });
       } else {
