@@ -55,7 +55,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isDark
           ? "bg-transparent"
-          : "bg-white/80 backdrop-blur-xl shadow-[0_1px_0_0_rgba(0,0,0,0.05)]"
+          : "bg-white shadow-[0_1px_0_0_rgba(0,0,0,0.05)]"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
