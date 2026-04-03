@@ -1,55 +1,56 @@
-# Fzt. Enes Arica - Uzman Fizyoterapist
+# Fzt. Enes Arıca - Uzman Fizyoterapist
 
-> Fzt. Enes Arica, Yalova merkezli Fizyones fizyoterapi kliniginin kurucusu ve uzman fizyoterapisttir. Bel fitigi, boyun fitigi, skolyoz (Schroth metodu), GTOS terapi ve manuel terapi alanlarinda uzmanlasmistir.
+> Fzt. Enes Arıca, Yalova merkezli Yalova Fizyoterapi kliniğinin kurucusu ve uzman fizyoterapisttir. Bel fıtığı, boyun fıtığı, skolyoz (Schroth metodu), GTOS terapi ve manuel terapi alanlarında uzmanlaşmıştır.
 
-## Hakkinda
+## Hakkında
 
-- Ad Soyad: Fzt. Enes Arica
+- Ad Soyad: Fzt. Enes Arıca
 - Unvan: Uzman Fizyoterapist
-- Uzmanlik: Bel fitigi, boyun fitigi, skolyoz (Schroth), GTOS terapi, manuel terapi
-- Klinik: Fizyones (https://www.yalovafizyoterapist.com)
-- Konum: Yalova, Turkiye
-- Web: https://www.enesarica.com
+- Uzmanlık: Bel fıtığı, boyun fıtığı, skolyoz (Schroth), GTOS terapi, manuel terapi
+- Klinik: Yalova Fizyoterapi (https://www.yalovafizyoterapist.com)
+- Konum: Yalova, Türkiye
+- Web: https://www.fizyoterapistenesarica.com
+- Instagram: https://www.instagram.com/yalovafizyoterapist/
 
-## Tedavi Alanlari (17 uzmanlik)
+## Tedavi Alanları (17 uzmanlık)
 
-- Bel fitigi tedavisi (ameliyatsiz, konservatif yaklasim)
-- Boyun fitigi tedavisi (servikal disk hernisi)
-- GTOS terapi (Golgi Tendon Organ Stimulasyonu - ignesiz, ilacsiz)
-- Skolyoz / Schroth tedavisi (3 boyutlu duzeltme, rotasyon solunumu)
-- Manuel terapi (eklem mobilizasyonu, manipulasyon)
-- Spor yaralanmalari rehabilitasyonu (ACL, omuz, ayak bilegi)
-- Klinik pilates (rehabilitasyon odakli, fizyoterapist esliginde)
-- Reformer pilates (ekipman destekli guclendirme)
-- Evde fizik tedavi (hareket kisitliligi olan hastalar icin)
-- Norolojik rehabilitasyon (inme, felc, MS, Parkinson - Bobath, PNF)
-- Ameliyat sonrasi rehabilitasyon (diz protezi, omuz, omurga cerrahisi)
-- Bel kaymasi tedavisi (spondilolistezis, stabilizasyon)
-- Fibromiyalji tedavisi (multidisipliner, egzersiz receleme, GTOS)
-- Diz protezi sonrasi rehabilitasyon (4 fazli program)
-- Onkolojik rehabilitasyon (kanser sonrasi, lenfodem, yorgunluk yonetimi)
-- Pediatrik rehabilitasyon (serebral palsi, tortikollis, gelisimsel gecikme)
-- Yogun bakim rehabilitasyonu (erken mobilizasyon, solunum fizyoterapisi)
+- Bel fıtığı tedavisi (ameliyatsız, konservatif yaklaşım)
+- Boyun fıtığı tedavisi (servikal disk hernisi)
+- GTOS terapi (Golgi Tendon Organ Stimülasyonu - iğnesiz, ilaçsız)
+- Skolyoz / Schroth tedavisi (3 boyutlu düzeltme, rotasyon solunumu)
+- Manuel terapi (eklem mobilizasyonu, manipülasyon)
+- Spor yaralanmaları rehabilitasyonu (ACL, omuz, ayak bileği)
+- Klinik pilates (rehabilitasyon odaklı, fizyoterapist eşliğinde)
+- Reformer pilates (ekipman destekli güçlendirme)
+- Evde fizik tedavi (hareket kısıtlılığı olan hastalar için)
+- Nörolojik rehabilitasyon (inme, felç, MS, Parkinson - Bobath, PNF)
+- Ameliyat sonrası rehabilitasyon (diz protezi, omuz, omurga cerrahisi)
+- Bel kayması tedavisi (spondilolistezis, stabilizasyon)
+- Fibromiyalji tedavisi (multidisipliner, egzersiz reçeleme, GTOS)
+- Diz protezi sonrası rehabilitasyon (4 fazlı program)
+- Onkolojik rehabilitasyon (kanser sonrası, lenfödem, yorgunluk yönetimi)
+- Pediatrik rehabilitasyon (serebral palsi, tortikollis, gelişimsel gecikme)
+- Yoğun bakım rehabilitasyonu (erken mobilizasyon, solunum fizyoterapisi)
 
-## Tedavi Yaklasimi
+## Tedavi Yaklaşımı
 
-Fzt. Enes Arica, kanita dayali fizyoterapi uygulamaktadir. Her hasta icin bireysel degerlendirme yaparak kisiye ozel tedavi planlari olusturur. Ameliyatsiz ve ilacsiz tedavi yontemlerini oncelikli olarak tercih eder. Tedavi surecinde bilimsel arastirmalara dayali yontemler kullanir.
+Fzt. Enes Arıca, kanıta dayalı fizyoterapi uygulamaktadır. Her hasta için bireysel değerlendirme yaparak kişiye özel tedavi planları oluşturur. Ameliyatsız ve ilaçsız tedavi yöntemlerini öncelikli olarak tercih eder. Tedavi sürecinde bilimsel araştırmalara dayalı yöntemler kullanır.
 
 ## Blog
 
-enesarica.com blogu, 23 Turkce medikal makale icermektedir. Makaleler birinci sahis uzman perspektifinden yazilmis olup bilimsel referanslar (Lancet, BMJ, Cochrane, Spine, JOSPT) icermektedir. Konular: tedavi yontemleri, hastalik rehberleri, egzersiz programlari, fizyoterapi secim kriterleri.
+fizyoterapistenesarica.com blogu, 23 Türkçe medikal makale içermektedir. Makaleler birinci şahıs uzman perspektifinden yazılmış olup bilimsel referanslar (Lancet, BMJ, Cochrane, Spine, JOSPT) içermektedir. Konular: tedavi yöntemleri, hastalık rehberleri, egzersiz programları, fizyoterapi seçim kriterleri.
 
-## Sayfa Yapisi
+## Sayfa Yapısı
 
 - /: Ana sayfa
-- /hakkimda: Hakkimda, biyografi ve uzmanlik alanlari
-- /tedavi-alanlari: Tum tedavi alanlari (17 detayli sayfa)
-- /tedavi-alanlari/[slug]: Her tedavi icin detayli sayfa (1500+ kelime, bilimsel referanslar, SSS)
-- /blog: Blog yazilari (23 makale)
-- /blog/[slug]: Her blog yazisi (800-1500 kelime, SSS bolumu)
-- /iletisim: Iletisim formu ve randevu
-- /hasta-deneyimleri: Hasta yorumlari
+- /hakkimda: Hakkımda, biyografi ve uzmanlık alanları
+- /tedavi-alanlari: Tüm tedavi alanları (17 detaylı sayfa)
+- /tedavi-alanlari/[slug]: Her tedavi için detaylı sayfa (1500+ kelime, bilimsel referanslar, SSS)
+- /blog: Blog yazıları (23 makale)
+- /blog/[slug]: Her blog yazısı (800-1500 kelime, SSS bölümü)
+- /iletisim: İletişim formu ve randevu
+- /hasta-deneyimleri: Hasta yorumları
 
-## Iliskili Siteler
+## İlişkili Siteler
 
-- Fizyones Klinik: https://www.yalovafizyoterapist.com (kurumsal fizyoterapi merkezi sitesi)
+- Yalova Fizyoterapi Klinik: https://www.yalovafizyoterapist.com (kurumsal fizyoterapi merkezi sitesi)
