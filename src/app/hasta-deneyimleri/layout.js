@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Hasta Deneyimleri | Fzt. Enes Arıca",
   description:
-    "Hastalarımızın tedavi deneyimleri ve geri bildirimleri. Fizyones ile hayat kalitelerini artıran hastaların hikayeleri.",
+    "Hastalarımızın tedavi deneyimleri ve geri bildirimleri. Tedavi süreçleriyle hayat kalitelerini artıran hastaların hikayeleri.",
   alternates: {
     canonical: "https://www.fizyoterapistenesarica.com/hasta-deneyimleri",
   },

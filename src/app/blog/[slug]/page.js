@@ -143,7 +143,7 @@ export default async function BlogPostPage({ params }) {
           <div className="mt-8 rounded-2xl p-8 border border-gray-100">
             <h3 className="font-semibold text-forest-900">Fzt. Enes Arıca</h3>
             <p className="text-gray-600 text-sm mt-2">
-              Fizyones kurucusu, uzman fizyoterapist. GTOS terapi, Schroth
+              Yalova Fizyoterapi kurucusu, uzman fizyoterapist. GTOS terapi, Schroth
               metodu ve manuel terapi alanlarında uzmanlaşmıştır.
             </p>
           </div>

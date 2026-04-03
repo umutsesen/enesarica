@@ -69,32 +69,32 @@ const exerciseVideos = [
 const videos = [
   {
     id: "Qh3dOevyzxs",
-    title: "Fizyones Tanıtım",
+    title: "Yalova Fizyoterapi Tanıtım",
     url: "https://youtu.be/Qh3dOevyzxs",
   },
   {
     id: "_6Oh5PdAQKg",
-    title: "Fizyones Sağlıklı Yaşam",
+    title: "Yalova Fizyoterapi Sağlıklı Yaşam",
     url: "https://youtu.be/_6Oh5PdAQKg",
   },
   {
     id: "GyB8qMQlzzM",
-    title: "Fizyones Tedavi Süreci",
+    title: "Yalova Fizyoterapi Tedavi Süreci",
     url: "https://youtu.be/GyB8qMQlzzM",
   },
   {
     id: "5rVTtKA8dMc",
-    title: "Fizyones Klinik",
+    title: "Yalova Fizyoterapi Klinik",
     url: "https://youtu.be/5rVTtKA8dMc",
   },
   {
     id: "ABRLO8FIdMk",
-    title: "Fizyones Fizyoterapi",
+    title: "Kliniğimizden Görüntüler",
     url: "https://youtu.be/ABRLO8FIdMk",
   },
   {
     id: "kunOW-qxMQw",
-    title: "Fizyones Rehabilitasyon",
+    title: "Yalova Fizyoterapi Rehabilitasyon",
     url: "https://youtu.be/kunOW-qxMQw",
   },
 ];

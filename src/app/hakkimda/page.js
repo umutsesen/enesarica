@@ -8,7 +8,7 @@ const ease = [0.25, 0.4, 0.25, 1];
 
 const timeline = [
   { year: "2014", title: "Lisans Mezuniyeti", desc: "Marmara Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü" },
-  { year: "2015", title: "Fizyones Kuruluşu", desc: "Yalova'da ilk Fizyones şubesinin açılışı" },
+  { year: "2015", title: "Klinik Kuruluşu", desc: "Yalova'da ilk kliniğin açılışı" },
   { year: "2016", title: "Manuel Terapi Sertifikası", desc: "Ortopedik manuel terapi eğitim programı" },
   { year: "2017", title: "GTOS Terapi Sertifikası", desc: "Golgi Tendon Organ Stimülasyonu uzmanlık eğitimi" },
   { year: "2019", title: "Schroth Metodu Sertifikası", desc: "Skolyoz tedavisinde Schroth metodu ileri düzey eğitimi" },
@@ -108,7 +108,7 @@ export default function HakkimdaPage() {
                 className="space-y-6 text-gray-600 leading-relaxed"
               >
                 <p>
-                  Marmara Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü mezunuyum. Mezuniyetimin ardından fizyoterapi alanındaki tutkumu kendi kliniğime taşıyarak Fizyones markasını kurdum. Bugün Yalova Merkez, Yalova Çiftlikköy, İstanbul Bahçelievler ve İzmir Alsancak olmak üzere 4 şubede hastalarıma hizmet vermenin gururunu yaşıyorum.
+                  Marmara Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü mezunuyum. Mezuniyetimin ardından fizyoterapi alanındaki tutkumu kendi kliniğime taşıyarak Yalova Fizyoterapi'yi kurdum. Bugün Yalova Merkez, Yalova Çiftlikköy, İstanbul Bahçelievler ve İzmir Alsancak olmak üzere 4 şubede hastalarıma hizmet vermenin gururunu yaşıyorum.
                 </p>
                 <p>
                   Kariyer yolculuğumda GTOS (Golgi Tendon Organ Stimülasyonu) terapi, skolyoz tedavisinde Schroth metodu ve ortopedik manuel terapi alanlarında ileri düzey eğitimler aldım. Bu uzmanlık alanları sayesinde özellikle bel fıtığı, boyun fıtığı, skolyoz ve kronik ağrı sendromlarında ameliyatsız, iğnesiz ve ilaçsız tedavi yöntemleri sunabiliyorum.
@@ -275,10 +275,10 @@ export default function HakkimdaPage() {
       >
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-4">
-            Tedavi Surecini Birlikte Planlayalim
+            Tedavi Sürecini Birlikte Planlayalım
           </h2>
           <p className="text-gray-500 mb-10">
-            Durumunuza ozel bir degerlendirme yapmak icin iletisime gecin.
+            Durumunuza özel bir değerlendirme yapmak için iletişime geçin.
           </p>
           <Link
             href="/iletisim"

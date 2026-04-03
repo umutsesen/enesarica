@@ -5,7 +5,7 @@ import { getAllPosts } from "@/lib/mdx";
 import { treatments } from "@/data/treatments";
 
 const socialLinks = [
-  { icon: FaInstagram, href: "https://www.instagram.com/fizyones/", label: "Instagram" },
+  { icon: FaInstagram, href: "https://www.instagram.com/yalovafizyoterapist/", label: "Instagram" },
   { icon: FaYoutube, href: "https://www.youtube.com/@fizyones", label: "YouTube" },
   { icon: FaFacebookF, href: "https://www.facebook.com/fizyones/", label: "Facebook" },
 ];
@@ -154,6 +154,14 @@ export default function Footer() {
               <li>İstanbul Bahçelievler</li>
               <li>İzmir Alsancak</li>
             </ul>
+            <a
+              href="https://www.yalovafizyoterapist.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 text-sm text-sage-400 hover:text-sage-300 transition-colors"
+            >
+              Yalova Fizyoterapi &rarr;
+            </a>
           </div>
         </div>
       </div>
