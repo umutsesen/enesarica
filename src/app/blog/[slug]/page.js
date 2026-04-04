@@ -31,6 +31,16 @@ export async function generateMetadata({ params }) {
       title: `${post.title} | Fzt. Enes Arıca Blog`,
       description: post.description,
       url: `https://www.fizyoterapistenesarica.com/blog/${slug}`,
+      type: 'article',
+      publishedTime: post.date,
+      modifiedTime: post.updatedDate || post.date,
+      authors: ['https://www.fizyoterapistenesarica.com/hakkimda'],
+      images: [{
+        url: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpeg',
+        width: 1200,
+        height: 630,
+        alt: post.title,
+      }],
     },
   };
 }
@@ -56,13 +66,25 @@ export default async function BlogPostPage({ params }) {
     "author": {
       "@type": "Person",
       "name": "Fzt. Enes Arıca",
+      "jobTitle": "Uzman Fizyoterapist",
       "url": "https://www.fizyoterapistenesarica.com/hakkimda",
+      "image": "https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpeg",
+      "sameAs": [
+        "https://www.fizyoterapistenesarica.com",
+        "https://www.instagram.com/yalovafizyoterapist"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Yalova Fizyoterapi",
+        "url": "https://www.yalovafizyoterapist.com"
+      }
     },
     "publisher": {
       "@type": "Person",
       "name": "Fzt. Enes Arıca",
     },
     "datePublished": post.date,
+    "dateModified": post.updatedDate || post.date,
     "mainEntityOfPage": `https://www.fizyoterapistenesarica.com/blog/${slug}`,
   };
 
