@@ -102,65 +102,11 @@ export function StructuredData() {
     },
   };
 
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'Fizyoterapi seansları ne kadar sürüyor?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Fizyoterapi seansları genellikle 45-60 dakika sürmektedir. Tedavi süresi bel fıtığı, boyun fıtığı, skolyoz gibi durumunuza göre belirlenir.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'GTOS terapi nedir ve kimlere uygulanır?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'GTOS terapi, kas-iskelet sistemi rahatsızlıklarında kullanılan iğnesiz, ilaçsız ve risksiz bir tedavi yöntemidir. Bel fıtığı, boyun fıtığı, siyatik, spor yaralanmaları ve kronik ağrılarda etkili sonuçlar verir.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Hangi şehirlerde hizmet veriyorsunuz?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yalova Merkez, Yalova Çiftlikköy, İzmir Alsancak ve İstanbul Bahçelievler olmak üzere 4 lokasyonda fizyoterapi ve rehabilitasyon hizmeti sunuyoruz.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Randevu nasıl alabilirim?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Web sitesinden iletişim formunu doldurarak, +90 544 662 12 45 numarasını arayarak veya WhatsApp üzerinden ulaşarak randevu alabilirsiniz.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Klinik Pilates ile Reformer Pilates arasındaki fark nedir?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Klinik Pilates, fizyoterapist eşliğinde rehabilitasyon odaklı uygulanan tedavi amaçlı pilatestir. Reformer Pilates ise özel ekipmanla yapılan, vücut şekillendirme ve güçlendirmeye yönelik pilatestir.',
-        },
-      },
-    ],
-  };
-
   return (
-    <>
-      <Script
-        id="person-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
-      <Script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-    </>
+    <Script
+      id="person-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+    />
   );
 }
