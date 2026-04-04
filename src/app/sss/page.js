@@ -126,6 +126,20 @@ export default function SSSPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.fizyoterapistenesarica.com" },
+              { "@type": "ListItem", "position": 2, "name": "Sık Sorulan Sorular", "item": "https://www.fizyoterapistenesarica.com/sss" },
+            ],
+          }),
+        }}
+      />
 
       <main className="pt-20">
         <section className="py-24 md:py-32">

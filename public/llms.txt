@@ -1,3 +1,8 @@
+Type: Healthcare / Physical Therapy Professional
+Language: tr (Turkish)
+Audience: Patients seeking physiotherapy services in Turkey
+Category: Medical / Healthcare
+
 # Fzt. Enes Arıca - Uzman Fizyoterapist
 
 > Fzt. Enes Arıca, Yalova merkezli Yalova Fizyoterapi kliniğinin kurucusu ve uzman fizyoterapisttir. Bel fıtığı, boyun fıtığı, skolyoz (Schroth metodu), GTOS terapi ve manuel terapi alanlarında uzmanlaşmıştır.
