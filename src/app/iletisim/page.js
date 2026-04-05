@@ -94,6 +94,7 @@ export default function IletisimPage() {
               </h2>
 
               <form onSubmit={handleSubmit} className="space-y-5">
+                <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1.5">
                     Ad Soyad

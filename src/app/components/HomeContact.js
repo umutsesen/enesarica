@@ -116,6 +116,7 @@ export default function HomeContact() {
           >
             <h3 className="text-xl font-semibold text-forest-900 mb-6">Randevu Al</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
+              <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <input

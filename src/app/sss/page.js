@@ -191,7 +191,7 @@ export default function SSSPage() {
                   İletişime Geç
                 </Link>
                 <a
-                  href="https://wa.me/905446621245"
+                  href="https://wa.me/905446621245?text=Merhaba%2C%20fizyoterapistenesarica.com%20%C3%BCzerinden%20yaz%C4%B1yorum.%20Bilgi%20almak%20istiyorum."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 border border-gray-200 text-forest-900 rounded-lg font-medium hover:bg-gray-50 transition-colors"
