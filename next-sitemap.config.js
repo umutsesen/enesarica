@@ -19,6 +19,7 @@ module.exports = {
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.7,
+  exclude: ['/favicon.ico', '/site.webmanifest', '/_next/*'],
   transform: async (config, path) => {
     let priority = 0.7;
     let changefreq = 'weekly';
