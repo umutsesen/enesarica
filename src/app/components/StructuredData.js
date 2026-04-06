@@ -3,7 +3,7 @@ import Script from 'next/script';
 export function StructuredData() {
   const personSchema = {
     '@context': 'https://schema.org',
-    '@type': ['Person', 'PhysicalTherapist'],
+    '@type': 'Person',
     name: 'Enes Arıca',
     jobTitle: 'Uzman Fizyoterapist',
     url: 'https://www.fizyoterapistenesarica.com',
@@ -11,12 +11,28 @@ export function StructuredData() {
     image: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpg',
     description:
       'Uzman Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında uzman.',
-    areaServed: ['Yalova', 'İzmir', 'İstanbul'],
     sameAs: [
       'https://www.instagram.com/yalovafizyoterapist/',
       'https://www.facebook.com/fizyones',
       'https://www.youtube.com/@fizyones',
     ],
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Yalova Fizyoterapi',
+      url: 'https://www.yalovafizyoterapist.com',
+    },
+  };
+
+  const businessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'PhysicalTherapist',
+    name: 'Yalova Fizyoterapi — Enes Arıca',
+    url: 'https://www.fizyoterapistenesarica.com',
+    telephone: '+905446621245',
+    image: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpg',
+    description:
+      'Uzman Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında uzman.',
+    areaServed: ['Yalova', 'İzmir', 'İstanbul'],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Fizyoterapi Hizmetleri',
@@ -89,11 +105,6 @@ export function StructuredData() {
         telephone: '+905386751491',
       },
     ],
-    worksFor: {
-      '@type': 'Organization',
-      name: 'Yalova Fizyoterapi',
-      url: 'https://www.yalovafizyoterapist.com',
-    },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
@@ -148,10 +159,17 @@ export function StructuredData() {
   };
 
   return (
-    <Script
-      id="person-schema"
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-    />
+    <>
+      <Script
+        id="person-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <Script
+        id="business-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+      />
+    </>
   );
 }

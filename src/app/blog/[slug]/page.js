@@ -80,8 +80,9 @@ export default async function BlogPostPage({ params }) {
       }
     },
     "publisher": {
-      "@type": "Person",
-      "name": "Fzt. Enes Arıca",
+      "@type": "Organization",
+      "name": "Yalova Fizyoterapi",
+      "url": "https://www.yalovafizyoterapist.com",
     },
     "datePublished": post.date,
     "dateModified": post.updatedDate || post.date,

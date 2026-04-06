@@ -42,45 +42,45 @@ export default async function TreatmentPage({ params }) {
     ? relatedSlugs.map((s) => treatments.find((t) => t.slug === s)).filter(Boolean)
     : treatments.filter((t) => t.slug !== slug).slice(0, 3);
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.fizyoterapistenesarica.com" },
-      { "@type": "ListItem", "position": 2, "name": "Tedavi Alanları", "item": "https://www.fizyoterapistenesarica.com/tedavi-alanlari" },
-      { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}` },
-    ],
-  };
-
-  const faqSchema = post.faqItems && post.faqItems.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": post.faqItems.map((faq) => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
-    })),
-  } : null;
-
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "MedicalTherapy",
-    "name": post.title,
-    "description": post.description,
-    "provider": {
-      "@type": "Person",
-      "name": "Fzt. Enes Arıca",
-      "url": "https://www.fizyoterapistenesarica.com",
-      "jobTitle": "Uzman Fizyoterapist",
+  const graphItems = [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.fizyoterapistenesarica.com" },
+        { "@type": "ListItem", "position": 2, "name": "Tedavi Alanları", "item": "https://www.fizyoterapistenesarica.com/tedavi-alanlari" },
+        { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}` },
+      ],
     },
-    "url": `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}`,
-  };
+    {
+      "@type": "MedicalTherapy",
+      "name": post.title,
+      "description": post.description,
+      "provider": {
+        "@type": "Person",
+        "name": "Fzt. Enes Arıca",
+        "url": "https://www.fizyoterapistenesarica.com",
+        "jobTitle": "Uzman Fizyoterapist",
+      },
+      "url": `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}`,
+    },
+  ];
+
+  if (post.faqItems && post.faqItems.length > 0) {
+    graphItems.push({
+      "@type": "FAQPage",
+      "mainEntity": post.faqItems.map((faq) => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
+      })),
+    });
+  }
+
+  const schemaGraph = { "@context": "https://schema.org", "@graph": graphItems };
 
   return (
     <div>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }} />
 
       <div className="bg-forest-900 py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

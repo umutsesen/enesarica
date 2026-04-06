@@ -15,22 +15,5 @@ export const metadata = {
 };
 
 export default function TedaviAlanlariLayout({ children }) {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.fizyoterapistenesarica.com" },
-              { "@type": "ListItem", "position": 2, "name": "Tedavi Alanları", "item": "https://www.fizyoterapistenesarica.com/tedavi-alanlari" },
-            ],
-          }),
-        }}
-      />
-      {children}
-    </>
-  );
+  return children;
 }
