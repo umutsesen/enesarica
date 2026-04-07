@@ -56,7 +56,21 @@ export default async function BlogPostPage({ params }) {
   const html = await compileContent(post.content);
 
   const allPosts = getAllBlogPosts();
-  const related = allPosts.filter((p) => p.slug !== slug).slice(0, 2);
+  const currentTags = new Set((post.tags || []).map((t) => t.toLowerCase()));
+  const related = allPosts
+    .filter((p) => p.slug !== slug)
+    .map((p) => {
+      const tagOverlap = (p.tags || [])
+        .map((t) => t.toLowerCase())
+        .filter((t) => currentTags.has(t)).length;
+      const categoryMatch = p.category && p.category === post.category ? 1 : 0;
+      return { ...p, _score: tagOverlap * 2 + categoryMatch };
+    })
+    .sort((a, b) => {
+      if (b._score !== a._score) return b._score - a._score;
+      return new Date(b.date) - new Date(a.date);
+    })
+    .slice(0, 4);
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -173,20 +187,33 @@ export default async function BlogPostPage({ params }) {
 
           {related.length > 0 && (
             <div className="mt-16">
-              <h2 className="text-2xl font-semibold text-forest-900 mb-8">
-                Diğer Yazılar
+              <span className="text-sage-600 text-xs font-medium tracking-widest uppercase">
+                Devamını Oku
+              </span>
+              <h2 className="text-2xl md:text-3xl font-semibold text-forest-900 mt-2 mb-8">
+                İlgili Yazılar
               </h2>
               <div className="grid sm:grid-cols-2 gap-6">
                 {related.map((r) => (
                   <Link
                     key={r.slug}
                     href={`/blog/${r.slug}`}
-                    className="group rounded-2xl p-8 border border-gray-100 hover:border-sage-600/30 transition-colors"
+                    className="group rounded-2xl p-6 border border-gray-100 hover:border-sage-600/30 hover:shadow-sm transition-all"
                   >
-                    <h3 className="font-semibold text-forest-900 group-hover:text-sage-600 transition-colors">
+                    {r.category && (
+                      <span className="text-xs font-medium text-sage-600 uppercase tracking-wider">
+                        {r.category}
+                      </span>
+                    )}
+                    <h3 className="font-semibold text-forest-900 group-hover:text-sage-600 transition-colors mt-2 leading-snug">
                       {r.title}
                     </h3>
-                    <time className="text-sm text-gray-400 mt-2 block">
+                    {r.description && (
+                      <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                        {r.description}
+                      </p>
+                    )}
+                    <time className="text-xs text-gray-400 mt-3 block">
                       {formatDate(r.date)}
                     </time>
                   </Link>
