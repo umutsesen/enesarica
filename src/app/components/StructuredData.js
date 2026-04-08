@@ -50,13 +50,13 @@ export function StructuredData() {
     location: [
       {
         '@type': 'Place',
-        name: 'Yalova Merkez',
+        name: 'Yalova FİZYOTERAPİ & ALETLİ PİLATES & EVDE FİZİK TEDAVİ & Schroth Skolyoz Metod -Yalova',
         address: {
           '@type': 'PostalAddress',
-          streetAddress: 'Rüstem Paşa, Hürriyet Sk büyükgümüş iş merkezi D:30/7',
+          streetAddress: 'Yahyaoğlu iş merkezi, Rüstem Paşa, Cumhuriyet sokak D:48/2',
           addressLocality: 'Yalova Merkez',
           addressRegion: 'Yalova',
-          postalCode: '77100',
+          postalCode: '77200',
           addressCountry: 'TR',
         },
         geo: { '@type': 'GeoCoordinates', latitude: 40.6562957, longitude: 29.2697809 },
@@ -64,21 +64,21 @@ export function StructuredData() {
       },
       {
         '@type': 'Place',
-        name: 'Yalova Çiftlikköy',
+        name: 'Çiftlikköy Aletli Pilates & Fizik Tedavi',
         address: {
           '@type': 'PostalAddress',
-          streetAddress: 'Atatürk Cd. Mehmet Bakay iş mrk No:21/10 kat3',
+          streetAddress: 'kaymakamlık karşısı, Çiftlik, Atatürk Cd. Mehmet Bakay iş mrk No:21/10 kat3',
           addressLocality: 'Çiftlikköy',
           addressRegion: 'Yalova',
-          postalCode: '77600',
+          postalCode: '77100',
           addressCountry: 'TR',
         },
         geo: { '@type': 'GeoCoordinates', latitude: 40.6609368, longitude: 29.3240432 },
-        telephone: '+905318893236',
+        telephone: '+905395834179',
       },
       {
         '@type': 'Place',
-        name: 'İzmir Alsancak',
+        name: 'Alsancak Fizik Tedavi/Alsancak Fizyoterapist/Aletli Pilates Alsancak',
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'Alsancak, 1471. Sk. Kenet Sitesi No:1 Kat:3 Daire:5',
@@ -92,7 +92,7 @@ export function StructuredData() {
       },
       {
         '@type': 'Place',
-        name: 'İstanbul Bahçelievler',
+        name: 'Fizyoterapist Pınar Elikesik- Bahçelievler',
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'Bahçelievler, İzzettin Çalışlar Cd. No:35 Kat:1 Daire:2',
@@ -109,14 +109,14 @@ export function StructuredData() {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
       opens: '09:00',
-      closes: '22:00',
+      closes: '22:30',
     },
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5.0',
       bestRating: '5',
       worstRating: '1',
-      reviewCount: '6',
+      reviewCount: '528',
     },
     review: [
       {
