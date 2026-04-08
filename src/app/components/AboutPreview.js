@@ -68,7 +68,15 @@ export default function AboutPreview() {
               viewport={{ once: true, margin: "-100px" }}
               className="text-gray-600 leading-relaxed mb-8"
             >
-              Yalova, İstanbul ve İzmir&apos;deki 4 şubemizde modern ekipmanlar ve güncel tedavi protokolleri ile hastalarımıza en iyi hizmeti sunuyoruz.
+              <a
+                href="https://www.yalovafizyoterapist.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-forest-900 underline decoration-sage-400/40 underline-offset-4 hover:decoration-sage-600 transition-colors"
+              >
+                Yalova Fizyoterapi
+              </a>{' '}
+              kliniğimizin Yalova, İstanbul ve İzmir&apos;deki 4 şubesinde modern ekipmanlar ve güncel tedavi protokolleri ile hastalarımıza en iyi hizmeti sunuyoruz.
             </motion.p>
             <motion.ul
               initial={{ opacity: 0 }}
