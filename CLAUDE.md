@@ -97,6 +97,7 @@ enesarica/
   - `@type` array KULLANMA — Google farklı hiyerarşileri birleştiremez → "Invalid object type for field '<parent_node>'" hatası
   - `Offer` + `OfferCatalog` + `Service` iç içe geçirme KULLANMA — Google Offer'ı Product kontextinde validate eder. Hizmet listesi için `knowsAbout` string array kullan
   - `MedicalTherapy`, `MedicalWebPage` gibi Google'ın desteklemediği tipleri schema'ya ekleme
+  - `location` array (Place nesneleri) KULLANMA — Google LocalBusiness için `address` ve `geo`'yu doğrudan entity üzerinde bekler
 
 ## Verification
 
