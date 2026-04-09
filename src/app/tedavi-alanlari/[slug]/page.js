@@ -51,18 +51,6 @@ export default async function TreatmentPage({ params }) {
         { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}` },
       ],
     },
-    {
-      "@type": "MedicalTherapy",
-      "name": post.title,
-      "description": post.description,
-      "provider": {
-        "@type": "Person",
-        "name": "Fzt. Enes Arıca",
-        "url": "https://www.fizyoterapistenesarica.com",
-        "jobTitle": "Uzman Fizyoterapist",
-      },
-      "url": `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}`,
-    },
   ];
 
   if (post.faqItems && post.faqItems.length > 0) {

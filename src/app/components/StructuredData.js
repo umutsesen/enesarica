@@ -33,20 +33,16 @@ export function StructuredData() {
     description:
       'Uzman Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında uzman.',
     areaServed: ['Yalova', 'İzmir', 'İstanbul'],
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Fizyoterapi Hizmetleri',
-      itemListElement: [
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Bel Fıtığı Tedavisi', serviceType: 'Physical Therapy' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Boyun Fıtığı Tedavisi', serviceType: 'Physical Therapy' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'GTOS Terapi', serviceType: 'Physical Therapy' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Manuel Terapi', serviceType: 'Physical Therapy' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Klinik Pilates', serviceType: 'Physical Therapy' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Reformer Pilates', serviceType: 'Physical Therapy' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Skolyoz / Schroth Tedavisi', serviceType: 'Physical Therapy' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Spor Yaralanmaları Rehabilitasyonu', serviceType: 'Physical Therapy' } },
-      ],
-    },
+    knowsAbout: [
+      'Bel Fıtığı Tedavisi',
+      'Boyun Fıtığı Tedavisi',
+      'GTOS Terapi',
+      'Manuel Terapi',
+      'Klinik Pilates',
+      'Reformer Pilates',
+      'Skolyoz / Schroth Tedavisi',
+      'Spor Yaralanmaları Rehabilitasyonu',
+    ],
     location: [
       {
         '@type': 'Place',
