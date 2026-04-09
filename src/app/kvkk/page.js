@@ -25,7 +25,7 @@ export default function KVKKPage() {
           <br />
           <strong>E-posta:</strong> fizyones77@gmail.com
           <br />
-          <strong>Telefon:</strong> +90 544 662 12 45
+          <strong>Telefon:</strong> +90 554 662 12 45
           <br />
           <strong>Adres:</strong> Yalova Merkez / Yalova
         </p>
@@ -142,7 +142,7 @@ export default function KVKKPage() {
         <p>
           <strong>E-posta:</strong> fizyones77@gmail.com
           <br />
-          <strong>Telefon:</strong> +90 544 662 12 45
+          <strong>Telefon:</strong> +90 554 662 12 45
         </p>
         <p>
           Basvurulariniz, talebin niteligi ve icerigine gore en gec 30 gun

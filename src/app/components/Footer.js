@@ -50,10 +50,10 @@ export default function Footer() {
                   Randevu Al
                 </Link>
                 <a
-                  href="tel:+905446621245"
+                  href="tel:+905546621245"
                   className="px-7 py-3.5 border border-white/20 text-white rounded-lg font-medium hover:bg-white/10 transition-colors text-center"
                 >
-                  +90 544 662 12 45
+                  +90 554 662 12 45
                 </a>
               </div>
               <div className="mt-5 flex gap-3 lg:justify-end">
@@ -125,9 +125,9 @@ export default function Footer() {
             <h3 className="text-white text-sm font-semibold mb-4">İletişim</h3>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <a href="tel:+905446621245" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
+                <a href="tel:+905546621245" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
                   <FaPhone className="w-3 h-3 shrink-0" />
-                  +90 544 662 12 45
+                  +90 554 662 12 45
                 </a>
               </li>
               <li>
@@ -137,7 +137,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/905446621245?text=Merhaba%2C%20fizyoterapistenesarica.com%20%C3%BCzerinden%20yaz%C4%B1yorum.%20Bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
+                <a href="https://wa.me/905546621245?text=Merhaba%2C%20fizyoterapistenesarica.com%20%C3%BCzerinden%20yaz%C4%B1yorum.%20Bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
                   <FaWhatsapp className="w-3 h-3 shrink-0" />
                   WhatsApp
                 </a>

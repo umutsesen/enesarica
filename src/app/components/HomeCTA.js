@@ -22,10 +22,10 @@ export default function HomeCTA() {
               Randevu Al
             </Link>
             <a
-              href="tel:+905446621245"
+              href="tel:+905546621245"
               className="inline-flex items-center px-8 py-4 border border-gray-200 text-forest-900 rounded-lg text-base font-medium transition-colors hover:bg-gray-50"
             >
-              +90 544 662 12 45
+              +90 554 662 12 45
             </a>
           </div>
         </div>

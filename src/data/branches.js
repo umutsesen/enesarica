@@ -3,8 +3,8 @@ const branches = [
     id: 'yalova-merkez',
     name: 'Yalova Merkez',
     address: 'Rüstem Paşa, Hürriyet Sk büyükgümüş iş merkezi D:30/7, Yalova Merkez',
-    phone: '+905446621245',
-    whatsapp: '905446621245',
+    phone: '+905546621245',
+    whatsapp: '905546621245',
     mapUrl:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.123456789!2d29.2697809!3d40.6562957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDM5JzIyLjciTiAyOcKwMTYnMTEuMiJF!5e0!3m2!1str!2str!4v1234567890',
     coordinates: { lat: 40.6562957, lng: 29.2697809 },

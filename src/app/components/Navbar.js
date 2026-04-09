@@ -236,10 +236,10 @@ export default function Navbar() {
               Randevu Al
             </Link>
             <a
-              href="tel:+905446621245"
+              href="tel:+905546621245"
               className="block mt-3 text-center text-sm text-gray-500"
             >
-              +90 544 662 12 45
+              +90 554 662 12 45
             </a>
           </div>
         </div>

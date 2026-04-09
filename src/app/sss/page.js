@@ -68,7 +68,7 @@ const faqData = [
     questions: [
       {
         q: 'Nasıl randevu alabilirim?',
-        a: 'Web sitemizdeki iletişim formunu doldurarak, +90 544 662 12 45 numarasını arayarak veya WhatsApp üzerinden mesaj göndererek randevu alabilirsiniz.',
+        a: 'Web sitemizdeki iletişim formunu doldurarak, +90 554 662 12 45 numarasını arayarak veya WhatsApp üzerinden mesaj göndererek randevu alabilirsiniz.',
       },
       {
         q: 'Hangi şehirlerde hizmet veriyorsunuz?',
@@ -97,7 +97,7 @@ const faqData = [
       },
       {
         q: 'Seans ücretleri ne kadar?',
-        a: 'Seans ücretleri tedavi yöntemine, seans süresine ve şubeye göre değişiklik göstermektedir. Güncel fiyat bilgisi için +90 544 662 12 45 numarasından veya iletişim sayfamızdan bize ulaşabilirsiniz.',
+        a: 'Seans ücretleri tedavi yöntemine, seans süresine ve şubeye göre değişiklik göstermektedir. Güncel fiyat bilgisi için +90 554 662 12 45 numarasından veya iletişim sayfamızdan bize ulaşabilirsiniz.',
       },
     ],
   },
@@ -191,7 +191,7 @@ export default function SSSPage() {
                   İletişime Geç
                 </Link>
                 <a
-                  href="https://wa.me/905446621245?text=Merhaba%2C%20fizyoterapistenesarica.com%20%C3%BCzerinden%20yaz%C4%B1yorum.%20Bilgi%20almak%20istiyorum."
+                  href="https://wa.me/905546621245?text=Merhaba%2C%20fizyoterapistenesarica.com%20%C3%BCzerinden%20yaz%C4%B1yorum.%20Bilgi%20almak%20istiyorum."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 border border-gray-200 text-forest-900 rounded-lg font-medium hover:bg-gray-50 transition-colors"

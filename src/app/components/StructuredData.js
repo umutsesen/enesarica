@@ -7,7 +7,7 @@ export function StructuredData() {
     name: 'Enes Arıca',
     jobTitle: 'Uzman Fizyoterapist',
     url: 'https://www.fizyoterapistenesarica.com',
-    telephone: '+905446621245',
+    telephone: '+905546621245',
     image: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpg',
     description:
       'Uzman Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında uzman.',
@@ -28,7 +28,7 @@ export function StructuredData() {
     '@type': 'PhysicalTherapist',
     name: 'Yalova Fizyoterapi — Enes Arıca',
     url: 'https://www.fizyoterapistenesarica.com',
-    telephone: '+905446621245',
+    telephone: '+905546621245',
     image: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpg',
     description:
       'Uzman Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında uzman.',
@@ -56,7 +56,7 @@ export function StructuredData() {
           addressCountry: 'TR',
         },
         geo: { '@type': 'GeoCoordinates', latitude: 40.6562957, longitude: 29.2697809 },
-        telephone: '+905446621245',
+        telephone: '+905546621245',
       },
       {
         '@type': 'Place',
