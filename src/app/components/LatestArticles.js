@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { getAllPosts } from '@/lib/mdx'
 
 const featuredPosts = [
   {
@@ -29,6 +30,10 @@ const featuredPosts = [
 ]
 
 export default function LatestArticles() {
+  const featuredSlugs = new Set(featuredPosts.map((p) => p.slug))
+  const allPosts = getAllPosts('blog')
+  const remainingPosts = allPosts.filter((p) => !featuredSlugs.has(p.slug))
+
   return (
     <section className="py-10 md:py-14">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -77,6 +82,26 @@ export default function LatestArticles() {
             </Link>
           ))}
         </div>
+
+        {remainingPosts.length > 0 && (
+          <div className="mt-12 pt-10 border-t border-sand-200">
+            <p className="text-xs uppercase tracking-wider text-sage-600 font-medium mb-5 text-center">
+              Tüm Rehberler
+            </p>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2.5">
+              {remainingPosts.map((post) => (
+                <li key={post.slug}>
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="text-sm text-forest-700 hover:text-sage-600 transition-colors line-clamp-1"
+                  >
+                    {post.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         <div className="mt-6 text-center sm:hidden">
           <Link
