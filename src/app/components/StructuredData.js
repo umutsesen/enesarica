@@ -51,51 +51,6 @@ export function StructuredData() {
       opens: '09:00',
       closes: '22:30',
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '5.0',
-      bestRating: '5',
-      worstRating: '1',
-      reviewCount: '528',
-    },
-    review: [
-      {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'Ömer Atış' },
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        reviewBody: 'Uzun süredir bel fıtığı ve siyatik ağrısı çekiyordum, ameliyat gündemime girmişti. Enes Bey\'in GTOS terapi ve manuel terapi kombinasyonuyla hazırladığı program sayesinde 4 haftada ameliyatsız iyileştim. Bel fıtığı tedavisinde gerçekten uzman bir fizyoterapist.',
-      },
-      {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'Seda Arpa' },
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        reviewBody: 'Oğlumda skolyoz teşhisi konulunca Schroth metodu uygulayan bir fizyoterapist aradık. Enes Bey her seansta omurga ölçümü yaparak ilerlemeyi takip etti, evde yapılacak skolyoz egzersizlerini de öğretti. 3 ayda belirgin düzelme oldu. Skolyoz tedavisi için kesinlikle tavsiye ederim.',
-      },
-      {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'İsmail Akcaalan' },
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        reviewBody: 'Boyun fıtığından kaynaklanan baş ağrısı ve kol uyuşması şikayetim vardı. GTOS terapi ile iğnesiz ve ilaçsız tedavi uygulandı, 6 seansta ağrılarım büyük ölçüde geçti. Boyun fıtığı tedavisinde profesyonel ve güler yüzlü bir ekip.',
-      },
-      {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'Alparslan Akkaş' },
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        reviewBody: 'Futbol oynarken ayak bileği burkulması geçirdim. Enes Bey sporcu rehabilitasyonu konusunda çok deneyimli, kişiye özel program hazırladı. Fizyoterapi ve kademeli güçlendirme egzersizleriyle 5 haftada sahaya dönebildim. Spor yaralanmaları için doğru adres.',
-      },
-      {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'Ayşe Yılmaz' },
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        reviewBody: 'Topuk dikeni ve taban çökmesi nedeniyle sabahları yere basamıyordum. FootBalance ayak analizi ile düz taban tespit edildi, kişiye özel tabanlık yapıldı. Manuel terapi ve egzersiz programıyla 8 haftada topuk dikeni ağrılarım geçti. Ayak problemleri için mutlaka danışın.',
-      },
-      {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'Mehmet Kaya' },
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        reviewBody: 'Bel kayması teşhisi sonrası klinik pilates programına başladım. Reformer pilates ile core kaslarım güçlendi, duruşum düzeldi ve kronik bel ağrılarım azaldı. Enes Bey birebir seanslarda her hareketi kişiye özel ayarlıyor. Klinik pilates ve reformer pilates arayanlar için en iyi tercih.',
-      },
-    ],
   };
 
   return (

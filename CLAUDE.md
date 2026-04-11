@@ -98,6 +98,7 @@ enesarica/
   - `Offer` + `OfferCatalog` + `Service` iç içe geçirme KULLANMA — Google Offer'ı Product kontextinde validate eder. Hizmet listesi için `knowsAbout` string array kullan
   - `MedicalTherapy`, `MedicalWebPage` gibi Google'ın desteklemediği tipleri schema'ya ekleme
   - `location` array (Place nesneleri) KULLANMA — Google LocalBusiness için `address` ve `geo`'yu doğrudan entity üzerinde bekler
+  - `aggregateRating` ve `review[]` self-serving KULLANMA — Google 2019'dan beri `LocalBusiness`/`Organization` (ve `PhysicalTherapist` gibi alt tipleri) için sitenin kendi hakkındaki review/rating'ini rich result olarak desteklemiyor (`ineligible for star review feature`). GSC'de "Review snippets — Invalid object type for field '<parent_node>'" olarak patlar. Review'ları sadece Google Business Profile / üçüncü taraf sitelerde bırak
 
 ## Verification
 
