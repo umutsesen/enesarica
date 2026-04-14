@@ -1,38 +1,46 @@
 import Script from 'next/script';
 
 export function StructuredData() {
+  const siteUrl = 'https://www.fizyoterapistenesarica.com';
+  const clinicUrl = 'https://www.yalovafizyoterapist.com';
+  const profileImage = `${siteUrl}/imgs/enes-arica.jpeg`;
+  const logoImage = `${siteUrl}/enesaricalogo.png`;
+  const socialProfiles = [
+    'https://www.instagram.com/yalovafizyoterapist/',
+    'https://www.facebook.com/fizyones',
+    'https://www.youtube.com/@fizyones',
+  ];
+
   const personSchema = {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Enes Arıca',
     jobTitle: 'Uzman Fizyoterapist',
-    url: 'https://www.fizyoterapistenesarica.com',
+    url: siteUrl,
     telephone: '+905546621245',
-    image: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpg',
+    image: profileImage,
     description:
       'Uzman Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında uzman.',
-    sameAs: [
-      'https://www.instagram.com/yalovafizyoterapist/',
-      'https://www.facebook.com/fizyones',
-      'https://www.youtube.com/@fizyones',
-    ],
+    sameAs: [siteUrl, clinicUrl, ...socialProfiles],
     worksFor: {
       '@type': 'Organization',
       name: 'Yalova Fizyoterapi',
-      url: 'https://www.yalovafizyoterapist.com',
+      url: clinicUrl,
     },
   };
 
   const businessSchema = {
     '@context': 'https://schema.org',
     '@type': 'PhysicalTherapist',
-    name: 'Yalova Fizyoterapi — Enes Arıca',
-    url: 'https://www.fizyoterapistenesarica.com',
+    name: 'Fzt. Enes Arıca',
+    url: siteUrl,
     telephone: '+905546621245',
-    image: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpg',
+    image: profileImage,
+    logo: logoImage,
     description:
       'Uzman Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında uzman.',
     areaServed: ['Yalova', 'İzmir', 'İstanbul'],
+    sameAs: [siteUrl, clinicUrl, ...socialProfiles],
     knowsAbout: [
       'Bel Fıtığı Tedavisi',
       'Boyun Fıtığı Tedavisi',
@@ -50,6 +58,11 @@ export function StructuredData() {
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
       opens: '09:00',
       closes: '22:30',
+    },
+    parentOrganization: {
+      '@type': 'Organization',
+      name: 'Yalova Fizyoterapi',
+      url: clinicUrl,
     },
   };
 

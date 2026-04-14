@@ -85,6 +85,7 @@ export default async function BlogPostPage({ params }) {
       "image": "https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpeg",
       "sameAs": [
         "https://www.fizyoterapistenesarica.com",
+        "https://www.yalovafizyoterapist.com",
         "https://www.instagram.com/yalovafizyoterapist"
       ],
       "worksFor": {
@@ -95,12 +96,19 @@ export default async function BlogPostPage({ params }) {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Yalova Fizyoterapi",
-      "url": "https://www.yalovafizyoterapist.com",
+      "name": "Fzt. Enes Arıca",
+      "url": "https://www.fizyoterapistenesarica.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.fizyoterapistenesarica.com/enesaricalogo.png"
+      }
     },
     "datePublished": post.date,
     "dateModified": post.updatedDate || post.date,
-    "mainEntityOfPage": `https://www.fizyoterapistenesarica.com/blog/${slug}`,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.fizyoterapistenesarica.com/blog/${slug}`
+    },
   };
 
   const breadcrumbSchema = {

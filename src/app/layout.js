@@ -11,6 +11,7 @@ const inter = Inter({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://www.fizyoterapistenesarica.com'),
   title: 'Uzman Fizyoterapist Enes Arıca | Yalova, İstanbul, İzmir',
   description:
     'Uzman Fizyoterapist Enes Arıca ile bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates tedavisi. Yalova, İstanbul ve İzmir\'de hizmetinizdeyiz.',
