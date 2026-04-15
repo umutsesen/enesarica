@@ -1,6 +1,7 @@
 const fs = require('fs');
 const pathModule = require('path');
 const matter = require('gray-matter');
+const indexingPolicy = require('./src/seo/indexing-policy.json');
 
 function getContentDate(contentDir, slug) {
   try {
@@ -19,7 +20,13 @@ module.exports = {
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.7,
-  exclude: ['/favicon.ico', '/site.webmanifest', '/_next/*'],
+  exclude: [
+    '/favicon.ico',
+    '/site.webmanifest',
+    '/_next/*',
+    ...indexingPolicy.noindexRoutes,
+    ...indexingPolicy.noindexPrefixes.map((prefix) => `${prefix}*`),
+  ],
   transform: async (config, path) => {
     let priority = 0.7;
     let changefreq = 'weekly';

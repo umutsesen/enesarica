@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import remarkHtml from 'remark-html';
+import { shouldIndexBlogSlug, shouldIndexTreatmentSlug } from '@/lib/indexing-policy';
 
 const blogDirectory = path.join(process.cwd(), 'content/blog');
 const tedavilerDirectory = path.join(process.cwd(), 'content/tedaviler');
@@ -31,7 +32,14 @@ export async function compileContent(rawContent) {
   return result.toString();
 }
 
-export function getAllPosts(type = 'blog') {
+function shouldIncludePost(type, slug, includeNoindex) {
+  if (includeNoindex) return true;
+  if (type === 'blog') return shouldIndexBlogSlug(slug);
+  return shouldIndexTreatmentSlug(slug);
+}
+
+export function getAllPosts(type = 'blog', options = {}) {
+  const { includeNoindex = false } = options;
   const dir = getDirectory(type);
   if (!fs.existsSync(dir)) return [];
 
@@ -48,28 +56,27 @@ export function getAllPosts(type = 'blog') {
     };
   });
 
-  return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+  return posts
+    .filter((post) => shouldIncludePost(type, post.slug, includeNoindex))
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
-export function generateStaticParams(type = 'blog') {
-  const dir = getDirectory(type);
-  if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
-    .filter((f) => f.endsWith('.mdx'))
-    .map((filename) => ({ slug: filename.replace(/\.mdx$/, '') }));
+export function generateStaticParams(type = 'blog', options = {}) {
+  return getAllPosts(type, { includeNoindex: true, ...options }).map((post) => ({
+    slug: post.slug,
+  }));
 }
 
-export function getAllBlogPosts() {
-  return getAllPosts('blog');
+export function getAllBlogPosts(options = {}) {
+  return getAllPosts('blog', options);
 }
 
 export function getBlogPost(slug) {
   return getRawPost(slug, 'blog');
 }
 
-export function getAllTreatmentPosts() {
-  return getAllPosts('tedaviler');
+export function getAllTreatmentPosts(options = {}) {
+  return getAllPosts('tedaviler', { includeNoindex: true, ...options });
 }
 
 export function getTreatmentPost(slug) {

@@ -29,7 +29,7 @@ export default function Specializations() {
               viewport={{ once: true, margin: "-80px" }}
               className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900"
             >
-              Tedavi Alanlarım
+              Çalıştığım Klinik Başlıklar
             </motion.h2>
           </div>
           <motion.div
@@ -39,15 +39,14 @@ export default function Specializations() {
             viewport={{ once: true }}
           >
             <Link
-              href="/tedavi-alanlari"
+              href="/blog"
               className="hidden md:inline-flex text-sm font-medium text-forest-900 hover:text-sage-600 transition-colors"
             >
-              Tümünü Gör →
+              Rehberleri Gör →
             </Link>
           </motion.div>
         </div>
 
-        {/* Stacked full-width rows */}
         <div className="divide-y divide-gray-200 border-t border-b border-gray-200">
           {featured.map((treatment, i) => (
             <motion.div
@@ -57,32 +56,54 @@ export default function Specializations() {
               transition={{ duration: 0.5, delay: i * 0.06, ease }}
               viewport={{ once: true, margin: "-50px" }}
             >
-              <Link
-                href={`/tedavi-alanlari/${treatment.slug}`}
-                className="group grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-6 md:py-8 items-baseline"
-              >
-                <h3 className="md:col-span-4 text-xl md:text-2xl font-medium text-forest-900 group-hover:text-sage-600 transition-colors">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-6 md:py-8 items-baseline">
+                <h3 className="md:col-span-4 text-xl md:text-2xl font-medium text-forest-900">
                   {treatment.title}
                 </h3>
                 <p className="md:col-span-6 text-gray-500 text-sm leading-relaxed line-clamp-2">
                   {treatment.shortDescription}
                 </p>
                 <div className="md:col-span-2 flex justify-end">
-                  <span className="text-sm text-gray-400 group-hover:text-sage-600 group-hover:translate-x-1 transition-all">
-                    Detay →
-                  </span>
+                  <Link
+                    href="/iletisim"
+                    className="text-sm text-gray-400 hover:text-sage-600 transition-colors"
+                  >
+                    Görüşme Planla →
+                  </Link>
                 </div>
-              </Link>
+              </div>
             </motion.div>
           ))}
         </div>
 
+        <div className="mt-8 rounded-2xl bg-sand-50 border border-sand-200 p-6 md:p-8">
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Tedavi alanları sayfalarını, hizmet kapsamını görmek isteyen danışanlar için
+            yayında tutuyorum. Yaklaşımımı, sık sorulan soruları ve hangi durumda nasıl
+            karar verdiğimi blog tarafında daha ayrıntılı anlatıyorum.
+          </p>
+          <div className="mt-4 flex flex-col sm:flex-row gap-3">
+            <Link
+              href="/blog"
+              className="inline-flex items-center justify-center rounded-lg bg-sage-600 px-5 py-3 text-sm font-medium text-white hover:bg-sage-700 transition-colors"
+            >
+              Blog Rehberlerine Git
+            </Link>
+            <Link
+              href="/iletisim"
+              className="inline-flex items-center justify-center rounded-lg border border-sand-300 px-5 py-3 text-sm font-medium text-forest-900 hover:border-sage-500 hover:text-sage-600 transition-colors"
+            >
+              İletişime Geç
+            </Link>
+          </div>
+        </div>
+
         <div className="mt-10 text-center md:hidden">
           <Link
-            href="/tedavi-alanlari"
+            href="/blog"
             className="text-sm font-medium text-forest-900 hover:text-sage-600 transition-colors"
           >
-            Tümünü Gör →
+            Rehberleri Gör →
           </Link>
         </div>
       </div>

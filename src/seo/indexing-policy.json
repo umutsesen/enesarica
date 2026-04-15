@@ -1,0 +1,8 @@
+{
+  "noindexRoutes": [
+    "/tedavi-alanlari"
+  ],
+  "noindexPrefixes": [
+    "/tedavi-alanlari/"
+  ]
+}

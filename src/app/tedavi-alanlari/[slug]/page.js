@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getTreatmentPost, getAllTreatmentPosts, compileContent } from "@/lib/mdx";
 import treatments from "@/data/treatments";
+import { getRobotsForPath } from "@/lib/indexing-policy";
+import { sanitizeClinicReferencesInHtml } from "@/lib/content-sanitizers";
 
 export async function generateStaticParams() {
   return getAllTreatmentPosts().map((post) => ({ slug: post.slug }));
@@ -19,6 +21,7 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}`,
     },
+    robots: getRobotsForPath(`/tedavi-alanlari/${slug}`),
     openGraph: {
       title: `${post.title} | Fzt. Enes Arıca`,
       description: post.description,
@@ -35,7 +38,7 @@ export default async function TreatmentPage({ params }) {
     notFound();
   }
 
-  const htmlContent = await compileContent(post.content);
+  const htmlContent = sanitizeClinicReferencesInHtml(await compileContent(post.content));
   const currentTreatment = treatments.find((t) => t.slug === slug);
   const relatedSlugs = currentTreatment?.relatedTreatments || [];
   const related = relatedSlugs.length > 0

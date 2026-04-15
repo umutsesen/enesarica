@@ -31,7 +31,7 @@ const featuredPosts = [
 
 export default function LatestArticles() {
   const featuredSlugs = new Set(featuredPosts.map((p) => p.slug))
-  const allPosts = getAllPosts('blog')
+  const allPosts = getAllPosts('blog', { includeNoindex: false })
   const remainingPosts = allPosts.filter((p) => !featuredSlugs.has(p.slug))
 
   return (

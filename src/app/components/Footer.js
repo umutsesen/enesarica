@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaInstagram, FaYoutube, FaFacebookF, FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { getAllPosts } from "@/lib/mdx";
-import { treatments } from "@/data/treatments";
 
 const socialLinks = [
   { icon: FaInstagram, href: "https://www.instagram.com/yalovafizyoterapist/", label: "Instagram" },
@@ -20,7 +19,7 @@ const quickLinks = [
 ];
 
 export default function Footer() {
-  const blogPosts = getAllPosts('blog').slice(0, 8);
+  const blogPosts = getAllPosts('blog', { includeNoindex: false }).slice(0, 8);
 
   return (
     <footer className="bg-forest-900 text-gray-400">
@@ -92,31 +91,28 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Tedavi Alanları */}
+          {/* Öne Çıkan Rehberler */}
           <div>
-            <h3 className="text-white text-sm font-semibold mb-4">Tedavi Alanları</h3>
+            <h3 className="text-white text-sm font-semibold mb-4">Öne Çıkan Rehberler</h3>
             <ul className="space-y-2.5">
-              {treatments.slice(0, 8).map((t) => (
-                <li key={t.slug}>
-                  <Link href={`/tedavi-alanlari/${t.slug}`} className="text-sm hover:text-sage-400 transition-colors">
-                    {t.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Son Yazılar */}
-          <div>
-            <h3 className="text-white text-sm font-semibold mb-4">Son Yazılar</h3>
-            <ul className="space-y-2.5">
-              {blogPosts.slice(0, 8).map((post) => (
+              {blogPosts.map((post) => (
                 <li key={post.slug}>
                   <Link href={`/blog/${post.slug}`} className="text-sm hover:text-sage-400 transition-colors line-clamp-1">
                     {post.title}
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Uzman İçeriği */}
+          <div>
+            <h3 className="text-white text-sm font-semibold mb-4">Uzman İçeriği</h3>
+            <ul className="space-y-2.5 text-sm">
+              <li>Omurga sağlığı ve ağrı yönetimi</li>
+              <li>Schroth ve skolyoz egzersiz yaklaşımı</li>
+              <li>Egzersiz planlama ve ev programları</li>
+              <li>Hasta seçimi ve klinik karar rehberleri</li>
             </ul>
           </div>
 

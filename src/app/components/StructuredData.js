@@ -21,8 +21,8 @@ export function StructuredData() {
     image: profileImage,
     description:
       'Uzman Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında uzman.',
-    sameAs: [siteUrl, clinicUrl, ...socialProfiles],
-    worksFor: {
+    sameAs: [siteUrl, ...socialProfiles],
+    affiliation: {
       '@type': 'Organization',
       name: 'Yalova Fizyoterapi',
       url: clinicUrl,
@@ -40,7 +40,7 @@ export function StructuredData() {
     description:
       'Uzman Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında uzman.',
     areaServed: ['Yalova', 'İzmir', 'İstanbul'],
-    sameAs: [siteUrl, clinicUrl, ...socialProfiles],
+    sameAs: [siteUrl, ...socialProfiles],
     knowsAbout: [
       'Bel Fıtığı Tedavisi',
       'Boyun Fıtığı Tedavisi',
@@ -59,7 +59,7 @@ export function StructuredData() {
       opens: '09:00',
       closes: '22:30',
     },
-    parentOrganization: {
+    affiliation: {
       '@type': 'Organization',
       name: 'Yalova Fizyoterapi',
       url: clinicUrl,

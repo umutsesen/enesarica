@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getBlogPost, getAllBlogPosts, compileContent } from "@/lib/mdx";
+import { sanitizeClinicReferencesInHtml } from "@/lib/content-sanitizers";
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString("tr-TR", {
@@ -53,7 +54,7 @@ export default async function BlogPostPage({ params }) {
     notFound();
   }
 
-  const html = await compileContent(post.content);
+  const html = sanitizeClinicReferencesInHtml(await compileContent(post.content));
 
   const allPosts = getAllBlogPosts();
   const currentTags = new Set((post.tags || []).map((t) => t.toLowerCase()));
@@ -85,14 +86,8 @@ export default async function BlogPostPage({ params }) {
       "image": "https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpeg",
       "sameAs": [
         "https://www.fizyoterapistenesarica.com",
-        "https://www.yalovafizyoterapist.com",
         "https://www.instagram.com/yalovafizyoterapist"
-      ],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Yalova Fizyoterapi",
-        "url": "https://www.yalovafizyoterapist.com"
-      }
+      ]
     },
     "publisher": {
       "@type": "Organization",
@@ -188,8 +183,9 @@ export default async function BlogPostPage({ params }) {
           <div className="mt-8 rounded-2xl p-8 border border-gray-100">
             <h3 className="font-semibold text-forest-900">Fzt. Enes Arıca</h3>
             <p className="text-gray-600 text-sm mt-2">
-              Yalova Fizyoterapi kurucusu, uzman fizyoterapist. GTOS terapi, Schroth
-              metodu ve manuel terapi alanlarında uzmanlaşmıştır.
+              Omurga sağlığı, ağrı yönetimi ve hareket kalitesi üzerine çalışan uzman
+              fizyoterapist. Yazılarımda klinik karar verme sürecimi ve danışanlarıma
+              anlattığım pratik çerçeveyi paylaşıyorum.
             </p>
           </div>
 

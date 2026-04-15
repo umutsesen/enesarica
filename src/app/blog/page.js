@@ -10,7 +10,7 @@ function formatDate(date) {
 }
 
 export default function BlogPage() {
-  const posts = getAllPosts('blog');
+  const posts = getAllPosts('blog', { includeNoindex: false });
   const [featured, ...rest] = posts;
 
   return (
