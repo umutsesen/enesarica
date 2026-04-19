@@ -37,7 +37,7 @@ export const metadata = {
     siteName: 'Uzman Fizyoterapist Enes Arıca',
     images: [
       {
-        url: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpeg',
+        url: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp',
         width: 1200,
         height: 630,
         alt: 'Uzman Fizyoterapist Enes Arıca',
@@ -51,7 +51,7 @@ export const metadata = {
     title: 'Uzman Fizyoterapist Enes Arıca',
     description:
       'Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates tedavisi.',
-    images: ['https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpeg'],
+    images: ['https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp'],
   },
   icons: {
     icon: [

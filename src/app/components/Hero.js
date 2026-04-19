@@ -146,7 +146,7 @@ export default function Hero() {
                 className="aspect-[3/4] relative rounded-3xl overflow-hidden"
               >
                 <Image
-                  src="/imgs/enes-arica.jpeg"
+                  src="/imgs/enes-arica.webp"
                   alt="Uzman Fizyoterapist Enes Arıca"
                   fill
                   className="object-cover object-top"

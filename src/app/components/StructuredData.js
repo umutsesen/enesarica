@@ -3,7 +3,7 @@ import Script from 'next/script';
 export function StructuredData() {
   const siteUrl = 'https://www.fizyoterapistenesarica.com';
   const clinicUrl = 'https://www.yalovafizyoterapist.com';
-  const profileImage = `${siteUrl}/imgs/enes-arica.jpeg`;
+  const profileImage = `${siteUrl}/imgs/enes-arica.webp`;
   const logoImage = `${siteUrl}/enesaricalogo.png`;
   const socialProfiles = [
     'https://www.instagram.com/yalovafizyoterapist/',

@@ -10,7 +10,7 @@ export const metadata = {
     description:
       "Hastalarımızın tedavi deneyimleri ve geri bildirimleri.",
     url: "https://www.fizyoterapistenesarica.com/hasta-deneyimleri",
-    images: [{ url: "https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpeg", width: 2048, height: 1368, alt: "Fzt. Enes Arıca - Hasta Deneyimleri" }],
+    images: [{ url: "https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp", width: 2048, height: 1368, alt: "Fzt. Enes Arıca - Hasta Deneyimleri" }],
   },
 };
 

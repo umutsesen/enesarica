@@ -37,7 +37,7 @@ export async function generateMetadata({ params }) {
       modifiedTime: post.updatedDate || post.date,
       authors: ['https://www.fizyoterapistenesarica.com/hakkimda'],
       images: [{
-        url: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpeg',
+        url: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp',
         width: 1200,
         height: 630,
         alt: post.title,
@@ -83,7 +83,7 @@ export default async function BlogPostPage({ params }) {
       "name": "Fzt. Enes Arıca",
       "jobTitle": "Uzman Fizyoterapist",
       "url": "https://www.fizyoterapistenesarica.com/hakkimda",
-      "image": "https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpeg",
+      "image": "https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp",
       "sameAs": [
         "https://www.fizyoterapistenesarica.com",
         "https://www.instagram.com/yalovafizyoterapist"

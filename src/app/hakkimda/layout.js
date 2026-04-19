@@ -10,7 +10,7 @@ export const metadata = {
     description:
       "Yalova Fizyoterapi kurucusu Fzt. Enes Arıca hakkında. GTOS terapi, Schroth metodu ve manuel terapi alanlarında uzman fizyoterapist.",
     url: "https://www.fizyoterapistenesarica.com/hakkimda",
-    images: [{ url: "https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpeg", width: 2048, height: 1368, alt: "Uzman Fizyoterapist Enes Arıca" }],
+    images: [{ url: "https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp", width: 2048, height: 1368, alt: "Uzman Fizyoterapist Enes Arıca" }],
   },
 };
 

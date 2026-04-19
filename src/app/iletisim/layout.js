@@ -10,7 +10,7 @@ export const metadata = {
     description:
       "Fzt. Enes Arıca ile iletişime geçin ve randevu alın.",
     url: "https://www.fizyoterapistenesarica.com/iletisim",
-    images: [{ url: "https://www.fizyoterapistenesarica.com/imgs/enes-arica.jpeg", width: 2048, height: 1368, alt: "Fzt. Enes Arıca - İletişim" }],
+    images: [{ url: "https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp", width: 2048, height: 1368, alt: "Fzt. Enes Arıca - İletişim" }],
   },
 };
 
