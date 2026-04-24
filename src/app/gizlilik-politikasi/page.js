@@ -30,11 +30,6 @@ export default function GizlilikPolitikasiPage() {
             <strong>Zorunlu cerezler:</strong> Web sitesinin duzgun calismasi
             icin gerekli olan cerezlerdir.
           </li>
-          <li>
-            <strong>Analitik cerezler:</strong> Microsoft Clarity araciligiyla
-            ziyaretci davranislarini anonim olarak analiz etmek icin
-            kullanilir.
-          </li>
         </ul>
         <p>
           Tarayici ayarlariniz uzerinden cerezleri devre disi birakabilirsiniz.
@@ -58,40 +53,11 @@ export default function GizlilikPolitikasiPage() {
           paylasilmaz.
         </p>
 
-        <h2>3. Microsoft Clarity</h2>
-        <p>
-          Web sitemizde kullanici deneyimini anlamak ve iyilestirmek amaciyla
-          Microsoft Clarity analitik araci kullanilmaktadir. Clarity, ziyaretci
-          davranislarini anonim olarak kaydeder ve asagidaki verileri toplar:
-        </p>
-        <ul>
-          <li>Sayfa goruntulenmeleri ve tiklamalar</li>
-          <li>Fare hareketleri ve kaydirma davranislari</li>
-          <li>Oturum suresi ve sayfa gecisleri</li>
-          <li>Cihaz ve tarayici bilgileri</li>
-        </ul>
-        <p>
-          Bu veriler anonim olarak islenir ve bireysel kimliklendirme amaciyla
-          kullanilmaz. Daha fazla bilgi icin{' '}
-          <a
-            href="https://clarity.microsoft.com/terms"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Microsoft Clarity Kullanim Sartlari
-          </a>
-          &apos;ni inceleyebilirsiniz.
-        </p>
-
-        <h2>4. Ucuncu Taraf Hizmetler</h2>
+        <h2>3. Ucuncu Taraf Hizmetler</h2>
         <p>
           Web sitemizde asagidaki ucuncu taraf hizmetler kullanilmaktadir:
         </p>
         <ul>
-          <li>
-            <strong>Microsoft Clarity:</strong> Web analitigi ve kullanici
-            deneyimi analizi
-          </li>
           <li>
             <strong>Vercel:</strong> Web sitesi barindirma hizmeti
           </li>
@@ -110,10 +76,6 @@ export default function GizlilikPolitikasiPage() {
           <li>
             <strong>Form verileri:</strong> Talebinizin sonuclanmasindan
             itibaren 1 yil
-          </li>
-          <li>
-            <strong>Analitik veriler:</strong> Microsoft Clarity politikasi
-            geregi anonim olarak saklanir
           </li>
           <li>
             <strong>Cerezler:</strong> Oturum cerezleri tarayici kapatildiginda,
