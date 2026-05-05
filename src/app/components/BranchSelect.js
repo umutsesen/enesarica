@@ -35,7 +35,7 @@ export default function BranchSelect({ branches, value, onChange, name = "branch
         }`}
       >
         <span className={selected ? 'text-forest-900' : 'text-gray-400'}>
-          {selected ? selected.name : 'Şube Seçin'}
+          {selected ? selected.name : 'İletişim Konusu Seçin'}
         </span>
         <FaChevronDown className={`w-3 h-3 text-gray-400 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
       </button>

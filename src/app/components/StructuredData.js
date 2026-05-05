@@ -15,12 +15,12 @@ export function StructuredData() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Enes Arıca',
-    jobTitle: 'Uzman Fizyoterapist',
+    jobTitle: 'Fizyoterapist',
     url: siteUrl,
     telephone: '+905546621245',
     image: profileImage,
     description:
-      'Uzman Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında uzman.',
+      'Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında deneyimli.',
     sameAs: [siteUrl, ...socialProfiles],
     affiliation: {
       '@type': 'Organization',
@@ -38,7 +38,7 @@ export function StructuredData() {
     image: profileImage,
     logo: logoImage,
     description:
-      'Uzman Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında uzman.',
+      'Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında deneyimli.',
     areaServed: ['Yalova', 'İzmir', 'İstanbul'],
     sameAs: [siteUrl, ...socialProfiles],
     knowsAbout: [

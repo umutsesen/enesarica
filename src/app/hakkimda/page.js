@@ -10,11 +10,11 @@ const timeline = [
   { year: "2014", title: "Lisans Mezuniyeti", desc: "Medipol Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü" },
   { year: "2015", title: "Klinik Kuruluşu", desc: "Yalova'da ilk kliniğin açılışı" },
   { year: "2016", title: "Manuel Terapi Sertifikası", desc: "Ortopedik manuel terapi eğitim programı" },
-  { year: "2017", title: "GTOS Terapi Sertifikası", desc: "Golgi Tendon Organ Stimülasyonu uzmanlık eğitimi" },
+  { year: "2017", title: "GTOS Terapi Sertifikası", desc: "Golgi Tendon Organ Stimülasyonu deneyim eğitimi" },
   { year: "2019", title: "Schroth Metodu Sertifikası", desc: "Skolyoz tedavisinde Schroth metodu ileri düzey eğitimi" },
-  { year: "2020", title: "İstanbul Şubesi", desc: "İstanbul Bahçelievler şubesinin açılışı" },
-  { year: "2022", title: "İzmir Şubesi", desc: "İzmir Alsancak şubesinin açılışı" },
-  { year: "2023", title: "Çiftlikköy Şubesi", desc: "Yalova Çiftlikköy şubesinin açılışı" },
+  { year: "2020", title: "İstanbul İletişimsi", desc: "İstanbul Bahçelievler iletişim noktasının açılışı" },
+  { year: "2022", title: "İzmir İletişimsi", desc: "İzmir Alsancak iletişim noktasının açılışı" },
+  { year: "2023", title: "Çiftlikköy İletişimsi", desc: "Yalova Çiftlikköy iletişim noktasının açılışı" },
 ];
 
 const certifications = [
@@ -26,7 +26,7 @@ const certifications = [
   {
     title: "Schroth Metodu",
     subtitle: "Skolyoz Spesifik Egzersiz",
-    desc: "Almanya kökenli Schroth metodunda uzmanlık. Skolyoz hastalarına özel üç boyutlu düzeltici egzersiz programları.",
+    desc: "Almanya kökenli Schroth metodunda deneyim. Skolyoz hastalarına özel üç boyutlu düzeltici egzersiz programları.",
   },
   {
     title: "Manuel Terapi",
@@ -47,7 +47,7 @@ export default function HakkimdaPage() {
             transition={{ duration: 0.5, ease }}
             className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
           >
-            Uzman Fizyoterapist
+            Fizyoterapist
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -74,7 +74,7 @@ export default function HakkimdaPage() {
               <div className="aspect-[3/4] relative rounded-2xl overflow-hidden">
                 <Image
                   src="/imgs/enes-arica.webp"
-                  alt="Fzt. Enes Arıca - Uzman Fizyoterapist"
+                  alt="Fzt. Enes Arıca - Fizyoterapist"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -108,10 +108,10 @@ export default function HakkimdaPage() {
                 className="space-y-6 text-gray-600 leading-relaxed"
               >
                 <p>
-                  Medipol Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü mezunuyum. Mezuniyetimin ardından fizyoterapi alanındaki tutkumu kendi kliniğime taşıyarak Yalova Fizyoterapi'yi kurdum. Bugün Yalova Merkez, Yalova Çiftlikköy, İstanbul Bahçelievler ve İzmir Alsancak olmak üzere 4 şubede hastalarıma hizmet vermenin gururunu yaşıyorum.
+                  Medipol Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü mezunuyum. Mezuniyetimin ardından fizyoterapi alanındaki tutkumu kendi kliniğime taşıyarak Yalova Fizyoterapi'yi kurdum. Bugün Yalova Merkez, Yalova Çiftlikköy, İstanbul Bahçelievler ve İzmir Alsancak olmak üzere iletişim kanallarımız üzerinden hastalarıma hizmet vermenin gururunu yaşıyorum.
                 </p>
                 <p>
-                  Kariyer yolculuğumda GTOS (Golgi Tendon Organ Stimülasyonu) terapi, skolyoz tedavisinde Schroth metodu ve ortopedik manuel terapi alanlarında ileri düzey eğitimler aldım. Bu uzmanlık alanları sayesinde özellikle bel fıtığı, boyun fıtığı, skolyoz ve kronik ağrı sendromlarında ameliyatsız, iğnesiz ve ilaçsız tedavi yöntemleri sunabiliyorum.
+                  Kariyer yolculuğumda GTOS (Golgi Tendon Organ Stimülasyonu) terapi, skolyoz tedavisinde Schroth metodu ve ortopedik manuel terapi alanlarında ileri düzey eğitimler aldım. Bu deneyim alanları sayesinde özellikle bel fıtığı, boyun fıtığı, skolyoz ve kronik ağrı sendromlarında ameliyatsız, iğnesiz ve ilaçsız tedavi yöntemleri sunabiliyorum.
                 </p>
                 <p>
                   Her hastamın kendine özgü olduğuna inanıyor ve tedavi programlarını kişiye özel olarak tasarlıyorum. Kanıta dayalı tıp prensiplerini modern fizyoterapi teknikleriyle birleştirerek hastalarımın en kısa sürede günlük hayatlarına ve sevdikleri aktivitelere dönmelerini sağlıyorum.
@@ -201,7 +201,7 @@ export default function HakkimdaPage() {
             viewport={{ once: true }}
             className="text-sage-600 text-sm font-medium tracking-widest uppercase mb-4"
           >
-            Uzmanlık Alanları
+            Deneyim Alanları
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 25 }}
@@ -258,7 +258,7 @@ export default function HakkimdaPage() {
                 Tedavide kanıta dayalı yaklaşımı benimsiyor, her hastamı bütüncül bir bakış açısıyla değerlendiriyorum. Ağrının sadece bir semptom olduğuna, asıl nedenin altında yatan fonksiyonel bozukluğun tedavi edilmesi gerektiğine inanıyorum.
               </p>
               <p>
-                Hastalarımla açık iletişim kurarak tedavi sürecini birlikte yönetiyoruz. Her seansta yapılan uygulamaların nedenini açıklıyor, hastalarımın kendi vücutlarını daha iyi anlamalarını sağlıyorum. Bu hasta merkezli yaklaşım, tedavi sürecini hızlandırıyor ve kalıcı sonuçlar elde etmemizi sağlıyor.
+                Hastalarımla açık iletişim kurarak tedavi sürecini birlikte yönetiyoruz. Her seansta yapılan uygulamaların nedenini açıklıyor, hastalarımın kendi vücutlarını daha iyi anlamalarını sağlıyorum. Bu hasta merkezli yaklaşım, tedavi sürecini hızlandırıyor ve sürdürülebilir sonuçlar elde etmemizi sağlıyor.
               </p>
             </div>
           </motion.div>

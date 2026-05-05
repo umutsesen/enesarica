@@ -12,9 +12,9 @@ const inter = Inter({
 
 export const metadata = {
   metadataBase: new URL('https://www.fizyoterapistenesarica.com'),
-  title: 'Uzman Fizyoterapist Enes Arıca | Yalova, İstanbul, İzmir',
+  title: 'Fizyoterapist Enes Arıca | Yalova, İstanbul, İzmir',
   description:
-    'Uzman Fizyoterapist Enes Arıca ile bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates tedavisi. Yalova, İstanbul ve İzmir\'de hizmetinizdeyiz.',
+    'Fizyoterapist Enes Arıca ile bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates tedavisi. Yalova, İstanbul ve İzmir\'de hizmetinizdeyiz.',
   keywords: [
     'fizyoterapist',
     'enes arıca',
@@ -30,17 +30,17 @@ export const metadata = {
     'fizyoterapi izmir',
   ],
   openGraph: {
-    title: 'Uzman Fizyoterapist Enes Arıca | Yalova, İstanbul, İzmir',
+    title: 'Fizyoterapist Enes Arıca | Yalova, İstanbul, İzmir',
     description:
       'Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates tedavisi.',
     url: 'https://www.fizyoterapistenesarica.com',
-    siteName: 'Uzman Fizyoterapist Enes Arıca',
+    siteName: 'Fizyoterapist Enes Arıca',
     images: [
       {
         url: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp',
         width: 1200,
         height: 630,
-        alt: 'Uzman Fizyoterapist Enes Arıca',
+        alt: 'Fizyoterapist Enes Arıca',
       },
     ],
     locale: 'tr_TR',
@@ -48,7 +48,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Uzman Fizyoterapist Enes Arıca',
+    title: 'Fizyoterapist Enes Arıca',
     description:
       'Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates tedavisi.',
     images: ['https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp'],

@@ -37,7 +37,7 @@ export default function Footer() {
                 />
               </Link>
               <p className="mt-4 text-gray-400 leading-relaxed max-w-lg">
-                Uzman fizyoterapist Enes Arıca, bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates alanlarında 10 yılı aşkın deneyimle ameliyatsız tedavi hizmeti sunmaktadır. Yalova Merkez, Yalova Çiftlikköy, İstanbul Bahçelievler ve İzmir Alsancak şubelerinde hastalarına kişiye özel tedavi programları uygulayarak kalıcı çözümler sağlamaktadır.
+                Fizyoterapist Enes Arıca, bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates alanlarında 10 yılı aşkın deneyimle ameliyatsız tedavi hizmeti sunmaktadır. Yalova Merkez, Yalova Çiftlikköy, İstanbul Bahçelievler ve İzmir Alsancak iletişim kanallarında hastalarına kişiye özel tedavi programları uygulayarak kişiye özel planlamalar sağlamaktadır.
               </p>
             </div>
             <div className="lg:text-right">
@@ -105,9 +105,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Uzman İçeriği */}
+          {/* Deneyimli İçeriği */}
           <div>
-            <h3 className="text-white text-sm font-semibold mb-4">Uzman İçeriği</h3>
+            <h3 className="text-white text-sm font-semibold mb-4">Deneyimli İçeriği</h3>
             <ul className="space-y-2.5 text-sm">
               <li>Omurga sağlığı ve ağrı yönetimi</li>
               <li>Schroth ve skolyoz egzersiz yaklaşımı</li>
@@ -141,9 +141,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Şubeler */}
+          {/* İletişim */}
           <div>
-            <h3 className="text-white text-sm font-semibold mb-4">Şubeler</h3>
+            <h3 className="text-white text-sm font-semibold mb-4">İletişim</h3>
             <ul className="space-y-2.5 text-sm">
               <li>Yalova Merkez</li>
               <li>Yalova Çiftlikköy</li>
@@ -178,7 +178,7 @@ export default function Footer() {
         </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-5">
           <p className="text-[11px] text-gray-600 text-center">
-            Bu web sitesindeki bilgiler genel bilgilendirme amaçlıdır ve tıbbi teşhis veya tedavi yerine geçmez. Tedavi kararları için mutlaka uzman fizyoterapiste danışınız.
+            Bu web sitesindeki bilgiler genel bilgilendirme amaçlıdır ve tıbbi teşhis veya tedavi yerine geçmez. Tedavi kararları için mutlaka fizyoterapiste danışınız.
           </p>
         </div>
       </div>

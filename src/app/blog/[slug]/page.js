@@ -81,7 +81,7 @@ export default async function BlogPostPage({ params }) {
     "author": {
       "@type": "Person",
       "name": "Fzt. Enes Arıca",
-      "jobTitle": "Uzman Fizyoterapist",
+      "jobTitle": "Fizyoterapist",
       "url": "https://www.fizyoterapistenesarica.com/hakkimda",
       "image": "https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp",
       "sameAs": [
@@ -170,7 +170,7 @@ export default async function BlogPostPage({ params }) {
               Bu konuda detaylı değerlendirme ister misiniz?
             </h3>
             <p className="text-gray-300 text-sm mb-6">
-              Uzman fizyoterapist Enes Arıca ile ücretsiz ön değerlendirme için randevu alın.
+              Fizyoterapist Enes Arıca ile ön değerlendirme için randevu alın.
             </p>
             <Link
               href="/iletisim"
@@ -183,7 +183,7 @@ export default async function BlogPostPage({ params }) {
           <div className="mt-8 rounded-2xl p-8 border border-gray-100">
             <h3 className="font-semibold text-forest-900">Fzt. Enes Arıca</h3>
             <p className="text-gray-600 text-sm mt-2">
-              Omurga sağlığı, ağrı yönetimi ve hareket kalitesi üzerine çalışan uzman
+              Omurga sağlığı, ağrı yönetimi ve hareket kalitesi üzerine çalışan deneyimli
               fizyoterapist. Yazılarımda klinik karar verme sürecimi ve danışanlarıma
               anlattığım pratik çerçeveyi paylaşıyorum.
             </p>

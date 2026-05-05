@@ -72,11 +72,11 @@ const faqData = [
       },
       {
         q: 'Hangi şehirlerde hizmet veriyorsunuz?',
-        a: 'Yalova Merkez, Yalova Çiftlikköy, İzmir Alsancak ve İstanbul Bahçelievler olmak üzere 4 şubede fizyoterapi ve rehabilitasyon hizmeti sunuyoruz.',
+        a: 'Yalova Merkez, Yalova Çiftlikköy, İzmir Alsancak ve İstanbul Bahçelievler olmak üzere iletişim kanallarımız üzerinden fizyoterapi ve rehabilitasyon hizmeti sunuyoruz.',
       },
       {
         q: 'Çalışma saatleriniz nedir?',
-        a: 'Kliniklerimiz Pazartesi-Cumartesi günleri 09:00-22:00 saatleri arasında hizmet vermektedir. Randevu saatleri şubeye göre değişiklik gösterebilir; iletişime geçerek uygun saatleri öğrenebilirsiniz.',
+        a: 'Kliniklerimiz Pazartesi-Cumartesi günleri 09:00-22:00 saatleri arasında hizmet vermektedir. Randevu saatleri iletişim kanalına göre değişiklik gösterebilir; iletişime geçerek uygun saatleri öğrenebilirsiniz.',
       },
       {
         q: 'İlk seansta ne yapılır?',
@@ -97,7 +97,7 @@ const faqData = [
       },
       {
         q: 'Seans ücretleri ne kadar?',
-        a: 'Seans ücretleri tedavi yöntemine, seans süresine ve şubeye göre değişiklik göstermektedir. Güncel fiyat bilgisi için +90 554 662 12 45 numarasından veya iletişim sayfamızdan bize ulaşabilirsiniz.',
+        a: 'Seans ücretleri tedavi yöntemine, seans süresine ve iletişim kanalına göre değişiklik göstermektedir. Güncel fiyat bilgisi için +90 554 662 12 45 numarasından veya iletişim sayfamızdan bize ulaşabilirsiniz.',
       },
     ],
   },

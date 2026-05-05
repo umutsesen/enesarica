@@ -98,7 +98,7 @@ export default function TedaviAlanlariPage() {
               transition={{ duration: 0.5, ease }}
               className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
             >
-              Uzman Fizyoterapist Enes Arica
+              Fizyoterapist Enes Arica
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -250,7 +250,7 @@ export default function TedaviAlanlariPage() {
             viewport={{ once: true }}
             className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-3"
           >
-            Tum Uzmanlik Alanlarim
+            Tum Deneyim Alanlarim
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 25 }}

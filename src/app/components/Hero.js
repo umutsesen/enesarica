@@ -57,7 +57,7 @@ export default function Hero() {
               transition={{ duration: 0.6, ease }}
               className="text-sage-400 text-xs font-semibold tracking-[0.2em] uppercase mb-5"
             >
-              Uzman Fizyoterapist
+              Fizyoterapist
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
@@ -65,7 +65,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.15, ease }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-[1.1]"
             >
-              Kronik Ağrı ve Spor Yaralanmalarında Uzman Tedavi
+              Kronik Ağrı ve Spor Yaralanmalarında Deneyimli Tedavi
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -73,7 +73,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.3, ease }}
               className="text-gray-400 text-lg max-w-md mb-8 leading-relaxed"
             >
-              Bel fıtığı, boyun fıtığı, skolyoz ve GTOS terapi tedavilerinde ameliyatsız, kişiye özel çözümler. Yalova, İstanbul ve İzmir&apos;de 4 şubede hizmetinizdeyiz.
+              Bel fıtığı, boyun fıtığı, skolyoz ve GTOS terapi tedavilerinde ameliyatsız, kişiye özel çözümler. Yalova, İstanbul ve İzmir&apos;de iletişim kanallarımız üzerinden hizmetinizdeyiz.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -126,7 +126,7 @@ export default function Hero() {
                 <span className="text-3xl md:text-4xl font-bold text-white">
                   <Counter target="4" />
                 </span>
-                <p className="text-sm text-gray-500 mt-1">Şube</p>
+                <p className="text-sm text-gray-500 mt-1">İletişim</p>
               </motion.div>
             </motion.div>
           </div>
@@ -147,7 +147,7 @@ export default function Hero() {
               >
                 <Image
                   src="/imgs/enes-arica.webp"
-                  alt="Uzman Fizyoterapist Enes Arıca"
+                  alt="Fizyoterapist Enes Arıca"
                   fill
                   className="object-cover object-top"
                   priority

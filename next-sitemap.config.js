@@ -24,6 +24,7 @@ module.exports = {
     '/favicon.ico',
     '/site.webmanifest',
     '/_next/*',
+    '/subeler/*',
     ...indexingPolicy.noindexRoutes,
     ...indexingPolicy.noindexPrefixes.map((prefix) => `${prefix}*`),
   ],

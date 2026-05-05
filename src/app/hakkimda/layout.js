@@ -1,16 +1,16 @@
 export const metadata = {
-  title: "Hakkımda | Uzman Fizyoterapist Enes Arıca",
+  title: "Hakkımda | Fizyoterapist Enes Arıca",
   description:
-    "Yalova Fizyoterapi kurucusu Fzt. Enes Arıca hakkında. GTOS terapi, Schroth metodu ve manuel terapi alanlarında uzman fizyoterapist.",
+    "Yalova Fizyoterapi kurucusu Fzt. Enes Arıca hakkında. GTOS terapi, Schroth metodu ve manuel terapi alanlarında fizyoterapist.",
   alternates: {
     canonical: "https://www.fizyoterapistenesarica.com/hakkimda",
   },
   openGraph: {
-    title: "Hakkımda | Uzman Fizyoterapist Enes Arıca",
+    title: "Hakkımda | Fizyoterapist Enes Arıca",
     description:
-      "Yalova Fizyoterapi kurucusu Fzt. Enes Arıca hakkında. GTOS terapi, Schroth metodu ve manuel terapi alanlarında uzman fizyoterapist.",
+      "Yalova Fizyoterapi kurucusu Fzt. Enes Arıca hakkında. GTOS terapi, Schroth metodu ve manuel terapi alanlarında fizyoterapist.",
     url: "https://www.fizyoterapistenesarica.com/hakkimda",
-    images: [{ url: "https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp", width: 2048, height: 1368, alt: "Uzman Fizyoterapist Enes Arıca" }],
+    images: [{ url: "https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp", width: 2048, height: 1368, alt: "Fizyoterapist Enes Arıca" }],
   },
 };
 

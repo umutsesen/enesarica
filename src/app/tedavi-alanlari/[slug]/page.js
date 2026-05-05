@@ -129,7 +129,7 @@ export default async function TreatmentPage({ params }) {
                   Randevu Alın
                 </h3>
                 <p className="text-gray-300 text-sm mb-6">
-                  Uzman fizyoterapist ile tedavi sürecinizi başlatın.
+                  Fizyoterapist ile tedavi sürecinizi başlatın.
                 </p>
                 <Link
                   href="/iletisim"

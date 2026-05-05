@@ -3,21 +3,21 @@ Language: tr (Turkish)
 Audience: Patients seeking physiotherapy services in Turkey
 Category: Medical / Healthcare
 
-# Fzt. Enes Arıca - Uzman Fizyoterapist
+# Fzt. Enes Arıca - Fizyoterapist
 
-> Fzt. Enes Arıca, Yalova merkezli Yalova Fizyoterapi kliniğinin kurucusu ve uzman fizyoterapisttir. Bel fıtığı, boyun fıtığı, skolyoz (Schroth metodu), GTOS terapi ve manuel terapi alanlarında uzmanlaşmıştır.
+> Fzt. Enes Arıca, Yalova merkezli Yalova Fizyoterapi kliniğinin kurucusu ve fizyoterapisttir. Bel fıtığı, boyun fıtığı, skolyoz (Schroth metodu), GTOS terapi ve manuel terapi alanlarında deneyimlitır.
 
 ## Hakkında
 
 - Ad Soyad: Fzt. Enes Arıca
-- Unvan: Uzman Fizyoterapist
-- Uzmanlık: Bel fıtığı, boyun fıtığı, skolyoz (Schroth), GTOS terapi, manuel terapi
+- Unvan: Fizyoterapist
+- Deneyim: Bel fıtığı, boyun fıtığı, skolyoz (Schroth), GTOS terapi, manuel terapi
 - Klinik: Yalova Fizyoterapi (https://www.yalovafizyoterapist.com)
 - Konum: Yalova, Türkiye
 - Web: https://www.fizyoterapistenesarica.com
 - Instagram: https://www.instagram.com/yalovafizyoterapist/
 
-## Tedavi Alanları (17 uzmanlık)
+## Tedavi Alanları (17 deneyim)
 
 - Bel fıtığı tedavisi (ameliyatsız, konservatif yaklaşım)
 - Boyun fıtığı tedavisi (servikal disk hernisi)
@@ -43,12 +43,12 @@ Fzt. Enes Arıca, kanıta dayalı fizyoterapi uygulamaktadır. Her hasta için b
 
 ## Blog
 
-fizyoterapistenesarica.com blogu, 23 Türkçe medikal makale içermektedir. Makaleler birinci şahıs uzman perspektifinden yazılmış olup bilimsel referanslar (Lancet, BMJ, Cochrane, Spine, JOSPT) içermektedir. Konular: tedavi yöntemleri, hastalık rehberleri, egzersiz programları, fizyoterapi seçim kriterleri.
+fizyoterapistenesarica.com blogu, 23 Türkçe medikal makale içermektedir. Makaleler birinci şahıs deneyimli perspektifinden yazılmış olup bilimsel referanslar (Lancet, BMJ, Cochrane, Spine, JOSPT) içermektedir. Konular: tedavi yöntemleri, hastalık rehberleri, egzersiz programları, fizyoterapi seçim kriterleri.
 
 ## Sayfa Yapısı
 
 - /: Ana sayfa
-- /hakkimda: Hakkımda, biyografi ve uzmanlık alanları
+- /hakkimda: Hakkımda, biyografi ve deneyim alanları
 - /tedavi-alanlari: Tüm tedavi alanları (17 detaylı sayfa)
 - /tedavi-alanlari/[slug]: Her tedavi için detaylı sayfa (1500+ kelime, bilimsel referanslar, SSS)
 - /blog: Blog yazıları (23 makale)

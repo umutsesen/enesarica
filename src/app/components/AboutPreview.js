@@ -41,7 +41,7 @@ export default function AboutPreview() {
               viewport={{ once: true, margin: "-100px" }}
               className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
             >
-              Uzman Fizyoterapist
+              Fizyoterapist
             </motion.p>
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
@@ -59,7 +59,7 @@ export default function AboutPreview() {
               viewport={{ once: true, margin: "-100px" }}
               className="text-gray-600 leading-relaxed mb-6"
             >
-              10 yılı aşkın klinik deneyimimle bel fıtığı, boyun fıtığı, skolyoz ve GTOS terapi alanlarında binlerce hastaya hizmet verdim. Tedavi yaklaşımımda manuel terapi teknikleri ile kişiye özel egzersiz programlarını bir arada kullanarak kalıcı sonuçlar elde etmeyi hedefliyorum.
+              10 yılı aşkın klinik deneyimimle bel fıtığı, boyun fıtığı, skolyoz ve GTOS terapi alanlarında binlerce hastaya hizmet verdim. Tedavi yaklaşımımda manuel terapi teknikleri ile kişiye özel egzersiz programlarını bir arada kullanarak sürdürülebilir sonuçlar elde etmeyi hedefliyorum.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -76,7 +76,7 @@ export default function AboutPreview() {
               >
                 Yalova Fizyoterapi
               </a>{' '}
-              kliniğimizin Yalova, İstanbul ve İzmir&apos;deki 4 şubesinde modern ekipmanlar ve güncel tedavi protokolleri ile hastalarımıza en iyi hizmeti sunuyoruz.
+              kliniğimizin Yalova, İstanbul ve İzmir&apos;deki iletişim kanalları üzerinden modern ekipmanlar ve güncel tedavi protokolleri ile hastalarımıza özenli hizmeti sunuyoruz.
             </motion.p>
             <motion.ul
               initial={{ opacity: 0 }}

@@ -4,17 +4,17 @@ const clinicAnchorPattern =
 const ctaReplacements = [
   {
     pattern:
-      /\s*[-—]\s*kurucusu olduğum Yalova Fizyoterapi kliniğinin Yalova, İstanbul ve İzmir şubelerine de başvurabilirsiniz/gi,
+      /\s*[-—]\s*kurucusu olduğum Yalova Fizyoterapi kliniğinin Yalova, İstanbul ve İzmir iletişim kanallarına de başvurabilirsiniz/gi,
     replacement: '',
   },
   {
     pattern:
-      /\s*ya da kurucusu olduğum Yalova Fizyoterapi kliniğinin Yalova, İstanbul ve İzmir şubelerine başvurabilirsiniz/gi,
+      /\s*ya da kurucusu olduğum Yalova Fizyoterapi kliniğinin Yalova, İstanbul ve İzmir iletişim kanallarına başvurabilirsiniz/gi,
     replacement: '',
   },
   {
     pattern:
-      /\s*Yalova Fizyoterapi kliniğinin Yalova, İstanbul ve İzmir şubelerine de başvurabilirsiniz/gi,
+      /\s*Yalova Fizyoterapi kliniğinin Yalova, İstanbul ve İzmir iletişim kanallarına de başvurabilirsiniz/gi,
     replacement: '',
   },
 ];

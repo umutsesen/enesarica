@@ -22,8 +22,8 @@ function AnimatedNumber({ value, suffix = '', inView }) {
 const stats = [
   { value: 10, suffix: '+', label: 'Yıl Deneyim' },
   { value: 5000, suffix: '+', label: 'Hasta' },
-  { value: 4, suffix: '', label: 'Şube' },
-  { value: 3, suffix: '', label: 'Uzmanlık Sertifikası' },
+  { value: 4, suffix: '', label: 'İletişim' },
+  { value: 3, suffix: '', label: 'Deneyim Sertifikası' },
 ]
 
 export default function TrustBar() {

@@ -6,6 +6,6 @@ export const certifications = [
     title: 'Schroth Metodu Sertifikası',
   },
   {
-    title: 'Manuel Terapi Uzmanlığı',
+    title: 'Manuel Terapi Deneyimi',
   },
 ];

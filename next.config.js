@@ -12,6 +12,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/subeler/:path*',
+        destination: '/iletisim',
+        permanent: true,
+      },
+      {
         source: '/:path*',
         has: [{ type: 'host', value: 'fizyoterapistenesarica.com' }],
         destination: 'https://www.fizyoterapistenesarica.com/:path*',

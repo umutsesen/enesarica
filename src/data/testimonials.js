@@ -25,9 +25,9 @@ const testimonials = [
     name: 'İsmail Akcaalan',
     treatment: 'GTOS Terapi',
     treatmentArea: 'GTOS Terapi',
-    text: 'GTOS terapi ile boyun ağrılarım geçti. İğnesiz ve ilaçsız bir yöntem olması beni çok rahatlattı. Enes Bey\'in uzmanlığı ve güler yüzü tedavi sürecini çok kolaylaştırdı.',
+    text: 'GTOS terapi ile boyun ağrılarım geçti. İğnesiz ve ilaçsız bir yöntem olması beni çok rahatlattı. Enes Bey\'in deneyimi ve güler yüzü tedavi sürecini çok kolaylaştırdı.',
     quote:
-      'GTOS terapi ile boyun ağrılarım geçti. İğnesiz ve ilaçsız bir yöntem olması beni çok rahatlattı. Enes Bey\'in uzmanlığı ve güler yüzü tedavi sürecini çok kolaylaştırdı.',
+      'GTOS terapi ile boyun ağrılarım geçti. İğnesiz ve ilaçsız bir yöntem olması beni çok rahatlattı. Enes Bey\'in deneyimi ve güler yüzü tedavi sürecini çok kolaylaştırdı.',
     rating: 5,
     branch: 'Yalova Çiftlikköy',
     featured: true,

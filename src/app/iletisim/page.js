@@ -137,7 +137,7 @@ export default function IletisimPage() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                    Şube Seçin
+                    İletişim Konusu Seçin
                   </label>
                   <BranchSelect
                     branches={branches}
@@ -187,7 +187,7 @@ export default function IletisimPage() {
               viewport={{ once: true, margin: "-100px" }}
             >
               <p className="text-sage-600 text-sm font-medium tracking-widest uppercase mb-4">
-                Şubelerimiz
+                İletişim Bilgileri
               </p>
               <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-8">
                 Lokasyonlar

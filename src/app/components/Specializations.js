@@ -20,7 +20,7 @@ export default function Specializations() {
               viewport={{ once: true, margin: "-80px" }}
               className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
             >
-              Uzmanlık Alanları
+              Deneyim Alanları
             </motion.p>
             <motion.h2
               initial={{ opacity: 0, y: 25 }}
