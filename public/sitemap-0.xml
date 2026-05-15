@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://www.fizyoterapistenesarica.com/sss</loc><lastmod>2026-04-15T23:26:58.559Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.fizyoterapistenesarica.com</loc><lastmod>2026-04-15T23:26:58.560Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
-<url><loc>https://www.fizyoterapistenesarica.com/hasta-deneyimleri</loc><lastmod>2026-04-15T23:26:58.560Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.fizyoterapistenesarica.com/blog</loc><lastmod>2026-04-15T23:26:58.560Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.fizyoterapistenesarica.com/gizlilik-politikasi</loc><lastmod>2026-04-15T23:26:58.560Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.fizyoterapistenesarica.com/iletisim</loc><lastmod>2026-04-15T23:26:58.560Z</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>https://www.fizyoterapistenesarica.com/kvkk</loc><lastmod>2026-04-15T23:26:58.560Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.fizyoterapistenesarica.com/gizlilik-politikasi</loc><lastmod>2026-05-15T09:46:20.909Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.fizyoterapistenesarica.com/kvkk</loc><lastmod>2026-05-15T09:46:20.910Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.fizyoterapistenesarica.com/sss</loc><lastmod>2026-05-15T09:46:20.910Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.fizyoterapistenesarica.com/hakkimda</loc><lastmod>2026-05-15T09:46:20.910Z</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>https://www.fizyoterapistenesarica.com/blog</loc><lastmod>2026-05-15T09:46:20.910Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.fizyoterapistenesarica.com/iletisim</loc><lastmod>2026-05-15T09:46:20.910Z</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
 <url><loc>https://www.fizyoterapistenesarica.com/blog/40-yas-ustu-omurga-sagligi</loc><lastmod>2026-03-18T00:00:00.000Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://www.fizyoterapistenesarica.com/blog/ameliyatsiz-tedavi-yontemleri</loc><lastmod>2026-03-18T00:00:00.000Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://www.fizyoterapistenesarica.com/blog/asil-tendonu-yaralanmasi</loc><lastmod>2026-03-18T00:00:00.000Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -34,5 +33,6 @@
 <url><loc>https://www.fizyoterapistenesarica.com/blog/sporcular-icin-yaralanma-onleme</loc><lastmod>2026-03-18T00:00:00.000Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://www.fizyoterapistenesarica.com/blog/trigger-point-tedavisi</loc><lastmod>2026-03-18T00:00:00.000Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://www.fizyoterapistenesarica.com/blog/yalova-fizyoterapi-rehberi</loc><lastmod>2026-04-02T00:00:00.000Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.fizyoterapistenesarica.com/hakkimda</loc><lastmod>2026-04-15T23:26:58.566Z</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>https://www.fizyoterapistenesarica.com/hasta-deneyimleri</loc><lastmod>2026-05-15T09:46:20.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.fizyoterapistenesarica.com</loc><lastmod>2026-05-15T09:46:20.916Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
 </urlset>
