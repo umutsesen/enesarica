@@ -12,17 +12,6 @@ export const metadata = {
     url: "https://www.fizyoterapistenesarica.com/tedavi-alanlari",
     images: [{ url: "https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp", width: 2048, height: 1368, alt: "Fzt. Enes Arıca - Tedavi Alanları" }],
   },
-  robots: {
-    index: false,
-    follow: true,
-    googleBot: {
-      index: false,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
 };
 
 export default function TedaviAlanlariLayout({ children }) {

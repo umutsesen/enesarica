@@ -14,7 +14,7 @@ const quickLinks = [
   { name: "Hakkımda", href: "/hakkimda" },
   { name: "Tedavi Alanları", href: "/tedavi-alanlari" },
   { name: "Blog", href: "/blog" },
-  { name: "Hasta Deneyimleri", href: "/hasta-deneyimleri" },
+  { name: "Deneyiminizi Paylaşın", href: "/hasta-deneyimleri" },
   { name: "İletişim", href: "/iletisim" },
 ];
 
@@ -37,7 +37,7 @@ export default function Footer() {
                 />
               </Link>
               <p className="mt-4 text-gray-400 leading-relaxed max-w-lg">
-                Fizyoterapist Enes Arıca, bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates alanlarında 10 yılı aşkın deneyimle ameliyatsız tedavi hizmeti sunmaktadır. Yalova Merkez, Yalova Çiftlikköy, İstanbul Bahçelievler ve İzmir Alsancak iletişim kanallarında hastalarına kişiye özel tedavi programları uygulayarak kişiye özel planlamalar sağlamaktadır.
+                Fizyoterapist Enes Arıca, bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates alanlarında 10 yılı aşkın deneyimle ameliyatsız tedavi hizmeti sunmaktadır. Yalova Merkez, Yalova Çiftlikköy, İstanbul Bahçelievler ve İzmir Alsancak iletişim kanallarında hastalarına kişiye özel tedavi programları uygulamaktadır.
               </p>
             </div>
             <div className="lg:text-right">
@@ -170,15 +170,20 @@ export default function Footer() {
             <span className="mx-2 opacity-30">|</span>
             <a href="https://denklabs.com" target="_blank" rel="noopener noreferrer" className="hover:text-sage-400 transition-colors">Made by DenkLabs</a>
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
             <Link href="/kvkk" className="hover:text-sage-400 transition-colors">KVKK Aydınlatma</Link>
             <span>&middot;</span>
             <Link href="/gizlilik-politikasi" className="hover:text-sage-400 transition-colors">Gizlilik Politikası</Link>
+            <span>&middot;</span>
+            <Link href="/cerez-politikasi" className="hover:text-sage-400 transition-colors">Çerez Politikası</Link>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-5">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-5 space-y-2">
           <p className="text-[11px] text-gray-600 text-center">
             Bu web sitesindeki bilgiler genel bilgilendirme amaçlıdır ve tıbbi teşhis veya tedavi yerine geçmez. Tedavi kararları için mutlaka fizyoterapiste danışınız.
+          </p>
+          <p className="text-[11px] text-gray-600 text-center">
+            İçerik sorumlusu / Veri sorumlusu: Fzt. Enes Arıca &middot; fizyones77@gmail.com &middot; +90 554 662 12 45 &middot; Son güncelleme: 29 Mayıs 2026
           </p>
         </div>
       </div>

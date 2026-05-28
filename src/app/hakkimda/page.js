@@ -12,9 +12,9 @@ const timeline = [
   { year: "2016", title: "Manuel Terapi Sertifikası", desc: "Ortopedik manuel terapi eğitim programı" },
   { year: "2017", title: "GTOS Terapi Sertifikası", desc: "Golgi Tendon Organ Stimülasyonu deneyim eğitimi" },
   { year: "2019", title: "Schroth Metodu Sertifikası", desc: "Skolyoz tedavisinde Schroth metodu ileri düzey eğitimi" },
-  { year: "2020", title: "İstanbul İletişimsi", desc: "İstanbul Bahçelievler iletişim noktasının açılışı" },
-  { year: "2022", title: "İzmir İletişimsi", desc: "İzmir Alsancak iletişim noktasının açılışı" },
-  { year: "2023", title: "Çiftlikköy İletişimsi", desc: "Yalova Çiftlikköy iletişim noktasının açılışı" },
+  { year: "2020", title: "İstanbul İletişim Noktası", desc: "İstanbul Bahçelievler iletişim noktasının açılışı" },
+  { year: "2022", title: "İzmir İletişim Noktası", desc: "İzmir Alsancak iletişim noktasının açılışı" },
+  { year: "2023", title: "Çiftlikköy İletişim Noktası", desc: "Yalova Çiftlikköy iletişim noktasının açılışı" },
 ];
 
 const certifications = [
