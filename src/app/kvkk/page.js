@@ -71,8 +71,8 @@ export default function KVKKPage() {
         <ul>
           <li>Yasal zorunluluk halinde yetkili kamu kurum ve kuruluslari</li>
           <li>
-            Web sitesi altyapisi icin kullanilan hosting ve analitik hizmet
-            saglayicilari (Microsoft Clarity)
+            Web sitesi altyapisi icin kullanilan hosting hizmet saglayicilari
+            (Vercel)
           </li>
         </ul>
         <p>
@@ -86,7 +86,7 @@ export default function KVKKPage() {
           <li>fizyoterapistenesarica.com uzerindeki iletisim ve randevu formlari</li>
           <li>WhatsApp ve telefon araciligiyla iletisim</li>
           <li>Klinige yuz yuze basvuru</li>
-          <li>Cerezler ve analitik araclar (Microsoft Clarity)</li>
+          <li>Sitenin calismasi icin gerekli zorunlu cerezler</li>
         </ul>
         <p>
           Hukuki sebepler: Acik riza (KVKK m.5/1), sozlesmenin ifasi (KVKK
@@ -150,7 +150,7 @@ export default function KVKKPage() {
         </p>
 
         <p className="text-sm text-gray-400 mt-12">
-          Son guncelleme: Nisan 2026
+          Son guncelleme: 29 Mayis 2026
         </p>
       </div>
     </section>

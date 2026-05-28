@@ -6,7 +6,7 @@ const branches = [
     phone: '+905546621245',
     whatsapp: '905546621245',
     mapUrl:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.123456789!2d29.2697809!3d40.6562957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDM5JzIyLjciTiAyOcKwMTYnMTEuMiJF!5e0!3m2!1str!2str!4v1234567890',
+      'https://www.google.com/maps/search/?api=1&query=40.6562957,29.2697809',
     coordinates: { lat: 40.6562957, lng: 29.2697809 },
   },
   {
@@ -16,7 +16,7 @@ const branches = [
     phone: '+905318893236',
     whatsapp: '905318893236',
     mapUrl:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.123456789!2d29.3240432!3d40.6609368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDM5JzM5LjQiTiAyOcKwMTknMjYuNiJF!5e0!3m2!1str!2str!4v1234567890',
+      'https://www.google.com/maps/search/?api=1&query=40.6609368,29.3240432',
     coordinates: { lat: 40.6609368, lng: 29.3240432 },
   },
   {
@@ -26,7 +26,7 @@ const branches = [
     phone: '+905514808474',
     whatsapp: '905514808474',
     mapUrl:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.123456789!2d27.0564492!3d38.3994223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDIzJzU3LjkiTiAyN8KwMDMnMjMuMiJF!5e0!3m2!1str!2str!4v1234567890',
+      'https://www.google.com/maps/search/?api=1&query=38.3994223,27.0564492',
     coordinates: { lat: 38.3994223, lng: 27.0564492 },
   },
   {
@@ -36,7 +36,7 @@ const branches = [
     phone: '+905386751491',
     whatsapp: '905386751491',
     mapUrl:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.123456789!2d28.8682755!3d41.0011268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzA0LjEiTiAyOMKwNTInMDUuOCJF!5e0!3m2!1str!2str!4v1234567890',
+      'https://www.google.com/maps/search/?api=1&query=41.0011268,28.8682755',
     coordinates: { lat: 41.0011268, lng: 28.8682755 },
   },
 ];

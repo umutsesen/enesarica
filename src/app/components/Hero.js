@@ -101,16 +101,6 @@ export default function Hero() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.8, ease }}
-              >
-                <span className="text-3xl md:text-4xl font-bold text-white">
-                  <Counter target="5000" suffix="+" />
-                </span>
-                <p className="text-sm text-gray-500 mt-1">Tedavi Edilen Hasta</p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.9, ease }}
               >
                 <span className="text-3xl md:text-4xl font-bold text-white">

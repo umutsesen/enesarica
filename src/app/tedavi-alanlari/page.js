@@ -135,7 +135,7 @@ export default function TedaviAlanlariPage() {
               <span className="text-4xl font-bold text-forest-900">
                 <Counter target="17" />
               </span>
-              <p className="text-sm text-gray-500 mt-1">Tedavi Alani</p>
+              <p className="text-sm text-gray-500 mt-1">Tedavi Alanı</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -143,19 +143,9 @@ export default function TedaviAlanlariPage() {
               transition={{ duration: 0.5, delay: 0.6, ease }}
             >
               <span className="text-4xl font-bold text-forest-900">
-                <Counter target="5000" suffix="+" />
+                <Counter target="10" suffix="+" />
               </span>
-              <p className="text-sm text-gray-500 mt-1">Tedavi Edilen Hasta</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.7, ease }}
-            >
-              <span className="text-4xl font-bold text-forest-900">
-                %<Counter target="90" />
-              </span>
-              <p className="text-sm text-gray-500 mt-1">Ameliyatsiz Basari</p>
+              <p className="text-sm text-gray-500 mt-1">Yıl Deneyim</p>
             </motion.div>
           </motion.div>
         </div>

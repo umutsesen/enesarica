@@ -59,7 +59,7 @@ export default function AboutPreview() {
               viewport={{ once: true, margin: "-100px" }}
               className="text-gray-600 leading-relaxed mb-6"
             >
-              10 yılı aşkın klinik deneyimimle bel fıtığı, boyun fıtığı, skolyoz ve GTOS terapi alanlarında binlerce hastaya hizmet verdim. Tedavi yaklaşımımda manuel terapi teknikleri ile kişiye özel egzersiz programlarını bir arada kullanarak sürdürülebilir sonuçlar elde etmeyi hedefliyorum.
+              10 yılı aşkın klinik deneyimimle bel fıtığı, boyun fıtığı, skolyoz ve GTOS terapi alanlarında hizmet veriyorum. Tedavi yaklaşımımda manuel terapi teknikleri ile kişiye özel egzersiz programlarını bir arada kullanarak sürdürülebilir sonuçlar elde etmeyi hedefliyorum.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}

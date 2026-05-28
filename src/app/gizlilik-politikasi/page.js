@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Gizlilik Politikasi | Fzt. Enes Arica',
   description:
-    'fizyoterapistenesarica.com gizlilik politikasi. Cerez kullanimi, form verileri ve analytics bilgileri.',
+    'fizyoterapistenesarica.com gizlilik politikasi. Cerez kullanimi ve form verileri hakkinda bilgilendirme.',
   alternates: { canonical: 'https://www.fizyoterapistenesarica.com/gizlilik-politikasi' },
 };
 
@@ -21,9 +21,9 @@ export default function GizlilikPolitikasiPage() {
 
         <h2>1. Cerez Politikasi</h2>
         <p>
-          Web sitemizde kullanici deneyimini iyilestirmek ve site performansini
-          analiz etmek amaciyla cerezler kullanilmaktadir. Kullanilan cerez
-          turleri:
+          Web sitemizde yalnizca sitenin teknik olarak duzgun calismasi icin
+          gerekli olan zorunlu cerezler kullanilmaktadir. Pazarlama veya analiz
+          amacli onaya tabi cerezler kullanilmamaktadir. Kullanilan cerez turleri:
         </p>
         <ul>
           <li>
@@ -34,6 +34,8 @@ export default function GizlilikPolitikasiPage() {
         <p>
           Tarayici ayarlariniz uzerinden cerezleri devre disi birakabilirsiniz.
           Ancak bu durumda web sitesinin bazi ozellikleri duzenli calismayabilir.
+          Detayli bilgi icin <a href="/cerez-politikasi">Cerez Politikasi</a>{' '}
+          sayfamizi inceleyebilirsiniz.
         </p>
 
         <h2>2. Form Verileri</h2>
@@ -104,7 +106,7 @@ export default function GizlilikPolitikasiPage() {
         </p>
 
         <p className="text-sm text-gray-400 mt-12">
-          Son guncelleme: Nisan 2026
+          Son guncelleme: 29 Mayis 2026
         </p>
       </div>
     </section>

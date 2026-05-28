@@ -1,16 +1,16 @@
 export const metadata = {
-  title: "Hasta Deneyimleri | Fzt. Enes Arıca",
+  title: "Deneyiminizi Paylaşın | Fzt. Enes Arıca",
   description:
-    "Hastalarımızın tedavi deneyimleri ve geri bildirimleri. Tedavi süreçleriyle hayat kalitelerini artıran hastaların hikayeleri.",
+    "Tedavi sürecinizle ilgili görüşlerinizi Google üzerinden değerlendirerek paylaşabilirsiniz.",
   alternates: {
     canonical: "https://www.fizyoterapistenesarica.com/hasta-deneyimleri",
   },
   openGraph: {
-    title: "Hasta Deneyimleri | Fzt. Enes Arıca",
+    title: "Deneyiminizi Paylaşın | Fzt. Enes Arıca",
     description:
-      "Hastalarımızın tedavi deneyimleri ve geri bildirimleri.",
+      "Tedavi sürecinizle ilgili görüşlerinizi Google üzerinden değerlendirebilirsiniz.",
     url: "https://www.fizyoterapistenesarica.com/hasta-deneyimleri",
-    images: [{ url: "https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp", width: 2048, height: 1368, alt: "Fzt. Enes Arıca - Hasta Deneyimleri" }],
+    images: [{ url: "https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp", width: 2048, height: 1368, alt: "Fzt. Enes Arıca" }],
   },
 };
 
