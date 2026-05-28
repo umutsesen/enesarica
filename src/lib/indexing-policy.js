@@ -13,7 +13,7 @@ export function shouldIndexBlogSlug() {
 }
 
 export function shouldIndexTreatmentSlug() {
-  return false;
+  return true;
 }
 
 export function getRobotsForPath(pathname) {
