@@ -32,7 +32,7 @@ export default function KVKKPage() {
 
         <h2>2. Islenen Kisisel Veriler</h2>
         <p>
-          Web sitemiz ve kliniklerimiz araciligiyla asagidaki kisisel veriler
+          Web sitemiz ve iletişim noktalarımız araciligiyla asagidaki kisisel veriler
           islenmektedir:
         </p>
         <ul>

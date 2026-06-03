@@ -89,7 +89,7 @@ const videos = [
   },
   {
     id: "ABRLO8FIdMk",
-    title: "Kliniğimizden Görüntüler",
+    title: "Merkezimizden Görüntüler",
     url: "https://youtu.be/ABRLO8FIdMk",
   },
   {

@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getBlogPost, getAllBlogPosts, compileContent } from "@/lib/mdx";
-import { sanitizeClinicReferencesInHtml } from "@/lib/content-sanitizers";
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString("tr-TR", {
@@ -54,7 +53,7 @@ export default async function BlogPostPage({ params }) {
     notFound();
   }
 
-  const html = sanitizeClinicReferencesInHtml(await compileContent(post.content));
+  const html = await compileContent(post.content);
 
   const allPosts = getAllBlogPosts();
   const currentTags = new Set((post.tags || []).map((t) => t.toLowerCase()));

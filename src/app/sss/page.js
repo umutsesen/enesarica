@@ -76,7 +76,7 @@ const faqData = [
       },
       {
         q: 'Çalışma saatleriniz nedir?',
-        a: 'Kliniklerimiz Pazartesi-Cumartesi günleri 09:00-22:00 saatleri arasında hizmet vermektedir. Randevu saatleri iletişim kanalına göre değişiklik gösterebilir; iletişime geçerek uygun saatleri öğrenebilirsiniz.',
+        a: 'İletişim noktalarımız Pazartesi-Cumartesi günleri 09:00-22:00 saatleri arasında hizmet vermektedir. Randevu saatleri iletişim kanalına göre değişiklik gösterebilir; iletişime geçerek uygun saatleri öğrenebilirsiniz.',
       },
       {
         q: 'İlk seansta ne yapılır?',
@@ -89,7 +89,7 @@ const faqData = [
     questions: [
       {
         q: 'Fizyoterapi seansları SGK kapsamında mı?',
-        a: 'Kliniğimizde özel sağlık sigortası ve bireysel ödeme ile hizmet verilmektedir. SGK anlaşmamız bulunmamaktadır. Detaylı fiyat bilgisi için bizimle iletişime geçebilirsiniz.',
+        a: 'Tarafımızca özel sağlık sigortası ve bireysel ödeme ile hizmet verilmektedir. SGK anlaşmamız bulunmamaktadır. Detaylı fiyat bilgisi için bizimle iletişime geçebilirsiniz.',
       },
       {
         q: 'Özel sağlık sigortası geçerli mi?',

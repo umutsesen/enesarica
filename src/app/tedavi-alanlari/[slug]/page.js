@@ -3,7 +3,6 @@ import Link from "next/link";
 import { getTreatmentPost, getAllTreatmentPosts, compileContent } from "@/lib/mdx";
 import treatments from "@/data/treatments";
 import { getRobotsForPath } from "@/lib/indexing-policy";
-import { sanitizeClinicReferencesInHtml } from "@/lib/content-sanitizers";
 
 export async function generateStaticParams() {
   return getAllTreatmentPosts().map((post) => ({ slug: post.slug }));
@@ -38,7 +37,7 @@ export default async function TreatmentPage({ params }) {
     notFound();
   }
 
-  const htmlContent = sanitizeClinicReferencesInHtml(await compileContent(post.content));
+  const htmlContent = await compileContent(post.content);
   const currentTreatment = treatments.find((t) => t.slug === slug);
   const relatedSlugs = currentTreatment?.relatedTreatments || [];
   const related = relatedSlugs.length > 0
