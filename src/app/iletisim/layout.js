@@ -1,7 +1,7 @@
 export const metadata = {
   title: "İletişim ve Randevu | Fzt. Enes Arıca",
   description:
-    "Fzt. Enes Arıca ile iletişime geçin ve randevu alın. Yalova, İstanbul ve İzmir iletişim kanallarımız üzerinden size en uygun lokasyonu seçin.",
+    "Fzt. Enes Arıca ile iletişime geçin ve randevu alın. Yalova'daki iletişim kanallarımız üzerinden bize ulaşın.",
   alternates: {
     canonical: "https://www.fizyoterapistenesarica.com/iletisim",
   },

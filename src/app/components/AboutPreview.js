@@ -76,7 +76,7 @@ export default function AboutPreview() {
               >
                 Yalova Fizyoterapi
               </a>{' '}
-              olarak Yalova, İstanbul ve İzmir&apos;deki iletişim kanalları üzerinden modern ekipmanlar ve güncel tedavi protokolleri ile hastalarımıza özenli hizmeti sunuyoruz.
+              olarak Yalova&apos;daki iletişim kanalları üzerinden modern ekipmanlar ve güncel tedavi protokolleri ile hastalarımıza özenli hizmeti sunuyoruz.
             </motion.p>
             <motion.ul
               initial={{ opacity: 0 }}

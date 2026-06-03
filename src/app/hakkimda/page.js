@@ -12,8 +12,6 @@ const timeline = [
   { year: "2016", title: "Manuel Terapi Sertifikası", desc: "Ortopedik manuel terapi eğitim programı" },
   { year: "2017", title: "GTOS Terapi Sertifikası", desc: "Golgi Tendon Organ Stimülasyonu deneyim eğitimi" },
   { year: "2019", title: "Schroth Metodu Sertifikası", desc: "Skolyoz tedavisinde Schroth metodu ileri düzey eğitimi" },
-  { year: "2020", title: "İstanbul İletişim Noktası", desc: "İstanbul Bahçelievler iletişim noktasının açılışı" },
-  { year: "2022", title: "İzmir İletişim Noktası", desc: "İzmir Alsancak iletişim noktasının açılışı" },
   { year: "2023", title: "Çiftlikköy İletişim Noktası", desc: "Yalova Çiftlikköy iletişim noktasının açılışı" },
 ];
 
@@ -108,7 +106,7 @@ export default function HakkimdaPage() {
                 className="space-y-6 text-gray-600 leading-relaxed"
               >
                 <p>
-                  Medipol Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü mezunuyum. Mezuniyetimin ardından fizyoterapi alanındaki tutkumu Yalova Fizyoterapi'yi kurarak sürdürdüm. Bugün Yalova Merkez, Yalova Çiftlikköy, İstanbul Bahçelievler ve İzmir Alsancak olmak üzere iletişim kanallarımız üzerinden hastalarıma hizmet vermenin gururunu yaşıyorum.
+                  Medipol Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü mezunuyum. Mezuniyetimin ardından fizyoterapi alanındaki tutkumu Yalova Fizyoterapi'yi kurarak sürdürdüm. Bugün Yalova Merkez ve Yalova Çiftlikköy iletişim kanallarımız üzerinden hastalarıma hizmet vermenin gururunu yaşıyorum.
                 </p>
                 <p>
                   Kariyer yolculuğumda GTOS (Golgi Tendon Organ Stimülasyonu) terapi, skolyoz tedavisinde Schroth metodu ve ortopedik manuel terapi alanlarında ileri düzey eğitimler aldım. Bu deneyim alanları sayesinde özellikle bel fıtığı, boyun fıtığı, skolyoz ve kronik ağrı sendromlarında ameliyatsız, iğnesiz ve ilaçsız tedavi yöntemleri sunabiliyorum.

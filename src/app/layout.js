@@ -12,9 +12,9 @@ const inter = Inter({
 
 export const metadata = {
   metadataBase: new URL('https://www.fizyoterapistenesarica.com'),
-  title: 'Fizyoterapist Enes Arıca | Yalova, İstanbul, İzmir',
+  title: 'Fizyoterapist Enes Arıca | Yalova',
   description:
-    'Fizyoterapist Enes Arıca ile bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates tedavisi. Yalova, İstanbul ve İzmir\'de hizmetinizdeyiz.',
+    'Fizyoterapist Enes Arıca ile bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates tedavisi. Yalova\'da hizmetinizdeyiz.',
   keywords: [
     'fizyoterapist',
     'enes arıca',
@@ -26,11 +26,9 @@ export const metadata = {
     'klinik pilates',
     'reformer pilates',
     'fizyoterapi yalova',
-    'fizyoterapi istanbul',
-    'fizyoterapi izmir',
   ],
   openGraph: {
-    title: 'Fizyoterapist Enes Arıca | Yalova, İstanbul, İzmir',
+    title: 'Fizyoterapist Enes Arıca | Yalova',
     description:
       'Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates tedavisi.',
     url: 'https://www.fizyoterapistenesarica.com',

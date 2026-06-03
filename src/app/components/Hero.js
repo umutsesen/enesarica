@@ -73,7 +73,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.3, ease }}
               className="text-gray-400 text-lg max-w-md mb-8 leading-relaxed"
             >
-              Bel fıtığı, boyun fıtığı, skolyoz ve GTOS terapi tedavilerinde ameliyatsız, kişiye özel çözümler. Yalova, İstanbul ve İzmir&apos;de iletişim kanallarımız üzerinden hizmetinizdeyiz.
+              Bel fıtığı, boyun fıtığı, skolyoz ve GTOS terapi tedavilerinde ameliyatsız, kişiye özel çözümler. Yalova&apos;da iletişim kanallarımız üzerinden hizmetinizdeyiz.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

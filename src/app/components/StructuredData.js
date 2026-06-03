@@ -39,7 +39,7 @@ export function StructuredData() {
     logo: logoImage,
     description:
       'Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında deneyimli.',
-    areaServed: ['Yalova', 'İzmir', 'İstanbul'],
+    areaServed: ['Yalova'],
     sameAs: [siteUrl, ...socialProfiles],
     knowsAbout: [
       'Bel Fıtığı Tedavisi',

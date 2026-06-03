@@ -72,7 +72,7 @@ const faqData = [
       },
       {
         q: 'Hangi şehirlerde hizmet veriyorsunuz?',
-        a: 'Yalova Merkez, Yalova Çiftlikköy, İzmir Alsancak ve İstanbul Bahçelievler olmak üzere iletişim kanallarımız üzerinden fizyoterapi ve rehabilitasyon hizmeti sunuyoruz.',
+        a: 'Yalova Merkez ve Yalova Çiftlikköy olmak üzere iletişim kanallarımız üzerinden fizyoterapi ve rehabilitasyon hizmeti sunuyoruz.',
       },
       {
         q: 'Çalışma saatleriniz nedir?',
