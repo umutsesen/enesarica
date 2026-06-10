@@ -71,12 +71,12 @@ const faqData = [
         a: 'Web sitemizdeki iletişim formunu doldurarak, +90 554 662 12 45 numarasını arayarak veya WhatsApp üzerinden mesaj göndererek randevu alabilirsiniz.',
       },
       {
-        q: 'Hangi şehirlerde hizmet veriyorsunuz?',
-        a: 'Yalova Merkez ve Yalova Çiftlikköy olmak üzere iletişim kanallarımız üzerinden fizyoterapi ve rehabilitasyon hizmeti sunuyoruz.',
+        q: 'Nerede hizmet veriyorsunuz?',
+        a: 'Yalova Merkez\'deki iletişim noktam üzerinden fizyoterapi ve rehabilitasyon hizmeti sunuyorum.',
       },
       {
         q: 'Çalışma saatleriniz nedir?',
-        a: 'İletişim noktalarımız Pazartesi-Cumartesi günleri 09:00-22:00 saatleri arasında hizmet vermektedir. Randevu saatleri iletişim kanalına göre değişiklik gösterebilir; iletişime geçerek uygun saatleri öğrenebilirsiniz.',
+        a: 'İletişim noktam Pazartesi-Cumartesi günleri 09:00-22:00 saatleri arasında hizmet vermektedir. Uygun randevu saatleri için iletişime geçebilirsiniz.',
       },
       {
         q: 'İlk seansta ne yapılır?',

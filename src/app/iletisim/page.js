@@ -190,7 +190,7 @@ export default function IletisimPage() {
                 İletişim Bilgileri
               </p>
               <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-8">
-                Lokasyonlar
+                Lokasyon
               </h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
                 {branches.map((b, i) => (
