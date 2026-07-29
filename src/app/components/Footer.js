@@ -14,7 +14,6 @@ const quickLinks = [
   { name: "Hakkımda", href: "/hakkimda" },
   { name: "Tedavi Alanları", href: "/tedavi-alanlari" },
   { name: "Blog", href: "/blog" },
-  { name: "Deneyiminizi Paylaşın", href: "/hasta-deneyimleri" },
   { name: "İletişim", href: "/iletisim" },
 ];
 
@@ -105,9 +104,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Deneyimli İçeriği */}
+          {/* Uzmanlık İçeriği */}
           <div>
-            <h3 className="text-white text-sm font-semibold mb-4">Deneyimli İçeriği</h3>
+            <h3 className="text-white text-sm font-semibold mb-4">Uzmanlık İçeriği</h3>
             <ul className="space-y-2.5 text-sm">
               <li>Omurga sağlığı ve ağrı yönetimi</li>
               <li>Schroth ve skolyoz egzersiz yaklaşımı</li>

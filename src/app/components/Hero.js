@@ -65,7 +65,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.15, ease }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-[1.1]"
             >
-              Kronik Ağrı ve Spor Yaralanmalarında Deneyimli Tedavi
+              Kronik Ağrı ve Spor Yaralanmalarında Fizyoterapi
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -107,16 +107,6 @@ export default function Hero() {
                   <Counter target="10" suffix="+" />
                 </span>
                 <p className="text-sm text-gray-500 mt-1">Yıl Deneyim</p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 1.0, ease }}
-              >
-                <span className="text-3xl md:text-4xl font-bold text-white">
-                  <Counter target="4" />
-                </span>
-                <p className="text-sm text-gray-500 mt-1">İletişim</p>
               </motion.div>
             </motion.div>
           </div>

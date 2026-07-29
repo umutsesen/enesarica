@@ -54,7 +54,6 @@ fizyoterapistenesarica.com blogu, 23 Türkçe medikal makale içermektedir. Maka
 - /blog: Blog yazıları (23 makale)
 - /blog/[slug]: Her blog yazısı (800-1500 kelime, SSS bölümü)
 - /iletisim: İletişim formu ve randevu
-- /hasta-deneyimleri: Hasta yorumları
 
 ## İlişkili Siteler
 

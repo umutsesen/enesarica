@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaPhone, FaMapMarkerAlt, FaExternalLinkAlt } from "react-icons/fa";
+import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import branches from "@/data/branches";
 import BranchSelect from "../components/BranchSelect";
 
@@ -219,15 +219,6 @@ export default function IletisimPage() {
                           {b.phone}
                         </a>
                       </p>
-                      <a
-                        href={b.mapUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-sm text-sage-600 hover:text-sage-700 transition-colors mt-2"
-                      >
-                        <FaExternalLinkAlt className="w-3 h-3" />
-                        Haritada Gör
-                      </a>
                     </div>
                   </motion.div>
                 ))}
