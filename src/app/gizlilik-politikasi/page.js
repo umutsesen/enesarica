@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Gizlilik Politikasi | Fzt. Enes Arica',
+  title: 'Gizlilik Politikasi | Fzt. Enes Arıca',
   description:
     'fizyoterapistenesarica.com gizlilik politikasi. Cerez kullanimi ve form verileri hakkinda bilgilendirme.',
   alternates: { canonical: 'https://www.fizyoterapistenesarica.com/gizlilik-politikasi' },
@@ -7,9 +7,9 @@ export const metadata = {
 
 export default function GizlilikPolitikasiPage() {
   return (
-    <section className="bg-warm-50 py-24">
+    <section className="bg-sand-50 py-24">
       <div className="max-w-3xl mx-auto px-6 prose">
-        <h1 className="text-3xl md:text-4xl font-semibold text-navy-900 mb-8 tracking-tight">
+        <h1 className="text-3xl md:text-4xl font-semibold text-forest-900 mb-8 tracking-tight">
           Gizlilik Politikasi
         </h1>
 

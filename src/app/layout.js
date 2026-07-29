@@ -15,18 +15,6 @@ export const metadata = {
   title: 'Fizyoterapist Enes Arıca | Yalova',
   description:
     'Fizyoterapist Enes Arıca ile bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates tedavisi. Yalova\'da hizmetinizdeyiz.',
-  keywords: [
-    'fizyoterapist',
-    'enes arıca',
-    'bel fıtığı tedavisi',
-    'boyun fıtığı tedavisi',
-    'skolyoz tedavisi',
-    'GTOS terapi',
-    'manuel terapi',
-    'klinik pilates',
-    'reformer pilates',
-    'fizyoterapi yalova',
-  ],
   openGraph: {
     title: 'Fizyoterapist Enes Arıca | Yalova',
     description:

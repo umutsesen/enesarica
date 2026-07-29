@@ -33,7 +33,7 @@ enesarica/
 │   └── gizlilik-politikasi/   # Privacy policy
 ├── src/data/                  # treatments.js, testimonials.js, branches.js, certifications.js
 ├── content/
-│   ├── blog/                  # 28 MDX blog posts
+│   ├── blog/                  # 27 MDX blog posts
 │   └── tedaviler/             # 17 MDX treatment detail pages
 └── public/
     ├── enesaricalogo.png      # Site logo (Navbar + Footer)
@@ -75,11 +75,10 @@ enesarica/
 ## Hard Rules
 
 - All domain refs: `https://www.fizyoterapistenesarica.com`
-- Social links: instagram.com/fizyones, youtube.com/@fizyones, facebook.com/fizyones
+- Social links: instagram.com/yalovafizyoterapist, youtube.com/@fizyones, facebook.com/fizyones
 - Author: "Fzt. Enes Arıca" (not "Fizyones")
-- Branch names: Yalova Merkez, Yalova Çiftlikköy (NOT Çınarcık), İzmir Alsancak, İstanbul Bahçelievler (NOT Ataşehir)
 - Floating buttons: right side (WhatsApp + Phone), `bottom-4 right-4 sm:bottom-6 sm:right-6`
-- Phone: +90 544 662 12 45 (NOT 554)
+- Phone: +90 554 662 12 45
 - Email: fizyones77@gmail.com
 - Copyright year: dynamic `new Date().getFullYear()`
 - Prose styling in globals.css for MDX content

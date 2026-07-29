@@ -51,7 +51,7 @@ export function StructuredData() {
       'Skolyoz / Schroth Tedavisi',
       'Spor Yaralanmaları Rehabilitasyonu',
     ],
-    address: { '@type': 'PostalAddress', streetAddress: 'Yahyaoğlu iş merkezi, Rüstem Paşa, Cumhuriyet sokak D:48/2', addressLocality: 'Yalova Merkez', addressRegion: 'Yalova', postalCode: '77200', addressCountry: 'TR' },
+    address: { '@type': 'PostalAddress', streetAddress: 'Rüstem Paşa, Hürriyet Sk. Büyükgümüş İş Merkezi D:30/7', addressLocality: 'Yalova Merkez', addressRegion: 'Yalova', postalCode: '77100', addressCountry: 'TR' },
     geo: { '@type': 'GeoCoordinates', latitude: 40.6562957, longitude: 29.2697809 },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',

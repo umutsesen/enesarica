@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'KVKK Aydinlatma Metni | Fzt. Enes Arica',
+  title: 'KVKK Aydinlatma Metni | Fzt. Enes Arıca',
   description:
     '6698 sayili Kisisel Verilerin Korunmasi Kanunu kapsaminda aydinlatma metni.',
   alternates: { canonical: 'https://www.fizyoterapistenesarica.com/kvkk' },
@@ -7,9 +7,9 @@ export const metadata = {
 
 export default function KVKKPage() {
   return (
-    <section className="bg-warm-50 py-24">
+    <section className="bg-sand-50 py-24">
       <div className="max-w-3xl mx-auto px-6 prose">
-        <h1 className="text-3xl md:text-4xl font-semibold text-navy-900 mb-8 tracking-tight">
+        <h1 className="text-3xl md:text-4xl font-semibold text-forest-900 mb-8 tracking-tight">
           KVKK Aydinlatma Metni
         </h1>
 
