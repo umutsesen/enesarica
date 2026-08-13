@@ -1,41 +1,9 @@
 "use client"
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion, useInView } from 'framer-motion'
-import { useRef, useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 
 const ease = [0.25, 0.4, 0.25, 1]
-
-function Counter({ target, suffix = "" }) {
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true })
-  const [count, setCount] = useState(0)
-
-  useEffect(() => {
-    if (!inView) return
-    const num = parseInt(target.replace(/\D/g, ''))
-    const duration = 1600
-    const steps = 40
-    const increment = num / steps
-    let current = 0
-    const timer = setInterval(() => {
-      current += increment
-      if (current >= num) {
-        setCount(num)
-        clearInterval(timer)
-      } else {
-        setCount(Math.floor(current))
-      }
-    }, duration / steps)
-    return () => clearInterval(timer)
-  }, [inView, target])
-
-  return (
-    <span ref={ref}>
-      {count.toLocaleString('tr-TR')}{suffix}
-    </span>
-  )
-}
 
 export default function Hero() {
   return (
@@ -73,7 +41,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.3, ease }}
               className="text-gray-400 text-lg max-w-md mb-8 leading-relaxed"
             >
-              Bel fıtığı, boyun fıtığı, skolyoz ve GTOS terapi tedavilerinde ameliyatsız, kişiye özel çözümler. Yalova&apos;daki iletişim noktam üzerinden hizmetinizdeyiz.
+              Bel fıtığı, boyun fıtığı, skolyoz ve GTOS terapi alanlarında kişiye özel fizyoterapi programları. Yalova&apos;daki iletişim noktam üzerinden bilgi alabilirsiniz.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -89,25 +57,6 @@ export default function Hero() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
                 </svg>
               </Link>
-            </motion.div>
-
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.7, ease }}
-              className="mt-14 pt-10 border-t border-white/10 flex flex-wrap gap-x-10 gap-y-6"
-            >
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.9, ease }}
-              >
-                <span className="text-3xl md:text-4xl font-bold text-white">
-                  <Counter target="10" suffix="+" />
-                </span>
-                <p className="text-sm text-gray-500 mt-1">Yıl Deneyim</p>
-              </motion.div>
             </motion.div>
           </div>
 

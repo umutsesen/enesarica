@@ -8,27 +8,27 @@ const ease = [0.25, 0.4, 0.25, 1];
 
 const timeline = [
   { year: "2014", title: "Lisans Mezuniyeti", desc: "Medipol Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü" },
-  { year: "2015", title: "Kuruluş", desc: "Yalova'da ilk merkezin açılışı" },
-  { year: "2016", title: "Manuel Terapi Sertifikası", desc: "Ortopedik manuel terapi eğitim programı" },
-  { year: "2017", title: "GTOS Terapi Sertifikası", desc: "Golgi Tendon Organ Stimülasyonu deneyim eğitimi" },
-  { year: "2019", title: "Schroth Metodu Sertifikası", desc: "Skolyoz tedavisinde Schroth metodu ileri düzey eğitimi" },
+  { year: "2015", title: "Mesleki Faaliyet", desc: "Yalova'da fizyoterapi uygulamalarına başlangıç" },
+  { year: "2016", title: "Manuel Terapi Eğitimi", desc: "Ortopedik manuel terapi eğitim programı" },
+  { year: "2017", title: "GTOS Terapi Eğitimi", desc: "Golgi Tendon Organ Stimülasyonu eğitim programı" },
+  { year: "2019", title: "Schroth Metodu Eğitimi", desc: "Skolyozda Schroth metodu eğitim programı" },
 ];
 
-const certifications = [
+const practiceAreas = [
   {
     title: "GTOS Terapi",
     subtitle: "Golgi Tendon Organ Stimülasyonu",
-    desc: "Kas-iskelet sistemi sorunlarında ileri düzey GTOS terapi uygulamaları. Kronik ağrı ve fonksiyonel bozukluklarda etkili tedavi yaklaşımı.",
+    desc: "Kas-iskelet sistemi şikayetlerinde uygulanan GTOS terapi yaklaşımı. Uygunluğu ve kapsamı kişiye göre değerlendirilir.",
   },
   {
     title: "Schroth Metodu",
     subtitle: "Skolyoz Spesifik Egzersiz",
-    desc: "Almanya kökenli Schroth metodunda deneyim. Skolyoz hastalarına özel üç boyutlu düzeltici egzersiz programları.",
+    desc: "Almanya kökenli Schroth yaklaşımı çerçevesinde, skolyozda kişiye göre planlanan üç boyutlu egzersiz programları.",
   },
   {
     title: "Manuel Terapi",
     subtitle: "Ortopedik Manuel Terapi",
-    desc: "Eklem mobilizasyonu, manipülasyon ve yumuşak doku teknikleri. Ağrı kontrolü ve hareket açıklığını artırmaya yönelik uygulamalar.",
+    desc: "Eklem mobilizasyonu ve yumuşak doku teknikleri. Ağrı yönetimi ve hareket açıklığına yönelik uygulamalar.",
   },
 ];
 
@@ -108,10 +108,10 @@ export default function HakkimdaPage() {
                   Medipol Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü mezunuyum. Mezuniyetimin ardından fizyoterapi alanındaki tutkumu Yalova Fizyoterapi'yi kurarak sürdürdüm. Bugün Yalova Merkez'deki iletişim noktam üzerinden hastalarıma hizmet vermenin gururunu yaşıyorum.
                 </p>
                 <p>
-                  Kariyer yolculuğumda GTOS (Golgi Tendon Organ Stimülasyonu) terapi, skolyoz tedavisinde Schroth metodu ve ortopedik manuel terapi alanlarında ileri düzey eğitimler aldım. Bu deneyim alanları sayesinde özellikle bel fıtığı, boyun fıtığı, skolyoz ve kronik ağrı sendromlarında ameliyatsız, iğnesiz ve ilaçsız tedavi yöntemleri sunabiliyorum.
+                  Kariyer yolculuğumda GTOS (Golgi Tendon Organ Stimülasyonu) terapi, skolyozda Schroth metodu ve ortopedik manuel terapi alanlarında eğitimler aldım. Bu alanlarda özellikle bel fıtığı, boyun fıtığı, skolyoz ve kronik ağrı şikayetlerinde ameliyatsız, iğnesiz ve ilaçsız fizyoterapi uygulamaları yürütüyorum.
                 </p>
                 <p>
-                  Her hastamın kendine özgü olduğuna inanıyor ve tedavi programlarını kişiye özel olarak tasarlıyorum. Kanıta dayalı tıp prensiplerini modern fizyoterapi teknikleriyle birleştirerek hastalarımın en kısa sürede günlük hayatlarına ve sevdikleri aktivitelere dönmelerini sağlıyorum.
+                  Her hastamın kendine özgü olduğuna inanıyor ve programları kişiye özel olarak planlıyorum. Kanıta dayalı yaklaşımı güncel fizyoterapi teknikleriyle birleştirerek günlük hayata ve sevilen aktivitelere dönüş sürecini desteklemeyi hedefliyorum; süreç ve sonuçlar kişiden kişiye değişir.
                 </p>
               </motion.div>
             </div>
@@ -207,10 +207,10 @@ export default function HakkimdaPage() {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-16"
           >
-            Sertifikalar
+            Eğitim Aldığım Alanlar
           </motion.h2>
           <div className="grid md:grid-cols-3 gap-6">
-            {certifications.map((cert, i) => (
+            {practiceAreas.map((cert, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30, scale: 0.97 }}
@@ -255,7 +255,7 @@ export default function HakkimdaPage() {
                 Tedavide kanıta dayalı yaklaşımı benimsiyor, her hastamı bütüncül bir bakış açısıyla değerlendiriyorum. Ağrının sadece bir semptom olduğuna, asıl nedenin altında yatan fonksiyonel bozukluğun tedavi edilmesi gerektiğine inanıyorum.
               </p>
               <p>
-                Hastalarımla açık iletişim kurarak tedavi sürecini birlikte yönetiyoruz. Her seansta yapılan uygulamaların nedenini açıklıyor, hastalarımın kendi vücutlarını daha iyi anlamalarını sağlıyorum. Bu hasta merkezli yaklaşım, tedavi sürecini hızlandırıyor ve sürdürülebilir sonuçlar elde etmemizi sağlıyor.
+                Hastalarımla açık iletişim kurarak süreci birlikte yönetiyoruz. Her seansta yapılan uygulamaların nedenini açıklıyor, hastalarımın kendi vücutlarını daha iyi anlamalarına katkı sunmayı amaçlıyorum.
               </p>
             </div>
           </motion.div>

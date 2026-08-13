@@ -20,7 +20,7 @@ export function StructuredData() {
     telephone: '+905546621245',
     image: profileImage,
     description:
-      'Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında deneyimli.',
+      'Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında fizyoterapi hizmeti.',
     sameAs: [siteUrl, ...socialProfiles],
     affiliation: {
       '@type': 'Organization',
@@ -38,7 +38,7 @@ export function StructuredData() {
     image: profileImage,
     logo: logoImage,
     description:
-      'Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında deneyimli.',
+      'Fizyoterapist Enes Arıca - Bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik ve reformer pilates alanlarında fizyoterapi hizmeti.',
     areaServed: ['Yalova'],
     sameAs: [siteUrl, ...socialProfiles],
     knowsAbout: [

@@ -104,9 +104,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Uzmanlık İçeriği */}
+          {/* Tedavi Alanları İçeriği */}
           <div>
-            <h3 className="text-white text-sm font-semibold mb-4">Uzmanlık İçeriği</h3>
+            <h3 className="text-white text-sm font-semibold mb-4">Tedavi Alanları</h3>
             <ul className="space-y-2.5 text-sm">
               <li>Omurga sağlığı ve ağrı yönetimi</li>
               <li>Schroth ve skolyoz egzersiz yaklaşımı</li>

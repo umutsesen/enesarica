@@ -6,10 +6,10 @@ import { motion } from 'framer-motion'
 
 const ease = [0.25, 0.4, 0.25, 1]
 
-const certifications = [
-  { name: 'Manuel Terapi Sertifikası' },
-  { name: 'GTOS Terapi Sertifikası' },
-  { name: 'Klinik Pilates Eğitmenliği' },
+const practiceAreas = [
+  { name: 'Manuel Terapi' },
+  { name: 'GTOS Terapi' },
+  { name: 'Klinik Pilates' },
 ]
 
 export default function AboutPreview() {
@@ -59,7 +59,7 @@ export default function AboutPreview() {
               viewport={{ once: true, margin: "-100px" }}
               className="text-gray-600 leading-relaxed mb-6"
             >
-              10 yılı aşkın klinik deneyimimle bel fıtığı, boyun fıtığı, skolyoz ve GTOS terapi alanlarında hizmet veriyorum. Tedavi yaklaşımımda manuel terapi teknikleri ile kişiye özel egzersiz programlarını bir arada kullanarak sürdürülebilir sonuçlar elde etmeyi hedefliyorum.
+              Bel fıtığı, boyun fıtığı, skolyoz ve GTOS terapi alanlarında fizyoterapi hizmeti veriyorum. Yaklaşımımda manuel terapi teknikleri ile kişiye özel egzersiz programlarını bir arada kullanıyorum; program içeriği ve süreç kişiden kişiye değişir.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -76,7 +76,7 @@ export default function AboutPreview() {
               >
                 Yalova Fizyoterapi
               </a>{' '}
-              olarak Yalova&apos;daki iletişim noktası üzerinden modern ekipmanlar ve güncel tedavi protokolleri ile hastalarımıza özenli hizmeti sunuyoruz.
+              olarak Yalova&apos;daki iletişim noktası üzerinden fizyoterapi ve rehabilitasyon hizmeti sunuyoruz.
             </motion.p>
             <motion.ul
               initial={{ opacity: 0 }}
@@ -85,9 +85,9 @@ export default function AboutPreview() {
               viewport={{ once: true, margin: "-100px" }}
               className="space-y-2 mb-10"
             >
-              {certifications.map((cert, i) => (
+              {practiceAreas.map((area, i) => (
                 <motion.li
-                  key={cert.name}
+                  key={area.name}
                   initial={{ opacity: 0, x: -15 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 0.45 + i * 0.08, ease }}
@@ -95,7 +95,7 @@ export default function AboutPreview() {
                   className="flex items-center gap-3 text-sm text-gray-600"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-sage-600 shrink-0" />
-                  {cert.name}
+                  {area.name}
                 </motion.li>
               ))}
             </motion.ul>

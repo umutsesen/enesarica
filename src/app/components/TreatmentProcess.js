@@ -7,8 +7,8 @@ const ease = [0.25, 0.4, 0.25, 1]
 const steps = [
   {
     num: '1',
-    title: 'Değerlendirme ve Tanı',
-    desc: 'Detaylı fiziksel muayene ve anamnez ile durumunuzu değerlendiriyoruz. Gerekli testler ve ölçümlerle doğru tanıya ulaşıyoruz.',
+    title: 'Fonksiyonel Değerlendirme',
+    desc: 'Öykü alma ve fonksiyonel analiz ile mevcut durumunuzu değerlendiriyoruz. Tıbbi tanı hekim tarafından konulur; fizyoterapi programı bu yönlendirme doğrultusunda planlanır.',
   },
   {
     num: '2',
@@ -22,8 +22,8 @@ const steps = [
   },
   {
     num: '4',
-    title: 'Kalıcı İyileşme',
-    desc: 'Ev egzersiz programı ve yaşam tarzı önerileri ile tedavi sonuçlarının kalıcı olmasını sağlıyoruz.',
+    title: 'Ev Programı ve Sürdürülebilirlik',
+    desc: 'Ev egzersiz programı ve günlük yaşam önerileri ile sürecin devamlılığını destekliyoruz. Sonuçlar kişiden kişiye değişir.',
   },
 ]
 

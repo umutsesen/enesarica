@@ -1,43 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { motion, useInView } from "framer-motion";
-import { useRef, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { treatments } from "@/data/treatments";
 
 const ease = [0.25, 0.4, 0.25, 1];
-
-function Counter({ target, suffix = "" }) {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true });
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    if (!inView) return;
-    const num = parseInt(target.replace(/\D/g, ""));
-    const duration = 1400;
-    const steps = 35;
-    const increment = num / steps;
-    let current = 0;
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= num) {
-        setCount(num);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(current));
-      }
-    }, duration / steps);
-    return () => clearInterval(timer);
-  }, [inView, target]);
-
-  return (
-    <span ref={ref}>
-      {count.toLocaleString("tr-TR")}
-      {suffix}
-    </span>
-  );
-}
 
 const categories = [
   {
@@ -120,34 +87,6 @@ export default function TedaviAlanlariPage() {
             </motion.p>
           </div>
 
-          {/* Stats row */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.4, ease }}
-            className="flex flex-wrap gap-12 mt-14 pt-10 border-t border-gray-200"
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5, ease }}
-            >
-              <span className="text-4xl font-bold text-forest-900">
-                <Counter target="17" />
-              </span>
-              <p className="text-sm text-gray-500 mt-1">Tedavi Alanı</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6, ease }}
-            >
-              <span className="text-4xl font-bold text-forest-900">
-                <Counter target="10" suffix="+" />
-              </span>
-              <p className="text-sm text-gray-500 mt-1">Yıl Deneyim</p>
-            </motion.div>
-          </motion.div>
         </div>
       </section>
 

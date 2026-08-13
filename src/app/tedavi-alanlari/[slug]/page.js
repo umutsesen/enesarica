@@ -98,6 +98,17 @@ export default async function TreatmentPage({ params }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             <article className="lg:col-span-2 prose prose-lg max-w-none text-gray-600">
+              {/* Tıbbi bilgilendirme uyarısı */}
+              <aside className="mb-10 rounded-xl border border-gray-200 bg-sand-50 px-5 py-4 not-prose">
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  <strong className="font-semibold text-forest-900">Bilgilendirme:</strong>{' '}
+                  Bu sayfa yalnızca genel bilgilendirme amacıyla hazırlanmıştır; tanı, tedavi veya
+                  yönlendirme yerine geçmez. Şikâyetleriniz için hekiminize başvurunuz. Fizyoterapi
+                  uygulamaları hekim yönlendirmesi doğrultusunda planlanır ve sonuçlar kişiden
+                  kişiye değişir.
+                </p>
+              </aside>
+
               <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
 
               {post.faqItems && post.faqItems.length > 0 && (

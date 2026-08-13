@@ -80,7 +80,7 @@ const faqData = [
       },
       {
         q: 'İlk seansta ne yapılır?',
-        a: 'İlk seansta detaylı bir değerlendirme yapılır. Şikayetleriniz, tıbbi geçmişiniz ve varsa görüntüleme sonuçlarınız incelenir. Fiziksel muayene ile hareket açıklığı, kas kuvveti, postür ve özel testler değerlendirilir. Bulgulara göre bireyselleştirilmiş tedavi planı oluşturulur ve ilk tedavi uygulamalarına başlanır.',
+        a: 'İlk seansta detaylı bir değerlendirme yapılır. Şikayetleriniz, tıbbi geçmişiniz ve varsa görüntüleme sonuçlarınız incelenir. Fonksiyonel değerlendirme ile hareket açıklığı, kas kuvveti, postür ve ilgili testler incelenir. Bulgulara göre bireyselleştirilmiş tedavi planı oluşturulur ve ilk tedavi uygulamalarına başlanır.',
       },
     ],
   },
