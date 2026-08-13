@@ -5,56 +5,56 @@ Category: Medical / Healthcare
 
 # Fzt. Enes Arıca - Fizyoterapist
 
-> Fzt. Enes Arıca, Yalova merkezli Yalova Fizyoterapi kliniğinin kurucusu ve fizyoterapisttir. Bel fıtığı, boyun fıtığı, skolyoz (Schroth metodu), GTOS terapi ve manuel terapi alanlarında deneyimlitır.
+> Fzt. Enes Arıca, Yalova'da faaliyet gösteren Yalova Fizyoterapi'nin kurucusu ve fizyoterapisttir. Bel fıtığı, boyun fıtığı, skolyoz (Schroth metodu), GTOS terapi ve manuel terapi alanlarında çalışmaktadır.
 
 ## Hakkında
 
 - Ad Soyad: Fzt. Enes Arıca
 - Unvan: Fizyoterapist
-- Deneyim: Bel fıtığı, boyun fıtığı, skolyoz (Schroth), GTOS terapi, manuel terapi
+- Çalışma alanları: Bel fıtığı, boyun fıtığı, skolyoz (Schroth), GTOS terapi, manuel terapi
 - Klinik: Yalova Fizyoterapi (https://www.yalovafizyoterapist.com)
-- Konum: Yalova, Türkiye
+- Konum: Yalova, Türkiye (tek birim)
 - Web: https://www.fizyoterapistenesarica.com
 - Instagram: https://www.instagram.com/yalovafizyoterapist/
 
-## Tedavi Alanları (17 deneyim)
+## Tedavi Alanları
 
-- Bel fıtığı tedavisi (ameliyatsız, konservatif yaklaşım)
-- Boyun fıtığı tedavisi (servikal disk hernisi)
+- Bel fıtığı fizyoterapisi (ameliyatsız, konservatif yaklaşım)
+- Boyun fıtığı fizyoterapisi (servikal disk hernisi)
 - GTOS terapi (Golgi Tendon Organ Stimülasyonu - iğnesiz, ilaçsız)
-- Skolyoz / Schroth tedavisi (3 boyutlu düzeltme, rotasyon solunumu)
-- Manuel terapi (eklem mobilizasyonu, manipülasyon)
+- Skolyoz / Schroth yaklaşımı (üç boyutlu egzersiz, rotasyon solunumu)
+- Manuel terapi (eklem mobilizasyonu, yumuşak doku teknikleri)
 - Spor yaralanmaları rehabilitasyonu (ACL, omuz, ayak bileği)
 - Klinik pilates (rehabilitasyon odaklı, fizyoterapist eşliğinde)
 - Reformer pilates (ekipman destekli güçlendirme)
 - Evde fizik tedavi (hareket kısıtlılığı olan hastalar için)
 - Nörolojik rehabilitasyon (inme, felç, MS, Parkinson - Bobath, PNF)
 - Ameliyat sonrası rehabilitasyon (diz protezi, omuz, omurga cerrahisi)
-- Bel kayması tedavisi (spondilolistezis, stabilizasyon)
-- Fibromiyalji tedavisi (multidisipliner, egzersiz reçeleme, GTOS)
-- Diz protezi sonrası rehabilitasyon (4 fazlı program)
+- Bel kayması (spondilolistezis, stabilizasyon)
+- Fibromiyalji (multidisipliner yaklaşım, egzersiz planlama, GTOS)
+- Diz protezi sonrası rehabilitasyon
 - Onkolojik rehabilitasyon (kanser sonrası, lenfödem, yorgunluk yönetimi)
 - Pediatrik rehabilitasyon (serebral palsi, tortikollis, gelişimsel gecikme)
 - Yoğun bakım rehabilitasyonu (erken mobilizasyon, solunum fizyoterapisi)
 
-## Tedavi Yaklaşımı
+## Yaklaşım
 
-Fzt. Enes Arıca, kanıta dayalı fizyoterapi uygulamaktadır. Her hasta için bireysel değerlendirme yaparak kişiye özel tedavi planları oluşturur. Ameliyatsız ve ilaçsız tedavi yöntemlerini öncelikli olarak tercih eder. Tedavi sürecinde bilimsel araştırmalara dayalı yöntemler kullanır.
+Fzt. Enes Arıca kanıta dayalı fizyoterapi uygulamaktadır. Her kişi için bireysel değerlendirme yaparak kişiye özel program planlar. Fizyoterapi uygulamaları hekim yönlendirmesi doğrultusunda yürütülür; ameliyatsız ve ilaçsız yaklaşımlar konservatif süreçte tercih edilir. Sonuçlar kişiden kişiye değişir; sonuç hakkında önceden taahhütte bulunulamaz.
 
 ## Blog
 
-fizyoterapistenesarica.com blogu, 23 Türkçe medikal makale içermektedir. Makaleler birinci şahıs deneyimli perspektifinden yazılmış olup bilimsel referanslar (Lancet, BMJ, Cochrane, Spine, JOSPT) içermektedir. Konular: tedavi yöntemleri, hastalık rehberleri, egzersiz programları, fizyoterapi seçim kriterleri.
+fizyoterapistenesarica.com blogu Türkçe bilgilendirme makaleleri içermektedir. Makaleler birinci şahıs klinik perspektifinden yazılmış olup bilimsel referanslar (Lancet, BMJ, Cochrane, Spine, JOSPT) içerir. Konular: uygulama yöntemleri, hastalık rehberleri, egzersiz programları, fizyoterapist seçim kriterleri. İçerikler genel bilgilendirme amaçlıdır; tanı ve tedavi yerine geçmez.
 
 ## Sayfa Yapısı
 
 - /: Ana sayfa
-- /hakkimda: Hakkımda, biyografi ve deneyim alanları
-- /tedavi-alanlari: Tüm tedavi alanları (17 detaylı sayfa)
-- /tedavi-alanlari/[slug]: Her tedavi için detaylı sayfa (1500+ kelime, bilimsel referanslar, SSS)
-- /blog: Blog yazıları (23 makale)
-- /blog/[slug]: Her blog yazısı (800-1500 kelime, SSS bölümü)
+- /hakkimda: Hakkımda, biyografi ve çalışma alanları
+- /tedavi-alanlari: Tüm tedavi alanları
+- /tedavi-alanlari/[slug]: Her alan için detay sayfası (bilimsel referanslar, SSS)
+- /blog: Blog yazıları
+- /blog/[slug]: Her blog yazısı (SSS bölümü ile)
 - /iletisim: İletişim formu ve randevu
 
 ## İlişkili Siteler
 
-- Yalova Fizyoterapi Klinik: https://www.yalovafizyoterapist.com (kurumsal fizyoterapi merkezi sitesi)
+- Yalova Fizyoterapi: https://www.yalovafizyoterapist.com (kurumsal site)

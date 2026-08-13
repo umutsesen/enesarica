@@ -25,8 +25,8 @@ export default function AboutPreview() {
             className="aspect-[4/5] relative rounded-2xl overflow-hidden"
           >
             <Image
-              src="/imgs/enes-arica-tv.webp"
-              alt="Fizyoterapist Enes Arıca TV yayını"
+              src="/imgs/enes-arica.webp"
+              alt="Fizyoterapist Enes Arıca"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

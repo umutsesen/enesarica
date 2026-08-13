@@ -68,7 +68,7 @@ export default function HomeContact() {
               İletişim
             </p>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-6">
-              İyileşme Yolculuğunuz Bir Mesaj Uzağınızda
+              Değerlendirme İçin Bir Mesaj Uzağınızdayım
             </h2>
             <p className="text-gray-500 leading-relaxed mb-8">
               Sorularınızı yanıtlamak, durumunuzu değerlendirmek ve size en uygun tedavi planını oluşturmak için buradayız. Formu doldurun, en kısa sürede size dönüş yapalım.

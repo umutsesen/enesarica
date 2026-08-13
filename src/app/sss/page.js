@@ -18,7 +18,7 @@ const faqData = [
       },
       {
         q: 'Fizyoterapiste ne zaman başvurmalıyım?',
-        a: 'Bel, boyun, sırt ağrısı, eklem sertliği, hareket kısıtlılığı, spor yaralanması, ameliyat sonrası rehabilitasyon ihtiyacı, duruş bozukluğu veya kronik ağrı durumlarında fizyoterapiste başvurmanız önerilir. Erken başvuru, tedavi süresini kısaltır ve sonuçları olumlu etkiler.',
+        a: 'Bel, boyun, sırt ağrısı, eklem sertliği, hareket kısıtlılığı, spor yaralanması, ameliyat sonrası rehabilitasyon ihtiyacı, duruş bozukluğu veya kronik ağrı durumlarında fizyoterapiste başvurmanız önerilir. Şikayetlerin erken dönemde değerlendirilmesi, sürecin planlanması açısından önerilir.',
       },
       {
         q: 'Fizyoterapi ile fizik tedavi arasındaki fark nedir?',
@@ -26,11 +26,11 @@ const faqData = [
       },
       {
         q: 'Klinik Pilates ile Reformer Pilates arasındaki fark nedir?',
-        a: 'Klinik Pilates, fizyoterapist eşliğinde rehabilitasyon odaklı uygulanan tedavi amaçlı pilatestir. Mat üzerinde vücut ağırlığı ve hafif ekipmanlarla çalışılır. Reformer Pilates ise yay dirençli özel cihazla yapılan, güçlendirme ve vücut şekillendirmeye yönelik pilatestir. Tedavi sürecinde genellikle klinik pilates ile başlar, yeterli stabilizasyon kazanıldıktan sonra reformer pilatese geçiş yaparım.',
+        a: 'Klinik Pilates, fizyoterapist eşliğinde rehabilitasyon odaklı uygulanan tedavi amaçlı pilatestir. Mat üzerinde vücut ağırlığı ve hafif ekipmanlarla çalışılır. Reformer Pilates ise yay dirençli cihazla yapılan, güçlendirme ve esneklik odaklı pilatestir. Tedavi sürecinde genellikle klinik pilates ile başlar, yeterli stabilizasyon kazanıldıktan sonra reformer pilatese geçiş yaparım.',
       },
       {
         q: 'GTOS terapi nedir ve kimlere uygulanır?',
-        a: 'GTOS terapi, kas-iskelet sistemi rahatsızlıklarında kullanılan iğnesiz, ilaçsız ve risksiz bir tedavi yöntemidir. Golgi tendon organları üzerinden kas tonusunu düzenler. Bel fıtığı, boyun fıtığı, siyatik, kas spazmları, spor yaralanmaları ve kronik ağrılarda etkili sonuçlar verir. Akut ve kronik birçok durumda güvenle uygulanabilir.',
+        a: 'GTOS terapi, kas-iskelet sistemi şikayetlerinde kullanılan iğnesiz ve ilaçsız bir fizyoterapi uygulamasıdır. Golgi tendon organları üzerinden kas tonusuna yönelik çalışır. Bel fıtığı, boyun fıtığı, siyatik, kas spazmları, spor yaralanmaları ve kronik ağrı şikayetlerinde değerlendirilebilecek seçeneklerden biridir. Uygunluğu ve yanıt kişiye göre değişir.',
       },
     ],
   },
@@ -39,7 +39,7 @@ const faqData = [
     questions: [
       {
         q: 'Fizyoterapi seansları ne kadar sürer?',
-        a: 'Seanslar genellikle 45-60 dakika sürmektedir. Süre, tedavi yöntemine ve hastanın durumuna göre değişebilir. İlk değerlendirme seansı biraz daha uzun tutulur çünkü detaylı muayene ve tedavi planı oluşturma süreci dahildir.',
+        a: 'Seanslar genellikle 45-60 dakika sürmektedir. Süre, tedavi yöntemine ve hastanın durumuna göre değişebilir. İlk değerlendirme seansı biraz daha uzun tutulur; fonksiyonel değerlendirme ve program planlama süreci dahildir.',
       },
       {
         q: 'Tedavi kaç seans sürer?',
@@ -51,15 +51,15 @@ const faqData = [
       },
       {
         q: 'Tedavi sırasında egzersiz yapmam gerekir mi?',
-        a: 'Evet, tedavinin en önemli bileşenlerinden biri ev egzersiz programıdır. Klinik seanslarda uygulanan tedavinin etkisinin kalıcı olması için verilen egzersizlerin düzenli yapılması gerekir. Egzersiz programı her hastaya özel olarak tasarlanır ve tedavi ilerledikçe güncellenir.',
+        a: 'Evet, sürecin önemli bileşenlerinden biri ev egzersiz programıdır. Klinik seanslarda yapılan çalışmanın sürdürülebilmesi için verilen egzersizlerin düzenli yapılması önerilir. Egzersiz programı her kişiye özel olarak planlanır ve süreç ilerledikçe güncellenir.',
       },
       {
         q: 'Bel fıtığında ameliyat şart mı?',
-        a: 'Bel fıtığı vakalarının büyük çoğunluğu ameliyatsız tedavi edilebilir. Manuel terapi, GTOS terapi, McKenzie yöntemleri ve bireyselleştirilmiş egzersiz programlarıyla hastaların önemli bir bölümünde başarılı sonuçlar elde edilir. Ameliyat ancak ilerleyici kas güç kaybı, cauda equina sendromu veya yoğun konservatif tedaviye rağmen yanıt alınamayan durumlarda değerlendirilir.',
+        a: 'Literatürde bel fıtığı vakalarının önemli bir bölümünde konservatif yaklaşımın ilk basamak olarak yer aldığı bildirilmektedir. Manuel terapi, GTOS terapi, McKenzie yöntemleri ve bireyselleştirilmiş egzersiz programları bu süreçte kullanılan yöntemlerdendir; yanıt kişiden kişiye değişir. Ameliyat ancak ilerleyici kas güç kaybı, cauda equina sendromu veya yoğun konservatif tedaviye rağmen yanıt alınamayan durumlarda değerlendirilir.',
       },
       {
         q: 'Skolyoz tedavisinde sonuç almak ne kadar sürer?',
-        a: 'Skolyoz tedavisi uzun soluklu bir süreçtir. İlk 3 ay yoğun faz olarak haftada 2-3 seans klinik çalışma yapılır. 3-6 ay arasında geliştirme fazına geçilir. 6 ay sonrasında sürdürme fazında periyodik kontrol ve düzenli ev programı ile devam edilir. Büyüme çağındaki çocuklarda erken başlangıç sonuçları doğrudan etkiler.',
+        a: 'Skolyoz tedavisi uzun soluklu bir süreçtir. İlk 3 ay yoğun faz olarak haftada 2-3 seans klinik çalışma yapılır. 3-6 ay arasında geliştirme fazına geçilir. 6 ay sonrasında sürdürme fazında periyodik kontrol ve düzenli ev programı ile devam edilir. Büyüme çağındaki çocuklarda sürecin erken dönemde takibe alınması literatürde önemli görülür; sonuçlar kişiden kişiye değişir.',
       },
     ],
   },
