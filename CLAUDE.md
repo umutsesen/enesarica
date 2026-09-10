@@ -1,6 +1,6 @@
 # Enes Arıca Kişisel Site — Agent Context
 
-> Uzman Fizyoterapist Enes Arıca kişisel marka web sitesi.
+> Fizyoterapist Enes Arıca kişisel marka web sitesi.
 > Domain: www.fizyoterapistenesarica.com
 
 ## Tech Stack
