@@ -30,11 +30,11 @@ yeniden kullanılamaz.
 ```bash
 grep -rinE "\\b(baş ?fizyoterapist|uzman[a-zçğıöşü]*|Uzm\\.|en (iyi|etkili|başarılı)|risksiz|yan etkisiz|zararsız|tamamen ağrısız|enfeksiyon riski yoktur)\\b" src/ content/ public/
 ```
-Çıktı elle gözden geçirilir. Kabul edilen istisnalar (kendi hizmetimize dair iddia değil):
-klinik/tıbbi bağlamda bir *bulgunun* nitelenmesi ("en iyi gösteren görüntüleme yöntemi",
-"en iyi uyku pozisyonu"), bir *belirtinin* zararsızlığı, literatür alıntısı. İddia özne
-olarak bizim hizmetimizse — istisna değildir, düzeltilir.
-Sonuç boş olmalıdır. Kelime bazlı toplu değiştirme yaparken Türkçe dilbilgisini kontrol et:
+**Çıktı boş olmalıdır — istisna yoktur.** Klinik bağlamda masum görünen kullanımlar da
+(bir görüntüleme yönteminin "en iyi" olması, bir belirtinin "zararsız" olması, literatür
+alıntısındaki superlatif) tarandığında gürültü yaratır ve kuralı işlevsizleştirir; bu
+yüzden hepsi nötr karşılıklarıyla değiştirilmiştir ("ayrıntılı gösteren", "kendiliğinden
+geçici", "etkili bir strateji"). Yeni içerik de bu dile uyar. Kelime bazlı toplu değiştirme yaparken Türkçe dilbilgisini kontrol et:
 2026-05-06 sweep'i `Uzmanlık İçeriği` → `Deneyimli İçeriği` bozuk çevirisi bıraktı ve
 2026-07-29'da bu "dilbilgisi düzeltmesi" yasak kelimeyi geri getirdi.
 
