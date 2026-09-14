@@ -3,6 +3,41 @@
 > Fizyoterapist Enes Arıca kişisel marka web sitesi.
 > Domain: www.fizyoterapistenesarica.com
 
+## Mevzuat — Unvan ve Tanıtım Kırmızı Çizgileri
+
+Dayanak: **Serbest Meslek İcrası Yön. (RG 29.03.2025 / 32856)** ve **Tanıtım ve
+Bilgilendirme Faaliyetleri Yön. (RG 12.11.2025 / 33075)**.
+02.07.2026 denetiminde tespit edilen ve 10.08.2026 tarihli savunma yazısına konu olan
+ihlaller aşağıdadır — bu ifadeler hiçbir public dosyada (`src/`, `content/`, `public/`)
+yeniden kullanılamaz.
+
+**Yasak unvanlar** (denetimde tespit edildi):
+- `baş fizyoterapist` / `başfizyoterapist` — 02.07.2026 denetiminde sitede tespit edildi
+- `uzman` / `uzmanlık` / `Uzm.` unvan veya iddia olarak — yalnızca gerçek YL/doktora varsa
+- `şef`, `koordinatör fizyoterapist` gibi hiyerarşi ima eden türevleri
+- hekim unvanları (`Dr.`, `Op. Dr.`) fizyoterapist için
+
+**Yasak tanıtım dili:**
+- Diğer **kuruluşların** aleyhine kendi hizmetini öne çıkaran karşılaştırma
+  (ör. "hastane/klinik ortamına kıyasla ... daha düşük/iyi")
+- Üstünlük: `en iyi`, `en etkili`, `en başarılı`, `lider`, `bir numara`
+- Mutlak güvenlik: `risksiz`, `yan etkisiz`, `zararsız`, `tamamen ağrısız`,
+  `enfeksiyon riski yoktur`
+- Sonuç/kür taahhüdü, başarı istatistiği, hasta görseli, hasta yorumu/memnuniyet ifadesi
+- Teşhis/muayene dili — fizyoterapist için yalnızca `değerlendirme`; tanı hekime aittir
+
+**Tarama (her PR öncesi çalıştır):**
+```bash
+grep -rinE "\\b(baş ?fizyoterapist|uzman[a-zçğıöşü]*|Uzm\\.|en (iyi|etkili|başarılı)|risksiz|yan etkisiz|zararsız|tamamen ağrısız|enfeksiyon riski yoktur)\\b" src/ content/ public/
+```
+Çıktı elle gözden geçirilir. Kabul edilen istisnalar (kendi hizmetimize dair iddia değil):
+klinik/tıbbi bağlamda bir *bulgunun* nitelenmesi ("en iyi gösteren görüntüleme yöntemi",
+"en iyi uyku pozisyonu"), bir *belirtinin* zararsızlığı, literatür alıntısı. İddia özne
+olarak bizim hizmetimizse — istisna değildir, düzeltilir.
+Sonuç boş olmalıdır. Kelime bazlı toplu değiştirme yaparken Türkçe dilbilgisini kontrol et:
+2026-05-06 sweep'i `Uzmanlık İçeriği` → `Deneyimli İçeriği` bozuk çevirisi bıraktı ve
+2026-07-29'da bu "dilbilgisi düzeltmesi" yasak kelimeyi geri getirdi.
+
 ## Tech Stack
 
 | Layer | Choice |
