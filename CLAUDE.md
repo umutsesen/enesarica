@@ -71,7 +71,6 @@ enesarica/
 │   ├── blog/                  # 27 MDX blog posts
 │   └── tedaviler/             # 17 MDX treatment detail pages
 └── public/
-    ├── enesaricalogo.png      # Site logo (Navbar + Footer)
     └── imgs/                  # Photos (jpeg/webp), basin images
 ```
 
@@ -88,7 +87,7 @@ enesarica/
 
 ## Design System
 
-- **Logo:** `/enesaricalogo.png` — Navbar (h-8 w-32), Footer (h-8 w-36). Dark bg: `brightness-0 invert`
+- **Logo:** Görsel logo YOK — Navbar/Footer'da metin wordmark "Fzt. Enes Arıca". Eski `enesaricalogo.png` "Uzman Fizyoterapist" yazdığı için kaldırıldı (2026-09-23); ikonlar yalnızca MEA işaretinden, yazısız üretildi. Metin içeren logo/ikon görseli eklenmeden önce görsel içindeki yazı da mevzuat taramasına tabidir.
 - **Hero:** Dark (bg-forest-900), sage-400 kicker text, white heading
 - **Section kickers:** `text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase`
 - **Cards:** rounded-2xl p-6/p-8 border border-gray-100

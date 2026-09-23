@@ -94,7 +94,7 @@ export default async function BlogPostPage({ params }) {
       "url": "https://www.fizyoterapistenesarica.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.fizyoterapistenesarica.com/enesaricalogo.png"
+        "url": "https://www.fizyoterapistenesarica.com/android-chrome-512x512.png"
       }
     },
     "datePublished": post.date,

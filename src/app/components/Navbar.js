@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 
 const treatments = [
   { name: "Bel Fıtığı Tedavisi", href: "/tedavi-alanlari/bel-fitigi-tedavisi" },
@@ -61,16 +60,13 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link href="/" className="relative h-8 w-32 block">
-          <Image
-            src="/enesaricalogo.png"
-            alt="Enes Arıca"
-            fill
-            className={`object-contain object-left transition-all duration-300 ${
-              isDark ? "brightness-0 invert" : ""
-            }`}
-            priority
-          />
+        <Link
+          href="/"
+          className={`text-lg font-semibold tracking-tight transition-colors duration-300 ${
+            isDark ? "text-white" : "text-forest-900"
+          }`}
+        >
+          Fzt. Enes Arıca
         </Link>
 
         {/* Desktop nav */}
