@@ -87,7 +87,7 @@ export default function HomeContact() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                Pazartesi – Cumartesi: 09:00 – 19:00
+                Pazartesi – Cumartesi: 10:00 – 22:00
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -20 }}

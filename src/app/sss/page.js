@@ -76,7 +76,7 @@ const faqData = [
       },
       {
         q: 'Çalışma saatleriniz nedir?',
-        a: 'İletişim noktam Pazartesi-Cumartesi günleri 09:00-22:00 saatleri arasında hizmet vermektedir. Uygun randevu saatleri için iletişime geçebilirsiniz.',
+        a: 'İletişim noktam Pazartesi-Cumartesi günleri 10:00-22:00 saatleri arasında hizmet vermektedir. Uygun randevu saatleri için iletişime geçebilirsiniz.',
       },
       {
         q: 'İlk seansta ne yapılır?',
