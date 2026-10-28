@@ -12,7 +12,7 @@ export default function HomeCTA() {
             Ağrısız Bir Yaşam İçin
           </h2>
           <p className="text-gray-500 text-lg mb-10 max-w-xl mx-auto">
-            Durumunuza özel bir değerlendirme yapmak ve size en uygun tedavi planını oluşturmak için iletişime geçin.
+            Durumunuza özel bir değerlendirme yapmak ve size en uygun fizyoterapi planını oluşturmak için iletişime geçin.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

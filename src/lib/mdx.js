@@ -6,10 +6,10 @@ import remarkHtml from 'remark-html';
 import { shouldIndexBlogSlug, shouldIndexTreatmentSlug } from '@/lib/indexing-policy';
 
 const blogDirectory = path.join(process.cwd(), 'content/blog');
-const tedavilerDirectory = path.join(process.cwd(), 'content/tedaviler');
+const calismaAlanlariDirectory = path.join(process.cwd(), 'content/calisma-alanlari');
 
 function getDirectory(type) {
-  return type === 'blog' ? blogDirectory : tedavilerDirectory;
+  return type === 'blog' ? blogDirectory : calismaAlanlariDirectory;
 }
 
 function getRawPost(slug, type) {
@@ -76,9 +76,9 @@ export function getBlogPost(slug) {
 }
 
 export function getAllTreatmentPosts(options = {}) {
-  return getAllPosts('tedaviler', { includeNoindex: true, ...options });
+  return getAllPosts('calisma-alanlari', { includeNoindex: true, ...options });
 }
 
 export function getTreatmentPost(slug) {
-  return getRawPost(slug, 'tedaviler');
+  return getRawPost(slug, 'calisma-alanlari');
 }

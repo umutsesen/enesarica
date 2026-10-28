@@ -248,11 +248,11 @@ export default function HakkimdaPage() {
               Yaklaşımım
             </p>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-8">
-              Tedavi Felsefem
+              Fizyoterapi Felsefem
             </h2>
             <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
               <p>
-                Tedavide kanıta dayalı yaklaşımı benimsiyor, her hastamı bütüncül bir bakış açısıyla değerlendiriyorum. Ağrının sadece bir semptom olduğuna, asıl nedenin altında yatan fonksiyonel bozukluğun tedavi edilmesi gerektiğine inanıyorum.
+                Fizyoterapide kanıta dayalı yaklaşımı benimsiyor, her hastamı bütüncül bir bakış açısıyla değerlendiriyorum. Ağrının sadece bir semptom olduğuna, asıl nedenin altında yatan fonksiyonel bozukluğun ele alınması gerektiğine inanıyorum.
               </p>
               <p>
                 Hastalarımla açık iletişim kurarak süreci birlikte yönetiyoruz. Her seansta yapılan uygulamaların nedenini açıklıyor, hastalarımın kendi vücutlarını daha iyi anlamalarına katkı sunmayı amaçlıyorum.
@@ -272,7 +272,7 @@ export default function HakkimdaPage() {
       >
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-4">
-            Tedavi Sürecini Birlikte Planlayalım
+            Fizyoterapi Sürecini Birlikte Planlayalım
           </h2>
           <p className="text-gray-500 mb-10">
             Durumunuza özel bir değerlendirme yapmak için iletişime geçin.

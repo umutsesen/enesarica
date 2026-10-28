@@ -11,7 +11,7 @@ const socialLinks = [
 const quickLinks = [
   { name: "Ana Sayfa", href: "/" },
   { name: "Hakkımda", href: "/hakkimda" },
-  { name: "Tedavi Alanları", href: "/tedavi-alanlari" },
+  { name: "Çalışma Alanları", href: "/calisma-alanlari" },
   { name: "Blog", href: "/blog" },
   { name: "İletişim", href: "/iletisim" },
 ];
@@ -30,7 +30,7 @@ export default function Footer() {
                 Fzt. Enes Arıca
               </Link>
               <p className="mt-4 text-gray-400 leading-relaxed max-w-lg">
-                Fizyoterapist Enes Arıca, bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates alanlarında 10 yılı aşkın deneyimle ameliyatsız tedavi hizmeti sunmaktadır. Yalova Merkez'deki iletişim noktasında hastalarına kişiye özel tedavi programları uygulamaktadır.
+                Fizyoterapist Enes Arıca, bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates alanlarında 10 yılı aşkın deneyimle ameliyatsız (konservatif) fizyoterapi hizmeti sunmaktadır. Yalova Merkez'deki iletişim noktasında hastalarına kişiye özel fizyoterapi programları uygulamaktadır.
               </p>
             </div>
             <div className="lg:text-right">
@@ -98,9 +98,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Tedavi Alanları İçeriği */}
+          {/* Çalışma Alanları İçeriği */}
           <div>
-            <h3 className="text-white text-sm font-semibold mb-4">Tedavi Alanları</h3>
+            <h3 className="text-white text-sm font-semibold mb-4">Çalışma Alanları</h3>
             <ul className="space-y-2.5 text-sm">
               <li>Omurga sağlığı ve ağrı yönetimi</li>
               <li>Schroth ve skolyoz egzersiz yaklaşımı</li>
@@ -170,7 +170,7 @@ export default function Footer() {
         </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-5 space-y-2">
           <p className="text-[11px] text-gray-600 text-center">
-            Bu web sitesindeki bilgiler genel bilgilendirme amaçlıdır ve tıbbi teşhis veya tedavi yerine geçmez. Tedavi kararları için mutlaka fizyoterapiste danışınız.
+            Bu web sitesindeki bilgiler genel bilgilendirme amaçlıdır ve hekim değerlendirmesinin yerine geçmez. Tanı ve tıbbi kararlar için mutlaka hekiminize danışınız.
           </p>
           <p className="text-[11px] text-gray-600 text-center">
             İçerik sorumlusu / Veri sorumlusu: Fzt. Enes Arıca &middot; fizyones77@gmail.com &middot; +90 554 662 12 45 &middot; Son güncelleme: 29 Mayıs 2026

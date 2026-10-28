@@ -4,7 +4,7 @@ import Script from 'next/script';
 export const metadata = {
   title: 'Sık Sorulan Sorular | Fzt. Enes Arıca',
   description:
-    'Fizyoterapi tedavileri, randevu süreci, fiyatlandırma ve tedavi süreleri hakkında sık sorulan sorular.',
+    'Fizyoterapi uygulamaları, randevu süreci, fiyatlandırma ve seans süreleri hakkında sık sorulan sorular.',
   alternates: { canonical: 'https://www.fizyoterapistenesarica.com/sss' },
 };
 
@@ -14,19 +14,19 @@ const faqData = [
     questions: [
       {
         q: 'Fizyoterapi nedir?',
-        a: 'Fizyoterapi, kas-iskelet sistemi, sinir sistemi ve kardiyopulmoner sistem rahatsızlıklarının ilaç ve cerrahi dışı yöntemlerle tedavi edilmesini sağlayan bir sağlık disiplinidir. Manuel terapi, egzersiz programları, elektroterapi ve özel tedavi teknikleri kullanılarak ağrının azaltılması, hareket kabiliyetinin artırılması ve fonksiyonel iyileşme hedeflenir.',
+        a: 'Fizyoterapi, kas-iskelet sistemi, sinir sistemi ve kardiyopulmoner sistem rahatsızlıklarında ilaç ve cerrahi dışı yöntemlerle çalışan bir sağlık disiplinidir. Manuel terapi, egzersiz programları, elektroterapi ve özel fizyoterapi teknikleri kullanılarak ağrının azaltılması, hareket kabiliyetinin artırılması ve fonksiyonel iyileşme hedeflenir.',
       },
       {
         q: 'Fizyoterapiste ne zaman başvurmalıyım?',
         a: 'Bel, boyun, sırt ağrısı, eklem sertliği, hareket kısıtlılığı, spor yaralanması, ameliyat sonrası rehabilitasyon ihtiyacı, duruş bozukluğu veya kronik ağrı durumlarında fizyoterapiste başvurmanız önerilir. Şikayetlerin erken dönemde değerlendirilmesi, sürecin planlanması açısından önerilir.',
       },
       {
-        q: 'Fizyoterapi ile fizik tedavi arasındaki fark nedir?',
-        a: 'Fizik tedavi genellikle elektroterapi cihazları (ultrason, TENS, lazer vb.) ile yapılan tedavileri ifade eder. Fizyoterapi ise bunlara ek olarak manuel terapi, terapötik egzersiz, GTOS terapi gibi aktif tedavi yöntemlerini de kapsayan daha geniş bir kavramdır. Tedavilerimde her iki yaklaşımı hastanın ihtiyacına göre birleştiriyorum.',
+        q: 'FTR hekimi ile fizyoterapist arasındaki fark nedir?',
+        a: 'FTR (Fiziksel Tıp ve Rehabilitasyon) hekimi tanı koyar, ilaç yazar ve gerektiğinde fizyoterapiye yönlendirir. Fizyoterapist ise değerlendirme yapar; elektrofiziksel ajanların (ultrason, TENS, lazer vb.) yanı sıra manuel terapi, terapötik egzersiz, GTOS terapi gibi aktif yöntemleri kapsayan fizyoterapi programını planlar ve uygular. Programlarımda bu yöntemleri hastanın ihtiyacına göre birleştiriyorum.',
       },
       {
         q: 'Klinik Pilates ile Reformer Pilates arasındaki fark nedir?',
-        a: 'Klinik Pilates, fizyoterapist eşliğinde rehabilitasyon odaklı uygulanan tedavi amaçlı pilatestir. Mat üzerinde vücut ağırlığı ve hafif ekipmanlarla çalışılır. Reformer Pilates ise yay dirençli cihazla yapılan, güçlendirme ve esneklik odaklı pilatestir. Tedavi sürecinde genellikle klinik pilates ile başlar, yeterli stabilizasyon kazanıldıktan sonra reformer pilatese geçiş yaparım.',
+        a: 'Klinik Pilates, fizyoterapist eşliğinde rehabilitasyon odaklı uygulanan pilatestir. Mat üzerinde vücut ağırlığı ve hafif ekipmanlarla çalışılır. Reformer Pilates ise yay dirençli cihazla yapılan, güçlendirme ve esneklik odaklı pilatestir. Fizyoterapi sürecinde genellikle klinik pilates ile başlar, yeterli stabilizasyon kazanıldıktan sonra reformer pilatese geçiş yaparım.',
       },
       {
         q: 'GTOS terapi nedir ve kimlere uygulanır?',
@@ -35,31 +35,31 @@ const faqData = [
     ],
   },
   {
-    category: 'Tedavi Süreci',
+    category: 'Fizyoterapi Süreci',
     questions: [
       {
         q: 'Fizyoterapi seansları ne kadar sürer?',
-        a: 'Seanslar genellikle 45-60 dakika sürmektedir. Süre, tedavi yöntemine ve hastanın durumuna göre değişebilir. İlk değerlendirme seansı biraz daha uzun tutulur; fonksiyonel değerlendirme ve program planlama süreci dahildir.',
+        a: 'Seanslar genellikle 45-60 dakika sürmektedir. Süre, uygulanan yönteme ve hastanın durumuna göre değişebilir. İlk değerlendirme seansı biraz daha uzun tutulur; fonksiyonel değerlendirme ve program planlama süreci dahildir.',
       },
       {
-        q: 'Tedavi kaç seans sürer?',
-        a: 'Tedavi süresi hastanın durumuna, şikayetin akut veya kronik oluşuna göre değişir. Akut sorunlarda genellikle 4-6 seans, kronik problemlerde 8-12 seans arasında değişmektedir. Bel ve boyun fıtığı gibi durumlarda tedavi süreci 8-12 haftayı kapsayabilir. Her 4-6 haftada yeniden değerlendirme yapılarak program güncellenir.',
+        q: 'Fizyoterapi kaç seans sürer?',
+        a: 'Program süresi hastanın durumuna, şikayetin akut veya kronik oluşuna göre değişir. Akut sorunlarda genellikle 4-6 seans, kronik problemlerde 8-12 seans arasında değişmektedir. Bel ve boyun fıtığı gibi durumlarda fizyoterapi süreci 8-12 haftayı kapsayabilir. Her 4-6 haftada yeniden değerlendirme yapılarak program güncellenir.',
       },
       {
         q: 'Manuel terapi ağrılı mıdır?',
-        a: 'Manuel terapi uygulamaları genellikle ağrısız veya minimal rahatsızlık verecek şekilde uygulanır. Bazı teknikler sırasında hafif bir baskı hissi olabilir ancak bu tolere edilebilir düzeydedir. Tedavi sırasında rahatsızlık hissederseniz fizyoterapistinize bildirmeniz önemlidir; uygulama yoğunluğu buna göre ayarlanır.',
+        a: 'Manuel terapi uygulamaları genellikle ağrısız veya minimal rahatsızlık verecek şekilde uygulanır. Bazı teknikler sırasında hafif bir baskı hissi olabilir ancak bu tolere edilebilir düzeydedir. Seans sırasında rahatsızlık hissederseniz fizyoterapistinize bildirmeniz önemlidir; uygulama yoğunluğu buna göre ayarlanır.',
       },
       {
-        q: 'Tedavi sırasında egzersiz yapmam gerekir mi?',
+        q: 'Fizyoterapi sürecinde egzersiz yapmam gerekir mi?',
         a: 'Evet, sürecin önemli bileşenlerinden biri ev egzersiz programıdır. Klinik seanslarda yapılan çalışmanın sürdürülebilmesi için verilen egzersizlerin düzenli yapılması önerilir. Egzersiz programı her kişiye özel olarak planlanır ve süreç ilerledikçe güncellenir.',
       },
       {
         q: 'Bel fıtığında ameliyat şart mı?',
-        a: 'Literatürde bel fıtığı vakalarının önemli bir bölümünde konservatif yaklaşımın ilk basamak olarak yer aldığı bildirilmektedir. Manuel terapi, GTOS terapi, McKenzie yöntemleri ve bireyselleştirilmiş egzersiz programları bu süreçte kullanılan yöntemlerdendir; yanıt kişiden kişiye değişir. Ameliyat ancak ilerleyici kas güç kaybı, cauda equina sendromu veya yoğun konservatif tedaviye rağmen yanıt alınamayan durumlarda değerlendirilir.',
+        a: 'Literatürde bel fıtığı vakalarının önemli bir bölümünde konservatif yaklaşımın ilk basamak olarak yer aldığı bildirilmektedir. Manuel terapi, GTOS terapi, McKenzie yöntemleri ve bireyselleştirilmiş egzersiz programları bu süreçte kullanılan yöntemlerdendir; yanıt kişiden kişiye değişir. Ameliyat ancak ilerleyici kas güç kaybı, cauda equina sendromu veya yoğun konservatif yaklaşıma rağmen yanıt alınamayan durumlarda değerlendirilir.',
       },
       {
-        q: 'Skolyoz tedavisinde sonuç almak ne kadar sürer?',
-        a: 'Skolyoz tedavisi uzun soluklu bir süreçtir. İlk 3 ay yoğun faz olarak haftada 2-3 seans klinik çalışma yapılır. 3-6 ay arasında geliştirme fazına geçilir. 6 ay sonrasında sürdürme fazında periyodik kontrol ve düzenli ev programı ile devam edilir. Büyüme çağındaki çocuklarda sürecin erken dönemde takibe alınması literatürde önemli görülür; sonuçlar kişiden kişiye değişir.',
+        q: 'Skolyozda fizyoterapiyle sonuç almak ne kadar sürer?',
+        a: 'Skolyozda fizyoterapi uzun soluklu bir süreçtir. İlk 3 ay yoğun faz olarak haftada 2-3 seans klinik çalışma yapılır. 3-6 ay arasında geliştirme fazına geçilir. 6 ay sonrasında sürdürme fazında periyodik kontrol ve düzenli ev programı ile devam edilir. Büyüme çağındaki çocuklarda sürecin erken dönemde takibe alınması literatürde önemli görülür; sonuçlar kişiden kişiye değişir.',
       },
     ],
   },
@@ -80,7 +80,7 @@ const faqData = [
       },
       {
         q: 'İlk seansta ne yapılır?',
-        a: 'İlk seansta detaylı bir değerlendirme yapılır. Şikayetleriniz, tıbbi geçmişiniz ve varsa görüntüleme sonuçlarınız incelenir. Fonksiyonel değerlendirme ile hareket açıklığı, kas kuvveti, postür ve ilgili testler incelenir. Bulgulara göre bireyselleştirilmiş tedavi planı oluşturulur ve ilk tedavi uygulamalarına başlanır.',
+        a: 'İlk seansta detaylı bir değerlendirme yapılır. Şikayetleriniz, tıbbi geçmişiniz ve varsa görüntüleme sonuçlarınız incelenir. Fonksiyonel değerlendirme ile hareket açıklığı, kas kuvveti, postür ve ilgili testler incelenir. Bulgulara göre bireyselleştirilmiş fizyoterapi planı oluşturulur ve ilk uygulamalara başlanır.',
       },
     ],
   },
@@ -97,7 +97,7 @@ const faqData = [
       },
       {
         q: 'Seans ücretleri ne kadar?',
-        a: 'Seans ücretleri tedavi yöntemine, seans süresine ve iletişim kanalına göre değişiklik göstermektedir. Güncel fiyat bilgisi için +90 554 662 12 45 numarasından veya iletişim sayfamızdan bize ulaşabilirsiniz.',
+        a: 'Seans ücretleri uygulanan yönteme, seans süresine ve iletişim kanalına göre değişiklik göstermektedir. Güncel fiyat bilgisi için +90 554 662 12 45 numarasından veya iletişim sayfamızdan bize ulaşabilirsiniz.',
       },
     ],
   },
@@ -148,7 +148,7 @@ export default function SSSPage() {
               Sık Sorulan Sorular
             </h1>
             <p className="text-lg text-gray-500 mb-20">
-              Fizyoterapi tedavileri, randevu süreci ve fiyatlandırma hakkında
+              Fizyoterapi uygulamaları, randevu süreci ve fiyatlandırma hakkında
               merak edilenler.
             </p>
 

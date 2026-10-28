@@ -34,14 +34,14 @@ module.exports = {
     let lastmod = new Date().toISOString();
 
     if (path === '/') { priority = 1.0; changefreq = 'daily'; }
-    else if (path.startsWith('/tedavi-alanlari/') && path !== '/tedavi-alanlari') {
+    else if (path.startsWith('/calisma-alanlari/') && path !== '/calisma-alanlari') {
       priority = 0.9;
       changefreq = 'monthly';
-      const slug = path.replace('/tedavi-alanlari/', '');
-      const date = getContentDate('tedaviler', slug);
+      const slug = path.replace('/calisma-alanlari/', '');
+      const date = getContentDate('calisma-alanlari', slug);
       if (date) lastmod = new Date(date).toISOString();
     }
-    else if (path === '/tedavi-alanlari' || path === '/hakkimda' || path === '/iletisim') { priority = 0.85; }
+    else if (path === '/calisma-alanlari' || path === '/hakkimda' || path === '/iletisim') { priority = 0.85; }
     else if (path.startsWith('/blog/') && path !== '/blog') {
       priority = 0.8;
       changefreq = 'monthly';

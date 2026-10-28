@@ -8,14 +8,14 @@ const ease = [0.25, 0.4, 0.25, 1];
 
 const categories = [
   {
-    label: "Omurga ve Ağrı Tedavileri",
+    label: "Omurga ve Ağrı",
     slugs: [
-      "bel-fitigi-tedavisi",
-      "boyun-fitigi-tedavisi",
-      "bel-kaymasi-tedavisi",
+      "bel-fitigi",
+      "boyun-fitigi",
+      "bel-kaymasi",
       "gtos-terapi",
       "manuel-terapi",
-      "fibromiyalji-tedavisi",
+      "fibromiyalji",
     ],
   },
   {
@@ -25,11 +25,11 @@ const categories = [
   {
     label: "Rehabilitasyon",
     slugs: [
-      "skolyoz-schroth-tedavisi",
+      "skolyoz-schroth",
       "norolojik-rehabilitasyon",
       "ameliyat-sonrasi-rehabilitasyon",
       "diz-protezi-rehabilitasyon",
-      "evde-fizik-tedavi",
+      "evde-fizyoterapi",
       "onkolojik-rehabilitasyon",
       "pediatrik-rehabilitasyon",
       "yogun-bakim-rehabilitasyonu",
@@ -38,17 +38,17 @@ const categories = [
 ];
 
 const featuredSlugs = [
-  "bel-fitigi-tedavisi",
-  "boyun-fitigi-tedavisi",
+  "bel-fitigi",
+  "boyun-fitigi",
   "gtos-terapi",
-  "skolyoz-schroth-tedavisi",
+  "skolyoz-schroth",
   "manuel-terapi",
   "spor-yaralanmalari",
   "klinik-pilates",
   "reformer-pilates",
 ];
 
-export default function TedaviAlanlariPage() {
+export default function CalismaAlanlariPage() {
   const featuredTreatments = featuredSlugs
     .map((s) => treatments.find((t) => t.slug === s))
     .filter(Boolean);
@@ -73,7 +73,7 @@ export default function TedaviAlanlariPage() {
               transition={{ duration: 0.7, delay: 0.1, ease }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-forest-900 mb-6"
             >
-              Tedavi Alanlarim
+              Calisma Alanlarim
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -83,7 +83,7 @@ export default function TedaviAlanlariPage() {
             >
               Kanita dayali fizyoterapi ile bel fitigi, boyun fitigi, skolyoz ve
               spor yaralanmalarindan ameliyatsiz iyilesme. Her hasta icin
-              bireysel tedavi plani.
+              bireysel fizyoterapi plani.
             </motion.p>
           </div>
 
@@ -100,7 +100,7 @@ export default function TedaviAlanlariPage() {
             viewport={{ once: true }}
             className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-3"
           >
-            One Cikan Tedaviler
+            One Cikan Alanlar
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 25 }}
@@ -109,7 +109,7 @@ export default function TedaviAlanlariPage() {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-semibold text-forest-900 tracking-tight"
           >
-            En Sik Uyguladigim Tedaviler
+            En Sik Calistigim Alanlar
           </motion.h2>
         </div>
 
@@ -132,7 +132,7 @@ export default function TedaviAlanlariPage() {
                 className="snap-start"
               >
                 <Link
-                  href={`/tedavi-alanlari/${t.slug}`}
+                  href={`/calisma-alanlari/${t.slug}`}
                   className="group flex-none w-[280px] sm:w-[320px] md:w-[380px] block"
                 >
                   <div className="h-full rounded-2xl border border-gray-100 bg-white p-6 sm:p-8 hover:border-sage-500/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col">
@@ -188,7 +188,7 @@ export default function TedaviAlanlariPage() {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-semibold text-forest-900 tracking-tight mb-16"
           >
-            Kategorilere Gore Tedaviler
+            Kategorilere Gore Calisma Alanlari
           </motion.h2>
 
           <div className="space-y-16">
@@ -221,7 +221,7 @@ export default function TedaviAlanlariPage() {
                         viewport={{ once: true, margin: "-30px" }}
                       >
                         <Link
-                          href={`/tedavi-alanlari/${t.slug}`}
+                          href={`/calisma-alanlari/${t.slug}`}
                           className="group flex items-start gap-4 p-5 rounded-xl hover:bg-white transition-colors"
                         >
                           <div className="w-2 h-2 rounded-full bg-sage-500 mt-2 flex-none" />
@@ -255,10 +255,10 @@ export default function TedaviAlanlariPage() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="rounded-2xl border border-gray-200 p-8 md:p-16 text-center">
             <h2 className="text-3xl md:text-4xl font-semibold text-forest-900 tracking-tight mb-4">
-              Tedavi Sürecini Birlikte Planlayalım
+              Fizyoterapi Sürecini Birlikte Planlayalım
             </h2>
             <p className="text-gray-500 mb-10 max-w-xl mx-auto">
-              Durumunuza özel bir değerlendirme yapmak ve size en uygun tedavi
+              Durumunuza özel bir değerlendirme yapmak ve size en uygun fizyoterapi
               planını oluşturmak için iletişime geçin.
             </p>
             <div className="flex flex-wrap justify-center gap-4">

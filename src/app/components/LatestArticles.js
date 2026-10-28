@@ -10,19 +10,19 @@ const featuredPosts = [
   },
   {
     slug: 'boyun-duzlesmesi',
-    title: 'Boyun Düzleşmesi Nedir? Belirtileri ve Tedavi Yöntemleri',
-    category: 'Tedavi',
+    title: 'Boyun Düzleşmesi Nedir? Belirtileri ve Fizyoterapi Yaklaşımları',
+    category: 'Fizyoterapi',
     image: '/imgs/blog/boyun-fitigi.webp',
   },
   {
     slug: 'skolyoz-nedir-belirtileri-nelerdir',
-    title: 'Skolyoz Nedir? Belirtileri ve Tedavi Seçenekleri',
-    category: 'Tedavi',
+    title: 'Skolyoz Nedir? Belirtileri Nelerdir?',
+    category: 'Fizyoterapi',
     image: '/imgs/blog/skolyoz.webp',
   },
   {
-    slug: 'siyatik-agrisi-evde-tedavi',
-    title: 'Siyatik Ağrısı: Belirtileri ve Evde Tedavi Yöntemleri',
+    slug: 'siyatik-agrisi-evde',
+    title: 'Siyatik Ağrısında Evde Neler Yapılabilir?',
     category: 'Rehber',
     image: '/imgs/blog/diz-agrilari.webp',
   },
@@ -36,7 +36,7 @@ export default function LatestArticles() {
           <div>
             <p className="text-sm uppercase tracking-wider text-sage-600 font-medium mb-2">Blog</p>
             <h2 className="text-2xl md:text-3xl font-semibold text-forest-900">
-              Tedavi Rehberleri
+              Fizyoterapi Rehberleri
             </h2>
           </div>
           <Link

@@ -78,7 +78,7 @@ export default function Specializations() {
 
         <div className="mt-8 rounded-2xl bg-sand-50 border border-sand-200 p-6 md:p-8">
           <p className="text-sm text-gray-600 leading-relaxed">
-            Tedavi alanları sayfalarını, hizmet kapsamını görmek isteyen danışanlar için
+            Çalışma alanları sayfalarını, hizmet kapsamını görmek isteyen danışanlar için
             yayında tutuyorum. Yaklaşımımı, sık sorulan soruları ve hangi durumda nasıl
             karar verdiğimi blog tarafında daha ayrıntılı anlatıyorum.
           </p>

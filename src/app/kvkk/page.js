@@ -57,7 +57,7 @@ export default function KVKKPage() {
         <p>Kisisel verileriniz asagidaki amaclarla islenmektedir:</p>
         <ul>
           <li>Randevu olusturma ve yonetimi</li>
-          <li>Fizyoterapi tedavi surecinin planlanmasi ve takibi</li>
+          <li>Fizyoterapi surecinin planlanmasi ve takibi</li>
           <li>Iletisim taleplerinizin cevaplanmasi</li>
           <li>Yasal yukumluluklerin yerine getirilmesi</li>
           <li>Hizmet kalitesinin arttirilmasi</li>

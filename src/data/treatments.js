@@ -1,29 +1,29 @@
 const treatments = [
   {
-    slug: 'bel-fitigi-tedavisi',
-    title: 'Bel Fıtığı Tedavisi',
+    slug: 'bel-fitigi',
+    title: 'Bel Fıtığında Fizyoterapi',
     description:
-      'Ameliyatsız bel fıtığı tedavisi ile şikayetleriniz için değerlendirme alın. GTOS terapi, manuel terapi ve kişiye özel egzersiz programları.',
+      'Bel fıtığında ameliyatsız fizyoterapi yaklaşımı için değerlendirme alın. GTOS terapi, manuel terapi ve kişiye özel egzersiz programları.',
     shortDescription:
-      'Ameliyatsız bel fıtığı tedavisi ile şikayetleriniz için değerlendirme alın. GTOS terapi, manuel terapi ve kişiye özel egzersiz programları.',
-    metaTitle: 'Bel Fıtığı Tedavisi | Fizyoterapist Enes Arıca',
+      'Bel fıtığında ameliyatsız fizyoterapi yaklaşımı için değerlendirme alın. GTOS terapi, manuel terapi ve kişiye özel egzersiz programları.',
+    metaTitle: 'Bel Fıtığında Fizyoterapi | Fizyoterapist Enes Arıca',
     metaDescription:
-      'Ameliyatsız bel fıtığı tedavisi. GTOS terapi, manuel terapi ve kişiye özel egzersiz programları ile bel fıtığında fizyoterapi yaklaşımı.',
-    keywords: ['bel fıtığı tedavisi', 'ameliyatsız bel fıtığı', 'bel ağrısı tedavisi', 'bel fıtığı fizyoterapi'],
-    relatedTreatments: ['boyun-fitigi-tedavisi', 'gtos-terapi', 'manuel-terapi'],
+      'Bel fıtığında ameliyatsız yaklaşım. GTOS terapi, manuel terapi ve kişiye özel egzersiz programları ile bel fıtığında fizyoterapi yaklaşımı.',
+    keywords: ['bel fıtığı fizyoterapi', 'ameliyatsız bel fıtığı', 'bel ağrısı fizyoterapi', 'bel fıtığı egzersizleri'],
+    relatedTreatments: ['boyun-fitigi', 'gtos-terapi', 'manuel-terapi'],
   },
   {
-    slug: 'boyun-fitigi-tedavisi',
-    title: 'Boyun Fıtığı Tedavisi',
+    slug: 'boyun-fitigi',
+    title: 'Boyun Fıtığında Fizyoterapi',
     description:
-      'Boyun fıtığı ve boyun ağrılarında ameliyatsız tedavi. Manuel terapi ve GTOS terapi ile konservatif fizyoterapi süreci.',
+      'Boyun fıtığı ve boyun ağrılarında ameliyatsız yaklaşım. Manuel terapi ve GTOS terapi ile konservatif fizyoterapi süreci.',
     shortDescription:
-      'Boyun fıtığı ve boyun ağrılarında ameliyatsız tedavi. Manuel terapi ve GTOS terapi ile konservatif fizyoterapi süreci.',
-    metaTitle: 'Boyun Fıtığı Tedavisi | Fizyoterapist Enes Arıca',
+      'Boyun fıtığı ve boyun ağrılarında ameliyatsız yaklaşım. Manuel terapi ve GTOS terapi ile konservatif fizyoterapi süreci.',
+    metaTitle: 'Boyun Fıtığında Fizyoterapi | Fizyoterapist Enes Arıca',
     metaDescription:
-      'Ameliyatsız boyun fıtığı tedavisi. Manuel terapi, GTOS terapi ve kişiye özel rehabilitasyon programları ile boyun şikayetlerinde fizyoterapi.',
-    keywords: ['boyun fıtığı tedavisi', 'ameliyatsız boyun fıtığı', 'boyun ağrısı', 'servikal disk hernisi'],
-    relatedTreatments: ['bel-fitigi-tedavisi', 'gtos-terapi', 'manuel-terapi'],
+      'Boyun fıtığında ameliyatsız yaklaşım. Manuel terapi, GTOS terapi ve kişiye özel rehabilitasyon programları ile boyun şikayetlerinde fizyoterapi.',
+    keywords: ['boyun fıtığı fizyoterapi', 'ameliyatsız boyun fıtığı', 'boyun ağrısı', 'servikal disk hernisi'],
+    relatedTreatments: ['bel-fitigi', 'gtos-terapi', 'manuel-terapi'],
   },
   {
     slug: 'gtos-terapi',
@@ -35,20 +35,20 @@ const treatments = [
     metaTitle: 'GTOS Terapi | Fizyoterapist Enes Arıca',
     metaDescription:
       'GTOS terapi ile iğnesiz, ilaçsız uygulama. Bel fıtığı, boyun fıtığı, spor yaralanmaları ve kronik ağrı şikayetlerinde fizyoterapi yaklaşımı.',
-    keywords: ['GTOS terapi', 'GTOS tedavisi', 'iğnesiz tedavi', 'ilaçsız tedavi'],
-    relatedTreatments: ['bel-fitigi-tedavisi', 'boyun-fitigi-tedavisi', 'spor-yaralanmalari'],
+    keywords: ['GTOS terapi', 'GTOS uygulaması', 'iğnesiz uygulama', 'ilaçsız yaklaşım'],
+    relatedTreatments: ['bel-fitigi', 'boyun-fitigi', 'spor-yaralanmalari'],
   },
   {
-    slug: 'skolyoz-schroth-tedavisi',
-    title: 'Skolyoz / Schroth Tedavisi',
+    slug: 'skolyoz-schroth',
+    title: 'Skolyoz / Schroth Yöntemi',
     description:
-      'Schroth metodu ile skolyoz tedavisi. Omurga eğriliğinde kişiye özel, egzersiz temelli fizyoterapi yaklaşımı.',
+      'Schroth metodu ile skolyozda fizyoterapi. Omurga eğriliğinde kişiye özel, egzersiz temelli fizyoterapi yaklaşımı.',
     shortDescription:
-      'Schroth metodu ile skolyoz tedavisi. Omurga eğriliğinde kişiye özel, egzersiz temelli fizyoterapi yaklaşımı.',
-    metaTitle: 'Skolyoz Tedavisi - Schroth Metodu | Fizyoterapist Enes Arıca',
+      'Schroth metodu ile skolyozda fizyoterapi. Omurga eğriliğinde kişiye özel, egzersiz temelli fizyoterapi yaklaşımı.',
+    metaTitle: 'Skolyozda Fizyoterapi - Schroth Metodu | Fizyoterapist Enes Arıca',
     metaDescription:
-      'Schroth metodu ile skolyoz tedavisi. Omurga eğriliğinde ameliyatsız yaklaşım ve kişiye özel egzersiz programları.',
-    keywords: ['skolyoz tedavisi', 'schroth metodu', 'omurga eğriliği', 'skolyoz egzersizleri'],
+      'Schroth metodu ile skolyozda fizyoterapi. Omurga eğriliğinde ameliyatsız yaklaşım ve kişiye özel egzersiz programları.',
+    keywords: ['skolyoz fizyoterapi', 'schroth metodu', 'omurga eğriliği', 'skolyoz egzersizleri'],
     relatedTreatments: ['klinik-pilates', 'manuel-terapi', 'reformer-pilates'],
   },
   {
@@ -61,8 +61,8 @@ const treatments = [
     metaTitle: 'Manuel Terapi | Fizyoterapist Enes Arıca',
     metaDescription:
       'Manuel terapi ile eklem ve kas şikayetlerinde fizyoterapi. Bel ağrısı, boyun ağrısı ve eklem kısıtlılıklarında konservatif yaklaşım.',
-    keywords: ['manuel terapi', 'manuel tedavi', 'eklem mobilizasyonu', 'manipülasyon'],
-    relatedTreatments: ['bel-fitigi-tedavisi', 'boyun-fitigi-tedavisi', 'gtos-terapi'],
+    keywords: ['manuel terapi', 'eklem mobilizasyonu', 'manipülasyon'],
+    relatedTreatments: ['bel-fitigi', 'boyun-fitigi', 'gtos-terapi'],
   },
   {
     slug: 'spor-yaralanmalari',
@@ -87,8 +87,8 @@ const treatments = [
     metaTitle: 'Klinik Pilates | Fizyoterapist Enes Arıca',
     metaDescription:
       'Fizyoterapist eşliğinde klinik pilates. Bel ağrısı, boyun ağrısı, skolyoz ve postür şikayetlerinde egzersiz temelli program.',
-    keywords: ['klinik pilates', 'tedavi amaçlı pilates', 'fizyoterapist eşliğinde pilates', 'rehabilitasyon pilates'],
-    relatedTreatments: ['reformer-pilates', 'skolyoz-schroth-tedavisi', 'bel-fitigi-tedavisi'],
+    keywords: ['klinik pilates', 'rehabilitasyon amaçlı pilates', 'fizyoterapist eşliğinde pilates', 'rehabilitasyon pilates'],
+    relatedTreatments: ['reformer-pilates', 'skolyoz-schroth', 'bel-fitigi'],
   },
   {
     slug: 'reformer-pilates',
@@ -101,19 +101,19 @@ const treatments = [
     metaDescription:
       'Reformer pilates ile güçlendirme ve esneklik çalışmaları. Fizyoterapist eşliğinde kişiye özel reformer pilates programları.',
     keywords: ['reformer pilates', 'pilates reformer', 'reformer egzersiz', 'pilates yalova'],
-    relatedTreatments: ['klinik-pilates', 'skolyoz-schroth-tedavisi', 'spor-yaralanmalari'],
+    relatedTreatments: ['klinik-pilates', 'skolyoz-schroth', 'spor-yaralanmalari'],
   },
   {
-    slug: 'evde-fizik-tedavi',
-    title: 'Evde Fizik Tedavi',
+    slug: 'evde-fizyoterapi',
+    title: 'Evde Fizyoterapi',
     description:
       'Hareket kısıtlılığı olan hastalar için evde fizyoterapi hizmeti. Ameliyat sonrası ve yaşlı hastalar için özel rehabilitasyon programları.',
     shortDescription:
       'Hareket kısıtlılığı olan hastalar için evde fizyoterapi hizmeti. Ameliyat sonrası ve yaşlı hastalar için özel rehabilitasyon programları.',
-    metaTitle: 'Evde Fizik Tedavi | Fizyoterapist Enes Arıca',
+    metaTitle: 'Evde Fizyoterapi | Fizyoterapist Enes Arıca',
     metaDescription:
-      'Evde fizik tedavi hizmeti ile ameliyat sonrası, nörolojik ve ortopedik rehabilitasyon. Fizyoterapist eşliğinde ev ortamında uygulama.',
-    keywords: ['evde fizik tedavi', 'evde fizyoterapi', 'evde rehabilitasyon', 'mobil fizyoterapi'],
+      'Evde fizyoterapi hizmeti ile ameliyat sonrası, nörolojik ve ortopedik rehabilitasyon. Fizyoterapist eşliğinde ev ortamında uygulama.',
+    keywords: ['evde fizyoterapi', 'evde rehabilitasyon', 'mobil fizyoterapi'],
     relatedTreatments: ['ameliyat-sonrasi-rehabilitasyon', 'norolojik-rehabilitasyon', 'manuel-terapi'],
   },
   {
@@ -126,8 +126,8 @@ const treatments = [
     metaTitle: 'Nörolojik Rehabilitasyon | Fizyoterapist Enes Arıca',
     metaDescription:
       'Nörolojik rehabilitasyon ile inme ve felç sonrası fizyoterapi süreci. Bobath ve PNF yaklaşımları çerçevesinde programlar.',
-    keywords: ['nörolojik rehabilitasyon', 'felç rehabilitasyonu', 'inme sonrası tedavi', 'nörorehabilitasyon'],
-    relatedTreatments: ['evde-fizik-tedavi', 'manuel-terapi', 'klinik-pilates'],
+    keywords: ['nörolojik rehabilitasyon', 'felç rehabilitasyonu', 'inme sonrası fizyoterapi', 'nörorehabilitasyon'],
+    relatedTreatments: ['evde-fizyoterapi', 'manuel-terapi', 'klinik-pilates'],
   },
   {
     slug: 'ameliyat-sonrasi-rehabilitasyon',
@@ -143,29 +143,29 @@ const treatments = [
     relatedTreatments: ['diz-protezi-rehabilitasyon', 'spor-yaralanmalari', 'manuel-terapi'],
   },
   {
-    slug: 'bel-kaymasi-tedavisi',
-    title: 'Bel Kayması (Spondilolistezis) Tedavisi',
+    slug: 'bel-kaymasi',
+    title: 'Bel Kayması (Spondilolistezis) Fizyoterapisi',
     description:
-      'Spondilolistezis tedavisinde stabilizasyon egzersizleri ve manuel terapi ile konservatif yaklaşım.',
+      'Spondilolisteziste stabilizasyon egzersizleri ve manuel terapi ile konservatif yaklaşım.',
     shortDescription:
-      'Spondilolistezis tedavisinde stabilizasyon egzersizleri ve manuel terapi ile konservatif yaklaşım.',
-    metaTitle: 'Bel Kayması Tedavisi | Fizyoterapist Enes Arıca',
+      'Spondilolisteziste stabilizasyon egzersizleri ve manuel terapi ile konservatif yaklaşım.',
+    metaTitle: 'Bel Kaymasında Fizyoterapi | Fizyoterapist Enes Arıca',
     metaDescription:
-      'Bel kayması (spondilolistezis) tedavisinde konservatif yaklaşım. Stabilizasyon egzersizleri ve manuel terapi uygulamaları.',
-    keywords: ['bel kayması tedavisi', 'spondilolistezis', 'omurga kayması', 'lomber instabilite'],
-    relatedTreatments: ['bel-fitigi-tedavisi', 'manuel-terapi', 'klinik-pilates'],
+      'Bel kaymasında (spondilolistezis) konservatif yaklaşım. Stabilizasyon egzersizleri ve manuel terapi uygulamaları.',
+    keywords: ['bel kayması fizyoterapi', 'spondilolistezis', 'omurga kayması', 'lomber instabilite'],
+    relatedTreatments: ['bel-fitigi', 'manuel-terapi', 'klinik-pilates'],
   },
   {
-    slug: 'fibromiyalji-tedavisi',
-    title: 'Fibromiyalji Tedavisi',
+    slug: 'fibromiyalji',
+    title: 'Fibromiyaljide Fizyoterapi',
     description:
       'Fibromiyalji hastalarına yönelik multidisipliner fizyoterapi yaklaşımı. Egzersiz, GTOS terapi ve ağrı yönetimi.',
     shortDescription:
       'Fibromiyalji hastalarına yönelik multidisipliner fizyoterapi yaklaşımı. Egzersiz, GTOS terapi ve ağrı yönetimi.',
-    metaTitle: 'Fibromiyalji Tedavisi | Fizyoterapist Enes Arıca',
+    metaTitle: 'Fibromiyaljide Fizyoterapi | Fizyoterapist Enes Arıca',
     metaDescription:
       'Fibromiyaljide fizyoterapi yaklaşımı. Egzersiz planlaması, GTOS terapi ve kronik ağrı yönetimine yönelik uygulamalar.',
-    keywords: ['fibromiyalji tedavisi', 'fibromiyalji fizyoterapi', 'kronik ağrı tedavisi', 'yaygın ağrı'],
+    keywords: ['fibromiyalji fizyoterapi', 'fibromiyalji egzersizleri', 'kronik ağrı yönetimi', 'yaygın ağrı'],
     relatedTreatments: ['gtos-terapi', 'manuel-terapi', 'klinik-pilates'],
   },
   {
@@ -185,14 +185,14 @@ const treatments = [
     slug: 'onkolojik-rehabilitasyon',
     title: 'Onkolojik Rehabilitasyon',
     description:
-      'Kanser tedavisi sürecinde ve sonrasında yaşam kalitesine yönelik fizyoterapi ve rehabilitasyon programları.',
+      'Onkolojik süreçte ve sonrasında yaşam kalitesine yönelik fizyoterapi ve rehabilitasyon programları.',
     shortDescription:
-      'Kanser tedavisi sürecinde ve sonrasında yaşam kalitesine yönelik fizyoterapi ve rehabilitasyon programları.',
+      'Onkolojik süreçte ve sonrasında yaşam kalitesine yönelik fizyoterapi ve rehabilitasyon programları.',
     metaTitle: 'Onkolojik Rehabilitasyon | Fizyoterapist Enes Arıca',
     metaDescription:
       'Kanser rehabilitasyonunda fizyoterapi. Egzersiz planlaması, lenfödem yönetimi ve yorgunluğa yönelik uygulamalar.',
     keywords: ['onkolojik rehabilitasyon', 'kanser rehabilitasyonu', 'kanser sonrası fizyoterapi', 'onkoloji fizyoterapi'],
-    relatedTreatments: ['evde-fizik-tedavi', 'manuel-terapi', 'klinik-pilates'],
+    relatedTreatments: ['evde-fizyoterapi', 'manuel-terapi', 'klinik-pilates'],
   },
   {
     slug: 'pediatrik-rehabilitasyon',
@@ -204,8 +204,8 @@ const treatments = [
     metaTitle: 'Pediatrik Rehabilitasyon | Fizyoterapist Enes Arıca',
     metaDescription:
       'Çocuk fizyoterapisi ile serebral palsi, gelişimsel gecikme ve kas hastalıklarında rehabilitasyon. Oyun bazlı yaklaşım.',
-    keywords: ['pediatrik rehabilitasyon', 'çocuk fizyoterapisi', 'serebral palsi tedavisi', 'çocuk gelişimi'],
-    relatedTreatments: ['norolojik-rehabilitasyon', 'klinik-pilates', 'evde-fizik-tedavi'],
+    keywords: ['pediatrik rehabilitasyon', 'çocuk fizyoterapisi', 'serebral palsi fizyoterapi', 'çocuk gelişimi'],
+    relatedTreatments: ['norolojik-rehabilitasyon', 'klinik-pilates', 'evde-fizyoterapi'],
   },
   {
     slug: 'yogun-bakim-rehabilitasyonu',
@@ -218,7 +218,7 @@ const treatments = [
     metaDescription:
       'Yoğun bakımda erken mobilizasyon ve solunum fizyoterapisi. ICU-acquired weakness açısından kritik hasta rehabilitasyonu.',
     keywords: ['yoğun bakım rehabilitasyonu', 'ICU fizyoterapi', 'erken mobilizasyon', 'solunum fizyoterapisi'],
-    relatedTreatments: ['norolojik-rehabilitasyon', 'evde-fizik-tedavi', 'ameliyat-sonrasi-rehabilitasyon'],
+    relatedTreatments: ['norolojik-rehabilitasyon', 'evde-fizyoterapi', 'ameliyat-sonrasi-rehabilitasyon'],
   },
 ];
 

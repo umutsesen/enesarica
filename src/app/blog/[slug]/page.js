@@ -150,8 +150,8 @@ export default async function BlogPostPage({ params }) {
           <aside className="mb-10 rounded-xl border border-gray-200 bg-sand-50 px-5 py-4">
             <p className="text-sm text-gray-600 leading-relaxed">
               <strong className="font-semibold text-forest-900">Bilgilendirme:</strong>{' '}
-              Bu yazı yalnızca genel bilgilendirme amacıyla hazırlanmıştır; tanı, tedavi veya
-              yönlendirme yerine geçmez. Şikâyetleriniz için hekiminize başvurunuz. Fizyoterapi
+              Bu yazı yalnızca genel bilgilendirme amacıyla hazırlanmıştır; hekim
+              değerlendirmesinin yerine geçmez. Şikâyetleriniz için hekiminize başvurunuz. Fizyoterapi
               uygulamaları hekim yönlendirmesi doğrultusunda planlanır ve sonuçlar kişiden kişiye
               değişir.
             </p>

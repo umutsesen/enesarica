@@ -10,7 +10,37 @@ const nextConfig = {
     ],
   },
   async redirects() {
+    // Slugs containing 'tedavi' renamed (2026-10-28): the word is no longer used on the site
+    const renamedAreas = [
+      ['bel-fitigi-tedavisi', 'bel-fitigi'],
+      ['bel-kaymasi-tedavisi', 'bel-kaymasi'],
+      ['boyun-fitigi-tedavisi', 'boyun-fitigi'],
+      ['fibromiyalji-tedavisi', 'fibromiyalji'],
+      ['skolyoz-schroth-tedavisi', 'skolyoz-schroth'],
+      ['evde-fizik-tedavi', 'evde-fizyoterapi'],
+    ];
+    const renamedPosts = [
+      ['siyatik-agrisi-evde-tedavi', 'siyatik-agrisi-evde'],
+      ['fizik-tedavi-fizyoterapi-farki', 'ftr-hekimi-fizyoterapist-farki'],
+      ['trigger-point-tedavisi', 'tetik-nokta-trigger-point'],
+      ['ameliyatsiz-tedavi-yontemleri', 'ameliyatsiz-yontemler'],
+    ];
     return [
+      ...renamedAreas.map(([from, to]) => ({
+        source: `/tedavi-alanlari/${from}`,
+        destination: `/calisma-alanlari/${to}`,
+        permanent: true,
+      })),
+      {
+        source: '/tedavi-alanlari/:path*',
+        destination: '/calisma-alanlari/:path*',
+        permanent: true,
+      },
+      ...renamedPosts.map(([from, to]) => ({
+        source: `/blog/${from}`,
+        destination: `/blog/${to}`,
+        permanent: true,
+      })),
       {
         source: '/subeler/:path*',
         destination: '/iletisim',

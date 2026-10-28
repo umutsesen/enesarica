@@ -79,7 +79,7 @@ const videos = [
   },
   {
     id: "GyB8qMQlzzM",
-    title: "Yalova Fizyoterapi Tedavi Süreci",
+    title: "Yalova Fizyoterapi Süreci",
     url: "https://youtu.be/GyB8qMQlzzM",
   },
   {

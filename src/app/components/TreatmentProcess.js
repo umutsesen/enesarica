@@ -12,13 +12,13 @@ const steps = [
   },
   {
     num: '2',
-    title: 'Kişiye Özel Tedavi Planı',
-    desc: 'Durumunuza özel manuel terapi, egzersiz ve GTOS terapi kombinasyonlarından oluşan bir tedavi programı hazırlıyoruz.',
+    title: 'Kişiye Özel Fizyoterapi Planı',
+    desc: 'Durumunuza özel manuel terapi, egzersiz ve GTOS terapi kombinasyonlarından oluşan bir fizyoterapi programı hazırlıyoruz.',
   },
   {
     num: '3',
-    title: 'Tedavi ve Takip',
-    desc: 'Her seansta ilerlemenizi takip ediyor, tedavi planını ihtiyaca göre güncelliyoruz.',
+    title: 'Uygulama ve Takip',
+    desc: 'Her seansta ilerlemenizi takip ediyor, programı ihtiyaca göre güncelliyoruz.',
   },
   {
     num: '4',

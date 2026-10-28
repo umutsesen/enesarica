@@ -25,10 +25,16 @@ yeniden kullanılamaz.
   `enfeksiyon riski yoktur`
 - Sonuç/kür taahhüdü, başarı istatistiği, hasta görseli, hasta yorumu/memnuniyet ifadesi
 - Teşhis/muayene dili — fizyoterapist için yalnızca `değerlendirme`; tanı hekime aittir
+- `tedavi` kelimesi (tüm ekleriyle: tedavisi, tedaviye, fizik tedavi …) — 2026-10-28'den beri
+  hiçbir public metinde, URL'de veya slug'da yok; hekimin yaptığı işi anlatırken de kullanılmaz.
+  Karşılıkları: `fizyoterapi`, `fizyoterapi programı`, `uygulama`, `rehabilitasyon`, `yaklaşım`;
+  hekim tarafı için `tıbbi kararlar`, `cerrahi`, `ilaç kullanımı`, `konservatif yaklaşım`;
+  uzmanlık dalı `Fiziksel Tıp ve Rehabilitasyon (FTR)`. Hastalık için `terapi` eş anlamlısı da
+  KULLANILMAZ (`bel fıtığı terapisi` yok) — `terapi` yalnızca yöntem adlarında (manuel terapi, GTOS terapi, KDT)
 
 **Tarama (her PR öncesi çalıştır):**
 ```bash
-grep -rinE "\\b(baş ?fizyoterapist|uzman[a-zçğıöşü]*|Uzm\\.|en (iyi|etkili|başarılı)|risksiz|yan etkisiz|zararsız|tamamen ağrısız|enfeksiyon riski yoktur)\\b" src/ content/ public/
+grep -rinE "\\b(baş ?fizyoterapist|uzman[a-zçğıöşü]*|Uzm\\.|tedavi[a-zçğıöşü]*|en (iyi|etkili|başarılı)|risksiz|yan etkisiz|zararsız|tamamen ağrısız|enfeksiyon riski yoktur)\\b" src/ content/ public/
 ```
 **Çıktı boş olmalıdır — istisna yoktur.** Klinik bağlamda masum görünen kullanımlar da
 (bir görüntüleme yönteminin "en iyi" olması, bir belirtinin "zararsız" olması, literatür
@@ -59,7 +65,7 @@ enesarica/
 │   ├── page.js                # Homepage: Hero → AboutPreview → Specializations → TreatmentProcess → FeaturedTestimonials → YouTubeShorts → LatestArticles → HomeContact
 │   ├── components/            # All components
 │   ├── hakkimda/              # Biography, timeline, certifications, philosophy
-│   ├── tedavi-alanlari/       # Treatment listing + [slug] MDX detail
+│   ├── calisma-alanlari/      # Çalışma alanları listing + [slug] MDX detail (eski /tedavi-alanlari → 301, 2026-10-28)
 │   ├── blog/                  # Blog listing + [slug] MDX detail
 │   ├── hasta-deneyimleri/     # Testimonial grid
 │   ├── iletisim/              # Contact form + branch cards
@@ -69,7 +75,7 @@ enesarica/
 ├── src/data/                  # treatments.js, testimonials.js, branches.js, certifications.js
 ├── content/
 │   ├── blog/                  # 27 MDX blog posts
-│   └── tedaviler/             # 17 MDX treatment detail pages
+│   └── calisma-alanlari/      # 17 MDX çalışma alanı detail pages
 └── public/
     └── imgs/                  # Photos (jpeg/webp), basin images
 ```
@@ -141,4 +147,4 @@ npx next build   # Must succeed with 0 errors
 
 ## SEO Targets
 
-fizyoterapist enes arıca, bel fıtığı tedavisi, boyun fıtığı tedavisi, GTOS terapi, skolyoz tedavisi, manuel terapi, klinik pilates, reformer pilates, Yalova fizyoterapi
+fizyoterapist enes arıca, bel fıtığı fizyoterapi, boyun fıtığı fizyoterapi, GTOS terapi, skolyoz fizyoterapi, manuel terapi, klinik pilates, reformer pilates, Yalova fizyoterapi

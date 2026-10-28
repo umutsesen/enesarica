@@ -5,19 +5,19 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const treatments = [
-  { name: "Bel Fıtığı Tedavisi", href: "/tedavi-alanlari/bel-fitigi-tedavisi" },
-  { name: "Boyun Fıtığı Tedavisi", href: "/tedavi-alanlari/boyun-fitigi-tedavisi" },
-  { name: "GTOS Terapi", href: "/tedavi-alanlari/gtos-terapi" },
-  { name: "Skolyoz & Schroth", href: "/tedavi-alanlari/skolyoz-schroth-tedavisi" },
-  { name: "Manuel Terapi", href: "/tedavi-alanlari/manuel-terapi" },
-  { name: "Spor Yaralanmaları", href: "/tedavi-alanlari/spor-yaralanmalari" },
-  { name: "Klinik Pilates", href: "/tedavi-alanlari/klinik-pilates" },
-  { name: "Reformer Pilates", href: "/tedavi-alanlari/reformer-pilates" },
+  { name: "Bel Fıtığında Fizyoterapi", href: "/calisma-alanlari/bel-fitigi" },
+  { name: "Boyun Fıtığında Fizyoterapi", href: "/calisma-alanlari/boyun-fitigi" },
+  { name: "GTOS Terapi", href: "/calisma-alanlari/gtos-terapi" },
+  { name: "Skolyoz & Schroth", href: "/calisma-alanlari/skolyoz-schroth" },
+  { name: "Manuel Terapi", href: "/calisma-alanlari/manuel-terapi" },
+  { name: "Spor Yaralanmaları", href: "/calisma-alanlari/spor-yaralanmalari" },
+  { name: "Klinik Pilates", href: "/calisma-alanlari/klinik-pilates" },
+  { name: "Reformer Pilates", href: "/calisma-alanlari/reformer-pilates" },
 ];
 
 const navLinks = [
   { name: "Hakkımda", href: "/hakkimda" },
-  { name: "Tedavi Alanları", href: "/tedavi-alanlari", hasDropdown: true },
+  { name: "Çalışma Alanları", href: "/calisma-alanlari", hasDropdown: true },
   { name: "Blog", href: "/blog" },
   { name: "İletişim", href: "/iletisim" },
 ];

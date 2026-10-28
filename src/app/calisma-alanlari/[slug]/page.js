@@ -12,19 +12,19 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = getTreatmentPost(slug);
   if (!post) {
-    return { title: "Tedavi Bulunamadı | Fzt. Enes Arıca" };
+    return { title: "Sayfa Bulunamadı | Fzt. Enes Arıca" };
   }
   return {
     title: `${post.title} | Fzt. Enes Arıca`,
     description: post.description,
     alternates: {
-      canonical: `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}`,
+      canonical: `https://www.fizyoterapistenesarica.com/calisma-alanlari/${slug}`,
     },
-    robots: getRobotsForPath(`/tedavi-alanlari/${slug}`),
+    robots: getRobotsForPath(`/calisma-alanlari/${slug}`),
     openGraph: {
       title: `${post.title} | Fzt. Enes Arıca`,
       description: post.description,
-      url: `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}`,
+      url: `https://www.fizyoterapistenesarica.com/calisma-alanlari/${slug}`,
     },
   };
 }
@@ -49,8 +49,8 @@ export default async function TreatmentPage({ params }) {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.fizyoterapistenesarica.com" },
-        { "@type": "ListItem", "position": 2, "name": "Tedavi Alanları", "item": "https://www.fizyoterapistenesarica.com/tedavi-alanlari" },
-        { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://www.fizyoterapistenesarica.com/tedavi-alanlari/${slug}` },
+        { "@type": "ListItem", "position": 2, "name": "Çalışma Alanları", "item": "https://www.fizyoterapistenesarica.com/calisma-alanlari" },
+        { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://www.fizyoterapistenesarica.com/calisma-alanlari/${slug}` },
       ],
     },
   ];
@@ -75,7 +75,7 @@ export default async function TreatmentPage({ params }) {
       <div className="bg-forest-900 py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sage-500 text-sm font-medium tracking-widest uppercase mb-4">
-            Tedavi Alanları
+            Çalışma Alanları
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight">
             {post.title}
@@ -88,7 +88,7 @@ export default async function TreatmentPage({ params }) {
         <ol className="flex items-center text-sm text-gray-500 gap-2">
           <li><Link href="/" className="hover:text-sage-600 transition-colors">Ana Sayfa</Link></li>
           <li>/</li>
-          <li><Link href="/tedavi-alanlari" className="hover:text-sage-600 transition-colors">Tedavi Alanları</Link></li>
+          <li><Link href="/calisma-alanlari" className="hover:text-sage-600 transition-colors">Çalışma Alanları</Link></li>
           <li>/</li>
           <li className="text-forest-900 font-medium truncate">{post.title}</li>
         </ol>
@@ -102,8 +102,8 @@ export default async function TreatmentPage({ params }) {
               <aside className="mb-10 rounded-xl border border-gray-200 bg-sand-50 px-5 py-4 not-prose">
                 <p className="text-sm text-gray-600 leading-relaxed">
                   <strong className="font-semibold text-forest-900">Bilgilendirme:</strong>{' '}
-                  Bu sayfa yalnızca genel bilgilendirme amacıyla hazırlanmıştır; tanı, tedavi veya
-                  yönlendirme yerine geçmez. Şikâyetleriniz için hekiminize başvurunuz. Fizyoterapi
+                  Bu sayfa yalnızca genel bilgilendirme amacıyla hazırlanmıştır; hekim
+                  değerlendirmesinin yerine geçmez. Şikâyetleriniz için hekiminize başvurunuz. Fizyoterapi
                   uygulamaları hekim yönlendirmesi doğrultusunda planlanır ve sonuçlar kişiden
                   kişiye değişir.
                 </p>
@@ -139,7 +139,7 @@ export default async function TreatmentPage({ params }) {
                   Randevu Alın
                 </h3>
                 <p className="text-gray-300 text-sm mb-6">
-                  Fizyoterapist ile tedavi sürecinizi başlatın.
+                  Fizyoterapist ile fizyoterapi sürecinizi başlatın.
                 </p>
                 <Link
                   href="/iletisim"
@@ -151,13 +151,13 @@ export default async function TreatmentPage({ params }) {
 
               <div className="rounded-2xl p-8 border border-gray-100">
                 <h3 className="text-lg font-semibold text-forest-900 mb-6">
-                  Diğer Tedaviler
+                  Diğer Çalışma Alanları
                 </h3>
                 <div className="space-y-3">
                   {related.map((t) => (
                     <Link
                       key={t.slug}
-                      href={`/tedavi-alanlari/${t.slug}`}
+                      href={`/calisma-alanlari/${t.slug}`}
                       className="block text-sm text-gray-600 hover:text-sage-600 transition-colors py-1"
                     >
                       {t.title}

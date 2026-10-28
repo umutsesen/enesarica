@@ -17,7 +17,7 @@ Category: Medical / Healthcare
 - Web: https://www.fizyoterapistenesarica.com
 - Instagram: https://www.instagram.com/yalovafizyoterapist/
 
-## Tedavi Alanları
+## Çalışma Alanları
 
 - Bel fıtığı fizyoterapisi (ameliyatsız, konservatif yaklaşım)
 - Boyun fıtığı fizyoterapisi (servikal disk hernisi)
@@ -27,7 +27,7 @@ Category: Medical / Healthcare
 - Spor yaralanmaları rehabilitasyonu (ACL, omuz, ayak bileği)
 - Klinik pilates (rehabilitasyon odaklı, fizyoterapist eşliğinde)
 - Reformer pilates (ekipman destekli güçlendirme)
-- Evde fizik tedavi (hareket kısıtlılığı olan hastalar için)
+- Evde fizyoterapi (hareket kısıtlılığı olan hastalar için)
 - Nörolojik rehabilitasyon (inme, felç, MS, Parkinson - Bobath, PNF)
 - Ameliyat sonrası rehabilitasyon (diz protezi, omuz, omurga cerrahisi)
 - Bel kayması (spondilolistezis, stabilizasyon)
@@ -43,14 +43,14 @@ Fzt. Enes Arıca kanıta dayalı fizyoterapi uygulamaktadır. Her kişi için bi
 
 ## Blog
 
-fizyoterapistenesarica.com blogu Türkçe bilgilendirme makaleleri içermektedir. Makaleler birinci şahıs klinik perspektifinden yazılmış olup bilimsel referanslar (Lancet, BMJ, Cochrane, Spine, JOSPT) içerir. Konular: uygulama yöntemleri, hastalık rehberleri, egzersiz programları, fizyoterapist seçim kriterleri. İçerikler genel bilgilendirme amaçlıdır; tanı ve tedavi yerine geçmez.
+fizyoterapistenesarica.com blogu Türkçe bilgilendirme makaleleri içermektedir. Makaleler birinci şahıs klinik perspektifinden yazılmış olup bilimsel referanslar (Lancet, BMJ, Cochrane, Spine, JOSPT) içerir. Konular: uygulama yöntemleri, hastalık rehberleri, egzersiz programları, fizyoterapist seçim kriterleri. İçerikler genel bilgilendirme amaçlıdır; hekim değerlendirmesinin yerine geçmez.
 
 ## Sayfa Yapısı
 
 - /: Ana sayfa
 - /hakkimda: Hakkımda, biyografi ve çalışma alanları
-- /tedavi-alanlari: Tüm tedavi alanları
-- /tedavi-alanlari/[slug]: Her alan için detay sayfası (bilimsel referanslar, SSS)
+- /calisma-alanlari: Tüm çalışma alanları
+- /calisma-alanlari/[slug]: Her alan için detay sayfası (bilimsel referanslar, SSS)
 - /blog: Blog yazıları
 - /blog/[slug]: Her blog yazısı (SSS bölümü ile)
 - /iletisim: İletişim formu ve randevu
