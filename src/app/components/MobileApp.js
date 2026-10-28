@@ -34,7 +34,7 @@ export default function MobileApp() {
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
               Hastalarim icin gelistirdigim uygulama ile fizyoterapi surecinizi
               yakindan takip edin. Egzersiz programiniz, agri takibiniz ve
-              terapistinizle iletisim tek bir yerde.
+              fizyoterapistinizle iletisim tek bir yerde.
             </p>
 
             <ul className="space-y-4 mb-10">

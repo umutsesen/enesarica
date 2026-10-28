@@ -71,7 +71,7 @@ export default function HomeContact() {
               Değerlendirme İçin Bir Mesaj Uzağınızdayım
             </h2>
             <p className="text-gray-500 leading-relaxed mb-8">
-              Sorularınızı yanıtlamak, durumunuzu değerlendirmek ve size en uygun fizyoterapi planını oluşturmak için buradayız. Formu doldurun, en kısa sürede size dönüş yapalım.
+              Sorularınızı yanıtlamak, durumunuzu değerlendirmek ve size özel bir fizyoterapi planı oluşturmak için buradayız. Fizyoterapi uygulamaları hekim tarafından konulan tanı ve yönlendirme doğrultusunda planlanır. Formu doldurun, en kısa sürede size dönüş yapalım.
             </p>
 
             <div className="space-y-3 text-sm">

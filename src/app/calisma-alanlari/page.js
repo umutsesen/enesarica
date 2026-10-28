@@ -81,9 +81,9 @@ export default function CalismaAlanlariPage() {
               transition={{ duration: 0.6, delay: 0.2, ease }}
               className="text-lg text-gray-500 leading-relaxed max-w-2xl"
             >
-              Kanita dayali fizyoterapi ile bel fitigi, boyun fitigi, skolyoz ve
-              spor yaralanmalarindan ameliyatsiz iyilesme. Her hasta icin
-              bireysel fizyoterapi plani.
+              Bel fitigi, boyun fitigi, skolyoz ve spor yaralanmalarinda
+              kanita dayali fizyoterapi yaklasimi. Her hasta icin bireysel
+              fizyoterapi plani.
             </motion.p>
           </div>
 
@@ -258,8 +258,8 @@ export default function CalismaAlanlariPage() {
               Fizyoterapi Sürecini Birlikte Planlayalım
             </h2>
             <p className="text-gray-500 mb-10 max-w-xl mx-auto">
-              Durumunuza özel bir değerlendirme yapmak ve size en uygun fizyoterapi
-              planını oluşturmak için iletişime geçin.
+              Durumunuza özel bir değerlendirme yapmak ve size özel bir fizyoterapi
+              planı oluşturmak için iletişime geçin.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link

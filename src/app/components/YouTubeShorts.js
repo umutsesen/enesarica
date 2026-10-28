@@ -8,17 +8,17 @@ const ease = [0.25, 0.4, 0.25, 1];
 const exerciseShorts = [
   {
     id: "lGgUpnG-5Bg",
-    title: "Omurganı özgür bırak! Fizyoterapist dokunuşuyla güç ve nefes",
+    title: "Fizyoterapist eşliğinde omurga, güç ve nefes çalışması",
     url: "https://www.youtube.com/shorts/lGgUpnG-5Bg",
   },
   {
     id: "HRB_wt01NQY",
-    title: "Pilates: Omurga sağlığı, güç ve ruhsal huzur!",
+    title: "Pilates ve omurga sağlığı",
     url: "https://www.youtube.com/shorts/HRB_wt01NQY",
   },
   {
     id: "Ku0EzqJ2kD8",
-    title: "Sırt ağrın varsa bu pilates combo'yu dene!",
+    title: "Sırt için pilates egzersiz kombinasyonu",
     url: "https://www.youtube.com/shorts/Ku0EzqJ2kD8",
   },
   {
@@ -51,17 +51,17 @@ const exerciseShorts = [
 const exerciseVideos = [
   {
     id: "aUX2A-SqSWE",
-    title: "Bel Ağrıları İçin Evde Yapabileceğiniz Etkili Egzersizler",
+    title: "Bel Ağrıları İçin Evde Yapabileceğiniz Egzersizler",
     url: "https://www.youtube.com/watch?v=aUX2A-SqSWE",
   },
   {
     id: "09_dP_KL_04",
-    title: "Pilates'de oblikler için en uygun basit egzersizler",
+    title: "Pilates'de oblikler için basit egzersizler",
     url: "https://www.youtube.com/watch?v=09_dP_KL_04",
   },
   {
     id: "fhrsqtY1370",
-    title: "Pilates'de karın kası gelişimi için en uygun basit egzersizler",
+    title: "Pilates'de karın kası gelişimi için basit egzersizler",
     url: "https://www.youtube.com/watch?v=fhrsqtY1370",
   },
 ];

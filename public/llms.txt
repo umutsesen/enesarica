@@ -39,7 +39,7 @@ Category: Medical / Healthcare
 
 ## Yaklaşım
 
-Fzt. Enes Arıca kanıta dayalı fizyoterapi uygulamaktadır. Her kişi için bireysel değerlendirme yaparak kişiye özel program planlar. Fizyoterapi uygulamaları hekim yönlendirmesi doğrultusunda yürütülür; ameliyatsız ve ilaçsız yaklaşımlar konservatif süreçte tercih edilir. Sonuçlar kişiden kişiye değişir; sonuç hakkında önceden taahhütte bulunulamaz.
+Fzt. Enes Arıca kanıta dayalı fizyoterapi uygulamaktadır. Her kişi için bireysel değerlendirme yaparak kişiye özel program planlar. Fizyoterapi uygulamaları, hekim tarafından konulan tanı ve yönlendirme doğrultusunda planlanır; başvurudan önce hekim değerlendirmesi yapılmış olması gerekir; ameliyatsız ve ilaçsız yaklaşımlar konservatif süreçte tercih edilir. Sonuçlar kişiden kişiye değişir; sonuç hakkında önceden taahhütte bulunulamaz.
 
 ## Blog
 

@@ -3,9 +3,9 @@ const treatments = [
     slug: 'bel-fitigi',
     title: 'Bel Fıtığında Fizyoterapi',
     description:
-      'Bel fıtığında ameliyatsız fizyoterapi yaklaşımı için değerlendirme alın. GTOS terapi, manuel terapi ve kişiye özel egzersiz programları.',
+      'Bel fıtığında hekim tanısı doğrultusunda ameliyatsız fizyoterapi yaklaşımı. GTOS terapi, manuel terapi ve kişiye özel egzersiz programları.',
     shortDescription:
-      'Bel fıtığında ameliyatsız fizyoterapi yaklaşımı için değerlendirme alın. GTOS terapi, manuel terapi ve kişiye özel egzersiz programları.',
+      'Bel fıtığında hekim tanısı doğrultusunda ameliyatsız fizyoterapi yaklaşımı. GTOS terapi, manuel terapi ve kişiye özel egzersiz programları.',
     metaTitle: 'Bel Fıtığında Fizyoterapi | Fizyoterapist Enes Arıca',
     metaDescription:
       'Bel fıtığında ameliyatsız yaklaşım. GTOS terapi, manuel terapi ve kişiye özel egzersiz programları ile bel fıtığında fizyoterapi yaklaşımı.',

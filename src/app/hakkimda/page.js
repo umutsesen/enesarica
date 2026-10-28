@@ -108,7 +108,7 @@ export default function HakkimdaPage() {
                   Medipol Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü mezunuyum. Mezuniyetimin ardından fizyoterapi alanındaki tutkumu Yalova Fizyoterapi'yi kurarak sürdürdüm. Bugün Yalova Merkez'deki iletişim noktam üzerinden hastalarıma hizmet vermenin gururunu yaşıyorum.
                 </p>
                 <p>
-                  Kariyer yolculuğumda GTOS (Golgi Tendon Organ Stimülasyonu) terapi, skolyozda Schroth metodu ve ortopedik manuel terapi alanlarında eğitimler aldım. Bu alanlarda özellikle bel fıtığı, boyun fıtığı, skolyoz ve kronik ağrı şikayetlerinde ameliyatsız, iğnesiz ve ilaçsız fizyoterapi uygulamaları yürütüyorum.
+                  Kariyer yolculuğumda GTOS (Golgi Tendon Organ Stimülasyonu) terapi, skolyozda Schroth metodu ve ortopedik manuel terapi alanlarında eğitimler aldım. Bu alanlarda özellikle bel fıtığı, boyun fıtığı, skolyoz ve kronik ağrı şikayetlerinde iğnesiz ve ilaçsız fizyoterapi uygulamaları yürütüyorum.
                 </p>
                 <p>
                   Her hastamın kendine özgü olduğuna inanıyor ve programları kişiye özel olarak planlıyorum. Kanıta dayalı yaklaşımı güncel fizyoterapi teknikleriyle birleştirerek günlük hayata ve sevilen aktivitelere dönüş sürecini desteklemeyi hedefliyorum; süreç ve sonuçlar kişiden kişiye değişir.

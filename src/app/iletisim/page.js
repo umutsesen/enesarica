@@ -89,9 +89,12 @@ export default function IletisimPage() {
               <p className="text-sage-600 text-sm font-medium tracking-widest uppercase mb-4">
                 Randevu Formu
               </p>
-              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-8">
+              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-4">
                 Randevu Alın
               </h2>
+              <p className="text-gray-600 mb-8">
+                Fizyoterapi uygulamaları, hekim tarafından konulan tanı ve yönlendirme doğrultusunda planlanır. Bu nedenle başvurudan önce hekim değerlendirmesi yapılmış olması gerekir; rapor ve resmi süreç gerektiren durumlarda da hekim raporu istenir.
+              </p>
 
               <form onSubmit={handleSubmit} className="space-y-5">
                 <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />

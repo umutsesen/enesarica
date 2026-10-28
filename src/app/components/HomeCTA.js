@@ -9,10 +9,10 @@ export default function HomeCTA() {
             İlk Adım
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-4">
-            Ağrısız Bir Yaşam İçin
+            Fizyoterapi Sürecinizi Planlayalım
           </h2>
           <p className="text-gray-500 text-lg mb-10 max-w-xl mx-auto">
-            Durumunuza özel bir değerlendirme yapmak ve size en uygun fizyoterapi planını oluşturmak için iletişime geçin.
+            Hekim değerlendirmesinin ardından durumunuza özel bir fizyoterapi değerlendirmesi yapmak ve size uygun fizyoterapi planını oluşturmak için iletişime geçin.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

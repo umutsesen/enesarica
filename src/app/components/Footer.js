@@ -30,7 +30,7 @@ export default function Footer() {
                 Fzt. Enes Arıca
               </Link>
               <p className="mt-4 text-gray-400 leading-relaxed max-w-lg">
-                Fizyoterapist Enes Arıca, bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates alanlarında 10 yılı aşkın deneyimle ameliyatsız (konservatif) fizyoterapi hizmeti sunmaktadır. Yalova Merkez'deki iletişim noktasında hastalarına kişiye özel fizyoterapi programları uygulamaktadır.
+                Fizyoterapist Enes Arıca, bel fıtığı, boyun fıtığı, skolyoz, GTOS terapi, manuel terapi, klinik pilates ve reformer pilates alanlarında ameliyatsız (konservatif) fizyoterapi hizmeti sunmaktadır. Yalova Merkez'deki iletişim noktasında, hekim tanısı ve yönlendirmesi doğrultusunda kişiye özel fizyoterapi programları uygulamaktadır.
               </p>
             </div>
             <div className="lg:text-right">

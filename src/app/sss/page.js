@@ -18,7 +18,7 @@ const faqData = [
       },
       {
         q: 'Fizyoterapiste ne zaman başvurmalıyım?',
-        a: 'Bel, boyun, sırt ağrısı, eklem sertliği, hareket kısıtlılığı, spor yaralanması, ameliyat sonrası rehabilitasyon ihtiyacı, duruş bozukluğu veya kronik ağrı durumlarında fizyoterapiste başvurmanız önerilir. Şikayetlerin erken dönemde değerlendirilmesi, sürecin planlanması açısından önerilir.',
+        a: 'Bel, boyun, sırt ağrısı, eklem sertliği, hareket kısıtlılığı, spor yaralanması, ameliyat sonrası rehabilitasyon ihtiyacı, duruş bozukluğu veya kronik ağrı durumlarında fizyoterapi gündeme gelebilir. Fizyoterapi uygulamaları, hekim tarafından konulan tanı ve yönlendirme doğrultusunda planlanır. Bu nedenle başvurudan önce hekim değerlendirmesi yapılmış olması gerekir; rapor ve resmi süreç gerektiren durumlarda da hekim raporu istenir.',
       },
       {
         q: 'FTR hekimi ile fizyoterapist arasındaki fark nedir?',
@@ -47,7 +47,7 @@ const faqData = [
       },
       {
         q: 'Manuel terapi ağrılı mıdır?',
-        a: 'Manuel terapi uygulamaları genellikle ağrısız veya minimal rahatsızlık verecek şekilde uygulanır. Bazı teknikler sırasında hafif bir baskı hissi olabilir ancak bu tolere edilebilir düzeydedir. Seans sırasında rahatsızlık hissederseniz fizyoterapistinize bildirmeniz önemlidir; uygulama yoğunluğu buna göre ayarlanır.',
+        a: 'Manuel terapi uygulamalarında yoğunluk kişinin toleransına göre ayarlanır. Bazı teknikler sırasında hafif bir baskı hissi olabilir ancak bu tolere edilebilir düzeydedir. Seans sırasında rahatsızlık hissederseniz fizyoterapistinize bildirmeniz önemlidir; uygulama yoğunluğu buna göre ayarlanır.',
       },
       {
         q: 'Fizyoterapi sürecinde egzersiz yapmam gerekir mi?',
@@ -55,10 +55,10 @@ const faqData = [
       },
       {
         q: 'Bel fıtığında ameliyat şart mı?',
-        a: 'Literatürde bel fıtığı vakalarının önemli bir bölümünde konservatif yaklaşımın ilk basamak olarak yer aldığı bildirilmektedir. Manuel terapi, GTOS terapi, McKenzie yöntemleri ve bireyselleştirilmiş egzersiz programları bu süreçte kullanılan yöntemlerdendir; yanıt kişiden kişiye değişir. Ameliyat ancak ilerleyici kas güç kaybı, cauda equina sendromu veya yoğun konservatif yaklaşıma rağmen yanıt alınamayan durumlarda değerlendirilir.',
+        a: 'Literatürde bel fıtığı vakalarının önemli bir bölümünde konservatif yaklaşımın ilk basamak olarak yer aldığı bildirilmektedir. Manuel terapi, GTOS terapi, McKenzie yöntemleri ve bireyselleştirilmiş egzersiz programları bu süreçte kullanılan yöntemlerdendir; yanıt kişiden kişiye değişir. Ameliyat ihtiyacı hekim tarafından; genellikle ilerleyici kas güç kaybı, cauda equina sendromu veya yoğun konservatif yaklaşıma rağmen yanıt alınamayan durumlarda değerlendirilir.',
       },
       {
-        q: 'Skolyozda fizyoterapiyle sonuç almak ne kadar sürer?',
+        q: 'Skolyozda fizyoterapi süreci ne kadar sürer?',
         a: 'Skolyozda fizyoterapi uzun soluklu bir süreçtir. İlk 3 ay yoğun faz olarak haftada 2-3 seans klinik çalışma yapılır. 3-6 ay arasında geliştirme fazına geçilir. 6 ay sonrasında sürdürme fazında periyodik kontrol ve düzenli ev programı ile devam edilir. Büyüme çağındaki çocuklarda sürecin erken dönemde takibe alınması literatürde önemli görülür; sonuçlar kişiden kişiye değişir.',
       },
     ],
@@ -68,7 +68,7 @@ const faqData = [
     questions: [
       {
         q: 'Nasıl randevu alabilirim?',
-        a: 'Web sitemizdeki iletişim formunu doldurarak, +90 554 662 12 45 numarasını arayarak veya WhatsApp üzerinden mesaj göndererek randevu alabilirsiniz.',
+        a: 'Web sitemizdeki iletişim formunu doldurarak, +90 554 662 12 45 numarasını arayarak veya WhatsApp üzerinden mesaj göndererek randevu alabilirsiniz. Fizyoterapi uygulamaları hekim tarafından konulan tanı ve yönlendirme doğrultusunda planlandığından, başvurudan önce hekim değerlendirmesi yapılmış olması gerekir.',
       },
       {
         q: 'Nerede hizmet veriyorsunuz?',
@@ -80,7 +80,7 @@ const faqData = [
       },
       {
         q: 'İlk seansta ne yapılır?',
-        a: 'İlk seansta detaylı bir değerlendirme yapılır. Şikayetleriniz, tıbbi geçmişiniz ve varsa görüntüleme sonuçlarınız incelenir. Fonksiyonel değerlendirme ile hareket açıklığı, kas kuvveti, postür ve ilgili testler incelenir. Bulgulara göre bireyselleştirilmiş fizyoterapi planı oluşturulur ve ilk uygulamalara başlanır.',
+        a: 'İlk seansta detaylı bir değerlendirme yapılır. Şikayetleriniz, tıbbi geçmişiniz, hekim tanınız ve raporunuz ile varsa görüntüleme sonuçlarınız incelenir. Fonksiyonel değerlendirme ile hareket açıklığı, kas kuvveti, postür ve ilgili testler incelenir. Bulgulara göre bireyselleştirilmiş fizyoterapi planı oluşturulur ve ilk uygulamalara başlanır.',
       },
     ],
   },
@@ -180,7 +180,7 @@ export default function SSSPage() {
                 Sorunuzun cevabını bulamadınız mı?
               </h2>
               <p className="text-gray-500 mb-8">
-                Size yardımcı olmaktan memnuniyet duyarım. Doğrudan iletişime
+                Size yardımcı olmaktan memnuniyet duyarım. Benimle iletişime
                 geçebilirsiniz.
               </p>
               <div className="flex flex-wrap justify-center gap-4">

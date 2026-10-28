@@ -180,7 +180,7 @@ export default async function BlogPostPage({ params }) {
               Bu konuda detaylı değerlendirme ister misiniz?
             </h3>
             <p className="text-gray-300 text-sm mb-6">
-              Fizyoterapist Enes Arıca ile ön değerlendirme için randevu alın.
+              Hekim yönlendirmeniz doğrultusunda Fzt. Enes Arıca ile fizyoterapi değerlendirmesi için randevu alın.
             </p>
             <Link
               href="/iletisim"
