@@ -62,7 +62,7 @@ geçici", "etkili bir strateji"). Yeni içerik de bu dile uyar. Kelime bazlı to
 enesarica/
 ├── src/app/
 │   ├── layout.js              # Root: Inter font, metadata, StructuredData
-│   ├── page.js                # Homepage: Hero → AboutPreview → Specializations → TreatmentProcess → FeaturedTestimonials → YouTubeShorts → LatestArticles → HomeContact
+│   ├── page.js                # Homepage: Hero → AboutPreview → Specializations → TreatmentProcess → LatestArticles → HomeContact
 │   ├── components/            # All components
 │   ├── hakkimda/              # Biography, timeline, certifications, philosophy
 │   ├── calisma-alanlari/      # Çalışma alanları listing + [slug] MDX detail (eski /tedavi-alanlari → 301, 2026-10-28)
@@ -99,7 +99,6 @@ enesarica/
 - **Cards:** rounded-2xl p-6/p-8 border border-gray-100
 - **Buttons:** bg-sage-600 hover:bg-sage-700 rounded-lg (primary), bg-forest-900 hover:bg-forest-800 (secondary)
 - **Section padding:** py-24 md:py-32
-- **YouTube:** Sekmeli yapı (Videolar / Egzersizler), shorts grid + video grid
 - **NO:** pill badges, gradient text, glow effects
 
 ## Animasyon Kuralları
@@ -115,7 +114,8 @@ enesarica/
 ## Hard Rules
 
 - All domain refs: `https://www.fizyoterapistenesarica.com`
-- Social links: instagram.com/yalovafizyoterapist, youtube.com/@fizyones, facebook.com/fizyones
+- **Social links (2026-10-28):** only facebook.com/fizyones. Instagram `@yalovafizyoterapist` (profile name "Fizik tedavi & Klinik Pilates") and YouTube (channel name "Uzman Fizyoterapist Enes Arıca"; `@fizyones` was a 404) were removed, along with the YouTubeShorts section, because their names are banned wording. Re-add them only after the profiles are renamed
+- Removed post `/blog/fizyoterapist-nasil-secilir` → 301 `/blog` (2026-10-28): a "how to choose a physiotherapist" text can read as an implicit comparison. Don't write fizyoterapist-seçimi content again
 - Author: "Fzt. Enes Arıca" (not "Fizyones")
 - Floating buttons: right side (WhatsApp + Phone), `bottom-4 right-4 sm:bottom-6 sm:right-6`
 - Phone: +90 554 662 12 45

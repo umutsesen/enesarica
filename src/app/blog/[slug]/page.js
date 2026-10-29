@@ -84,8 +84,7 @@ export default async function BlogPostPage({ params }) {
       "url": "https://www.fizyoterapistenesarica.com/hakkimda",
       "image": "https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp",
       "sameAs": [
-        "https://www.fizyoterapistenesarica.com",
-        "https://www.instagram.com/yalovafizyoterapist"
+        "https://www.fizyoterapistenesarica.com"
       ]
     },
     "publisher": {

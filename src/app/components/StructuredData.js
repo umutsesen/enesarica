@@ -6,9 +6,7 @@ export function StructuredData() {
   const profileImage = `${siteUrl}/imgs/enes-arica.webp`;
   const logoImage = `${siteUrl}/android-chrome-512x512.png`;
   const socialProfiles = [
-    'https://www.instagram.com/yalovafizyoterapist/',
     'https://www.facebook.com/fizyones',
-    'https://www.youtube.com/@fizyones',
   ];
 
   const personSchema = {

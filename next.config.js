@@ -41,6 +41,12 @@ const nextConfig = {
         destination: `/blog/${to}`,
         permanent: true,
       })),
+      // Unpublished 2026-10-28: a "how to choose a physiotherapist" post can read as an implicit comparison
+      {
+        source: '/blog/fizyoterapist-nasil-secilir',
+        destination: '/blog',
+        permanent: true,
+      },
       {
         source: '/subeler/:path*',
         destination: '/iletisim',

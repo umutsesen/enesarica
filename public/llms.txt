@@ -15,7 +15,6 @@ Category: Medical / Healthcare
 - Klinik: Yalova Fizyoterapi (https://www.yalovafizyoterapist.com)
 - Konum: Yalova, Türkiye (tek birim)
 - Web: https://www.fizyoterapistenesarica.com
-- Instagram: https://www.instagram.com/yalovafizyoterapist/
 
 ## Çalışma Alanları
 
@@ -43,7 +42,7 @@ Fzt. Enes Arıca kanıta dayalı fizyoterapi uygulamaktadır. Her kişi için bi
 
 ## Blog
 
-fizyoterapistenesarica.com blogu Türkçe bilgilendirme makaleleri içermektedir. Makaleler birinci şahıs klinik perspektifinden yazılmış olup bilimsel referanslar (Lancet, BMJ, Cochrane, Spine, JOSPT) içerir. Konular: uygulama yöntemleri, hastalık rehberleri, egzersiz programları, fizyoterapist seçim kriterleri. İçerikler genel bilgilendirme amaçlıdır; hekim değerlendirmesinin yerine geçmez.
+fizyoterapistenesarica.com blogu Türkçe bilgilendirme makaleleri içermektedir. Makaleler birinci şahıs klinik perspektifinden yazılmıştır; yer yer bilimsel literatüre atıf içerir. Konular: uygulama yöntemleri, hastalık rehberleri, egzersiz programları. İçerikler genel bilgilendirme amaçlıdır; hekim değerlendirmesinin yerine geçmez.
 
 ## Sayfa Yapısı
 

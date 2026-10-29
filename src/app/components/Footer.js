@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { FaInstagram, FaYoutube, FaFacebookF, FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { getAllPosts } from "@/lib/mdx";
 
+// Instagram and YouTube links removed 2026-10-28: those profile names use
+// banned wording (see CLAUDE.md); re-add once the profiles are renamed
 const socialLinks = [
-  { icon: FaInstagram, href: "https://www.instagram.com/yalovafizyoterapist/", label: "Instagram" },
-  { icon: FaYoutube, href: "https://www.youtube.com/@fizyones", label: "YouTube" },
   { icon: FaFacebookF, href: "https://www.facebook.com/fizyones/", label: "Facebook" },
 ];
 
