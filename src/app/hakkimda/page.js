@@ -34,7 +34,7 @@ const practiceAreas = [
 
 export default function HakkimdaPage() {
   return (
-    <main className="pt-20">
+    <div className="pt-20">
       {/* Hero */}
       <div className="bg-sand-50 py-24 md:py-32 border-b border-gray-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -285,6 +285,6 @@ export default function HakkimdaPage() {
           </Link>
         </div>
       </motion.section>
-    </main>
+    </div>
   );
 }

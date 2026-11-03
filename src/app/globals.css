@@ -48,3 +48,13 @@ body {
 .prose img {
   @apply rounded-2xl my-8;
 }
+
+/* Keep keyboard focus visible across navigation, forms and article links. */
+:focus-visible {
+  outline: 3px solid #557259;
+  outline-offset: 4px;
+}
+
+.bg-forest-900 :focus-visible {
+  outline-color: #B0C7B4;
+}

@@ -1,9 +1,9 @@
-export const metadata = {
-  title: 'Gizlilik Politikasi | Fzt. Enes Arıca',
-  description:
-    'fizyoterapistenesarica.com gizlilik politikasi. Cerez kullanimi ve form verileri hakkinda bilgilendirme.',
-  alternates: { canonical: 'https://www.fizyoterapistenesarica.com/gizlilik-politikasi' },
-};
+import { createPageMetadata } from '@/lib/metadata';
+export const metadata = createPageMetadata({
+  title: 'Gizlilik Politikası | Fzt. Enes Arıca',
+  description: 'Web sitesi, iletişim formu ve üçüncü taraf hizmetlerde veri işleme hakkında bilgiler. Gizlilik ve iletişim başvuruları.',
+  path: '/gizlilik-politikasi',
+});
 
 export default function GizlilikPolitikasiPage() {
   return (
@@ -47,12 +47,12 @@ export default function GizlilikPolitikasiPage() {
           <li>Ad ve soyad</li>
           <li>Telefon numarasi</li>
           <li>E-posta adresi</li>
-          <li>Mesaj icerigi</li>
+          <li>İsteğe bağlı mesaj içeriği</li>
+          <li>Sabit iletişim noktası: Yalova Merkez</li>
         </ul>
         <p>
-          Bu bilgiler yalnizca talebinizi degerlendirmek ve size geri donus
-          yapmak amaciyla kullanilir. Pazarlama amacli ucuncu taraflarla
-          paylasilmaz.
+          Bu bilgiler iletişim talebinizi yanıtlamak ve randevuya ilişkin iletişimi yürütmek amacıyla kullanılır.
+          Form sağlık bilgileri için tasarlanmamıştır; lütfen tanı, rapor, görüntüleme sonucu veya sağlık geçmişi paylaşmayın.
         </p>
 
         <h2>3. Ucuncu Taraf Hizmetler</h2>
@@ -64,24 +64,29 @@ export default function GizlilikPolitikasiPage() {
             <strong>Vercel:</strong> Web sitesi barindirma hizmeti
           </li>
           <li>
-            <strong>Google Fonts:</strong> Yazi tipi hizmeti
+            <strong>Web3Forms:</strong> Mesaj formunu gönderdiğinizde formdaki bilgiler tarayıcınızdan
+            bu hizmetin API’sine iletilir.
+          </li>
+          <li>
+            <strong>Yazı tipleri:</strong> Sitenin alan adından sunulur; sayfa görüntülenirken
+            Google Fonts’a ayrıca istek gönderilmez.
           </li>
         </ul>
         <p>
-          Bu hizmet saglayicilar, kendi gizlilik politikalari cercevesinde veri
-          islemektedir.
+          Hizmet sağlayıcılar teknik altyapılarında veri işleyebilir. Veri işleme ve aktarım koşullarıyla ilgili
+          ayrıntılar için veri sorumlusuna ulaşabilirsiniz. İletişim kanallarına ilişkin bilgi KVKK aydınlatma metninde yer alır.
         </p>
 
         <h2>5. Veri Saklama Sureleri</h2>
         <p>Kisisel verileriniz asagidaki sureler boyunca saklanmaktadir:</p>
         <ul>
           <li>
-            <strong>Form verileri:</strong> Talebinizin sonuclanmasindan
-            itibaren 1 yil
+            <strong>Form verileri:</strong> Talebin yanıtlanması ve uygulanabilir yasal yükümlülükler için gerekli süreyle sınırlı olarak saklanır.
+            Saklama ve silme koşulları hakkında veri sorumlusundan bilgi isteyebilirsiniz.
           </li>
           <li>
-            <strong>Cerezler:</strong> Oturum cerezleri tarayici kapatildiginda,
-            kalici cerezler en fazla 13 ay boyunca saklanir
+            <strong>Çerezler:</strong> Saklama süresi kullanılan teknik çerezin işlevine göre değişebilir.
+            Tarayıcınızın site verileri bölümünden mevcut çerezleri görüntüleyebilir ve silebilirsiniz.
           </li>
         </ul>
 
@@ -106,7 +111,7 @@ export default function GizlilikPolitikasiPage() {
         </p>
 
         <p className="text-sm text-gray-400 mt-12">
-          Son guncelleme: 29 Mayis 2026
+          Son güncelleme: 3 Kasım 2026
         </p>
       </div>
     </section>

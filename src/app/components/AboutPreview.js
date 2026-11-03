@@ -1,120 +1,33 @@
-'use client'
+import Link from 'next/link';
 
-import Image from 'next/image'
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-
-const ease = [0.25, 0.4, 0.25, 1]
-
-const practiceAreas = [
-  { name: 'Manuel Terapi' },
-  { name: 'GTOS Terapi' },
-  { name: 'Klinik Pilates' },
-]
+const preparation = [
+  { title: 'Hekim yönlendirmesi', text: 'Hastalık durumlarında uygulamalar, hekim tarafından konulan tanı ve yönlendirme doğrultusunda planlanır.' },
+  { title: 'Mevcut belgeler', text: 'Varsa hekim raporunuzu ve mevcut görüntüleme sonuçlarınızı ilk görüşmeye getirebilirsiniz.' },
+  { title: 'Bireysel değerlendirme', text: 'Hareket, kuvvet ve fonksiyon değerlendirilir. Programın içeriği ve izlem aralıkları kişiye göre belirlenir.' },
+];
 
 export default function AboutPreview() {
   return (
-    <section className="py-24 md:py-32 bg-sand-50">
+    <section className="bg-sand-50 py-14 md:py-20" aria-labelledby="yaklasim-baslik">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
-          <motion.div
-            initial={{ clipPath: "inset(0 100% 0 0)" }}
-            whileInView={{ clipPath: "inset(0 0% 0 0)" }}
-            transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
-            viewport={{ once: true, margin: "-100px" }}
-            className="aspect-[4/5] relative rounded-2xl overflow-hidden"
-          >
-            <Image
-              src="/imgs/enes-arica.webp"
-              alt="Fizyoterapist Enes Arıca"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </motion.div>
-
-          <div>
-            <motion.p
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, ease }}
-              viewport={{ once: true, margin: "-100px" }}
-              className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
-            >
-              Fizyoterapist
-            </motion.p>
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1, ease }}
-              viewport={{ once: true, margin: "-100px" }}
-              className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-8"
-            >
-              Hakkımda
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2, ease }}
-              viewport={{ once: true, margin: "-100px" }}
-              className="text-gray-600 leading-relaxed mb-6"
-            >
-              Bel fıtığı, boyun fıtığı, skolyoz ve GTOS terapi alanlarında fizyoterapi hizmeti veriyorum. Yaklaşımımda manuel terapi teknikleri ile kişiye özel egzersiz programlarını bir arada kullanıyorum; program içeriği ve süreç kişiden kişiye değişir.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3, ease }}
-              viewport={{ once: true, margin: "-100px" }}
-              className="text-gray-600 leading-relaxed mb-8"
-            >
-              <a
-                href="https://www.yalovafizyoterapist.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-forest-900 underline decoration-sage-400/40 underline-offset-4 hover:decoration-sage-600 transition-colors"
-              >
-                Yalova Fizyoterapi
-              </a>{' '}
-              olarak Yalova&apos;daki iletişim noktası üzerinden fizyoterapi ve rehabilitasyon hizmeti sunuyoruz.
-            </motion.p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.4, ease }}
-              viewport={{ once: true, margin: "-100px" }}
-              className="space-y-2 mb-10"
-            >
-              {practiceAreas.map((area, i) => (
-                <motion.li
-                  key={area.name}
-                  initial={{ opacity: 0, x: -15 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, delay: 0.45 + i * 0.08, ease }}
-                  viewport={{ once: true }}
-                  className="flex items-center gap-3 text-sm text-gray-600"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-sage-600 shrink-0" />
-                  {area.name}
-                </motion.li>
-              ))}
-            </motion.ul>
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5, ease }}
-              viewport={{ once: true, margin: "-100px" }}
-            >
-              <Link
-                href="/hakkimda"
-                className="inline-flex items-center px-8 py-4 border border-gray-200 bg-white rounded-lg text-sm font-medium text-forest-900 transition-all hover:border-gray-300 hover:-translate-y-0.5"
-              >
-                Devamını Oku →
-              </Link>
-            </motion.div>
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-16">
+          <div className="lg:col-span-4">
+            <p className="text-sm font-medium text-sage-700 mb-3">Çalışma yaklaşımım</p>
+            <h2 id="yaklasim-baslik" className="text-3xl font-semibold tracking-tight text-forest-900">İlk görüşme öncesinde</h2>
+            <p className="mt-4 text-gray-600 leading-relaxed">Fizyoterapi süreci, sağlık geçmişiniz ve hekim yönlendirmeniz birlikte ele alınarak başlar. Süreç ve sonuçlar kişiden kişiye değişir.</p>
+            <Link href="/hakkimda" className="mt-5 inline-block font-medium text-sage-700 underline underline-offset-4">Hakkımda ve çalışma yaklaşımım →</Link>
           </div>
+          <ol className="lg:col-span-8 grid sm:grid-cols-3 gap-6">
+            {preparation.map((item, index) => (
+              <li key={item.title} className="border-t border-sage-300 pt-5">
+                <span className="text-sm text-sage-700" aria-hidden="true">0{index + 1}</span>
+                <h3 className="mt-3 font-semibold text-forest-900">{item.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.text}</p>
+              </li>
+            ))}
+          </ol>
         </div>
       </div>
     </section>
-  )
+  );
 }

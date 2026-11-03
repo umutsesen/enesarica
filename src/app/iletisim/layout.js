@@ -1,18 +1,9 @@
-export const metadata = {
-  title: "İletişim ve Randevu | Fzt. Enes Arıca",
-  description:
-    "Fzt. Enes Arıca ile iletişime geçin ve randevu alın. Yalova Merkez'deki iletişim noktam üzerinden bana ulaşın.",
-  alternates: {
-    canonical: "https://www.fizyoterapistenesarica.com/iletisim",
-  },
-  openGraph: {
-    title: "İletişim ve Randevu | Fzt. Enes Arıca",
-    description:
-      "Fzt. Enes Arıca ile iletişime geçin ve randevu alın.",
-    url: "https://www.fizyoterapistenesarica.com/iletisim",
-    images: [{ url: "https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp", width: 2048, height: 1368, alt: "Fzt. Enes Arıca - İletişim" }],
-  },
-};
+import { createPageMetadata } from '@/lib/metadata';
+export const metadata = createPageMetadata({
+  title: 'İletişim ve Randevu Bilgileri | Fzt. Enes Arıca',
+  description: 'Fizyoterapist Enes Arıca’nın Yalova Merkez adresi, çalışma saatleri, telefon ve e-posta bilgileri. İletişim formu ve ulaşım bilgileri.',
+  path: '/iletisim',
+});
 
 export default function IletisimLayout({ children }) {
   return (

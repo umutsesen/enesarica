@@ -1,3 +1,5 @@
+import { createPageMetadata } from '@/lib/metadata';
+import { PERSON_ID } from '@/lib/site';
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getBlogPost, getAllBlogPosts, compileContent } from "@/lib/mdx";
@@ -21,28 +23,14 @@ export async function generateMetadata({ params }) {
   if (!post) {
     return { title: "Yazı Bulunamadı | Fzt. Enes Arıca" };
   }
-  return {
-    title: `${post.title} | Fzt. Enes Arıca Blog`,
+  return createPageMetadata({
+    title: post.title + ' | Fzt. Enes Arıca Blog',
     description: post.description,
-    alternates: {
-      canonical: `https://www.fizyoterapistenesarica.com/blog/${slug}`,
-    },
-    openGraph: {
-      title: `${post.title} | Fzt. Enes Arıca Blog`,
-      description: post.description,
-      url: `https://www.fizyoterapistenesarica.com/blog/${slug}`,
-      type: 'article',
-      publishedTime: post.date,
-      modifiedTime: post.updatedDate || post.date,
-      authors: ['https://www.fizyoterapistenesarica.com/hakkimda'],
-      images: [{
-        url: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp',
-        width: 1200,
-        height: 630,
-        alt: post.title,
-      }],
-    },
-  };
+    path: '/blog/' + slug,
+    type: 'article',
+    publishedTime: post.date,
+    modifiedTime: post.updatedDate || post.date,
+  });
 }
 
 export default async function BlogPostPage({ params }) {
@@ -79,6 +67,7 @@ export default async function BlogPostPage({ params }) {
     "description": post.description,
     "author": {
       "@type": "Person",
+      "@id": PERSON_ID,
       "name": "Fzt. Enes Arıca",
       "jobTitle": "Fizyoterapist",
       "url": "https://www.fizyoterapistenesarica.com/hakkimda",
@@ -88,13 +77,10 @@ export default async function BlogPostPage({ params }) {
       ]
     },
     "publisher": {
-      "@type": "Organization",
+      "@type": "Person",
+      "@id": PERSON_ID,
       "name": "Fzt. Enes Arıca",
-      "url": "https://www.fizyoterapistenesarica.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.fizyoterapistenesarica.com/android-chrome-512x512.png"
-      }
+      "url": "https://www.fizyoterapistenesarica.com"
     },
     "datePublished": post.date,
     "dateModified": post.updatedDate || post.date,
@@ -129,8 +115,11 @@ export default async function BlogPostPage({ params }) {
           <h1 className="text-4xl md:text-5xl font-semibold text-white tracking-tight mt-4">
             {post.title}
           </h1>
-          <div className="flex items-center justify-center gap-4 mt-6 text-sm text-gray-400">
-            <time dateTime={post.date}>{formatDate(post.date)}</time>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 mt-6 text-sm text-gray-300">
+            <span>Yayın: <time dateTime={post.date}>{formatDate(post.date)}</time></span>
+            {post.updatedDate && post.updatedDate !== post.date && (
+              <span>Güncelleme: <time dateTime={post.updatedDate}>{formatDate(post.updatedDate)}</time></span>
+            )}
             <span>&middot;</span>
             <span>{post.readingTime} dk okuma</span>
             {post.author && (

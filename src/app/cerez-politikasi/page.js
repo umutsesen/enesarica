@@ -1,9 +1,9 @@
-export const metadata = {
+import { createPageMetadata } from '@/lib/metadata';
+export const metadata = createPageMetadata({
   title: 'Çerez Politikası | Fzt. Enes Arıca',
-  description:
-    'fizyoterapistenesarica.com çerez politikası. Sitemizde yalnızca zorunlu çerezler kullanılmaktadır.',
-  alternates: { canonical: 'https://www.fizyoterapistenesarica.com/cerez-politikasi' },
-};
+  description: 'Web sitesinin teknik işleyişi, çerezler ve üçüncü taraf hizmetlerle ilgili genel bilgiler.',
+  path: '/cerez-politikasi',
+});
 
 export default function CerezPolitikasiPage() {
   return (
@@ -37,9 +37,9 @@ export default function CerezPolitikasiPage() {
 
         <h2>2. Üçüncü Taraf Hizmetler</h2>
         <p>
-          Web sitemiz barındırma için Vercel ve yazı tipi hizmeti için Google
-          Fonts altyapısını kullanır. Bu hizmetler, teknik gereklilikler
-          kapsamında sınırlı veri işleyebilir. Sitemizde Google Analytics,
+          Web sitemiz barındırma için Vercel altyapısını kullanır. Yazı tipleri site alan adından
+          sunulur; sayfa görüntülenirken Google Fonts’a ayrıca istek gönderilmez.
+          Mesaj formu gönderildiğinde bilgiler Web3Forms API’sine iletilir; ayrıntılar gizlilik politikasında açıklanır. Sitemizde Google Analytics,
           Microsoft Clarity gibi reklam veya davranışsal izleme amaçlı analitik
           araçlar kullanılmamaktadır.
         </p>
@@ -64,7 +64,7 @@ export default function CerezPolitikasiPage() {
         </p>
 
         <p className="text-sm text-gray-400 mt-12">
-          Son güncelleme: 29 Mayıs 2026
+          Son güncelleme: 3 Kasım 2026
         </p>
       </div>
     </section>

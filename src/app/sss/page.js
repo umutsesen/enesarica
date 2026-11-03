@@ -1,12 +1,12 @@
+import { createPageMetadata } from '@/lib/metadata';
 import Link from 'next/link';
 import Script from 'next/script';
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: 'Sık Sorulan Sorular | Fzt. Enes Arıca',
-  description:
-    'Fizyoterapi uygulamaları, randevu süreci, başvuru belgeleri ve seans süreleri hakkında sık sorulan sorular.',
-  alternates: { canonical: 'https://www.fizyoterapistenesarica.com/sss' },
-};
+  description: 'Fizyoterapi süreci, hekim yönlendirmesi, başvuru belgeleri ve seans süreleri hakkında sık sorulan sorulara genel yanıtlar.',
+  path: '/sss',
+});
 
 const faqData = [
   {
@@ -124,7 +124,7 @@ export default function SSSPage() {
         }}
       />
 
-      <main className="pt-20">
+      <div className="pt-20">
         <section className="py-24 md:py-32">
           <div className="max-w-4xl mx-auto px-6">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-forest-900 mb-4">
@@ -185,7 +185,7 @@ export default function SSSPage() {
             </div>
           </div>
         </section>
-      </main>
+      </div>
     </>
   );
 }

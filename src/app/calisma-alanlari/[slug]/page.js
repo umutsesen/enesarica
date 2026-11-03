@@ -1,3 +1,4 @@
+import { createPageMetadata } from '@/lib/metadata';
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getTreatmentPost, getAllTreatmentPosts, compileContent } from "@/lib/mdx";
@@ -14,19 +15,12 @@ export async function generateMetadata({ params }) {
   if (!post) {
     return { title: "Sayfa Bulunamadı | Fzt. Enes Arıca" };
   }
-  return {
-    title: `${post.title} | Fzt. Enes Arıca`,
+  return createPageMetadata({
+    title: post.title + ' | Fzt. Enes Arıca',
     description: post.description,
-    alternates: {
-      canonical: `https://www.fizyoterapistenesarica.com/calisma-alanlari/${slug}`,
-    },
-    robots: getRobotsForPath(`/calisma-alanlari/${slug}`),
-    openGraph: {
-      title: `${post.title} | Fzt. Enes Arıca`,
-      description: post.description,
-      url: `https://www.fizyoterapistenesarica.com/calisma-alanlari/${slug}`,
-    },
-  };
+    path: '/calisma-alanlari/' + slug,
+    robots: getRobotsForPath('/calisma-alanlari/' + slug),
+  });
 }
 
 export default async function TreatmentPage({ params }) {

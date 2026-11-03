@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap && node scripts/check-public-content.mjs --rendered",
+    "postbuild": "next-sitemap && node scripts/check-public-content.mjs --rendered && npm run check:seo",
     "start": "next start",
     "check:content": "node scripts/check-public-content.mjs",
-    "prebuild": "npm run check:content"
+    "prebuild": "npm run check:content",
+    "check:seo": "node scripts/check-seo.mjs"
   },
   "dependencies": {
     "framer-motion": "^11.11.1",

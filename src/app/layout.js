@@ -1,3 +1,5 @@
+import { createPageMetadata } from '@/lib/metadata';
+import { SITE_URL } from '@/lib/site';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from './components/Navbar';
@@ -11,34 +13,11 @@ const inter = Inter({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://www.fizyoterapistenesarica.com'),
-  title: 'Fizyoterapist Enes Arıca | Yalova',
-  description:
-    'Fizyoterapist Enes Arıca: bel fıtığı, boyun fıtığı ve skolyozda fizyoterapi; GTOS terapi, manuel terapi, klinik pilates ve reformer pilates uygulamaları. Yalova\'da hizmetinizdeyiz.',
-  openGraph: {
-    title: 'Fizyoterapist Enes Arıca | Yalova',
-    description:
-      'Bel fıtığı, boyun fıtığı ve skolyozda fizyoterapi; GTOS terapi, manuel terapi, klinik ve reformer pilates uygulamaları.',
-    url: 'https://www.fizyoterapistenesarica.com',
-    siteName: 'Fizyoterapist Enes Arıca',
-    images: [
-      {
-        url: 'https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp',
-        width: 1200,
-        height: 630,
-        alt: 'Fizyoterapist Enes Arıca',
-      },
-    ],
-    locale: 'tr_TR',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Fizyoterapist Enes Arıca',
-    description:
-      'Bel fıtığı, boyun fıtığı ve skolyozda fizyoterapi; GTOS terapi, manuel terapi, klinik ve reformer pilates uygulamaları.',
-    images: ['https://www.fizyoterapistenesarica.com/imgs/enes-arica.webp'],
-  },
+  metadataBase: new URL(SITE_URL),
+  ...createPageMetadata({
+    title: 'Fizyoterapist Enes Arıca | Yalova Merkez',
+    description: 'Fizyoterapist Enes Arıca’nın Yalova Merkez’deki çalışma yaklaşımı, fizyoterapi ve rehabilitasyon alanları, genel bilgilendirme yazıları ve iletişim bilgileri.',
+  }),
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -78,8 +57,11 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <StructuredData />
+        <a href="#icerik" className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[70] focus:rounded-lg focus:bg-white focus:px-4 focus:py-3 focus:text-forest-900">
+          İçeriğe geç
+        </a>
         <Navbar />
-        <main>{children}</main>
+        <main id="icerik" tabIndex={-1} className="focus:outline-none">{children}</main>
         <Footer />
         <FloatingButtons />
       </body>

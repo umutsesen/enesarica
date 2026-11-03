@@ -1,9 +1,9 @@
-export const metadata = {
-  title: 'KVKK Aydinlatma Metni | Fzt. Enes Arıca',
-  description:
-    '6698 sayili Kisisel Verilerin Korunmasi Kanunu kapsaminda aydinlatma metni.',
-  alternates: { canonical: 'https://www.fizyoterapistenesarica.com/kvkk' },
-};
+import { createPageMetadata } from '@/lib/metadata';
+export const metadata = createPageMetadata({
+  title: 'KVKK Aydınlatma Metni | Fzt. Enes Arıca',
+  description: 'İletişim formunda işlenen bilgiler, Web3Forms üzerinden iletim ve kişisel verilerle ilgili haklar hakkında aydınlatma metni.',
+  path: '/kvkk',
+});
 
 export default function KVKKPage() {
   return (
@@ -44,8 +44,8 @@ export default function KVKKPage() {
             adresi
           </li>
           <li>
-            <strong>Saglik bilgileri:</strong> Randevu formu uzerinden
-            paylasilan sikayet ve saglik gecmisi bilgileri
+            <strong>Mesaj içeriği:</strong> İletişim talebinize ilişkin isteğe bağlı açıklama.
+            Bu form sağlık verisi toplamak için tasarlanmamıştır; tanı, rapor veya sağlık geçmişi paylaşmayınız.
           </li>
           <li>
             <strong>Dijital veriler:</strong> IP adresi, tarayici bilgileri,
@@ -57,10 +57,10 @@ export default function KVKKPage() {
         <p>Kisisel verileriniz asagidaki amaclarla islenmektedir:</p>
         <ul>
           <li>Randevu olusturma ve yonetimi</li>
-          <li>Fizyoterapi surecinin planlanmasi ve takibi</li>
+
           <li>Iletisim taleplerinizin cevaplanmasi</li>
           <li>Yasal yukumluluklerin yerine getirilmesi</li>
-          <li>Hizmet kalitesinin arttirilmasi</li>
+
         </ul>
 
         <h2>4. Kisisel Verilerin Aktarilmasi</h2>
@@ -74,10 +74,16 @@ export default function KVKKPage() {
             Web sitesi altyapisi icin kullanilan hosting hizmet saglayicilari
             (Vercel)
           </li>
+          <li>
+            İletişim formu iletim hizmeti (Web3Forms): Gönder düğmesine bastığınızda ad, telefon,
+            isteğe bağlı e-posta ve mesaj ile sabit Yalova Merkez konum bilgisi tarayıcınızdan
+            Web3Forms API’sine iletilir.
+          </li>
         </ul>
         <p>
-          Kisisel verileriniz, acik rizaniz olmaksizin ucuncu sahislarla
-          pazarlama amacli paylastirilmaz.
+          Form iletimi, hizmet sağlayıcının altyapısında veri işlenmesini gerektirir. Hizmet sağlayıcıların
+          veri işleme ve aktarım koşullarına ilişkin sorularınızı veri sorumlusuna yöneltebilirsiniz.
+          Bu form pazarlama izni almak için kullanılmaz.
         </p>
 
         <h2>5. Kisisel Verilerin Toplanma Yontemleri ve Hukuki Sebepleri</h2>
@@ -90,7 +96,7 @@ export default function KVKKPage() {
         </ul>
         <p>
           Hukuki sebepler: Acik riza (KVKK m.5/1), sozlesmenin ifasi (KVKK
-          m.5/2-c), hukuki yukumluluk (KVKK m.5/2-c), meşru menfaat (KVKK
+          m.5/2-c), hukuki yukumluluk (KVKK m.5/2-ç), meşru menfaat (KVKK
           m.5/2-f).
         </p>
 
@@ -150,7 +156,7 @@ export default function KVKKPage() {
         </p>
 
         <p className="text-sm text-gray-400 mt-12">
-          Son guncelleme: 29 Mayis 2026
+          Son güncelleme: 3 Kasım 2026
         </p>
       </div>
     </section>

@@ -14,7 +14,7 @@ export default function BlogPage() {
   const [featured, ...rest] = posts;
 
   return (
-    <main className="pt-20">
+    <div className="pt-20">
       {/* Hero — Light */}
       <div className="bg-sand-50 py-24 md:py-32 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -96,6 +96,6 @@ export default function BlogPage() {
           )}
         </div>
       </section>
-    </main>
+    </div>
   );
 }

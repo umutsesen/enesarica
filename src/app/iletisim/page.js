@@ -1,235 +1,39 @@
-"use client";
-
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
-import branches from "@/data/branches";
-import BranchSelect from "../components/BranchSelect";
-
-const ease = [0.25, 0.4, 0.25, 1];
+import branches from '@/data/branches';
+import { OPENING_HOURS } from '@/lib/site';
+import ContactForm from '../components/ContactForm';
 
 export default function IletisimPage() {
-  const [form, setForm] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    branch: "",
-    message: "",
-  });
-  const [status, setStatus] = useState(null);
-  const [loading, setLoading] = useState(false);
-
-  function handleChange(e) {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  }
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-    setLoading(true);
-    setStatus(null);
-
-    try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "a849377f-2f48-4c4d-b751-364a46e721fc",
-          subject: "Yeni Randevu Talebi - Fzt. Enes Arıca",
-          from_name: form.name,
-          ...form,
-        }),
-      });
-      const data = await res.json();
-      if (data.success) {
-        setStatus("success");
-        setForm({ name: "", phone: "", email: "", branch: "", message: "" });
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
-    } finally {
-      setLoading(false);
-    }
-  }
-
+  const location = branches[0];
+  const directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=' + location.coordinates.lat + ',' + location.coordinates.lng;
   return (
-    <main className="pt-20">
-      <div className="bg-sand-50 py-24 md:py-32 border-b border-gray-100 overflow-hidden">
+    <div className="pt-20">
+      <header className="bg-sand-50 py-14 md:py-20 border-b border-sand-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <motion.p
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease }}
-            className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
-          >
-            Bize Ulaşın
-          </motion.p>
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1, ease }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-forest-900"
-          >
-            İletişim ve Randevu
-          </motion.h1>
+          <p className="text-sage-700 text-sm font-medium mb-4">Fzt. Enes Arıca · Yalova Merkez</p>
+          <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-forest-900">İletişim ve randevu bilgileri</h1>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-gray-600">Adres, çalışma saatleri ve iletişim kanalları. Hastalık durumlarında fizyoterapi uygulamaları hekim tanısı ve yönlendirmesi doğrultusunda planlanır.</p>
         </div>
-      </div>
-
-      <section className="py-24 md:py-32 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16">
-            {/* Form */}
-            <motion.div
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, ease }}
-              viewport={{ once: true, margin: "-100px" }}
-            >
-              <p className="text-sage-600 text-sm font-medium tracking-widest uppercase mb-4">
-                Randevu Formu
-              </p>
-              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-4">
-                Randevu Alın
-              </h2>
-              <p className="text-gray-600 mb-8">
-                Fizyoterapi uygulamaları, hekim tarafından konulan tanı ve yönlendirme doğrultusunda planlanır. Bu nedenle başvurudan önce hekim değerlendirmesi yapılmış olması gerekir; rapor ve resmi süreç gerektiren durumlarda da hekim raporu istenir.
-              </p>
-
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                    Ad Soyad
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    required
-                    value={form.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-sage-600 focus:ring-1 focus:ring-sage-600 outline-none transition-colors"
-                  />
-                </div>
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                      Telefon
-                    </label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      required
-                      value={form.phone}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-sage-600 focus:ring-1 focus:ring-sage-600 outline-none transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                      E-posta
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={form.email}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-sage-600 focus:ring-1 focus:ring-sage-600 outline-none transition-colors"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                    İletişim Konusu Seçin
-                  </label>
-                  <BranchSelect
-                    branches={branches}
-                    value={form.branch}
-                    onChange={handleChange}
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                    Mesajınız
-                  </label>
-                  <textarea
-                    name="message"
-                    rows={4}
-                    value={form.message}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-sage-600 focus:ring-1 focus:ring-sage-600 outline-none transition-colors resize-none"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="w-full bg-forest-900 text-white font-medium py-3.5 rounded-lg hover:bg-forest-800 transition-colors disabled:opacity-50"
-                >
-                  {loading ? "Gönderiliyor..." : "Randevu Talebi Gönder"}
-                </button>
-
-                {status === "success" && (
-                  <p className="text-green-600 text-sm">
-                    Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.
-                  </p>
-                )}
-                {status === "error" && (
-                  <p className="text-red-600 text-sm">
-                    Bir hata oluştu. Lütfen tekrar deneyin veya telefonla iletişime geçin.
-                  </p>
-                )}
-              </form>
-            </motion.div>
-
-            {/* Branches */}
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 0.1, ease }}
-              viewport={{ once: true, margin: "-100px" }}
-            >
-              <p className="text-sage-600 text-sm font-medium tracking-widest uppercase mb-4">
-                İletişim Bilgileri
-              </p>
-              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-8">
-                Lokasyon
-              </h2>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
-                {branches.map((b, i) => (
-                  <motion.div
-                    key={b.name}
-                    initial={{ opacity: 0, y: 25 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: i * 0.1, ease }}
-                    viewport={{ once: true, margin: "-50px" }}
-                    className="rounded-2xl p-8 border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
-                  >
-                    <h3 className="text-lg font-semibold text-forest-900">
-                      {b.name}
-                    </h3>
-                    <div className="mt-4 space-y-3">
-                      <p className="flex items-start gap-3 text-sm text-gray-600">
-                        <FaMapMarkerAlt className="w-4 h-4 text-sage-600 shrink-0 mt-0.5" />
-                        {b.address}
-                      </p>
-                      <p className="flex items-center gap-3 text-sm text-gray-600">
-                        <FaPhone className="w-4 h-4 text-sage-600 shrink-0" />
-                        <a
-                          href={`tel:${b.phone.replace(/\s/g, "")}`}
-                          className="hover:text-sage-600 transition-colors"
-                        >
-                          {b.phone}
-                        </a>
-                      </p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
+      </header>
+      <section className="py-14 md:py-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-forest-900">Mesaj formu</h2>
+            <p className="mt-4 mb-7 text-gray-600 leading-relaxed">Bu form iletişim talepleri içindir; tıbbi tanı veya kişisel sağlık değerlendirmesi yerine geçmez. Gönderilen talep, randevu saatini otomatik olarak onaylamaz.</p>
+            <ContactForm idPrefix="contact-page" />
+          </div>
+          <div className="rounded-2xl border border-sand-200 bg-sand-50 p-6 sm:p-8 self-start">
+            <h2 className="text-2xl font-semibold tracking-tight text-forest-900">{location.name}</h2>
+            <address className="mt-6 not-italic space-y-5 leading-relaxed text-gray-700">
+              <p>{location.address}</p>
+              <p>{OPENING_HOURS}</p>
+              <p><a href={'tel:' + location.phone} className="text-forest-900 font-medium underline underline-offset-4">+90 554 662 12 45</a></p>
+              <p><a href="mailto:fizyones77@gmail.com" className="underline underline-offset-4">fizyones77@gmail.com</a></p>
+            </address>
+            <a href={directionsUrl} target="_blank" rel="noopener noreferrer" className="mt-7 inline-block text-sage-700 font-medium underline underline-offset-4">Google Haritalar’da yol tarifi →</a>
+            <p className="mt-8 text-sm leading-relaxed text-gray-600">İlk görüşmeye varsa hekim raporunuzu, yönlendirme belgenizi ve mevcut görüntüleme sonuçlarınızı getirebilirsiniz. Bu belgeleri mesaj formuna yazmayın.</p>
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
