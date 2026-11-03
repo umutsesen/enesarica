@@ -139,6 +139,21 @@ for (const url of indexable) {
   if (!reachable.has(url)) issues.push(`Indexable page has no rendered link path from homepage: ${url}`);
 }
 
+// Validate compiled routing rather than only the source declaration: requests carry
+// percent-encoded paths, and a literal Unicode source may silently fail to match.
+const routing = JSON.parse(readFileSync(join(root, '.next/routes-manifest.json'), 'utf8'));
+for (const redirect of routing.redirects || []) {
+  if (redirect.source.includes(':') || !redirect.destination.startsWith('/')) continue;
+  try {
+    const wirePath = encodeURI(decodeURI(redirect.source));
+    if (!new RegExp(redirect.regex, routing.caseSensitive ? '' : 'i').test(wirePath)) {
+      issues.push(`Redirect does not match its encoded request path: ${redirect.source}`);
+    }
+    const destination = new URL(redirect.destination, siteUrl).href.replace(/\/$/u, '');
+    if (!internalLinks.has(destination)) issues.push(`Redirect destination is not a generated page: ${redirect.destination}`);
+  } catch { issues.push(`Invalid compiled redirect: ${redirect.source}`); }
+}
+
 const sitemapUrls = new Set();
 const sitemapFiles = readdirSync(join(root, 'public')).filter((name) => /^sitemap-\d+\.xml$/u.test(name));
 if (!sitemapFiles.length) issues.push('No generated sitemap files found');

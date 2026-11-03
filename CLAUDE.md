@@ -171,3 +171,11 @@ Vercel uses this same command via `vercel.json`.
 - The root layout owns the only main element and the skip target. Page components must use div, section or fragment wrappers.
 - Navbar dropdowns use native buttons, aria-expanded/controls, Escape handling and hidden closed panels.
 - Both contact surfaces use the same labelled ContactForm. Its branch payload is always Yalova Merkez; preserve the existing Web3Forms destination/payload, privacy disclosure and health-data warning. Never submit external test messages.
+
+
+## Health-content evidence and editorial boundaries (2026-11-03)
+
+- Do not publish fixed per-condition session counts, universal exercise doses or autobiographical clinical protocols without documented supporting evidence and actual practitioner verification. A general guideline does not validate a branded method, a different population or a specific exercise list.
+- Verify that a reference exists and supports its adjacent claim before linking it. Use direct primary publications or official guidance; record scope and uncertainty in the implementation document. Do not invent a reviewer, review date, clinical signoff, personal experience, graduation, training or institutional role.
+- Retain stable article URLs and measured search intent while correcting unsupported specifics. Dates reflect actual editorial changes, never automatic freshness.
+- Homepage reachability and internal Markdown destinations are build guards; preserve noindex exclusions and all legacy redirects. Existing Search Console reports are historical evidence, not proof that a new edit improved rankings.

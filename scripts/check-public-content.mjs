@@ -41,6 +41,20 @@ function scan(path) {
     }
   }
   if (!rendered) {
+    // Check educational Markdown links before a build is available. Noindex
+    // destinations may still be linked; this check never changes that policy.
+    if (extname(path) === '.mdx') {
+      for (const match of text.matchAll(/\]\((\/(?!\/)[^\s)]+)\)/gu)) {
+        const route = decodeURIComponent(new URL(match[1], 'http://local.test').pathname).replace(/\/$/u, '') || '/';
+        const contentRoute = /^\/(blog|calisma-alanlari)\/([^/]+)$/u.exec(route);
+        const destination = contentRoute
+          ? join(root, 'content', contentRoute[1], `${contentRoute[2]}.mdx`)
+          : join(root, 'src/app', route, 'page.js');
+        if (!existsSync(destination) && !existsSync(join(root, 'public', route))) {
+          failures.push(`${relative(root, path)}: broken Markdown link ${route}`);
+        }
+      }
+    }
     // Literal local image references must resolve. Dynamic references still need visual QA.
     for (const match of text.matchAll(/["'(](\/[^"'\s)<>]+\.(?:webp|png|jpe?g|svg|ico))["')]/giu)) {
       if (!existsSync(join(root, 'public', match[1]))) {

@@ -1,7 +1,7 @@
 import { createPageMetadata } from '@/lib/metadata';
 export const metadata = createPageMetadata({
   title: 'Hakkımda | Fizyoterapist Enes Arıca',
-  description: 'Fizyoterapist Enes Arıca hakkında: eğitim, çalışma yaklaşımı ve Yalova Merkez’deki fizyoterapi ve rehabilitasyon sürecine ilişkin bilgiler.',
+  description: 'Fizyoterapist Enes Arıca hakkında: kişisel tanıtım, çalışma yaklaşımı ve Yalova Merkez’deki fizyoterapi ve rehabilitasyon sürecine ilişkin bilgiler.',
   path: '/hakkimda',
 });
 

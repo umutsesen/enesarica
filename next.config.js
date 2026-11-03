@@ -20,6 +20,11 @@ const nextConfig = {
       ['evde-fizik-tedavi', 'evde-fizyoterapi'],
     ];
     const renamedPosts = [
+      // Historical misspellings observed in Search Console; preserve the relevant destination.
+      ['reformer-klinik-pilates-farki', 'reformer-klinik-pilates-farklari'],
+      ['klinik-reformer-pilates-farklari', 'reformer-klinik-pilates-farklari'],
+      ['fizyoterapist-kac-seans-surer', 'fizyoterapi-kac-seans-surer'],
+      ['fizik-fiziyoterapi-farki', 'ftr-hekimi-fizyoterapist-farki'],
       ['siyatik-agrisi-evde-tedavi', 'siyatik-agrisi-evde'],
       ['fizik-tedavi-fizyoterapi-farki', 'ftr-hekimi-fizyoterapist-farki'],
       ['trigger-point-tedavisi', 'tetik-nokta-trigger-point'],

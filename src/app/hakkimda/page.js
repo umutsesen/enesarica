@@ -6,29 +6,30 @@ import { motion } from "framer-motion";
 
 const ease = [0.25, 0.4, 0.25, 1];
 
-const timeline = [
-  { year: "2014", title: "Lisans Mezuniyeti", desc: "Medipol Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü" },
-  { year: "2015", title: "Mesleki Faaliyet", desc: "Yalova'da fizyoterapi uygulamalarına başlangıç" },
-  { year: "2016", title: "Manuel Terapi Eğitimi", desc: "Ortopedik manuel terapi eğitim programı" },
-  { year: "2017", title: "GTOS Terapi Eğitimi", desc: "Golgi Tendon Organ Stimülasyonu eğitim programı" },
-  { year: "2019", title: "Schroth Metodu Eğitimi", desc: "Skolyozda Schroth metodu eğitim programı" },
+const discussionSteps = [
+  { label: '01', title: 'İhtiyaçlarınızı anlatın', desc: 'Günlük yaşamda zorlandığınız hareketleri, sorularınızı ve önceliklerinizi ilk görüşmede paylaşabilirsiniz.' },
+  { label: '02', title: 'Mevcut belgeleri birlikte ele alın', desc: 'Hekim tanısı ve yönlendirmesi ile varsa ilgili raporlar, fizyoterapi değerlendirmesinin çerçevesini oluşturur.' },
+  { label: '03', title: 'Planı ve izlem zamanını konuşun', desc: 'Önerilen çalışmanın amacı, size uygunluğu ve ne zaman yeniden değerlendirileceği görüşülür.' },
 ];
 
 const practiceAreas = [
   {
     title: "GTOS Terapi",
     subtitle: "Golgi Tendon Organ Stimülasyonu",
-    desc: "Kas-iskelet sistemi şikayetlerinde uygulanan GTOS terapi yaklaşımı. Uygunluğu ve kapsamı kişiye göre değerlendirilir.",
+    desc: "GTOS adıyla ilgili açıklamalar, yönteme özgü kanıtın sınırları ve uygulama öncesinde sorulabilecek sorular.",
+    href: "/calisma-alanlari/gtos-terapi",
   },
   {
     title: "Schroth Metodu",
     subtitle: "Skolyoz Spesifik Egzersiz",
-    desc: "Almanya kökenli Schroth yaklaşımı çerçevesinde, skolyozda kişiye göre planlanan üç boyutlu egzersiz programları.",
+    desc: "Skolyozda egzersiz yaklaşımı, bireysel planlama ve hekim takibi hakkında genel bilgiler.",
+    href: "/calisma-alanlari/skolyoz-schroth",
   },
   {
     title: "Manuel Terapi",
     subtitle: "Ortopedik Manuel Terapi",
-    desc: "Eklem mobilizasyonu ve yumuşak doku teknikleri. Ağrı yönetimi ve hareket açıklığına yönelik uygulamalar.",
+    desc: "Manuel terapi yöntemleri, değerlendirme süreci ve kişiye göre planlama hakkında genel bilgiler.",
+    href: "/calisma-alanlari/manuel-terapi",
   },
 ];
 
@@ -105,13 +106,13 @@ export default function HakkimdaPage() {
                 className="space-y-6 text-gray-600 leading-relaxed"
               >
                 <p>
-                  Medipol Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü mezunuyum. Mezuniyetimin ardından fizyoterapi alanındaki tutkumu Yalova Fizyoterapi'yi kurarak sürdürdüm. Bugün Yalova Merkez'deki iletişim noktam üzerinden hastalarıma hizmet vermenin gururunu yaşıyorum.
+                  Ben Fizyoterapist Enes Arıca. Yalova Merkez’deki iletişim noktam üzerinden fizyoterapi süreci hakkında bilgi alabilirsiniz. Bu kişisel sitede hareket, egzersiz ve fizyoterapiye ilişkin açıklamaları bir araya getiriyorum.
                 </p>
                 <p>
-                  Kariyer yolculuğumda GTOS (Golgi Tendon Organ Stimülasyonu) terapi, skolyozda Schroth metodu ve ortopedik manuel terapi alanlarında eğitimler aldım. Bu alanlarda özellikle bel fıtığı, boyun fıtığı, skolyoz ve kronik ağrı şikayetlerinde iğnesiz ve ilaçsız fizyoterapi uygulamaları yürütüyorum.
+                  Çalışma yaklaşımımda açık iletişime ve kişinin günlük yaşam ihtiyaçlarının anlaşılmasına önem veriyorum. Fizyoterapi uygulamaları, hekim tarafından konulan tanı ve yönlendirme doğrultusunda kişiye göre planlanır.
                 </p>
                 <p>
-                  Her hastamın kendine özgü olduğuna inanıyor ve programları kişiye özel olarak planlıyorum. Kanıta dayalı yaklaşımı güncel fizyoterapi teknikleriyle birleştirerek günlük hayata ve sevilen aktivitelere dönüş sürecini desteklemeyi hedefliyorum; süreç ve sonuçlar kişiden kişiye değişir.
+                  Bir görüşmede hangi hareketlerde zorlandığınızı, neyi yapmak istediğinizi ve size önerilen plan hakkında merak ettiklerinizi paylaşabilirsiniz. Hedeflerin ve izlem zamanının anlaşılır biçimde konuşulması, sürece katılımınız açısından önemlidir.
                 </p>
               </motion.div>
             </div>
@@ -119,7 +120,7 @@ export default function HakkimdaPage() {
         </div>
       </section>
 
-      {/* Timeline */}
+      {/* Discussion steps */}
       <section className="py-24 md:py-32 bg-sand-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-16">
@@ -131,7 +132,7 @@ export default function HakkimdaPage() {
                 viewport={{ once: true }}
                 className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
               >
-                Kariyer Yolculuğu
+                İlk Görüşme
               </motion.p>
               <motion.h2
                 initial={{ opacity: 0, y: 25 }}
@@ -140,7 +141,7 @@ export default function HakkimdaPage() {
                 viewport={{ once: true }}
                 className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-4"
               >
-                Eğitim ve Deneyim
+                Birlikte konuşacağımız başlıklar
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 15 }}
@@ -149,7 +150,7 @@ export default function HakkimdaPage() {
                 viewport={{ once: true }}
                 className="text-gray-500 leading-relaxed"
               >
-                2014&apos;ten bugüne fizyoterapi alanındaki gelişim sürecim ve kazanımlarım.
+                Belgeleriniz, günlük yaşam hedefleriniz ve aklınızdaki sorular, görüşmenin başlangıç noktasıdır.
               </motion.p>
             </div>
 
@@ -157,7 +158,7 @@ export default function HakkimdaPage() {
               <div className="relative">
                 <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-gray-200" />
                 <div className="space-y-10">
-                  {timeline.map((item, i) => (
+                  {discussionSteps.map((item, i) => (
                     <motion.div
                       key={i}
                       initial={{ opacity: 0, x: -30 }}
@@ -176,7 +177,7 @@ export default function HakkimdaPage() {
                         <div className="absolute inset-0 rounded-full bg-sage-600/20 scale-[2]" />
                       </motion.div>
 
-                      <span className="text-sage-600 text-sm font-semibold">{item.year}</span>
+                      <span className="text-sage-600 text-sm font-semibold">{item.label}</span>
                       <h3 className="text-lg font-semibold text-forest-900 mt-1">{item.title}</h3>
                       <p className="text-gray-600 mt-1">{item.desc}</p>
                     </motion.div>
@@ -188,7 +189,7 @@ export default function HakkimdaPage() {
         </div>
       </section>
 
-      {/* Certifications */}
+      {/* Topic guides */}
       <section className="py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.p
@@ -198,7 +199,7 @@ export default function HakkimdaPage() {
             viewport={{ once: true }}
             className="text-sage-600 text-sm font-medium tracking-widest uppercase mb-4"
           >
-            Deneyim Alanları
+            Bilgi Rehberleri
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 25 }}
@@ -207,7 +208,7 @@ export default function HakkimdaPage() {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900 mb-16"
           >
-            Eğitim Aldığım Alanlar
+            Sitedeki konu başlıkları
           </motion.h2>
           <div className="grid md:grid-cols-3 gap-6">
             {practiceAreas.map((cert, i) => (
@@ -220,7 +221,7 @@ export default function HakkimdaPage() {
                 className="rounded-2xl p-8 border border-gray-100 hover:border-sage-600/30 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
               >
                 <h3 className="text-xl font-semibold text-forest-900">
-                  {cert.title}
+                  <Link href={cert.href} className="hover:text-sage-700 underline underline-offset-4">{cert.title}</Link>
                 </h3>
                 <p className="text-sage-600 text-sm font-medium mt-1">
                   {cert.subtitle}
@@ -252,10 +253,10 @@ export default function HakkimdaPage() {
             </h2>
             <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
               <p>
-                Fizyoterapide kanıta dayalı yaklaşımı benimsiyor, her hastamı bütüncül bir bakış açısıyla değerlendiriyorum. Ağrının sadece bir semptom olduğuna, asıl nedenin altında yatan fonksiyonel bozukluğun ele alınması gerektiğine inanıyorum.
+                Fizyoterapiyle ilgili soruların, hekim değerlendirmesi ve kişinin ihtiyaçları birlikte ele alınarak konuşulmasını önemsiyorum. Yöntem adları kadar önerilen çalışmanın amacı, dayanağı ve belirsizliklerinin de anlaşılır olması gerekir.
               </p>
               <p>
-                Hastalarımla açık iletişim kurarak süreci birlikte yönetiyoruz. Her seansta yapılan uygulamaların nedenini açıklıyor, hastalarımın kendi vücutlarını daha iyi anlamalarına katkı sunmayı amaçlıyorum.
+                Sorularınızı paylaşmanız, anlamadığınız bir açıklamanın yeniden ele alınması ve planın izlem görüşmelerinde gözden geçirilmesi bu yaklaşımın parçasıdır. Süreç ve yanıt kişiden kişiye değişir.
               </p>
             </div>
           </motion.div>

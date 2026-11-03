@@ -29,13 +29,13 @@ const treatments = [
     slug: 'gtos-terapi',
     title: 'GTOS Terapi',
     description:
-      'İğnesiz ve ilaçsız GTOS terapi yöntemi ile kas-iskelet sistemi şikayetlerinde fizyoterapi uygulaması.',
+      'GTOS adının anlamı, yönteme özgü kanıtın sınırları ve görüşmede sorulabilecek sorular.',
     shortDescription:
-      'İğnesiz ve ilaçsız GTOS terapi yöntemi ile kas-iskelet sistemi şikayetlerinde fizyoterapi uygulaması.',
+      'GTOS adının anlamı, yönteme özgü kanıtın sınırları ve görüşmede sorulabilecek sorular.',
     metaTitle: 'GTOS Terapi | Fizyoterapist Enes Arıca',
     metaDescription:
-      'GTOS terapi ile iğnesiz, ilaçsız uygulama. Bel fıtığı, boyun fıtığı, spor yaralanmaları ve kronik ağrı şikayetlerinde fizyoterapi yaklaşımı.',
-    keywords: ['GTOS terapi', 'GTOS uygulaması', 'iğnesiz uygulama', 'ilaçsız yaklaşım'],
+      'GTOS hakkında bilgilendirme: kanıt sınırları, kişisel planlama ve uygulama öncesi sorular.',
+    keywords: ['GTOS terapi', 'GTOS hakkında sorular', 'fizyoterapi planlaması'],
     relatedTreatments: ['bel-fitigi', 'boyun-fitigi', 'spor-yaralanmalari'],
   },
   {

@@ -155,7 +155,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400">
           <p>
             &copy; {new Date().getFullYear()} Fzt. Enes Arıca. Tüm hakları saklıdır.
             <span className="mx-2 opacity-30">|</span>
@@ -170,10 +170,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-5 space-y-2">
-          <p className="text-[11px] text-gray-600 text-center">
+          <p className="text-[11px] text-gray-400 text-center">
             Bu web sitesindeki bilgiler genel bilgilendirme amaçlıdır ve hekim değerlendirmesinin yerine geçmez. Tanı ve tıbbi kararlar için mutlaka hekiminize danışınız.
           </p>
-          <p className="text-[11px] text-gray-600 text-center">
+          <p className="text-[11px] text-gray-400 text-center">
             İçerik sorumlusu / Veri sorumlusu: Fzt. Enes Arıca &middot; fizyones77@gmail.com &middot; +90 554 662 12 45 &middot; Son güncelleme: 3 Kasım 2026
           </p>
           <p className="text-sm text-gray-300 text-center leading-relaxed">
