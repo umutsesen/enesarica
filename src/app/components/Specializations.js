@@ -65,10 +65,10 @@ export default function Specializations() {
                 </p>
                 <div className="md:col-span-2 flex justify-end">
                   <Link
-                    href="/iletisim"
+                    href={`/calisma-alanlari/${treatment.slug}`}
                     className="text-sm text-gray-400 hover:text-sage-600 transition-colors"
                   >
-                    Görüşme Planla →
+                    Konuyu Oku →
                   </Link>
                 </div>
               </div>

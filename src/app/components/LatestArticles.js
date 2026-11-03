@@ -1,30 +1,25 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 const featuredPosts = [
   {
     slug: 'bel-fitigi-egzersizleri',
     title: 'Bel Fıtığında Egzersizler: Evde Yapılabilecek 10 Hareket',
     category: 'Egzersiz',
-    image: '/imgs/blog/bel-fitigi.webp',
   },
   {
     slug: 'boyun-duzlesmesi',
     title: 'Boyun Düzleşmesi Nedir? Belirtileri ve Fizyoterapi Yaklaşımları',
     category: 'Fizyoterapi',
-    image: '/imgs/blog/boyun-fitigi.webp',
   },
   {
     slug: 'skolyoz-nedir-belirtileri-nelerdir',
     title: 'Skolyoz Nedir? Belirtileri Nelerdir?',
     category: 'Fizyoterapi',
-    image: '/imgs/blog/skolyoz.webp',
   },
   {
     slug: 'siyatik-agrisi-evde',
     title: 'Siyatik Ağrısında Evde Neler Yapılabilir?',
     category: 'Rehber',
-    image: '/imgs/blog/diz-agrilari.webp',
   },
 ]
 
@@ -57,15 +52,6 @@ export default function LatestArticles() {
               href={`/blog/${post.slug}`}
               className="group block rounded-2xl border border-sand-200 bg-white overflow-hidden transition-all duration-300 hover:border-sage-300 hover:shadow-lg"
             >
-              <div className="relative h-36 overflow-hidden">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                />
-              </div>
               <div className="p-4">
                 <p className="text-xs uppercase tracking-wider text-sage-600 font-medium mb-1.5">
                   {post.category}

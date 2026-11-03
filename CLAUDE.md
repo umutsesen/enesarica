@@ -67,7 +67,6 @@ enesarica/
 │   ├── hakkimda/              # Biography, timeline, certifications, philosophy
 │   ├── calisma-alanlari/      # Çalışma alanları listing + [slug] MDX detail (eski /tedavi-alanlari → 301, 2026-10-28)
 │   ├── blog/                  # Blog listing + [slug] MDX detail
-│   ├── hasta-deneyimleri/     # Testimonial grid
 │   ├── iletisim/              # Contact form + branch cards
 │   ├── sss/                   # FAQ page
 │   ├── kvkk/                  # KVKK legal
@@ -142,9 +141,22 @@ enesarica/
 ## Verification
 
 ```bash
-npx next build   # Must succeed with 0 errors
+npm run build   # Source guard, Next build, sitemap and rendered HTML guard must all pass
 ```
 
 ## SEO Targets
 
 fizyoterapist enes arıca, bel fıtığı fizyoterapi, boyun fıtığı fizyoterapi, GTOS terapi, skolyoz fizyoterapi, manuel terapi, klinik pilates, reformer pilates, Yalova fizyoterapi
+
+
+## Public-content regression checks (2026-11-03)
+
+`npm run check:content` checks maintained source/public text and reviewed media.
+`npm run build` also scans every generated HTML page, including metadata and JSON-LD.
+Vercel uses this same command via `vercel.json`.
+
+- Do not reintroduce restricted titles, the restricted treatment word, removed social profiles, patient review markup, or appointment solicitations inside educational article copy.
+- Legacy spellings are allowed only as redirect sources in Next config; never as destination URLs, internal links, rendered copy or sitemap entries.
+- Public media is pinned by SHA-256 in `scripts/reviewed-media.json`. Inspect any new or changed image visually (including embedded text) before updating its reviewed entry. Do not automatically regenerate the inventory to make a failure disappear.
+- Stock images of people receiving hands-on care or exercising were removed from the personal site. Keep homepage article cards text-only. The reviewed seated portrait is a biography image, not a patient result.
+- Replacing a word with a therapy synonym does not establish legal compliance. Read `docs/compliance-review-2026-11-03.md` for evidence boundaries and documentary checks.

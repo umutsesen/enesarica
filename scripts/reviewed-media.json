@@ -1,0 +1,42 @@
+{
+  "android-chrome-192x192.png": {
+    "sha256": "292805f5ebee2c7440abd4bb73eb7027e226e4b2de305384103339ebba217303",
+    "reviewedOn": "2026-11-03",
+    "purpose": "Visually reviewed brand icon or wordmark, no restricted title"
+  },
+  "android-chrome-512x512.png": {
+    "sha256": "1d2e1c4589105bee1b64cbbe2e3cae21dea3b0a95ad9989a933da6038f3cf7ce",
+    "reviewedOn": "2026-11-03",
+    "purpose": "Visually reviewed brand icon or wordmark, no restricted title"
+  },
+  "apple-touch-icon.png": {
+    "sha256": "0088de997cc7b31113873c2d4edd752153fe94b8b9b2f9c03220c354612417ae",
+    "reviewedOn": "2026-11-03",
+    "purpose": "Visually reviewed brand icon or wordmark, no restricted title"
+  },
+  "favicon-16x16.png": {
+    "sha256": "223dcf616484c4c65bcc2b9b34e4665f29f17a7be9626d8c4ec714e1f7a60935",
+    "reviewedOn": "2026-11-03",
+    "purpose": "Visually reviewed brand icon or wordmark, no restricted title"
+  },
+  "favicon-32x32.png": {
+    "sha256": "ffc202156fb3b910159f718c6fca724685b9e46226159d79686a4c2cf8e227bf",
+    "reviewedOn": "2026-11-03",
+    "purpose": "Visually reviewed brand icon or wordmark, no restricted title"
+  },
+  "favicon.ico": {
+    "sha256": "b504d5548e2fb3dcd2c7f9f3bd1c579c370917da4bb551739f6f4bb8d19fb495",
+    "reviewedOn": "2026-11-03",
+    "purpose": "Visually reviewed brand icon or wordmark, no restricted title"
+  },
+  "imgs/enes-arica.webp": {
+    "sha256": "25187b8bb0e926c64b9ed0b139dbc0c67337a7fda5a5db0ca3ddc24a2adc5a5f",
+    "reviewedOn": "2026-11-03",
+    "purpose": "Visually reviewed clothed seated portrait; no patient, procedure, testimonial or visible restricted title"
+  },
+  "mstile-150x150.png": {
+    "sha256": "3bcbd46f3bc9922ee9dfce93d3b794fbaaa5a7fc2b0c4f34517bdd94b69f4782",
+    "reviewedOn": "2026-11-03",
+    "purpose": "Visually reviewed brand icon or wordmark, no restricted title"
+  }
+}

@@ -176,16 +176,16 @@ export default async function BlogPostPage({ params }) {
 
           <div className="mt-12 rounded-2xl p-8 bg-forest-900 text-center">
             <h3 className="text-xl font-semibold text-white mb-2">
-              Bu konuda detaylı değerlendirme ister misiniz?
+              İçerik hakkında
             </h3>
             <p className="text-gray-300 text-sm mb-6">
-              Hekim yönlendirmeniz doğrultusunda Fzt. Enes Arıca ile fizyoterapi değerlendirmesi için randevu alın.
+              Bu yazı kişisel değerlendirme veya uygulama önerisi yerine geçmez. İçerikle ilgili sorularınız için editörün iletişim bilgileri aşağıdadır.
             </p>
             <Link
               href="/iletisim"
               className="inline-block bg-sage-600 text-white text-sm font-medium px-8 py-3 rounded-lg hover:bg-sage-700 transition-colors"
             >
-              Randevu Al
+              İletişim bilgileri
             </Link>
           </div>
 

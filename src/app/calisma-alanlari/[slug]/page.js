@@ -136,16 +136,16 @@ export default async function TreatmentPage({ params }) {
             <aside className="space-y-8">
               <div className="rounded-2xl p-8 border border-gray-100 bg-forest-900 text-center">
                 <h3 className="text-xl font-semibold text-white mb-3">
-                  Randevu Alın
+                  İçerik hakkında
                 </h3>
                 <p className="text-gray-300 text-sm mb-6">
-                  Hekim yönlendirmesi doğrultusunda fizyoterapi sürecinizi planlayalım.
+                  Bu bilgiler kişisel değerlendirme yerine geçmez. İçerik sorumlusunun iletişim bilgileri aşağıdadır.
                 </p>
                 <Link
                   href="/iletisim"
                   className="inline-block w-full bg-sage-600 text-white text-sm font-medium px-6 py-3 rounded-lg hover:bg-sage-700 transition-colors"
                 >
-                  Randevu Al
+                  İletişim bilgileri
                 </Link>
               </div>
 

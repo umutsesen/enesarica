@@ -105,7 +105,7 @@ export default function Footer() {
               <li>Omurga sağlığı ve ağrı yönetimi</li>
               <li>Schroth ve skolyoz egzersiz yaklaşımı</li>
               <li>Egzersiz planlama ve ev programları</li>
-              <li>Hasta seçimi ve klinik karar rehberleri</li>
+              <li>Genel sağlık ve hareket bilgileri</li>
             </ul>
           </div>
 
@@ -173,7 +173,11 @@ export default function Footer() {
             Bu web sitesindeki bilgiler genel bilgilendirme amaçlıdır ve hekim değerlendirmesinin yerine geçmez. Tanı ve tıbbi kararlar için mutlaka hekiminize danışınız.
           </p>
           <p className="text-[11px] text-gray-600 text-center">
-            İçerik sorumlusu / Veri sorumlusu: Fzt. Enes Arıca &middot; fizyones77@gmail.com &middot; +90 554 662 12 45 &middot; Son güncelleme: 29 Mayıs 2026
+            İçerik sorumlusu / Veri sorumlusu: Fzt. Enes Arıca &middot; fizyones77@gmail.com &middot; +90 554 662 12 45 &middot; Son güncelleme: 3 Kasım 2026
+          </p>
+          <p className="text-sm text-gray-300 text-center leading-relaxed">
+            Her cerrahi veya girişimsel işlemde sonuçlar kişiden kişiye değişiklik gösterebilir.
+            İşlem öncesinde hekiminizden detaylı görüş almanız önerilir.
           </p>
         </div>
       </div>

@@ -4,7 +4,7 @@ import Script from 'next/script';
 export const metadata = {
   title: 'Sık Sorulan Sorular | Fzt. Enes Arıca',
   description:
-    'Fizyoterapi uygulamaları, randevu süreci, fiyatlandırma ve seans süreleri hakkında sık sorulan sorular.',
+    'Fizyoterapi uygulamaları, randevu süreci, başvuru belgeleri ve seans süreleri hakkında sık sorulan sorular.',
   alternates: { canonical: 'https://www.fizyoterapistenesarica.com/sss' },
 };
 
@@ -84,23 +84,6 @@ const faqData = [
       },
     ],
   },
-  {
-    category: 'Fiyatlandırma',
-    questions: [
-      {
-        q: 'Fizyoterapi seansları SGK kapsamında mı?',
-        a: 'Tarafımızca özel sağlık sigortası ve bireysel ödeme ile hizmet verilmektedir. SGK anlaşmamız bulunmamaktadır. Detaylı fiyat bilgisi için bizimle iletişime geçebilirsiniz.',
-      },
-      {
-        q: 'Özel sağlık sigortası geçerli mi?',
-        a: 'Bazı özel sağlık sigortalarıyla anlaşmamız bulunmaktadır. Sigortanızın fizyoterapi kapsamını öğrenmek için bizi aramanızı öneriyoruz. Sigorta dışı bireysel ödeme seçenekleri de mevcuttur.',
-      },
-      {
-        q: 'Seans ücretleri ne kadar?',
-        a: 'Seans ücretleri uygulanan yönteme, seans süresine ve iletişim kanalına göre değişiklik göstermektedir. Güncel fiyat bilgisi için +90 554 662 12 45 numarasından veya iletişim sayfamızdan bize ulaşabilirsiniz.',
-      },
-    ],
-  },
 ];
 
 const allQuestions = faqData.flatMap((cat) => cat.questions);
@@ -148,7 +131,7 @@ export default function SSSPage() {
               Sık Sorulan Sorular
             </h1>
             <p className="text-lg text-gray-500 mb-20">
-              Fizyoterapi uygulamaları, randevu süreci ve fiyatlandırma hakkında
+              Fizyoterapi uygulamaları, randevu süreci ve seans süreleri hakkında
               merak edilenler.
             </p>
 
