@@ -1,6 +1,5 @@
 import { createPageMetadata } from '@/lib/metadata';
 import Link from 'next/link';
-import Script from 'next/script';
 
 export const metadata = createPageMetadata({
   title: 'Sık Sorulan Sorular | Fzt. Enes Arıca',
@@ -10,77 +9,53 @@ export const metadata = createPageMetadata({
 
 const faqData = [
   {
-    category: 'Genel',
+    category: 'Başvuru Öncesi',
     questions: [
       {
-        q: 'Fizyoterapi nedir?',
-        a: 'Fizyoterapi, kas-iskelet sistemi, sinir sistemi ve kardiyopulmoner sistem rahatsızlıklarında ilaç ve cerrahi dışı yöntemlerle çalışan bir sağlık disiplinidir. Manuel terapi, egzersiz programları, elektroterapi ve özel fizyoterapi teknikleri kullanılarak ağrının azaltılması, hareket kabiliyetinin artırılması ve fonksiyonel iyileşme hedeflenir.',
+        q: 'Başvuru öncesinde hekim değerlendirmesi gerekir mi?',
+        a: 'Fizyoterapi uygulamaları, hekim tarafından konulan tanı ve yönlendirme doğrultusunda planlanır. Başvuru öncesinde hekim değerlendirmesi yapılmış olması gerekir. Mevcut rapor ve yönlendirme belgelerinizi ilk görüşmeye getirmeniz önerilir.',
       },
       {
-        q: 'Fizyoterapiste ne zaman başvurmalıyım?',
-        a: 'Bel, boyun, sırt ağrısı, eklem sertliği, hareket kısıtlılığı, spor yaralanması, ameliyat sonrası rehabilitasyon ihtiyacı, duruş bozukluğu veya kronik ağrı durumlarında fizyoterapi gündeme gelebilir. Fizyoterapi uygulamaları, hekim tarafından konulan tanı ve yönlendirme doğrultusunda planlanır. Bu nedenle başvurudan önce hekim değerlendirmesi yapılmış olması gerekir; rapor ve resmi süreç gerektiren durumlarda da hekim raporu istenir.',
+        q: 'İlk görüşmeye gelirken neleri hazırlamalıyım?',
+        a: 'Varsa hekim raporunuzu, yönlendirme belgenizi ve ilgili tetkik sonuçlarınızı yanınızda bulundurabilirsiniz. Günlük hareketinizi etkileyen durumları ve görüşmede sormak istediğiniz soruları önceden not almanız yararlı olabilir.',
       },
       {
-        q: 'FTR hekimi ile fizyoterapist arasındaki fark nedir?',
-        a: 'FTR (Fiziksel Tıp ve Rehabilitasyon) hekimi tanı koyar, ilaç yazar ve gerektiğinde fizyoterapiye yönlendirir. Fizyoterapist ise değerlendirme yapar; elektrofiziksel ajanların (ultrason, TENS, lazer vb.) yanı sıra manuel terapi, terapötik egzersiz, GTOS terapi gibi aktif yöntemleri kapsayan fizyoterapi programını planlar ve uygular. Programlarımda bu yöntemleri hastanın ihtiyacına göre birleştiriyorum.',
-      },
-      {
-        q: 'Klinik Pilates ile Reformer Pilates arasındaki fark nedir?',
-        a: 'Klinik Pilates, fizyoterapist eşliğinde rehabilitasyon odaklı uygulanan pilatestir. Mat üzerinde vücut ağırlığı ve hafif ekipmanlarla çalışılır. Reformer Pilates ise yay dirençli cihazla yapılan, güçlendirme ve esneklik odaklı pilatestir. Fizyoterapi sürecinde genellikle klinik pilates ile başlar, yeterli stabilizasyon kazanıldıktan sonra reformer pilatese geçiş yaparım.',
-      },
-      {
-        q: 'GTOS terapi nedir ve kimlere uygulanır?',
-        a: 'GTOS terapi, kas-iskelet sistemi şikayetlerinde kullanılan iğnesiz ve ilaçsız bir fizyoterapi uygulamasıdır. Golgi tendon organları üzerinden kas tonusuna yönelik çalışır. Bel fıtığı, boyun fıtığı, siyatik, kas spazmları, spor yaralanmaları ve kronik ağrı şikayetlerinde değerlendirilebilecek seçeneklerden biridir. Uygunluğu ve yanıt kişiye göre değişir.',
+        q: 'Sağlık belgelerimi iletişim formundan göndermeli miyim?',
+        a: 'İletişim formuna sağlık raporu, tetkik sonucu veya ayrıntılı sağlık bilgisi eklemeyin. Formu iletişim ve randevu talebi için kullanın. Belgelerin görüşmede nasıl değerlendirileceğine ilişkin bilgiyi doğrudan iletişime geçerek alabilirsiniz.',
       },
     ],
   },
   {
-    category: 'Fizyoterapi Süreci',
+    category: 'Görüşme ve Program',
     questions: [
       {
-        q: 'Fizyoterapi seansları ne kadar sürer?',
-        a: 'Seanslar genellikle 45-60 dakika sürmektedir. Süre, uygulanan yönteme ve hastanın durumuna göre değişebilir. İlk değerlendirme seansı biraz daha uzun tutulur; fonksiyonel değerlendirme ve program planlama süreci dahildir.',
+        q: 'İlk görüşmede neler değerlendirilir?',
+        a: 'Hekim tanısı ve yönlendirmesi, mevcut belgeler, günlük hareket ihtiyaçları ve fonksiyonel durum birlikte ele alınır. Uygun fizyoterapi planı bu değerlendirme doğrultusunda kişiye göre belirlenir.',
       },
       {
-        q: 'Fizyoterapi kaç seans sürer?',
-        a: 'Program süresi hastanın durumuna, şikayetin akut veya kronik oluşuna göre değişir. Akut sorunlarda genellikle 4-6 seans, kronik problemlerde 8-12 seans arasında değişmektedir. Bel ve boyun fıtığı gibi durumlarda fizyoterapi süreci 8-12 haftayı kapsayabilir. Her 4-6 haftada yeniden değerlendirme yapılarak program güncellenir.',
+        q: 'Seans süresi ve toplam seans sayısı önceden belli midir?',
+        a: 'Herkes için geçerli bir seans süresi veya toplam seans sayısı yoktur. Plan; hekim yönlendirmesi, kişinin durumu, hareket ihtiyaçları ve değerlendirme bulgularına göre belirlenir. Süreçteki değişiklikler doğrultusunda yeniden değerlendirilir.',
       },
       {
-        q: 'Manuel terapi ağrılı mıdır?',
-        a: 'Manuel terapi uygulamalarında yoğunluk kişinin toleransına göre ayarlanır. Bazı teknikler sırasında hafif bir baskı hissi olabilir ancak bu tolere edilebilir düzeydedir. Seans sırasında rahatsızlık hissederseniz fizyoterapistinize bildirmeniz önemlidir; uygulama yoğunluğu buna göre ayarlanır.',
-      },
-      {
-        q: 'Fizyoterapi sürecinde egzersiz yapmam gerekir mi?',
-        a: 'Evet, sürecin önemli bileşenlerinden biri ev egzersiz programıdır. Klinik seanslarda yapılan çalışmanın sürdürülebilmesi için verilen egzersizlerin düzenli yapılması önerilir. Egzersiz programı her kişiye özel olarak planlanır ve süreç ilerledikçe güncellenir.',
-      },
-      {
-        q: 'Bel fıtığında ameliyat şart mı?',
-        a: 'Literatürde bel fıtığı vakalarının önemli bir bölümünde konservatif yaklaşımın ilk basamak olarak yer aldığı bildirilmektedir. Manuel terapi, GTOS terapi, McKenzie yöntemleri ve bireyselleştirilmiş egzersiz programları bu süreçte kullanılan yöntemlerdendir; yanıt kişiden kişiye değişir. Ameliyat ihtiyacı hekim tarafından; genellikle ilerleyici kas güç kaybı, cauda equina sendromu veya yoğun konservatif yaklaşıma rağmen yanıt alınamayan durumlarda değerlendirilir.',
-      },
-      {
-        q: 'Skolyozda fizyoterapi süreci ne kadar sürer?',
-        a: 'Skolyozda fizyoterapi uzun soluklu bir süreçtir. İlk 3 ay yoğun faz olarak haftada 2-3 seans klinik çalışma yapılır. 3-6 ay arasında geliştirme fazına geçilir. 6 ay sonrasında sürdürme fazında periyodik kontrol ve düzenli ev programı ile devam edilir. Büyüme çağındaki çocuklarda sürecin erken dönemde takibe alınması literatürde önemli görülür; sonuçlar kişiden kişiye değişir.',
+        q: 'Ev egzersiz programı herkese aynı şekilde mi verilir?',
+        a: 'Egzersizlerin uygunluğu, sıklığı ve yoğunluğu kişiye göre değerlendirilir. İnternetteki genel bilgiler kişisel egzersiz planının yerine geçmez. Size önerilen programla ilgili sorularınızı fizyoterapistinize iletebilirsiniz.',
       },
     ],
   },
   {
-    category: 'Randevu',
+    category: 'Randevu ve İletişim',
     questions: [
       {
-        q: 'Nasıl randevu alabilirim?',
-        a: 'Web sitemizdeki iletişim formunu doldurarak, +90 554 662 12 45 numarasını arayarak veya WhatsApp üzerinden mesaj göndererek randevu alabilirsiniz. Fizyoterapi uygulamaları hekim tarafından konulan tanı ve yönlendirme doğrultusunda planlandığından, başvurudan önce hekim değerlendirmesi yapılmış olması gerekir.',
+        q: 'Nasıl randevu talebi oluşturabilirim?',
+        a: 'İletişim formunu doldurarak, +90 554 662 12 45 numarasını arayarak veya WhatsApp üzerinden mesaj göndererek randevu talebinizi iletebilirsiniz. Talep göndermek randevunun kesinleştiği anlamına gelmez; gün ve saat karşılıklı görüşülerek belirlenir.',
       },
       {
-        q: 'Nerede hizmet veriyorsunuz?',
-        a: 'Yalova Merkez\'deki iletişim noktam üzerinden fizyoterapi ve rehabilitasyon hizmeti sunuyorum.',
+        q: 'Görüşmeler nerede yapılır?',
+        a: "İletişim noktası Yalova Merkez’dedir. Güncel adres ve harita bağlantısına iletişim sayfasından ulaşabilirsiniz.",
       },
       {
         q: 'Çalışma saatleriniz nedir?',
-        a: 'İletişim noktam Pazartesi-Cumartesi günleri 10:00-22:00 saatleri arasında hizmet vermektedir. Uygun randevu saatleri için iletişime geçebilirsiniz.',
-      },
-      {
-        q: 'İlk seansta ne yapılır?',
-        a: 'İlk seansta detaylı bir değerlendirme yapılır. Şikayetleriniz, tıbbi geçmişiniz, hekim tanınız ve raporunuz ile varsa görüntüleme sonuçlarınız incelenir. Fonksiyonel değerlendirme ile hareket açıklığı, kas kuvveti, postür ve ilgili testler incelenir. Bulgulara göre bireyselleştirilmiş fizyoterapi planı oluşturulur ve ilk uygulamalara başlanır.',
+        a: 'İletişim saatleri Pazartesi-Cumartesi 10:00-22:00 arasındadır. Randevu uygunluğunu ve görüşme saatini önceden iletişime geçerek teyit edebilirsiniz.',
       },
     ],
   },
@@ -104,12 +79,12 @@ const faqSchema = {
 export default function SSSPage() {
   return (
     <>
-      <Script
+      <script
         id="faq-page-schema"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, '\\u003c') }}
       />
-      <Script
+      <script
         id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -131,8 +106,8 @@ export default function SSSPage() {
               Sık Sorulan Sorular
             </h1>
             <p className="text-lg text-gray-500 mb-20">
-              Fizyoterapi uygulamaları, randevu süreci ve seans süreleri hakkında
-              merak edilenler.
+              Başvuru belgeleri, ilk görüşme, kişiye göre planlama ve randevu
+              talepleri hakkında pratik bilgiler.
             </p>
 
             <div className="space-y-20">

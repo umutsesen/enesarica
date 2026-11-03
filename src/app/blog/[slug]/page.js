@@ -125,7 +125,7 @@ export default async function BlogPostPage({ params }) {
             {post.author && (
               <>
                 <span>&middot;</span>
-                <span>{post.author}</span>
+                <Link href="/hakkimda" className="underline underline-offset-4 hover:text-white">{post.author}</Link>
               </>
             )}
           </div>

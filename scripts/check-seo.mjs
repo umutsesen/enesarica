@@ -13,6 +13,8 @@ const issues = [];
 const titles = new Map();
 const canonicals = new Set();
 const indexable = new Set();
+const internalLinks = new Map();
+const origin = new URL(siteUrl).origin;
 const allowedTypes = new Set([
   'LocalBusiness', 'Organization', 'Person', 'PostalAddress', 'GeoCoordinates',
   'OpeningHoursSpecification', 'ContactPoint', 'City', 'WebSite', 'WebPage',
@@ -61,6 +63,16 @@ for (const path of pages) {
   const route = label === 'index.html' ? '/' : `/${label.slice(0, -5)}`;
   const html = readFileSync(path, 'utf8');
   const expected = new URL(route, siteUrl).href.replace(/\/$/u, '');
+  const links = new Set();
+  for (const match of html.matchAll(/<a\b[^>]*>/gu)) {
+    const href = attributes(match[0]).href;
+    if (!href) continue;
+    try {
+      const destination = new URL(href, expected);
+      if (destination.origin === origin) links.add(`${origin}${destination.pathname}`.replace(/\/$/u, ''));
+    } catch { /* Non-URL anchors cannot establish a crawl path. */ }
+  }
+  internalLinks.set(expected, links);
   const titleTags = [...html.matchAll(/<title\b[^>]*>([\s\S]*?)<\/title>/gu)];
   const title = decode(titleTags[0]?.[1]).trim();
   if (titleTags.length !== 1 || !title) issues.push(`${label}: expected one nonempty title`);
@@ -107,7 +119,24 @@ for (const path of pages) {
     catch { issues.push(`${label}: malformed JSON-LD`); }
   }
   if (!types.has('LocalBusiness')) issues.push(`${label}: business JSON-LD must be server-rendered`);
+  if (route === '/sss' && (!types.has('FAQPage') || !types.has('BreadcrumbList'))) issues.push(`${label}: FAQ and breadcrumb JSON-LD must be server-rendered`);
   if (route === '/' && siteUrl.includes('fizyoterapistenesarica') && !types.has('Person')) issues.push(`${label}: person JSON-LD must be server-rendered`);
+}
+
+// A sitemap entry alone does not make a page discoverable through site navigation.
+// Traverse rendered anchors so circular orphan groups also fail this guard.
+const reachable = new Set();
+const pending = [siteUrl.replace(/\/$/u, '')];
+while (pending.length) {
+  const url = pending.pop();
+  if (reachable.has(url)) continue;
+  reachable.add(url);
+  for (const link of internalLinks.get(url) || []) {
+    if (internalLinks.has(link) && !reachable.has(link)) pending.push(link);
+  }
+}
+for (const url of indexable) {
+  if (!reachable.has(url)) issues.push(`Indexable page has no rendered link path from homepage: ${url}`);
 }
 
 const sitemapUrls = new Set();
@@ -138,5 +167,5 @@ if (issues.length) {
   console.error(`SEO guard failed: ${issues.length} findings across ${pages.length} pages.`);
   process.exitCode = 1;
 } else {
-  console.log(`SEO guard passed: ${pages.length} pages, ${sitemapUrls.size} sitemap URLs, metadata, server-rendered schema and content dates.`);
+  console.log(`SEO guard passed: ${pages.length} pages, ${sitemapUrls.size} sitemap URLs, metadata, server-rendered schema, content dates and crawlable navigation.`);
 }
