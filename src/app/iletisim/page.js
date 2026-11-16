@@ -1,6 +1,5 @@
 import branches from '@/data/branches';
 import { OPENING_HOURS } from '@/lib/site';
-import ContactForm from '../components/ContactForm';
 
 export default function IletisimPage() {
   const location = branches[0];
@@ -15,12 +14,7 @@ export default function IletisimPage() {
         </div>
       </header>
       <section className="py-14 md:py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16">
-          <div>
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-forest-900">Mesaj formu</h2>
-            <p className="mt-4 mb-7 text-gray-600 leading-relaxed">Bu form iletişim talepleri içindir; tıbbi tanı veya kişisel sağlık değerlendirmesi yerine geçmez. Gönderilen talep, randevu saatini otomatik olarak onaylamaz.</p>
-            <ContactForm idPrefix="contact-page" />
-          </div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="rounded-2xl border border-sand-200 bg-sand-50 p-6 sm:p-8 self-start">
             <h2 className="text-2xl font-semibold tracking-tight text-forest-900">{location.name}</h2>
             <address className="mt-6 not-italic space-y-5 leading-relaxed text-gray-700">
@@ -30,7 +24,7 @@ export default function IletisimPage() {
               <p><a href="mailto:fizyones77@gmail.com" className="underline underline-offset-4">fizyones77@gmail.com</a></p>
             </address>
             <a href={directionsUrl} target="_blank" rel="noopener noreferrer" className="mt-7 inline-block text-sage-700 font-medium underline underline-offset-4">Google Haritalar’da yol tarifi →</a>
-            <p className="mt-8 text-sm leading-relaxed text-gray-600">İlk görüşmeye varsa hekim raporunuzu, yönlendirme belgenizi ve mevcut görüntüleme sonuçlarınızı getirebilirsiniz. Bu belgeleri mesaj formuna yazmayın.</p>
+            <p className="mt-8 text-sm leading-relaxed text-gray-600">İlk görüşmeye varsa hekim raporunuzu, yönlendirme belgenizi ve mevcut görüntüleme sonuçlarınızı getirebilirsiniz.</p>
           </div>
         </div>
       </section>

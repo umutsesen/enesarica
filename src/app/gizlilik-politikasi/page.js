@@ -1,7 +1,7 @@
 import { createPageMetadata } from '@/lib/metadata';
 export const metadata = createPageMetadata({
   title: 'Gizlilik Politikası | Fzt. Enes Arıca',
-  description: 'Web sitesi, iletişim formu ve üçüncü taraf hizmetlerde veri işleme hakkında bilgiler. Gizlilik ve iletişim başvuruları.',
+  description: 'Web sitesi ve üçüncü taraf hizmetlerde veri işleme hakkında bilgiler. Gizlilik ve iletişim başvuruları.',
   path: '/gizlilik-politikasi',
 });
 
@@ -40,19 +40,8 @@ export default function GizlilikPolitikasiPage() {
 
         <h2>2. Form Verileri</h2>
         <p>
-          Web sitemizdeki iletisim formu araciligiyla asagidaki bilgiler
-          toplanmaktadir:
-        </p>
-        <ul>
-          <li>Ad ve soyad</li>
-          <li>Telefon numarasi</li>
-          <li>E-posta adresi</li>
-          <li>İsteğe bağlı mesaj içeriği</li>
-          <li>Sabit iletişim noktası: Yalova Merkez</li>
-        </ul>
-        <p>
-          Bu bilgiler iletişim talebinizi yanıtlamak ve randevuya ilişkin iletişimi yürütmek amacıyla kullanılır.
-          Form sağlık bilgileri için tasarlanmamıştır; lütfen tanı, rapor, görüntüleme sonucu veya sağlık geçmişi paylaşmayın.
+          Web sitesinde şu anda iletişim formu bulunmamaktadır. Önceki form gönderimleri Web3Forms aracılığıyla iletilmiştir.
+          Daha önce gönderilmiş form bilgileriyle ilgili sorularınızı veri sorumlusuna yöneltebilirsiniz.
         </p>
 
         <h2>3. Ucuncu Taraf Hizmetler</h2>
@@ -62,10 +51,6 @@ export default function GizlilikPolitikasiPage() {
         <ul>
           <li>
             <strong>Vercel:</strong> Web sitesi barindirma hizmeti
-          </li>
-          <li>
-            <strong>Web3Forms:</strong> Mesaj formunu gönderdiğinizde formdaki bilgiler tarayıcınızdan
-            bu hizmetin API’sine iletilir.
           </li>
           <li>
             <strong>Yazı tipleri:</strong> Sitenin alan adından sunulur; sayfa görüntülenirken
@@ -78,11 +63,10 @@ export default function GizlilikPolitikasiPage() {
         </p>
 
         <h2>5. Veri Saklama Sureleri</h2>
-        <p>Kisisel verileriniz asagidaki sureler boyunca saklanmaktadir:</p>
+        <p>Saklama koşulları hakkında veri sorumlusundan bilgi isteyebilirsiniz:</p>
         <ul>
           <li>
-            <strong>Form verileri:</strong> Talebin yanıtlanması ve uygulanabilir yasal yükümlülükler için gerekli süreyle sınırlı olarak saklanır.
-            Saklama ve silme koşulları hakkında veri sorumlusundan bilgi isteyebilirsiniz.
+            <strong>Önceki form gönderimleri:</strong> Saklama ve silme koşulları hakkında veri sorumlusundan bilgi isteyebilirsiniz.
           </li>
           <li>
             <strong>Çerezler:</strong> Saklama süresi kullanılan teknik çerezin işlevine göre değişebilir.

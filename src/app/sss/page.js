@@ -20,8 +20,8 @@ const faqData = [
         a: 'Varsa hekim raporunuzu, yönlendirme belgenizi ve ilgili tetkik sonuçlarınızı yanınızda bulundurabilirsiniz. Günlük hareketinizi etkileyen durumları ve görüşmede sormak istediğiniz soruları önceden not almanız yararlı olabilir.',
       },
       {
-        q: 'Sağlık belgelerimi iletişim formundan göndermeli miyim?',
-        a: 'İletişim formuna sağlık raporu, tetkik sonucu veya ayrıntılı sağlık bilgisi eklemeyin. Formu iletişim ve randevu talebi için kullanın. Belgelerin görüşmede nasıl değerlendirileceğine ilişkin bilgiyi doğrudan iletişime geçerek alabilirsiniz.',
+        q: 'Sağlık belgelerimi e-posta veya WhatsApp üzerinden göndermeli miyim?',
+        a: 'İlk iletişimde sağlık raporu, tetkik sonucu veya ayrıntılı sağlık bilgisi göndermeyin. Belgelerin nasıl değerlendirileceğini telefonla sorabilirsiniz.',
       },
     ],
   },
@@ -47,7 +47,7 @@ const faqData = [
     questions: [
       {
         q: 'Nasıl randevu talebi oluşturabilirim?',
-        a: 'İletişim formunu doldurarak, +90 554 662 12 45 numarasını arayarak veya WhatsApp üzerinden mesaj göndererek randevu talebinizi iletebilirsiniz. Talep göndermek randevunun kesinleştiği anlamına gelmez; gün ve saat karşılıklı görüşülerek belirlenir.',
+        a: '+90 554 662 12 45 numarasını arayarak veya WhatsApp üzerinden mesaj göndererek randevu talebinizi iletebilirsiniz. Talep göndermek randevunun kesinleştiği anlamına gelmez; gün ve saat karşılıklı görüşülerek belirlenir.',
       },
       {
         q: 'Görüşmeler nerede yapılır?',

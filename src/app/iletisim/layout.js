@@ -1,7 +1,7 @@
 import { createPageMetadata } from '@/lib/metadata';
 export const metadata = createPageMetadata({
   title: 'İletişim ve Randevu Bilgileri | Fzt. Enes Arıca',
-  description: 'Fizyoterapist Enes Arıca’nın Yalova Merkez adresi, çalışma saatleri, telefon ve e-posta bilgileri. İletişim formu ve ulaşım bilgileri.',
+  description: 'Fizyoterapist Enes Arıca’nın Yalova Merkez adresi, çalışma saatleri, telefon ve e-posta bilgileri. Ulaşım bilgileri.',
   path: '/iletisim',
 });
 
