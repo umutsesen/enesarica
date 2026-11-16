@@ -1,5 +1,6 @@
 import branches from '@/data/branches';
 import { OPENING_HOURS } from '@/lib/site';
+import VisitInfo from '@/app/components/VisitInfo';
 
 export default function IletisimPage() {
   const location = branches[0];
@@ -24,10 +25,10 @@ export default function IletisimPage() {
               <p><a href="mailto:fizyones77@gmail.com" className="underline underline-offset-4">fizyones77@gmail.com</a></p>
             </address>
             <a href={directionsUrl} target="_blank" rel="noopener noreferrer" className="mt-7 inline-block text-sage-700 font-medium underline underline-offset-4">Google Haritalar’da yol tarifi →</a>
-            <p className="mt-8 text-sm leading-relaxed text-gray-600">İlk görüşmeye varsa hekim raporunuzu, yönlendirme belgenizi ve mevcut görüntüleme sonuçlarınızı getirebilirsiniz.</p>
           </div>
         </div>
       </section>
+      <VisitInfo showDirectionsLink={false} />
     </div>
   );
 }

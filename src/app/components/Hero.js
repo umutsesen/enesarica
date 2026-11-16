@@ -17,11 +17,11 @@ export default function Hero() {
               Bu sitede çalışma yaklaşımımı ve hareket sağlığına ilişkin genel bilgileri bulabilirsiniz.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/calisma-alanlari" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-white text-forest-900 font-medium hover:bg-sage-100 transition-colors">
-                Çalışma alanlarını inceleyin
+              <Link href="/iletisim" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-white text-forest-900 font-medium hover:bg-sage-100 transition-colors">
+                İletişim ve yol tarifi
               </Link>
-              <Link href="/iletisim" className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-sage-400 text-white font-medium hover:bg-white/10 transition-colors">
-                İletişim bilgileri
+              <Link href="/calisma-alanlari" className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-sage-400 text-white font-medium hover:bg-white/10 transition-colors">
+                Çalışma alanlarını inceleyin
               </Link>
             </div>
             <dl className="mt-10 pt-6 border-t border-white/20 grid sm:grid-cols-2 gap-5 text-sm">

@@ -8,9 +8,10 @@ const rendered = process.argv.includes('--rendered');
 const textTypes = new Set(['.js', '.jsx', '.ts', '.tsx', '.mdx', '.md', '.json', '.txt', '.xml', '.svg', '.webmanifest', '.css', '.html']);
 const mediaTypes = new Set(['.png', '.jpg', '.jpeg', '.webp', '.avif', '.gif', '.ico', '.svg', '.mp4', '.webm', '.pdf']);
 const rules = [
-  ['restricted terminology', /tedavi|uzman|baş\s*fizyoterapist/iu],
+  ['restricted terminology', /tedavi|uzman|baş\s*fizyoterapist|(?<!\p{L})uzm\s*\.?\s*(?:fzt|f[iı]zyoterap[iı]st)(?!\p{L})/iu],
   ['superiority or absolute safety', /(?<!\p{L})(?:en (?:iyi|etkili|başarili)|risksiz|yan etkisiz|zararsiz|tamamen ağrisiz|enfeksiyon riski yoktur)(?!\p{L})/iu],
   ['unreviewed social profile', /(?:instagram\.com|youtube\.com|youtu\.be)/iu],
+  ['Web3Forms submission endpoint', /api\.web3forms\.com\/submit/iu],
   ['patient review markup', /["'](?:aggregaterating|reviewbody)["']\s*:/u],
 ];
 const failures = [];
