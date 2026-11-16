@@ -1,7 +1,7 @@
 import { createPageMetadata } from '@/lib/metadata';
 export const metadata = createPageMetadata({
   title: 'KVKK Aydınlatma Metni | Fzt. Enes Arıca',
-  description: 'İletişim formunda işlenen bilgiler, Web3Forms üzerinden iletim ve kişisel verilerle ilgili haklar hakkında aydınlatma metni.',
+  description: 'Kişisel veriler ve ilgili kişilerin hakları hakkında aydınlatma metni.',
   path: '/kvkk',
 });
 
@@ -45,7 +45,6 @@ export default function KVKKPage() {
           </li>
           <li>
             <strong>Mesaj içeriği:</strong> İletişim talebinize ilişkin isteğe bağlı açıklama.
-            Bu form sağlık verisi toplamak için tasarlanmamıştır; tanı, rapor veya sağlık geçmişi paylaşmayınız.
           </li>
           <li>
             <strong>Dijital veriler:</strong> IP adresi, tarayici bilgileri,
@@ -74,22 +73,15 @@ export default function KVKKPage() {
             Web sitesi altyapisi icin kullanilan hosting hizmet saglayicilari
             (Vercel)
           </li>
-          <li>
-            İletişim formu iletim hizmeti (Web3Forms): Gönder düğmesine bastığınızda ad, telefon,
-            isteğe bağlı e-posta ve mesaj ile sabit Yalova Merkez konum bilgisi tarayıcınızdan
-            Web3Forms API’sine iletilir.
-          </li>
         </ul>
         <p>
-          Form iletimi, hizmet sağlayıcının altyapısında veri işlenmesini gerektirir. Hizmet sağlayıcıların
-          veri işleme ve aktarım koşullarına ilişkin sorularınızı veri sorumlusuna yöneltebilirsiniz.
-          Bu form pazarlama izni almak için kullanılmaz.
+          Web sitesinde şu anda iletişim formu bulunmamaktadır. Önceki form gönderimleri Web3Forms aracılığıyla iletilmiştir.
+          Daha önce gönderilmiş form bilgilerine ilişkin sorularınızı veri sorumlusuna yöneltebilirsiniz.
         </p>
 
         <h2>5. Kisisel Verilerin Toplanma Yontemleri ve Hukuki Sebepleri</h2>
         <p>Kisisel verileriniz asagidaki yontemlerle toplanmaktadir:</p>
         <ul>
-          <li>fizyoterapistenesarica.com uzerindeki iletisim ve randevu formlari</li>
           <li>WhatsApp ve telefon araciligiyla iletisim</li>
           <li>Klinige yuz yuze basvuru</li>
           <li>Sitenin calismasi icin gerekli zorunlu cerezler</li>

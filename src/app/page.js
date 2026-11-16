@@ -1,4 +1,5 @@
 import Hero from './components/Hero'
+import VisitInfo from './components/VisitInfo'
 import Specializations from './components/Specializations'
 import AboutPreview from './components/AboutPreview'
 import LatestArticles from './components/LatestArticles'
@@ -9,6 +10,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <VisitInfo />
       <AboutPreview />
       <Specializations />
       <TreatmentProcess />

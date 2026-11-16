@@ -62,6 +62,9 @@ for (const path of pages) {
   const label = relative(output, path);
   const route = label === 'index.html' ? '/' : `/${label.slice(0, -5)}`;
   const html = readFileSync(path, 'utf8');
+  if (['index.html', 'iletisim.html'].includes(label) && /<form\b/i.test(html)) {
+    issues.push(`${label}: website contact form is suspended`);
+  }
   const expected = new URL(route, siteUrl).href.replace(/\/$/u, '');
   const links = new Set();
   for (const match of html.matchAll(/<a\b[^>]*>/gu)) {

@@ -39,7 +39,7 @@ export default function CerezPolitikasiPage() {
         <p>
           Web sitemiz barındırma için Vercel altyapısını kullanır. Yazı tipleri site alan adından
           sunulur; sayfa görüntülenirken Google Fonts’a ayrıca istek gönderilmez.
-          Mesaj formu gönderildiğinde bilgiler Web3Forms API’sine iletilir; ayrıntılar gizlilik politikasında açıklanır. Sitemizde Google Analytics,
+          Sitemizde Google Analytics,
           Microsoft Clarity gibi reklam veya davranışsal izleme amaçlı analitik
           araçlar kullanılmamaktadır.
         </p>
