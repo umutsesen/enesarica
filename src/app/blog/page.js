@@ -18,12 +18,15 @@ export default function BlogPage() {
       {/* Hero — Light */}
       <div className="bg-sand-50 py-24 md:py-32 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">
-            Yazılar
-          </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-forest-900">
-            Blog
+            Fizyoterapi Yazıları ve Rehberleri
           </h1>
+          <p className="mt-5 max-w-2xl text-gray-600 leading-relaxed">
+            Görüşmeye hazırlık ve hareket sağlığı üzerine Fzt. Enes Arıca’nın bilgilendirme yazıları.
+          </p>
+          <Link href="/blog/yalova-fizyoterapi-rehberi" className="mt-5 inline-block font-medium text-sage-700 underline underline-offset-4">
+            İlk fizyoterapi görüşmesine hazırlık rehberi
+          </Link>
         </div>
       </div>
 
@@ -74,7 +77,7 @@ export default function BlogPage() {
                       className="group flex flex-col md:flex-row md:items-center justify-between gap-3 py-6"
                     >
                       <div className="flex-1 min-w-0">
-                        <h3 className="text-lg font-medium text-forest-900 group-hover:text-sage-600 transition-colors truncate">
+                        <h3 className="text-lg font-medium text-forest-900 group-hover:text-sage-600 transition-colors">
                           {post.title}
                         </h3>
                         {post.category && (
