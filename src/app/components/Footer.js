@@ -123,7 +123,7 @@ export default function Footer() {
               <li>
                 <a href="mailto:fizyones77@gmail.com" className="flex items-center gap-2 hover:text-sage-400 transition-colors">
                   <FaEnvelope className="w-3 h-3 shrink-0" />
-                  fizyones77@gmail.com
+                  <span className="min-w-0 [overflow-wrap:anywhere]">fizyones77@gmail.com</span>
                 </a>
               </li>
               <li>
