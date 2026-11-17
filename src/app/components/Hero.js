@@ -8,7 +8,13 @@ export default function Hero() {
       <div className="editorial-shell hero-grid">
         <div className="hero-copy">
           <p className="eyebrow">Yalova Merkez · Fizyoterapi ve rehabilitasyon</p>
-          <h1 id="hero-heading"><span>Fizyoterapist</span>Enes Arıca</h1>
+          <h1 id="hero-heading"><span>Fizyoterapist</span>{' '}Enes Arıca</h1>
+        </div>
+        <figure className="hero-portrait">
+          <div className="portrait-frame"><Image src="/imgs/enes-arica.webp" alt="Fizyoterapist Enes Arıca" fill priority sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 899px) 340px, (max-width: 1239px) 38vw, 440px" className="object-cover object-top" /></div>
+          <figcaption><span>Fzt. Enes Arıca</span><span>Yalova</span></figcaption>
+        </figure>
+        <div className="hero-information">
           <p className="hero-intro">Hekim yönlendirmesi ve fizyoterapist değerlendirmesi doğrultusunda planlanan fizyoterapi ve rehabilitasyon programları.</p>
           <p className="hero-note">Bu sitede çalışma yaklaşımımı ve hareket sağlığına ilişkin genel bilgileri bulabilirsiniz.</p>
           <div className="hero-actions">
@@ -20,10 +26,6 @@ export default function Hero() {
             <div><dt>Çalışma saatleri</dt><dd>{OPENING_HOURS}</dd></div>
           </dl>
         </div>
-        <figure className="hero-portrait">
-          <div className="portrait-frame"><Image src="/imgs/enes-arica.webp" alt="Fizyoterapist Enes Arıca" fill priority sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 899px) 340px, (max-width: 1239px) 38vw, 440px" className="object-cover object-top" /></div>
-          <figcaption><span>Fzt. Enes Arıca</span><span>Yalova</span></figcaption>
-        </figure>
       </div>
     </section>
   );
