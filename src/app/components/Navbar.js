@@ -31,7 +31,6 @@ function Chevron({ open }) {
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [desktopOpen, setDesktopOpen] = useState(false);
   const [mobileTopicsOpen, setMobileTopicsOpen] = useState(false);
@@ -39,15 +38,7 @@ export default function Navbar() {
   const desktopGroup = useRef(null);
   const desktopTrigger = useRef(null);
   const mobileTrigger = useRef(null);
-  const isDark = pathname === '/' && !scrolled && !mobileOpen;
-  const tone = isDark ? 'text-white hover:bg-white/10' : 'text-forest-900 hover:bg-sand-100';
-
-  useEffect(() => {
-    function updateScroll() { setScrolled(window.scrollY > 10); }
-    updateScroll();
-    window.addEventListener('scroll', updateScroll, { passive: true });
-    return () => window.removeEventListener('scroll', updateScroll);
-  }, []);
+  const tone = 'text-forest-900 hover:bg-sand-100';
 
   useEffect(() => {
     setMobileOpen(false);
@@ -111,9 +102,9 @@ export default function Navbar() {
   }
 
   return (
-    <nav ref={navRef} aria-label="Ana menü" onKeyDown={handleNavigationKey} className={'fixed top-0 left-0 right-0 z-50 border-b transition-colors ' + (isDark ? 'bg-forest-900 border-white/10' : 'bg-white border-sand-200')}>
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
-        <Link href="/" aria-label="Fzt. Enes Arıca ana sayfa" className={'text-lg font-semibold tracking-tight ' + (isDark ? 'text-white' : 'text-forest-900')}>Fzt. Enes Arıca</Link>
+    <nav ref={navRef} aria-label="Ana menü" onKeyDown={handleNavigationKey} className="fixed top-0 left-0 right-0 z-50 border-b bg-white border-sand-200">
+      <div className="editorial-shell h-16 flex items-center justify-between gap-4">
+        <Link href="/" aria-label="Fzt. Enes Arıca ana sayfa" className="text-lg font-semibold tracking-tight text-forest-900">Fzt. Enes Arıca</Link>
         <ul className="hidden lg:flex items-center gap-1">
           {links.map((link) => (
             <li key={link.href} ref={link.disclosure ? desktopGroup : null} className="relative" onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setDesktopOpen(false); }}>
@@ -136,7 +127,7 @@ export default function Navbar() {
               )}
             </li>
           ))}
-          <li><a href="tel:+905546621245" className={'ml-3 inline-block px-4 py-2 rounded-lg text-sm font-medium ' + (isDark ? 'bg-white text-forest-900 hover:bg-sage-100' : 'bg-forest-900 text-white hover:bg-forest-800')}>+90 554 662 12 45</a></li>
+          <li><a href="tel:+905546621245" className="ml-3 inline-block px-4 py-2 rounded text-sm font-medium bg-forest-900 text-white hover:bg-forest-800">+90 554 662 12 45</a></li>
         </ul>
         <button ref={mobileTrigger} type="button" aria-label={mobileOpen ? 'Menüyü kapat' : 'Menüyü aç'} aria-expanded={mobileOpen} aria-controls="mobile-navigation" onClick={() => setMobileOpen((open) => !open)} className={'lg:hidden rounded-lg p-2 ' + tone}>
           <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">

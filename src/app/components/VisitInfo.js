@@ -3,8 +3,8 @@ import branches from '@/data/branches';
 
 export default function VisitInfo({ showDirectionsLink = true }) {
   return (
-    <section id="ziyaret-bilgileri" className="scroll-mt-24 py-14 md:py-20 bg-sand-50" aria-labelledby="ziyaret-baslik">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="ziyaret-bilgileri" className="scroll-mt-24 py-14 md:py-20 border-t border-sand-200" aria-labelledby="ziyaret-baslik">
+      <div className="editorial-shell">
         <p className="text-sm font-medium text-sage-700 mb-3">Fzt. Enes Arıca · Yalova Merkez</p>
         <h2 id="ziyaret-baslik" className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900">İlk görüşmeye hazırlık</h2>
         <div className="mt-6 max-w-2xl space-y-4 text-gray-600 leading-relaxed">

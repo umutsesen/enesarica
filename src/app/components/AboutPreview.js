@@ -8,8 +8,8 @@ const preparation = [
 
 export default function AboutPreview() {
   return (
-    <section className="bg-sand-50 py-14 md:py-20" aria-labelledby="yaklasim-baslik">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="bg-sand-50 py-16 md:py-24" aria-labelledby="yaklasim-baslik">
+      <div className="editorial-shell">
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-16">
           <div className="lg:col-span-4">
             <p className="text-sm font-medium text-sage-700 mb-3">Çalışma yaklaşımım</p>
@@ -18,9 +18,8 @@ export default function AboutPreview() {
             <Link href="/hakkimda" className="mt-5 inline-block font-medium text-sage-700 underline underline-offset-4">Hakkımda ve çalışma yaklaşımım →</Link>
           </div>
           <ol className="lg:col-span-8 grid sm:grid-cols-3 gap-6">
-            {preparation.map((item, index) => (
+            {preparation.map((item) => (
               <li key={item.title} className="border-t border-sage-300 pt-5">
-                <span className="text-sm text-sage-700" aria-hidden="true">0{index + 1}</span>
                 <h3 className="mt-3 font-semibold text-forest-900">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.text}</p>
               </li>
