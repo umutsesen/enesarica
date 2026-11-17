@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="home-hero" aria-labelledby="hero-heading">
       <div className="editorial-shell hero-grid">
         <div className="hero-copy">
-          <p className="eyebrow">Yalova Merkez · Fizyoterapi ve rehabilitasyon</p>
+          <p className="eyebrow">Yalova Merkez · Çalışma yaklaşımı</p>
           <h1 id="hero-heading"><span>Fizyoterapist</span>{' '}Enes Arıca</h1>
         </div>
         <figure className="hero-portrait">
@@ -15,11 +15,12 @@ export default function Hero() {
           <figcaption><span>Fzt. Enes Arıca</span><span>Yalova</span></figcaption>
         </figure>
         <div className="hero-information">
-          <p className="hero-intro">Hekim yönlendirmesi ve fizyoterapist değerlendirmesi doğrultusunda planlanan fizyoterapi ve rehabilitasyon programları.</p>
-          <p className="hero-note">Bu sitede çalışma yaklaşımımı ve hareket sağlığına ilişkin genel bilgileri bulabilirsiniz.</p>
+          <p className="hero-intro">Çalışma yaklaşımım, ilk görüşmeye hazırlık ve hareket sağlığı üzerine rehberler.</p>
+          <p className="hero-note">Fizyoterapi uygulamaları, hekim tanısı ve yönlendirmesi doğrultusunda bireysel değerlendirmeyle planlanır.</p>
           <div className="hero-actions">
             <Link href="/iletisim" className="editorial-button">İletişim ve yol tarifi <span aria-hidden="true">↗</span></Link>
-            <Link href="/hakkimda" className="editorial-link">Beni tanıyın <span aria-hidden="true">→</span></Link>
+            <Link href="/hakkimda" className="editorial-link">Enes Arıca hakkında <span aria-hidden="true">→</span></Link>
+            <a href="#ziyaret-bilgileri" className="editorial-link">İlk görüşmeye hazırlık <span aria-hidden="true">↓</span></a>
           </div>
           <dl className="hero-details">
             <div><dt>Telefon</dt><dd><a href="tel:+905546621245">+90 554 662 12 45</a></dd></div>
