@@ -15,8 +15,8 @@ const inter = Inter({
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   ...createPageMetadata({
-    title: 'Fizyoterapist Enes Arıca | Yalova Merkez',
-    description: 'Fizyoterapist Enes Arıca’nın Yalova Merkez’deki çalışma yaklaşımı, fizyoterapi ve rehabilitasyon alanları, genel bilgilendirme yazıları ve iletişim bilgileri.',
+    title: 'Fizyoterapist Enes Arıca | Profil ve İletişim',
+    description: 'Fizyoterapist Enes Arıca’nın çalışma yaklaşımı, hareket sağlığı rehberleri ve Yalova Merkez’de ilk görüşme için iletişim ve ziyaret bilgileri.',
   }),
   icons: {
     icon: [

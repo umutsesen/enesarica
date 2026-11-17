@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const topics = [
-  { label: 'Pilates', title: 'Klinik Pilates ve Reformer', text: 'İki yaklaşımın amaçları, ortak noktaları ve aralarındaki farklar.', href: '/blog/reformer-klinik-pilates-farklari' },
+  { label: 'Pilates', title: 'Klinik pilates ve reformer pilates farkı', text: 'Klinik yaklaşımın mat ve reformer egzersizleriyle nasıl ilişkilendirildiği.', href: '/blog/reformer-klinik-pilates-farklari' },
   { label: 'Boyun ağrısı', title: 'Masa başında hareket', text: 'Ofiste boyun ağrısı, ergonomi ve hareket molaları üzerine.', href: '/blog/ofiste-boyun-agrisi' },
   { label: 'Spor ve aktiviteye dönüş', title: 'Spora dönüşü anlamak', text: 'Spor yaralanmalarında değerlendirme ve spora dönüş kriterleri.', href: '/calisma-alanlari/spor-yaralanmalari' },
 ];
