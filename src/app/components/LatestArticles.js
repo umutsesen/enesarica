@@ -1,78 +1,26 @@
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 
-const featuredPosts = [
-  {
-    slug: 'bel-fitigi-egzersizleri',
-    title: 'Bel Fıtığında Egzersizler: Evde Yapılabilecek 10 Hareket',
-    category: 'Egzersiz',
-  },
-  {
-    slug: 'boyun-duzlesmesi',
-    title: 'Boyun Düzleşmesi Nedir? Belirtileri ve Fizyoterapi Yaklaşımları',
-    category: 'Fizyoterapi',
-  },
-  {
-    slug: 'skolyoz-nedir-belirtileri-nelerdir',
-    title: 'Skolyoz Nedir? Belirtileri Nelerdir?',
-    category: 'Fizyoterapi',
-  },
-  {
-    slug: 'siyatik-agrisi-evde',
-    title: 'Siyatik Ağrısında Evde Neler Yapılabilir?',
-    category: 'Rehber',
-  },
-]
+const topics = [
+  { label: 'Pilates', title: 'Klinik Pilates ve Reformer', text: 'İki yaklaşımın amaçları, ortak noktaları ve aralarındaki farklar.', href: '/blog/reformer-klinik-pilates-farklari' },
+  { label: 'Boyun ağrısı', title: 'Masa başında hareket', text: 'Ofiste boyun ağrısı, ergonomi ve hareket molaları üzerine.', href: '/blog/ofiste-boyun-agrisi' },
+  { label: 'Spor ve aktiviteye dönüş', title: 'Spora dönüşü anlamak', text: 'Spor yaralanmalarında değerlendirme ve spora dönüş kriterleri.', href: '/calisma-alanlari/spor-yaralanmalari' },
+];
 
 export default function LatestArticles() {
   return (
-    <section className="py-10 md:py-14">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-8">
-          <div>
-            <p className="text-sm uppercase tracking-wider text-sage-600 font-medium mb-2">Blog</p>
-            <h2 className="text-2xl md:text-3xl font-semibold text-forest-900">
-              Fizyoterapi Rehberleri
-            </h2>
-          </div>
-          <Link
-            href="/blog"
-            className="hidden sm:inline-flex items-center gap-2 text-sm font-medium text-forest-900 hover:text-sage-600 transition-colors"
-          >
-            Tümünü gör
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 5l7 7-7 7" />
-            </svg>
-          </Link>
+    <section className="topic-section" aria-labelledby="rehberler-baslik">
+      <div className="editorial-shell">
+        <div className="editorial-heading"><div><p className="eyebrow">Hareket üzerine okumalar</p><h2 id="rehberler-baslik">Gündelik hayattan<br className="hidden sm:block" /> hareketin içine.</h2></div><Link href="/blog" className="editorial-link">Tüm rehberler <span aria-hidden="true">↗</span></Link></div>
+        <div className="topic-layout">
+          <figure className="equipment-figure">
+            <div className="equipment-frame"><Image src="/editorial/sports-equipment.webp" alt="Dambıllar ve köpük rulo ile hazırlanmış temsili egzersiz ekipmanı kompozisyonu" fill sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1239px) 42vw, 500px" className="object-cover" /></div>
+            <figcaption>Yapay zekâ ile üretilmiş temsili ekipman görseli.</figcaption>
+          </figure>
+          <div className="topic-list">{topics.map((topic) => <article key={topic.href}><Link href={topic.href} className="topic-link"><div><p className="eyebrow">{topic.label}</p><h3>{topic.title}</h3><p className="topic-description">{topic.text}</p></div><span className="topic-arrow" aria-hidden="true">↗</span></Link></article>)}</div>
         </div>
-
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {featuredPosts.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="group block rounded-2xl border border-sand-200 bg-white overflow-hidden transition-all duration-300 hover:border-sage-300 hover:shadow-lg"
-            >
-              <div className="p-4">
-                <p className="text-xs uppercase tracking-wider text-sage-600 font-medium mb-1.5">
-                  {post.category}
-                </p>
-                <h3 className="text-sm font-semibold text-forest-900 leading-snug group-hover:text-sage-700 transition-colors line-clamp-2">
-                  {post.title}
-                </h3>
-              </div>
-            </Link>
-          ))}
-        </div>
-
-        <div className="mt-6 text-center sm:hidden">
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 text-sm font-medium text-forest-900 hover:text-sage-600 transition-colors"
-          >
-            Tüm yazıları gör →
-          </Link>
-        </div>
+        <p className="editorial-disclaimer">Bu içerikler genel bilgilendirme amaçlıdır; hekim değerlendirmesinin yerine geçmez.</p>
       </div>
     </section>
-  )
+  );
 }

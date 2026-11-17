@@ -1,112 +1,13 @@
-'use client'
-
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-import { treatments } from '@/data/treatments'
-
-const ease = [0.25, 0.4, 0.25, 1]
-const featured = treatments.slice(0, 8)
+import Link from 'next/link';
+import { treatments } from '@/data/treatments';
 
 export default function Specializations() {
   return (
-    <section className="py-24 md:py-32">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12 sm:mb-16">
-          <div>
-            <motion.p
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, ease }}
-              viewport={{ once: true, margin: "-80px" }}
-              className="text-sage-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
-            >
-              Deneyim Alanları
-            </motion.p>
-            <motion.h2
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1, ease }}
-              viewport={{ once: true, margin: "-80px" }}
-              className="text-3xl md:text-4xl font-semibold tracking-tight text-forest-900"
-            >
-              Çalıştığım Klinik Başlıklar
-            </motion.h2>
-          </div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.3, ease }}
-            viewport={{ once: true }}
-          >
-            <Link
-              href="/blog"
-              className="hidden md:inline-flex text-sm font-medium text-forest-900 hover:text-sage-600 transition-colors"
-            >
-              Rehberleri Gör →
-            </Link>
-          </motion.div>
-        </div>
-
-        <div className="divide-y divide-gray-200 border-t border-b border-gray-200">
-          {featured.map((treatment, i) => (
-            <motion.div
-              key={treatment.slug}
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.06, ease }}
-              viewport={{ once: true, margin: "-50px" }}
-            >
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-6 md:py-8 items-baseline">
-                <h3 className="md:col-span-4 text-xl md:text-2xl font-medium text-forest-900">
-                  {treatment.title}
-                </h3>
-                <p className="md:col-span-6 text-gray-500 text-sm leading-relaxed line-clamp-2">
-                  {treatment.shortDescription}
-                </p>
-                <div className="md:col-span-2 flex justify-end">
-                  <Link
-                    href={`/calisma-alanlari/${treatment.slug}`}
-                    className="text-sm text-gray-400 hover:text-sage-600 transition-colors"
-                  >
-                    Konuyu Oku →
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        <div className="mt-8 rounded-2xl bg-sand-50 border border-sand-200 p-6 md:p-8">
-          <p className="text-sm text-gray-600 leading-relaxed">
-            Çalışma alanları sayfalarını, hizmet kapsamını görmek isteyen danışanlar için
-            yayında tutuyorum. Yaklaşımımı, sık sorulan soruları ve hangi durumda nasıl
-            karar verdiğimi blog tarafında daha ayrıntılı anlatıyorum.
-          </p>
-          <div className="mt-4 flex flex-col sm:flex-row gap-3">
-            <Link
-              href="/blog"
-              className="inline-flex items-center justify-center rounded-lg bg-sage-600 px-5 py-3 text-sm font-medium text-white hover:bg-sage-700 transition-colors"
-            >
-              Blog Rehberlerine Git
-            </Link>
-            <Link
-              href="/iletisim"
-              className="inline-flex items-center justify-center rounded-lg border border-sand-300 px-5 py-3 text-sm font-medium text-forest-900 hover:border-sage-500 hover:text-sage-600 transition-colors"
-            >
-              İletişime Geç
-            </Link>
-          </div>
-        </div>
-
-        <div className="mt-10 text-center md:hidden">
-          <Link
-            href="/blog"
-            className="text-sm font-medium text-forest-900 hover:text-sage-600 transition-colors"
-          >
-            Rehberleri Gör →
-          </Link>
-        </div>
+    <section className="editorial-section" aria-labelledby="alanlar-baslik">
+      <div className="editorial-shell">
+        <div className="editorial-heading"><div><p className="eyebrow">Çalışma alanları</p><h2 id="alanlar-baslik">Fizyoterapiye dair<br />konu başlıkları.</h2></div><Link href="/calisma-alanlari" className="editorial-link">Tüm çalışma alanları <span aria-hidden="true">↗</span></Link></div>
+        <div className="clinical-list">{treatments.slice(0, 8).map((item) => <Link key={item.slug} href={`/calisma-alanlari/${item.slug}`}><h3>{item.title}</h3><span aria-hidden="true">↗</span></Link>)}</div>
       </div>
     </section>
-  )
+  );
 }

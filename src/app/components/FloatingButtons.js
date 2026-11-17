@@ -10,16 +10,16 @@ export function FloatingButtons() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp ile iletişime geç"
-        className="flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-105 transition-transform"
+        className="flex items-center justify-center w-11 h-11 rounded-full bg-sage-600 text-white border border-white/30 hover:bg-sage-700 transition-colors"
       >
-        <FaWhatsapp className="w-7 h-7" />
+        <FaWhatsapp className="w-5 h-5" />
       </a>
       <a
         href="tel:+905546621245"
         aria-label="Telefon ile ara"
-        className="flex items-center justify-center w-14 h-14 rounded-full bg-forest-900 text-white shadow-lg hover:scale-105 transition-transform"
+        className="flex items-center justify-center w-11 h-11 rounded-full bg-forest-900 text-white border border-white/30 hover:bg-sage-700 transition-colors"
       >
-        <FaPhone className="w-6 h-6" />
+        <FaPhone className="w-4 h-4" />
       </a>
     </div>
   );

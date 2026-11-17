@@ -38,5 +38,10 @@
     "sha256": "3bcbd46f3bc9922ee9dfce93d3b794fbaaa5a7fc2b0c4f34517bdd94b69f4782",
     "reviewedOn": "2026-11-03",
     "purpose": "Visually reviewed brand icon or wordmark, no restricted title"
+  },
+  "editorial/sports-equipment.webp": {
+    "sha256": "d2a958f92f282874233b64e85d21810862a03bba533f3517975f6c0a2250f168",
+    "reviewedOn": "2026-11-17",
+    "purpose": "Visually inspected AI-generated editorial illustration of equipment or everyday objects; no patient, provider, actual premises, intervention or outcome."
   }
 }
